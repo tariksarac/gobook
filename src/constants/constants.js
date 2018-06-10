@@ -1,3 +1,5 @@
+export const firstHeading = 'BEST OF BOSNIA & HERZEGOVINA'
+export const firstSubHeading = 'Osjetite nevjerovatnu Bosnu i Hercegovinu'
 export const temporaryImg = require('../images/sebilj.jpg')
 export const pliva = require('../images/pliva.jpg')
 export const plivaText = 'U veoma kratkom period Bosna i Hercegovina je postala turistička bajka. Zahvaljujući ljepotama naše zemlje iz\n' +
@@ -17,3 +19,10 @@ export const jezero = 'https://drscdn.500px.org/photo/150980049/q%3D80_m%3D2000/
 export const products = [{name:'Sarajevo-Jajce-Mostar,', images:[sarajevo, mostar], description:'6 noćenja, 7 dana', price:'100$'},
     {name:'Sarajevo-Jajce,', images:[sarajevo, jajce], description:'4 noćenja, 5 dana', price:'100$'},
     {name:'Sarajevo-Mostar,', images:[sarajevo, mostar], description:'4 noćenja, 5 dana', price:'100$'}]
+
+export const lastHeading = 'doživite ljepote Bosne i Hercegovine'
+export const lastSubHeading = 'Cilj naše agencije jeste da vam pomognemo da upoznate i doživite ljepote Bosne i Hercegovine na najbolji mogući\n' +
+    '\n' +
+    'način.\n' +
+    '\n' +
+    'Zahvaljujemo se svima koji odluče svoje povjerenje prepustiti nama!'

@@ -9,6 +9,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 
 }
 .product-container .Product .product-name {
@@ -25,6 +26,13 @@
 .product-container .Product .product-price {
     color: #ffffff;
     z-index: 3;
+
+}
+
+.product-container .Product .product-image {
+    position: absolute;
+    width: auto;
+    height: 100%;
 
 }
 
