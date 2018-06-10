@@ -1,28 +1,147 @@
+body {
+  --main-text-color: #3ac0c7;
+}
+
+p {
+  width: 80%;
+  color: #696969;
+  line-height: 1.5em;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .App {
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+          "hd hd hd hd   hd   hd   hd   hd   hd"
+          ". main main main main main main main ."
+          "ft ft ft ft   ft   ft   ft   ft   ft";
+
+  overflow: hidden;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App .App-header {
+  grid-area: hd;
+  background-color: #f2f2f2;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  color: var(--main-text-color);
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.App .App-header .header-content {
+  grid-column-start: 2;
+  grid-column-end: 9;
+  display: flex;
 }
 
-.App-title {
-  font-size: 1.5em;
+.App .App-header .header-content .header-items {
+  width: auto;
+  transition: ease-in-out 200ms;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
 }
 
-.App-intro {
-  font-size: large;
+.App .App-header .header-content .header-social {
+  margin-right: 0;
+  margin-left: auto;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.App .App-header .header-content .header-items .header-item {
+  padding-right: 15px;
 }
+
+
+
+.App .App-header .header-content img {
+  height: 55px;
+  width: 55px;
+  margin-bottom: auto;
+  margin-top: auto;
+  padding-right: 10px;
+}
+
+.App .App-header .menu {
+  display: none;
+}
+
+
+.App .App-main {
+  grid-area: main;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+
+  }
+
+  .App {
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+            "hd hd hd hd   hd   hd   hd   hd   hd"
+            "main main main main main main main main main"
+            "ft ft ft ft   ft   ft   ft   ft   ft";
+  }
+
+  .App .App-header {
+    height: 90px;
+    position: relative;
+  }
+
+  .App .App-header .header-content {
+    grid-column-start: 1;
+    grid-column-end: 10;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .App .App-header .header-content img {
+    display: none;
+  }
+
+  .App .App-header .header-content .header-social {
+    margin: 0;
+    padding-left: 10px;
+  }
+
+
+  .App .App-header .header-content .header-items {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    left: 100%;
+    transition: ease-in-out 200ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 100px;
+    z-index: 5;
+  }
+
+  .App .App-header .header-items .header-item {
+    height: 35px;
+  }
+
+  .App .App-header .menu {
+    display: flex;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding-right: 10px;
+    z-index: 6;
+  }
+
+
+
+
+}
+
