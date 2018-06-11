@@ -1,6 +1,8 @@
 import React from 'react'
 import HamburgerMenu from 'react-hamburger-menu'
 import Social from "./Social";
+import { Link } from 'react-router-dom'
+
 
 const logo = require('../../images/logo.jpeg')
 
@@ -26,8 +28,8 @@ class Header extends React.Component {
                 <div className={'header-content'}>
                     <img src={logo}/>
                     <div className={'header-items'} style={{left: open && '0%'}}>
-                        <div className={'header-item'}>Home</div>
-                        <div className={'header-item'}>Tours</div>
+                        <Link  to="/" onClick={() => this.setState({open :false})}><div className={'header-item'}>Home</div></Link>
+                        <Link className={'header-item'} to="/all-tours" onClick={() => this.setState({open :false})}>Tours</Link>
                     </div>
                     <div className={'menu'}>
                         <HamburgerMenu
