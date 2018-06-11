@@ -16,9 +16,9 @@ export const jajce = 'https://drscdn.500px.org/photo/199890883/q%3D80_m%3D1500/v
 export const mostar = 'https://drscdn.500px.org/photo/100843871/q%3D80_m%3D2000/v2?webp=true&sig=acd845aa07fdca3789e7a1af7f4e70a78e07fc7ae9042cea206970105cbf958f'
 export const jezero = 'https://drscdn.500px.org/photo/150980049/q%3D80_m%3D2000/v2?webp=true&sig=4577267c9a336325e79d9364e54d5143b4fc3050b442bb8cbf7587a53a35f465'
 
-export const products = [{name:'Sarajevo-Jajce-Mostar,', images:[sarajevo, mostar], description:'6 noćenja, 7 dana', price:'100$'},
-    {name:'Sarajevo-Jajce,', images:[sarajevo, jajce], description:'4 noćenja, 5 dana', price:'100$'},
-    {name:'Sarajevo-Mostar,', images:[sarajevo, mostar], description:'4 noćenja, 5 dana', price:'100$'}]
+export const products = [{name:'Sarajevo-Jajce-Mostar', images:[sarajevo, mostar], description:'6 noćenja, 7 dana', price:'100$'},
+    {name:'Sarajevo-Jajce', images:[sarajevo, jajce], description:'4 noćenja, 5 dana', price:'100$'},
+    {name:'Sarajevo-Mostar', images:[sarajevo, mostar], description:'4 noćenja, 5 dana', price:'100$'}]
 
 export const lastHeading = 'doživite ljepote Bosne i Hercegovine'
 export const lastSubHeading = 'Cilj naše agencije jeste da vam pomognemo da upoznate i doživite ljepote Bosne i Hercegovine na najbolji mogući\n' +

@@ -21,7 +21,7 @@ class Product extends React.Component {
             backgroundSize: 'cover'
         }
         let layer = {
-            backgroundColor: 'rgba(58, 192, 199, 0.3)',
+            backgroundColor: 'rgba(0, 0, 0, 0.5)',
             position: 'absolute',
             top: 0,
             left: 0,
@@ -36,9 +36,9 @@ class Product extends React.Component {
 
                 {!over && name && <div className={'product-name'}>{name}</div>}
 
-                {over && description && <div className={'product-description'}>{description}</div>}
+                {over && description && <div className={'product-name'}>{description}</div>}
 
-                {over && price && <div className={'product-price'}>{price}</div>}
+                {price && <div className={'product-name product-price'} style={{display: over && 'block'}}>{price}</div>}
 
                 {over && <div className="layer" style={layer}/>}
 

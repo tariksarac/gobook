@@ -2,14 +2,22 @@ import React from 'react'
 import './FeaturedPicture.css'
 
 const FeaturedPicture = ({picture, title, subTitle, about}) => {
-    const backround = {
-        background: `lightblue url(${picture}) no-repeat fixed center`,
-        backgroundSize: 'cover'
+    // const backround = {
+    //     //     background: `lightblue url(${picture}) no-repeat fixed center`,
+    //     //     backgroundSize: 'cover'
+    //     //
+    //     // }
 
+    let backGround = {
+        backgroundImage: `url(${picture})`,
+        backgroundPosition:'center',
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed'
     }
+
     return (
         <div className={'featured-picture-container'} >
-            <div className={'featured-picture'} style={backround}>
+            <div className={'featured-picture'} style={backGround}>
                 {title && <div className={'featured-title'}>{title}</div>}
                 {subTitle && <div className={'featured-subtitle'}>{subTitle}</div>}
 

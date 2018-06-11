@@ -13,8 +13,12 @@
 
 }
 .product-container .Product .product-name {
+    height: 30px;
     color: #ffffff;
     z-index: 3;
+    font-size: 22px;
+    border-bottom: 2px solid var(--main-text-color);
+    background-color: rgba(0, 0, 0, 0.5);
 
 }
 .product-container .Product .product-description {
@@ -24,8 +28,12 @@
 }
 
 .product-container .Product .product-price {
+    display: none;
     color: #ffffff;
+    height: 40px;
     z-index: 3;
+    border-bottom: 0;
+    font-size: 32px;
 
 }
 
@@ -45,6 +53,11 @@
 
     .product-container .Product {
        height: 300px;
+
+    }
+
+    .product-container .Product .product-price {
+        display: block;
 
     }
 
