@@ -42,7 +42,8 @@
     box-shadow: 0 0 0 transparent;
 }
 .contact-container .Contact form input[type="submit"] {
-    background-color: #3ac0c7;
+    background-color: var(--main-text-color);
+    -webkit-appearance: none;
 }
 
 .contact-container .Contact form textarea {
