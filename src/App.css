@@ -1,5 +1,5 @@
 body {
-  --main-text-color: #3ac0c7;
+  --main-text-color: #33a3fc;
 }
 
 p {
@@ -48,6 +48,11 @@ p {
 
 }
 
+.App .App-header .header-content .header-items a {
+ text-decoration: none;
+
+}
+
 .App .App-header .header-content .header-social {
   margin-right: 0;
   margin-left: auto;
@@ -56,6 +61,9 @@ p {
 
 .App .App-header .header-content .header-items .header-item {
   padding-right: 15px;
+  text-decoration: none;
+  color: #33a3fc;
+
 }
 
 

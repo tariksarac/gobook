@@ -29,7 +29,8 @@ class Header extends React.Component {
                     <img src={logo}/>
                     <div className={'header-items'} style={{left: open && '0%'}}>
                         <Link  to="/" onClick={() => this.setState({open :false})}><div className={'header-item'}>Home</div></Link>
-                        <Link className={'header-item'} to="/all-tours" onClick={() => this.setState({open :false})}>Tours</Link>
+                        <Link className={'header-item'} to="/all-tours" onClick={() => this.setState({open :false})}>Destinations</Link>
+                        <Link className={'header-item'} to="/#contact" onClick={() => this.setState({open :false})}>Destinations</Link>
                     </div>
                     <div className={'menu'}>
                         <HamburgerMenu

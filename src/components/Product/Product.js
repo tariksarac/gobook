@@ -1,4 +1,6 @@
 import React from 'react'
+import { withRouter } from 'react-router-dom'
+
 
 class Product extends React.Component {
     constructor(props) {
@@ -31,7 +33,7 @@ class Product extends React.Component {
         }
         return (
             <div className={'Product'} onMouseOver={() => this.setState({over: true})}
-                 onMouseLeave={() => this.setState({over: false})} style={backGround}>
+                 onMouseLeave={() => this.setState({over: false})} style={backGround} onClick={() => this.props.history.push(`/tour/${name}`)}>
                 {/*<img className={'product-image'} src={backGroundImage}/>*/}
 
                 {!over && name && <div className={'product-name'}>{name}</div>}
@@ -47,4 +49,4 @@ class Product extends React.Component {
     }
 }
 
-export default Product
+export default withRouter(Product)

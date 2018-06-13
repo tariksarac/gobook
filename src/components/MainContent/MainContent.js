@@ -13,7 +13,7 @@ const MainContent = () => {
             <FeaturedPicture about={plivaText} picture={pliva}/>
             <Heading heading={'2018'} line subHeading={'Ponuda Izleta za 2018. godinu'}/>
             <ProductsContainer products={products}/>
-            <Heading heading={lastHeading} subHeading={lastSubHeading}/>
+            <Heading heading={lastHeading} subHeading={lastSubHeading} line/>
         </div>
     )
 }

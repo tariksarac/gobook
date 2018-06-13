@@ -10,6 +10,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    border: 1px  solid #ffffff;
+    cursor: pointer;
 
 }
 .product-container .Product .product-name {

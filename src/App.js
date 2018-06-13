@@ -21,7 +21,7 @@ class App extends Component {
                 <Route exact path="/" component={MainContent}/>
                 <Route path="/all-tours" component={AllTour}/>
                 <Route path="/tour/:name" component={Tour}/>
-          <Contact />
+          <Contact id={'contact'}/>
       </div>
         </Router>
 
