@@ -1,5 +1,7 @@
 body {
   --main-text-color: #33a3fc;
+  font-family: Roboto;
+  color: #696969;
 }
 
 p {

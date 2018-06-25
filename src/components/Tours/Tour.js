@@ -1,10 +1,12 @@
-import React ,{ createContext }from 'react';
+import React from 'react';
 import './Tour.css';
 import '../../../node_modules/react-image-gallery/styles/css/image-gallery.css';
 import ImageGallery from 'react-image-gallery';
 import { about, heading } from '../../constants/constants';
 import Heading from '../Heading/Heading';
 import AppContext from '../../constants/mainContext';
+import Highlights from "../Highlights/Highlights";
+import Itinerary from "../Itinerary/Itinerary";
 
 const images = [
     {
@@ -21,17 +23,11 @@ const images = [
     },
 ];
 
-// const Context = createContext();
-// const { Consumer } = Context;
-
 class Tour extends React.Component {
     render() {
-        // const { gallery } = this.tour && this.tour
-        // let tour = tours.find(item => item.name === this.props.match.params.name);
         return (
 
             <div className={'Tour'}>
-                {/*<Heading heading={heading} line subHeading={about} color={'#f5f5f5'} />*/}
                 <Heading heading={heading}  subHeading={about}  />
                 <AppContext.Consumer>
                     { value => {
@@ -39,8 +35,9 @@ class Tour extends React.Component {
                         return (<ImageGallery items={tourItem.gallery} showThumbnails={false} />)
                     }}
                     </AppContext.Consumer>
-                {/*<NumberContext.Consumer>{tours => (<div>{1}</div>)}</NumberContext.Consumer>*/}
-
+                <Heading heading={heading} line subHeading={about} color={'#f5f5f5'} margin={'20px 0'}/>
+                <Highlights highlights={['Discover the Whale Route to Hermanus','Discover the Whale Route to Hermanus','Discover the Whale Route to Hermanus']}/>
+                <Itinerary data={[1,2,3]}/>
             </div>
 
         );

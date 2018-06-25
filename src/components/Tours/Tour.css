@@ -5,3 +5,9 @@
 .Tour .originalClass {
     max-height: 600px;
 }
+
+@media only screen and (max-width: 600px){
+    .Tour .originalClass {
+        max-height: 300px;
+    }
+}

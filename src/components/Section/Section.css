@@ -1,0 +1,13 @@
+.Section {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px){
+
+    .Section {
+        flex-direction: column;
+    }
+}

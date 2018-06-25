@@ -1,0 +1,12 @@
+.ext-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.ext-panel .exp-sum {
+    height: 50px;
+}
+
+.ext-panel .exp-sum .title{
+    padding-left: 20px;
+}
