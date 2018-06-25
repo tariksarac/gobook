@@ -1,0 +1,7 @@
+.Tour {
+    grid-area: main;
+}
+
+.Tour .originalClass {
+    max-height: 600px;
+}

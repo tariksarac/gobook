@@ -10,8 +10,9 @@ const FeaturedPicture = ({picture, title, subTitle, about}) => {
 
     let backGround = {
         backgroundImage: `url(${picture})`,
-        backgroundPosition:'center center',
+        backgroundPosition:'center',
         backgroundSize: 'cover',
+        // backgroundAttachment: 'fixed'
     }
 
     return (

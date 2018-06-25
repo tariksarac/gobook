@@ -7,7 +7,6 @@ import {
     heading,
     pliva,
     plivaText,
-    products,
     temporaryImg,
     firstHeading,
     firstSubHeading,
@@ -15,6 +14,8 @@ import {
     lastSubHeading,
     offer
 } from "../../constants/constants";
+import {tours} from '../../constants/constants'
+
 
 const MainContent = () => {
 
@@ -24,7 +25,7 @@ const MainContent = () => {
             <Heading heading={heading} line subHeading={about}/>
             <FeaturedPicture about={plivaText} picture={pliva}/>
             <Heading heading={'2018'} line subHeading={offer}/>
-            <ProductsContainer products={products}/>
+            <ProductsContainer products={tours}/>
             <Heading heading={lastHeading} subHeading={lastSubHeading} line/>
         </div>
     )
