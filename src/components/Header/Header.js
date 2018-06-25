@@ -26,11 +26,13 @@ class Header extends React.Component {
         return (
             <header className="App-header" style={{backgroundColor: open && 'transparent'}}>
                 <div className={'header-content'}>
-                    <img src={logo}/>
+
                     <div className={'header-items'} style={{left: open && '0%'}}>
-                        <Link  to="/" onClick={() => this.setState({open :false})}><div className={'header-item'}>Home</div></Link>
-                        <Link className={'header-item'} to="/all-tours" onClick={() => this.setState({open :false})}>Destinations</Link>
-                        <Link className={'header-item'} to="/#contact" onClick={() => this.setState({open :false})}>Contact</Link>
+                        <Link className={'header-item'}  to="/" onClick={() => this.setState({open :false})}> <img src={logo}/></Link>
+
+                        <Link className={'header-item'} to="/about" onClick={() => this.setState({open :false})}>About</Link>
+                        <Link className={'header-item'} to="/why-bosnia" onClick={() => this.setState({open :false})}>Why Bosnia</Link>
+                        <Link className={'header-item'} to="/why-bosnia" onClick={() => this.setState({open :false})}>Contact</Link>
                     </div>
                     <div className={'menu'}>
                         <HamburgerMenu
