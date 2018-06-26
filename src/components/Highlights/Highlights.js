@@ -2,7 +2,7 @@ import React from 'react'
 import Section from "../Section/Section";
 import './Highlights.css'
 import HighlightItem from "./HighlightItem";
-import {jajce} from "../../constants/constants";
+import { sarajevo} from "../../constants/constants";
 
 const Highlights = ({highlights}) => {
     return(
@@ -11,7 +11,7 @@ const Highlights = ({highlights}) => {
                 <div className={'title'}>highlights</div>
                 {highlights.map((item,index) => <HighlightItem key={index} data={item}/>)}
             </div>
-            <div className={'Highlights-image'}><img src={jajce}/></div>
+            <div className={'Highlights-image'}><img src={sarajevo}/></div>
         </Section>
     )
 }

@@ -7,6 +7,9 @@ import Heading from '../Heading/Heading';
 import AppContext from '../../constants/mainContext';
 import Highlights from "../Highlights/Highlights";
 import Itinerary from "../Itinerary/Itinerary";
+import Include from "../Include/Include";
+import BookButton from "../Common/BookButton/BookButton";
+import {withRouter} from "react-router-dom";
 
 const images = [
     {
@@ -24,6 +27,11 @@ const images = [
 ];
 
 class Tour extends React.Component {
+
+    bookAction = () => {
+        this.props.history.push('/contact')
+    }
+
     render() {
         return (
 
@@ -37,11 +45,14 @@ class Tour extends React.Component {
                     </AppContext.Consumer>
                 <Heading heading={heading} line subHeading={about} color={'#f5f5f5'} margin={'20px 0'}/>
                 <Highlights highlights={['Discover the Whale Route to Hermanus','Discover the Whale Route to Hermanus','Discover the Whale Route to Hermanus']}/>
-                <Itinerary data={[1,2,3]}/>
+                <Itinerary data={[1,2,3]} itinerary />
+                <Include  data={[1,2,3]} include title={'PRICE INCLUDES:'}/>
+                <Include  data={[1,2,3]} title={'NOT INCLUDED:'}/>
+                <BookButton onClickAction={this.bookAction}/>
             </div>
 
         );
     }
 }
 
-export default Tour;
+export default withRouter(Tour) ;

@@ -15,11 +15,11 @@
 
 }
 .product-container .Product .product-name {
-    height: 30px;
+    height: 60px;
     color: #ffffff;
     z-index: 3;
     font-size: 22px;
-    border-bottom: 2px solid var(--main-text-color);
+    /*border-bottom: 2px solid var(--main-text-color);*/
     background-color: rgba(0, 0, 0, 0.5);
 
 }

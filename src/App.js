@@ -17,11 +17,11 @@ class App extends Component {
             <Router>
                 <div className="App">
                     <Header />
-
                     <Route exact path="/" component={MainContent} />
                     <Route path="/all-tours" component={AllTour} />
                     <Route path="/tour/:name" component={Tour} />
-                    <Contact id={'contact'} />
+                    <Route path="/contact" component={Contact} />
+                    {/*<Contact id={'contact'} />*/}
                 </div>
             </Router>
             </AppContext.Provider>

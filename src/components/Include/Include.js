@@ -1,15 +1,14 @@
 import React from 'react'
 import Section from "../Section/Section";
 import ExpansionItem from "../Common/ExpansionItem/ExpansionItem";
-import './Itinerary.css'
 
-const Itinerary = ({data, itinerary}) => {
+const Include = ({data, include, title}) => {
     return(
         <Section style={{ background:'#f5f5f5', flexDirection: 'column', alignItems: 'center' }}>
-            <div className={'Itinerary-title'}>Itinerary</div>
-            { data.map((item, index) => <ExpansionItem key={index} data={item} itinerary={itinerary}/>)}
+            <div className={'Itinerary-title'}>{title}</div>
+            { data.map((item, index) => <ExpansionItem key={index} data={item} include={include}/>)}
         </Section>
     )
 }
 
-export default Itinerary
+export default Include

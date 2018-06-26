@@ -1,6 +1,8 @@
 .ext-panel {
-    display: flex;
-    flex-direction: column;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    background-color: unset!important;
+    box-shadow: unset!important;
 }
 
 .ext-panel .exp-sum {

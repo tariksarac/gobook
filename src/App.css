@@ -50,6 +50,11 @@ p {
 
 }
 
+.App .App-header .header-content .header-items .mobile-home {
+  display: none;
+
+}
+
 .App .App-header .header-content .header-items a {
  text-decoration: none;
 
@@ -114,7 +119,7 @@ p {
     justify-content: space-between;
   }
 
-  .App .App-header .header-content img {
+  .App .App-header .header-content .logo {
     display: none;
   }
 
@@ -136,6 +141,11 @@ p {
     justify-content: flex-start;
     padding-top: 100px;
     z-index: 5;
+  }
+
+  .App .App-header .header-content .header-items .mobile-home {
+    display: block;
+
   }
 
   .App .App-header .header-items .header-item {
