@@ -1,0 +1,32 @@
+.Footer {
+    grid-area: ft;
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Footer .footer-contact {
+    color: #f2f2f2;
+    padding: 20px;
+}
+
+.Footer .footer-logo {
+    height: 110px;
+}
+
+.Footer .footer-logo img {
+    max-height: 100px;
+    max-width: 100%;
+}
+
+.Footer .footer-text {
+   padding: 10px;
+    color: #f2f2f2;
+}
+
+.Footer .footer-social {
+    display: inline-block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}

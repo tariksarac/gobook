@@ -9,6 +9,7 @@ import Tour from './components/Tours/Tour';
 import AppContext from './constants/mainContext'
 import {tours} from "./constants/constants";
 import ScrollToTop from "./utils/ScrollToTop";
+import Footer from "./components/Footer/Footer";
 
 
 class App extends Component {
@@ -26,6 +27,7 @@ class App extends Component {
                     <Route path="/contact" component={Contact} />
                     {/*<Contact id={'contact'} />*/}
                     </ScrollToTop>
+                    <Footer />
                 </div>
 
             </Router>
