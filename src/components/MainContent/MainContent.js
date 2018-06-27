@@ -19,7 +19,9 @@ import {
 } from "../../constants/constants";
 import {tours} from '../../constants/constants'
 
-
+const whiteBackground = {
+    backgroundColor: '#ffffff'
+}
 
 class MainContent extends Component {
     static defaultProps = {};
@@ -36,9 +38,9 @@ class MainContent extends Component {
         return (
             <div className={"App-main"}>
                 <FeaturedPicture  title={firstHeading} subTitle={firstSubHeading} picture={temporaryImg}/>
-                <Heading heading={heading} line subHeading={about}/>
-                <FeaturedPicture about={plivaText} picture={pliva}/>
-                <Heading heading={'2018'} line subHeading={offer}/>
+                <Heading heading={heading} line subTitle={about} />
+                {/*<FeaturedPicture about={plivaText} picture={pliva}/>*/}
+                <Heading heading={'2018'} line subTitle={offer} style={whiteBackground}/>
                 <ProductsContainer products={tours}/>
                 <Heading heading={lastHeading} subHeading={lastSubHeading} line/>
                 <BookButton onClickAction={this.bookAction}/>

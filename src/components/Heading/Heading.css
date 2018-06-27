@@ -10,7 +10,7 @@
 
 .Heading .main-heading {
  font-size: 34px;
-    color: #2F2E2E;
+    /*color: #2F2E2E;*/
     text-transform: uppercase;
 }
 
@@ -24,9 +24,15 @@
 
 .Heading .sub-heading {
     width: 80%;
-    color: #696969;
     line-height: 1.5em;
     text-align: center;
     margin: 0 auto;
     padding: 20px;
+}
+
+.Heading .sub-heading-about {
+    line-height: 25px;
+    /*text-align: center;*/
+    /*margin: 0 auto;*/
+    padding: 20px 0 20px 0;
 }

@@ -1,0 +1,26 @@
+.TextItem {
+padding: 30px 20px;
+    background-color: #ffffff;
+}
+
+.TextItem-line {
+    position: absolute;
+    width: 0;
+    height: 100px;
+    border-right: 3px solid #33a3fc;
+}
+
+.TextItem-title {
+    padding: 0 0 5px 20px;
+    font-size: 20px;
+    color: #2f2e2e;
+    font-weight: 700;
+    text-align: left;
+}
+
+.TextItem-text {
+    padding: 0 0 5px 20px;
+    font-size: 16px;
+    color: #2f2e2e;
+    text-align: left;
+}

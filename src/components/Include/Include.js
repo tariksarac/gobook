@@ -4,7 +4,7 @@ import ExpansionItem from "../Common/ExpansionItem/ExpansionItem";
 
 const Include = ({data, include, title}) => {
     return(
-        <Section style={{ background:'#f5f5f5', flexDirection: 'column', alignItems: 'center' }}>
+        <Section style={{ flexDirection: 'column', alignItems: 'center' }}>
             <div className={'Itinerary-title'}>{title}</div>
             { data.map((item, index) => <ExpansionItem key={index} data={item} include={include}/>)}
         </Section>

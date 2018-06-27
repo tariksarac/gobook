@@ -5,7 +5,7 @@ import './Itinerary.css'
 
 const Itinerary = ({data, itinerary}) => {
     return(
-        <Section style={{ background:'#f5f5f5', flexDirection: 'column', alignItems: 'center' }}>
+        <Section style={{ flexDirection: 'column', alignItems: 'center' }}>
             <div className={'Itinerary-title'}>Itinerary</div>
             { data.map((item, index) => <ExpansionItem key={index} data={item} itinerary={itinerary}/>)}
         </Section>

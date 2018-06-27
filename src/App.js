@@ -10,6 +10,7 @@ import AppContext from './constants/mainContext'
 import {tours} from "./constants/constants";
 import ScrollToTop from "./utils/ScrollToTop";
 import Footer from "./components/Footer/Footer";
+import WhyBosnia from "./components/WhyBosnia/WhyBosnia";
 
 
 class App extends Component {
@@ -22,7 +23,7 @@ class App extends Component {
                     <Header />
                     <ScrollToTop>
                     <Route exact path="/" component={MainContent} />
-                    <Route path="/all-tours" component={AllTour} />
+                    <Route path="/why-bosnia" component={WhyBosnia} />
                     <Route path="/tour/:name" component={Tour} />
                     <Route path="/contact" component={Contact} />
                     {/*<Contact id={'contact'} />*/}

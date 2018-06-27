@@ -36,7 +36,7 @@ class Tour extends React.Component {
         return (
 
             <div className={'Tour'}>
-                <Heading heading={heading}  subHeading={about}  />
+                <Heading heading={heading}  subTitle={about}  />
                 <AppContext.Consumer>
                     { value => {
                         let tourItem = value.find(item => item.name === this.props.match.params.name)

@@ -1,7 +1,8 @@
 body {
   --main-text-color: #33a3fc;
   font-family: Roboto;
-  color: #696969;
+  color: #2F2E2E;
+  background-color: #f2f2f2;
 }
 
 p {
@@ -28,7 +29,8 @@ p {
 
 .App .App-header {
   grid-area: hd;
-  background-color: #f2f2f2;
+  /*background-color: #f2f2f2;*/
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   color: var(--main-text-color);

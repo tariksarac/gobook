@@ -6,7 +6,7 @@ import { sarajevo} from "../../constants/constants";
 
 const Highlights = ({highlights}) => {
     return(
-        <Section style={{ background:'#f5f5f5' }}>
+        <Section>
             <div className={'Highlights'}>
                 <div className={'title'}>highlights</div>
                 {highlights.map((item,index) => <HighlightItem key={index} data={item}/>)}

@@ -1,12 +1,13 @@
 import React from 'react'
 import './Heading.css'
 
-const Heading = ({subHeading,heading,line, color, margin}) => {
+const Heading = ({subTitle,heading,line, color, margin, about, style}) => {
     return(
-        <div className={'Heading'} style={{backgroundColor:color, margin:margin}}>
+        <div className={'Heading'} style={{...style}}>
             { heading && <div className={'main-heading'}>{heading}</div>}
             { line && <div className={'line'}/>}
-            { subHeading && <div className={"sub-heading"}>{subHeading}</div>}
+            { subTitle && <div className={"sub-heading"}>{subTitle}</div>}
+            { about && <div className={"sub-heading-about"}>{about}</div>}
         </div>
     )
 }
