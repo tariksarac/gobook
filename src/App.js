@@ -8,6 +8,7 @@ import AllTour from './components/Tours/AllTour';
 import Tour from './components/Tours/Tour';
 import AppContext from './constants/mainContext'
 import {tours} from "./constants/constants";
+import ScrollToTop from "./utils/ScrollToTop";
 
 
 class App extends Component {
@@ -15,14 +16,18 @@ class App extends Component {
         return (
             <AppContext.Provider value={tours}>
             <Router>
+
                 <div className="App">
                     <Header />
+                    <ScrollToTop>
                     <Route exact path="/" component={MainContent} />
                     <Route path="/all-tours" component={AllTour} />
                     <Route path="/tour/:name" component={Tour} />
                     <Route path="/contact" component={Contact} />
                     {/*<Contact id={'contact'} />*/}
+                    </ScrollToTop>
                 </div>
+
             </Router>
             </AppContext.Provider>
 
