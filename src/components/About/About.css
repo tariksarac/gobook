@@ -1,0 +1,8 @@
+.About {
+    display: flex;
+    grid-area: main;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top: 100px;
+}

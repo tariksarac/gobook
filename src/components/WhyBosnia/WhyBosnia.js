@@ -5,6 +5,7 @@ import FeaturedPicture from '../FeaturedPicture/FeaturedPicture';
 import Heading from '../Heading/Heading';
 import './WhyBosnia.css';
 import TextItem from './TextItem';
+import {customStyle} from "../MainContent/MainContent";
 
 const headingAbout =
     'In a very short period Bosnia and Herzegovina has become a well-known tourist and one Europe’s exotic destinations. The cities and towns of Bosnia and Herzegovina have rich history, beautiful nature, tasty local food and warm-hearted and pleasant people. People in Bosnia and Herzegovina know how to enjoy. We invite you to be our guests!\n' +
@@ -25,9 +26,8 @@ const WhyBosnia = props => {
                 title={firstHeading}
                 subTitle={firstSubHeading}
                 picture={temporaryImg}
-                about={'test'}
             />
-            <Heading heading={'WHY BOSNIA?'} line about={headingAbout}/>
+            <Heading heading={'WHY BOSNIA?'} line subTitle={headingAbout} style={customStyle}/>
             <TextItem
                 title={'Landscapes of Bosnia and Herzegovina'}
                 text={

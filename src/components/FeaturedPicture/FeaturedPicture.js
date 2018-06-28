@@ -45,7 +45,8 @@ const FeaturedPicture = ({picture, title, subTitle, about, left}) => {
 
     const withImageStyle = {
         color: '#ffffff',
-        alignItems: 'center'
+        alignItems: 'center',
+        fontSize:'50px'
     }
 
     const leftStyle = {

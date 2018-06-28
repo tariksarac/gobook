@@ -11,6 +11,7 @@ import {tours} from "./constants/constants";
 import ScrollToTop from "./utils/ScrollToTop";
 import Footer from "./components/Footer/Footer";
 import WhyBosnia from "./components/WhyBosnia/WhyBosnia";
+import About from "./components/About/About";
 
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
                     <ScrollToTop>
                     <Route exact path="/" component={MainContent} />
                     <Route path="/why-bosnia" component={WhyBosnia} />
+                    <Route path="/about" component={About} />
                     <Route path="/tour/:name" component={Tour} />
                     <Route path="/contact" component={Contact} />
                     {/*<Contact id={'contact'} />*/}

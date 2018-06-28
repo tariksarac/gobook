@@ -1,14 +1,19 @@
 .ext-panel {
-    /*display: flex;*/
-    /*flex-direction: column;*/
+    display: flex;
+    flex-direction: column;
     background-color: unset!important;
     box-shadow: unset!important;
+    width: 90%;
 }
 
 .ext-panel .exp-sum {
     height: 50px;
+    /*width: 100%;*/
 }
 
 .ext-panel .exp-sum .title{
     padding-left: 20px;
+    max-width: 400px;
+    max-height: 100%;
+    white-space: pre-wrap;
 }

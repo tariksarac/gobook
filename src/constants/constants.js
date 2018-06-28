@@ -1,4 +1,4 @@
-export const firstHeading = 'BEST OF BOSNIA & HERZEGOVINA';
+export const firstHeading = 'THE BEST OF BOSNIA & HERZEGOVINA TOURS';
 export const firstSubHeading = 'Experience the incredible Bosnia and Herzegovina';
 
 export const heading = 'Take a break and relax';
@@ -56,7 +56,8 @@ export const products = [
 export const tours = [
     {
         name: 'Sarajevo-Jajce-Mostar',
-        title: 'BOSNIA & HERZEGOVINA INTRO TOUR',
+        title: ' THE BEST OF BOSNIA & HERZEGOVINA TOUR',
+        description: '6 noćenja, 7 dana',
         placeByDay: [
             {
                 name: 'Day 1',
@@ -190,24 +191,27 @@ export const tours = [
                 originalClass: 'originalClass'
             },
         ],
-        includes: [
+        includesInTour: [
             {
                 include: true,
-                includeText:
-                    'Transportation, transfer, accommodation in a four star hotel with breakfast included, ' +
-                    'and visiting the above mentioned sights and landmarks. \n',
+                includeText: 'Transportation, transfer, accommodation ',
+                includeDescription: 'Transportation, transfer, accommodation in a four star hotel with breakfast included, ' +
+                'and visiting the above mentioned sights and landmarks. \n',
             },
             {
                 include: true,
-                includeText: 'Accommodation in Sarajevo - 2 nights',
+                includeText: 'Accommodation in Sarajevo ',
+                includeDescription: 'Accommodation in Sarajevo - 2 nights',
             },
             {
                 include: true,
-                includeText: 'Accommodation in Mostar - 2 nights',
+                includeText: 'Accommodation in Mostar ',
+                includeDescription: 'Accommodation in Mostar - 2 nights',
             },
             {
                 include: false,
-                includeText: 'meals – except from the breakfast at the hotel',
+                includeText: 'Meals ',
+                includeDescription: 'Meals – except from the breakfast at the hotel',
             },
             {
                 include: false,
@@ -225,7 +229,8 @@ export const tours = [
     },
     {
         name: 'Sarajevo-Jajce',
-        title: 'THE BEST OF BOSNIA & HERZEGOVINA TOUR',
+        title: 'BEST OF BOSNIA ',
+        description: '4 noćenja, 5 dana',
         placeByDay: [
             {
                 name: 'Day 1',
@@ -385,24 +390,28 @@ export const tours = [
                 originalClass: 'originalClass'
             },
         ],
-        includes: [
+        includesInTour: [
             {
                 include: true,
-                includeText:
+                includeText: 'Transportation, transfer, accommodation ',
+                includeDescription:
                     'Transportation, transfer, accommodation in a four star hotel with breakfast included, ' +
                     'and visiting the above mentioned sights and landmarks. \n',
             },
             {
                 include: true,
-                includeText: 'Accommodation in Sarajevo - 2 nights',
+                includeText: 'Accommodation in Sarajevo',
+                includeDescription: 'Accommodation in Sarajevo - 2 nights',
             },
             {
                 include: true,
-                includeText: 'Accommodation in Mostar - 2 nights',
+                includeText: 'Accommodation in Mostar ',
+                includeDescription: 'Accommodation in Mostar - 2 nights',
             },
             {
                 include: false,
-                includeText: 'meals – except from the breakfast at the hotel',
+                includeText: 'Meals ',
+                includeDescription: 'Meals – except from the breakfast at the hotel',
             },
             {
                 include: false,
@@ -420,7 +429,8 @@ export const tours = [
     },
     {
         name: 'Sarajevo-Mostar',
-        title: 'THE BEST OF BOSNIA & HERZEGOVINA TOUR',
+        title: 'BOSNIA & HERZEGOVINA INTRO TOUR',
+        description: '4 noćenja, 5 dana',
         placeByDay: [
             {
                 name: 'Day 1',
@@ -580,24 +590,29 @@ export const tours = [
                 originalClass: 'originalClass'
             },
         ],
-        includes: [
+        includesInTour: [
             {
                 include: true,
                 includeText:
+                    'Transportation, transfer, accommodation ',
+                includeDescription:
                     'Transportation, transfer, accommodation in a four star hotel with breakfast included, ' +
                     'and visiting the above mentioned sights and landmarks. \n',
             },
             {
                 include: true,
-                includeText: 'Accommodation in Sarajevo - 2 nights',
+                includeText: 'Accommodation in Sarajevo ',
+                includeDescription: 'Accommodation in Sarajevo - 2 nights',
             },
             {
                 include: true,
-                includeText: 'Accommodation in Mostar - 2 nights',
+                includeText: 'Accommodation in Mostar',
+                includeDescription: 'Accommodation in Mostar - 2 nights',
             },
             {
                 include: false,
-                includeText: 'meals – except from the breakfast at the hotel',
+                includeText: 'Meals',
+                includeDescription: 'Meals – except from the breakfast at the hotel',
             },
             {
                 include: false,

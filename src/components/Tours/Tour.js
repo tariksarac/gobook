@@ -5,11 +5,12 @@ import ImageGallery from 'react-image-gallery';
 import { about, heading } from '../../constants/constants';
 import Heading from '../Heading/Heading';
 import AppContext from '../../constants/mainContext';
-import Highlights from "../Highlights/Highlights";
-import Itinerary from "../Itinerary/Itinerary";
-import Include from "../Include/Include";
-import BookButton from "../Common/BookButton/BookButton";
-import {withRouter} from "react-router-dom";
+import Highlights from '../Highlights/Highlights';
+import Itinerary from '../Itinerary/Itinerary';
+import Include from '../Include/Include';
+import BookButton from '../Common/BookButton/BookButton';
+import { withRouter } from 'react-router-dom';
+import { customStyle } from '../MainContent/MainContent';
 
 const images = [
     {
@@ -27,32 +28,40 @@ const images = [
 ];
 
 class Tour extends React.Component {
-
     bookAction = () => {
-        this.props.history.push('/contact')
-    }
+        this.props.history.push('/contact');
+    };
 
     render() {
         return (
-
-            <div className={'Tour'}>
-                <Heading heading={heading}  subTitle={about}  />
-                <AppContext.Consumer>
-                    { value => {
-                        let tourItem = value.find(item => item.name === this.props.match.params.name)
-                        return (<ImageGallery items={tourItem.gallery} showThumbnails={false} />)
-                    }}
-                    </AppContext.Consumer>
-                <Heading heading={heading} line subHeading={about} color={'#f5f5f5'} margin={'20px 0'}/>
-                <Highlights highlights={['Discover the Whale Route to Hermanus','Discover the Whale Route to Hermanus','Discover the Whale Route to Hermanus']}/>
-                <Itinerary data={[1,2,3]} itinerary />
-                <Include  data={[1,2,3]} include title={'PRICE INCLUDES:'}/>
-                <Include  data={[1,2,3]} title={'NOT INCLUDED:'}/>
-                <BookButton onClickAction={this.bookAction}/>
-            </div>
-
+            <AppContext.Consumer>
+                {value => {
+                    let tourItem = value.find(item => item.name === this.props.match.params.name);
+                    return (
+                        <div className={'Tour'}>
+                            <ImageGallery items={tourItem.gallery} showThumbnails={false} />
+                            <Heading heading={heading} subTitle={about} style={customStyle} />
+                            <Highlights
+                                highlights={[
+                                    'Discover the Whale Route to Hermanus',
+                                    'Discover the Whale Route to Hermanus',
+                                    'Discover the Whale Route to Hermanus',
+                                ]}
+                            />
+                            <Itinerary data={tourItem.placeByDay} itinerary />
+                            <Include data={tourItem.includesInTour.filter(item => item.include)} include title={'PRICE INCLUDES:'} />
+                            <Include data={tourItem.includesInTour.filter(item => !item.include)} title={'NOT INCLUDED:'} />
+                            <BookButton onClickAction={this.bookAction} />
+                        </div>
+                    );
+                }}
+            </AppContext.Consumer>
         );
     }
 }
 
-export default withRouter(Tour) ;
+export default withRouter(Tour);
+
+{
+    /*<Heading heading={heading}  subTitle={about}  style={customStyle}/>*/
+}

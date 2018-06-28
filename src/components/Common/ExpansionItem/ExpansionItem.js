@@ -9,20 +9,29 @@ import Check from '@material-ui/icons/Check';
 import Error from '@material-ui/icons/Error';
 import './ExpansionItem.css';
 
-const ExpansionItem = ({ classes, include, itinerary }) => {
+const ExpansionItem = ({ data, classes, include, itinerary }) => {
     return (
         <ExpansionPanel className={'ext-panel'}>
             <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} className={'exp-sum'}>
                 {itinerary && <Place />}
                 {include && <Check />}
                 {include === undefined && itinerary === undefined && <Error />}
-                <div className={'title'}>Day 1: Friday: Cape Town</div>
+                {itinerary && <div className={'title'}>{`${data.name}   ${data.place}`}</div>}
+                {!itinerary && <div className={'title'}>{data.includeText}</div>}
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
-                <Typography>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                    sit amet blandit leo lobortis eget.
-                </Typography>
+                {itinerary &&
+                    data.introDescription && (
+                        <Typography component="p" align={'left'}>
+                            {data.introDescription}
+                        </Typography>
+                    )}
+                {!itinerary &&
+                    data.includeDescription && (
+                        <Typography component="p" align={'left'}>
+                            {data.includeDescription}
+                        </Typography>
+                    )}
             </ExpansionPanelDetails>
         </ExpansionPanel>
     );

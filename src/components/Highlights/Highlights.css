@@ -28,14 +28,14 @@
 }
 
 .Highlights-image {
-    flex: 1;
-    /*max-width: 50%;*/
+    /*flex: 1;*/
+    max-width: 50%;
     max-height: 200px;
 }
 
 .Highlights-image img {
     max-height: 100%;
-    width: auto;
+    width: 50%;
     /*max-height: 250px;*/
     /*max-width: 250px;*/
 }
@@ -43,6 +43,7 @@
 @media only screen and (max-width: 600px){
     .Highlights-image {
         padding-top: 20px;
+        max-width: 100%;
     }
 
     .Highlights-image img {

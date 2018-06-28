@@ -20,7 +20,14 @@ import {
 import {tours} from '../../constants/constants'
 
 const whiteBackground = {
-    backgroundColor: '#ffffff'
+    backgroundColor: '#ffffff',
+    alignItems: 'center',
+    fontSize:'34px'
+}
+
+export const customStyle = {
+    alignItems: 'center',
+    fontSize:'34px'
 }
 
 class MainContent extends Component {
@@ -35,14 +42,15 @@ class MainContent extends Component {
     }
 
     render() {
+        
         return (
             <div className={"App-main"}>
-                <FeaturedPicture  title={firstHeading} subTitle={firstSubHeading} picture={temporaryImg}/>
-                <Heading heading={heading} line subTitle={about} />
+                <FeaturedPicture  title={firstHeading} subTitle={firstSubHeading} picture={temporaryImg} />
+                <Heading heading={'Take a break and relax'} line subTitle={about} style={customStyle}/>
                 {/*<FeaturedPicture about={plivaText} picture={pliva}/>*/}
-                <Heading heading={'2018'} line subTitle={offer} style={whiteBackground}/>
+                <Heading heading={'2018'} line subTitle={offer} style={whiteBackground} />
                 <ProductsContainer products={tours}/>
-                <Heading heading={lastHeading} subHeading={lastSubHeading} line/>
+                <Heading heading={lastHeading} subTitle={lastSubHeading} line style={customStyle}/>
                 <BookButton onClickAction={this.bookAction}/>
             </div>
         );
