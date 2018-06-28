@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb826fb-30f8-49aa-937d-473dc2ebb226" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/About/About.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Common/ExpansionItem/ExpansionItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/ExpansionItem/ExpansionItem.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Common/ExpansionItem/ExpansionItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/ExpansionItem/ExpansionItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FeaturedPicture/FeaturedPicture.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FeaturedPicture/FeaturedPicture.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Heading/Heading.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Heading/Heading.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Highlights/Highlights.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Highlights/Highlights.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContent/MainContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/MainContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/Product.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/Product.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/Product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tours/Tour.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tours/Tour.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WhyBosnia/WhyBosnia.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WhyBosnia/WhyBosnia.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,11 +40,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WhyBosnia.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WhyBosnia.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/WhyBosnia/WhyBosnia.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
+            <state relative-caret-position="230">
               <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="About.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/About/About.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="80" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -74,15 +72,6 @@
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExpansionItem.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Common/ExpansionItem/ExpansionItem.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -202,7 +191,6 @@
         <option value="$PROJECT_DIR$/src/components/Include/Include.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/About/About.css" />
-        <option value="$PROJECT_DIR$/src/components/About/About.js" />
         <option value="$PROJECT_DIR$/src/components/Heading/Heading.css" />
         <option value="$PROJECT_DIR$/src/components/FeaturedPicture/FeaturedPicture.js" />
         <option value="$PROJECT_DIR$/src/components/Product/Product.js" />
@@ -215,6 +203,7 @@
         <option value="$PROJECT_DIR$/src/components/Highlights/Highlights.css" />
         <option value="$PROJECT_DIR$/src/components/Product/Product.css" />
         <option value="$PROJECT_DIR$/src/components/WhyBosnia/WhyBosnia.js" />
+        <option value="$PROJECT_DIR$/src/components/About/About.js" />
       </list>
     </option>
   </component>
@@ -378,12 +367,12 @@
       <workItem from="1530032594507" duration="7281000" />
       <workItem from="1530046604496" duration="5947000" />
       <workItem from="1530117571128" duration="9125000" />
-      <workItem from="1530198392565" duration="14409000" />
+      <workItem from="1530198392565" duration="14531000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112264000" />
+    <option name="totallyTimeSpent" value="112386000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -391,10 +380,10 @@
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50069445" side_tool="true" weight="0.32969698" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49930555" visible="true" weight="0.33915213" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49930555" weight="0.33915213" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49305555" weight="0.2860606" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49305555" visible="true" weight="0.28553617" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25369978" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -661,16 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/About/About.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Heading/Heading.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -817,8 +796,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/WhyBosnia/WhyBosnia.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
+        <state relative-caret-position="230">
           <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/About/About.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="80" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
