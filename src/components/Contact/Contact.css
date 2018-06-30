@@ -40,8 +40,9 @@
     /*background-color: rgba(255, 255, 255, 1);*/
     border: 0 solid rgba(160, 160, 159, 0.29);
     box-shadow: 0 0 0 transparent;
-    background-color: #f5f5f5;
+    /*background-color: #f5f5f5;*/
     font-family: Roboto;
+    background: #ffffff;
 }
 .contact-container .Contact form input[type="submit"] {
     background-color: var(--main-text-color);
@@ -65,8 +66,9 @@
     /*background-color: rgba(255, 255, 255, 1);*/
     border: 0px solid rgba(160, 160, 159, 0.29);
     /*font-size: small;*/
-    background-color: #f5f5f5;
+    /*background-color: #f5f5f5;*/
     font-family: Roboto;
+    background: #ffffff;
 }
 
 .contact-container .Contact form :first-child {
