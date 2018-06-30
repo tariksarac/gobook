@@ -48,7 +48,7 @@ class MainContent extends Component {
                 <FeaturedPicture  title={firstHeading} subTitle={firstSubHeading} picture={temporaryImg} />
                 <Heading heading={'Take a break and relax'} line subTitle={about} style={customStyle}/>
                 {/*<FeaturedPicture about={plivaText} picture={pliva}/>*/}
-                <Heading heading={'2018'} line subTitle={offer} style={whiteBackground} />
+                <Heading heading={'Go Book'} line subTitle={offer} style={whiteBackground} />
                 <ProductsContainer products={tours}/>
                 <Heading  subTitle={lastSubHeading} line style={customStyle}/>
                 <BookButton onClickAction={this.bookAction}/>
