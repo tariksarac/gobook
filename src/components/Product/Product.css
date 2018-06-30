@@ -77,6 +77,7 @@
     .product-container .Product {
         margin: 10px 0;
         transition: none;
+        width: 350px;
 
     }
     .product-container .Product:hover {
