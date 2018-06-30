@@ -23,7 +23,7 @@
 }
 
 .Heading .sub-heading {
-    width: 80%;
+    max-width: 80%;
     /*line-height: 1.5em;*/
     text-align: center;
     margin: 0 auto;

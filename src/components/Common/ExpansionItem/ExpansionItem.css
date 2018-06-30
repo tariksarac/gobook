@@ -17,3 +17,13 @@
     max-height: 100%;
     white-space: pre-wrap;
 }
+
+@media only screen and (max-width: 600px){
+    .ext-panel {
+        width: 100%;
+    }
+
+    .ext-panel .exp-sum .title{
+        text-align: left;
+    }
+}
