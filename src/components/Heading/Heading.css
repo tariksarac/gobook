@@ -44,7 +44,7 @@
     }
 
     .Heading .sub-heading {
-        width: 100%;
+        max-width: 100%;
         padding: 20px 5px;
         font-size: 20px;
     }
