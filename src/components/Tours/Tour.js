@@ -58,6 +58,10 @@ class Tour extends React.Component {
                                         showImageControl: !showImageControl,
                                     }))
                                 }
+                                onTouchEnd={() =>
+                                    this.setState(({ showImageControl }) => ({
+                                        showImageControl: !showImageControl,
+                                    }))}
                             />
                             <Highlights
                                 highlights={[

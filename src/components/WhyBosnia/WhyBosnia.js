@@ -29,6 +29,7 @@ const WhyBosnia = props => {
                 picture={temporaryImg}
             />
             <TextItem
+                style={{marginTop: '50px'}}
                 title={'Landscapes of Bosnia and Herzegovina'}
                 text={
                     'Bosna and Herzegovina still has unspoiled nature, clean rivers, incredible views and beautiful forests abundant with different flora and fauna. In the south of the country, one can find not very extensive but highly valuable seacoast with crystal clear water. Our landscapes offer beautiful views which greatly vary from place to place. '

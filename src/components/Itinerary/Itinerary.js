@@ -7,7 +7,7 @@ const Itinerary = ({data, itinerary}) => {
     return(
         <Section style={{ flexDirection: 'column', alignItems: 'center' }}>
             <div className={'Itinerary-title'}>Itinerary</div>
-            { data.map((item, index) => <ExpansionItem key={index} data={item} itinerary={itinerary}/>)}
+            { data.map((item, index) => <ExpansionItem key={index} data={item} itinerary={itinerary}/>) }
         </Section>
     )
 }
