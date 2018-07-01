@@ -23,6 +23,12 @@
         width: 100%;
     }
 
+    .ext-panel .exp-sum {
+        height: unset;
+        min-height: 50px;
+        /*width: 100%;*/
+    }
+
     .ext-panel .exp-sum .title{
         text-align: left;
     }

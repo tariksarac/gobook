@@ -45,19 +45,18 @@ class Product extends React.Component {
                     <Typography gutterBottom variant="headline" component="h2">
                         {title}
                     </Typography>
-                    <Typography component="p" align={'left'}>
+                    <Typography component="p" align={'center'}>
                         {name}
                     </Typography>
                 </CardContent>
                 {showMore && (
-                    <Typography component="p" align={'left'}>
+                    <Typography component="p" align={'center'}>
                         {description}
                     </Typography>
                 )}
                 <CardActions className={'Product-image-button'}>
                     <Button
                         size="small"
-                        color="primary"
                         onClick={() => this.setState(({ showMore }) => ({ showMore: !showMore }))}>
                         {showMore ? 'Less' : 'Learn More'}
                     </Button>
@@ -68,70 +67,3 @@ class Product extends React.Component {
 }
 
 export default withRouter(Product);
-
-{
-    /*<div*/
-}
-{
-    /*className={'Product'}*/
-}
-{
-    /*onMouseOver={() => this.setState({ over: true })}*/
-}
-{
-    /*onMouseLeave={() => this.setState({ over: false })}*/
-}
-{
-    /*style={backGround}*/
-}
-{
-    /*onClick={() => this.props.history.push(`/tour/${name}`)}>*/
-}
-{
-    /*{!over && title && <div className={'product-name'}>{title}</div>}*/
-}
-
-{
-    /*{over && name && <div className={'product-name'}>{name}</div>}*/
-}
-
-{
-    /*{price && (*/
-}
-{
-    /*<div className={'product-name product-price'} style={{ display: over && 'block' }}>*/
-}
-{
-    /*{price}*/
-}
-{
-    /*</div>*/
-}
-{
-    /*)}*/
-}
-
-{
-    /*{over && <div className="layer" style={layer} />}*/
-}
-{
-    /*</div>*/
-}
-{
-    /*<div className={'card-description'}>*/
-}
-{
-    /*<div className={'card-title'} />*/
-}
-{
-    /*<div className={'card-subTitle'} />*/
-}
-{
-    /*<div className={'card-show-more'} />*/
-}
-{
-    /*{showMore && <div className={'show-more-text'} onClick={() => this.setState(({showMore})=>({showMore: !showMore}))}>more</div>}*/
-}
-{
-    /*</div>*/
-}

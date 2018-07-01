@@ -21,6 +21,7 @@ class BookButton extends Component {
         let buttonStyle = {
             backgroundColor: !this.state.hovered && '#33a3fc',
             color: !this.state.hovered ? '#ffffff' : '#33a3fc',
+            border: this.state.hovered ? '1px solid' : '0',
             borderColor: this.state.hovered && '#33a3fc',
         };
         return (

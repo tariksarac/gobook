@@ -4,7 +4,6 @@ import Header from './components/Header/Header';
 import MainContent from './components/MainContent/MainContent';
 import Contact from './components/Contact/Contact';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import AllTour from './components/Tours/AllTour';
 import Tour from './components/Tours/Tour';
 import AppContext from './constants/mainContext'
 import {tours} from "./constants/constants";

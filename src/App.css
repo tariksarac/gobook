@@ -1,14 +1,17 @@
 body {
   --main-text-color: #33a3fc;
   font-family: Roboto;
-  color: #2F2E2E;
   background-color: #f2f2f2;
+  font-size: 18px;
+  line-height: 30px;
+  color: #2d2926;
+  font-weight: 300;
 }
 
 p {
-  width: 80%;
-  color: #696969;
-  line-height: 1.5em;
+  /*width: 80%;*/
+  /*color: #696969;*/
+  /*line-height: 1.5em;*/
   text-align: center;
   margin: 0 auto;
   padding: 20px;
@@ -40,6 +43,7 @@ p {
   grid-column-start: 2;
   grid-column-end: 9;
   display: flex;
+  justify-content: space-between;
 }
 
 .App .App-header .header-content .header-items {
@@ -63,8 +67,8 @@ p {
 }
 
 .App .App-header .header-content .header-social {
-  margin-right: 0;
-  margin-left: auto;
+  /*margin-right: 0;*/
+  /*margin-left: auto;*/
   display: flex;
 }
 
@@ -123,6 +127,10 @@ p {
 
   .App .App-header .header-content .logo {
     display: none;
+  }
+
+  #logo {
+    display: none !important;
   }
 
   .App .App-header .header-content .header-social {

@@ -5,10 +5,21 @@ import Heading from "../Heading/Heading";
 const FeaturedPicture = ({picture, title, subTitle, about, left}) => {
 
     let backGround = {
-        backgroundImage: `url(${picture})`,
+        backgroundImage: `url(${picture}), linear-gradient(red, yellow)`,
         backgroundPosition:'center',
         backgroundSize: 'cover',
         // backgroundAttachment: 'fixed'
+        paddingTop: left && '200px',
+        boxSizing: left && 'border-box'
+    }
+
+    let test= {
+        background: `linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ), url(${picture})`,
+        backgroundPosition:'center',
+        backgroundSize: 'cover',
         paddingTop: left && '200px',
         boxSizing: left && 'border-box'
     }
@@ -46,7 +57,7 @@ const FeaturedPicture = ({picture, title, subTitle, about, left}) => {
     const withImageStyle = {
         color: '#ffffff',
         alignItems: 'center',
-        fontSize:'50px'
+        fontSize:'50px!important'
     }
 
     const leftStyle = {
@@ -55,8 +66,8 @@ const FeaturedPicture = ({picture, title, subTitle, about, left}) => {
 
     return (
         <div className={'featured-picture-container'} >
-            <div className={'featured-picture'} style={backGround}>
-                <Heading heading={title} subTitle={subTitle} about={about} style={{...withImageStyle}}/>
+            <div className={'featured-picture'} style={test}>
+                <Heading heading={title} subTitle={subTitle} about={about} style={{...withImageStyle}} large/>
                 {/*{title && <div className={'featured-title'} style={titleStyle}>{whyBosniaTitle}</div>}*/}
                 {/*{subTitle && <div className={'featured-subtitle'} style={subTitleStyle}>{whyBosniaSubTitle}</div>}*/}
                 {/*{about && <div className={'featured-about'} style={aboutStyle}>{whyBosniaAbout}</div>}*/}

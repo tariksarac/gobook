@@ -9,9 +9,12 @@
 }
 
 .Heading .main-heading {
- /*font-size: 34px;*/
+ font-size: 34px;
     /*color: #2F2E2E;*/
     text-transform: uppercase;
+    font-weight: 600;
+    line-height: 60px;
+    /*font-size: 50px;*/
 }
 
 .Heading .line {
@@ -41,6 +44,10 @@
 @media only screen and (max-width: 600px){
     .Heading {
         padding: 20px 5px;
+    }
+
+    .Heading .main-heading {
+        font-size: 38px!important;
     }
 
     .Heading .sub-heading {

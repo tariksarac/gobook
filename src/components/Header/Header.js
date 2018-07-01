@@ -26,9 +26,8 @@ class Header extends React.Component {
         return (
             <header className="App-header" style={{backgroundColor: open && 'transparent'}}>
                 <div className={'header-content'}>
-
                     <div className={'header-items'} style={{left: open && '0%'}}>
-                        <Link className={'header-item'}  to="/" onClick={() => this.setState({open :false})}> <img className={'logo'} src={logo}/></Link>
+                        <Link id={'logo'} className={'header-item'}  to="/" onClick={() => this.setState({open :false})} style={{display:'flex', alignItems:'center'}}> <img className={'logo'} src={logo} style={{margin: '0'}}/></Link>
                         <Link className={'header-item mobile-home'} to="/" onClick={() => this.setState({open :false})}>Home</Link>
                         <Link className={'header-item'} to="/why-bosnia" onClick={() => this.setState({open :false})}>Why Bosnia</Link>
                         <Link className={'header-item'} to="/about" onClick={() => this.setState({open :false})}>About</Link>
@@ -42,7 +41,7 @@ class Header extends React.Component {
                             height={15}
                             strokeWidth={2}
                             rotate={0}
-                            color='#3ac0c7'
+                            color='#33a3fc'
                             borderRadius={0}
                             animationDuration={0.5}
                             style={{backgroundColor: 'red'}}
