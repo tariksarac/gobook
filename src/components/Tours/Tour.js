@@ -36,6 +36,9 @@ class Tour extends React.Component {
     };
 
     render() {
+        let width = window.innerWidth
+            || document.documentElement.clientWidth
+            || document.body.clientWidth;
         return (
             <AppContext.Consumer>
                 {value => {
@@ -46,8 +49,8 @@ class Tour extends React.Component {
                             <ImageGallery
                                 items={tourItem.gallery}
                                 showThumbnails={false}
-                                showPlayButton={this.state.showImageControl}
-                                showFullscreenButton={this.state.showImageControl}
+                                showPlayButton={width < 600 ? true : this.state.showImageControl}
+                                showFullscreenButton={width < 600 ? true : this.state.showImageControl}
                                 onMouseOver={() =>
                                     this.setState(({ showImageControl }) => ({
                                         showImageControl: !showImageControl,
@@ -58,10 +61,6 @@ class Tour extends React.Component {
                                         showImageControl: !showImageControl,
                                     }))
                                 }
-                                onTouchEnd={() =>
-                                    this.setState(({ showImageControl }) => ({
-                                        showImageControl: !showImageControl,
-                                    }))}
                             />
                             <Highlights
                                 highlights={[
