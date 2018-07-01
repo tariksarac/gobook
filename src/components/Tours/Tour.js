@@ -28,6 +28,9 @@ const images = [
 ];
 
 class Tour extends React.Component {
+    state = {
+        showImageControl: false,
+    };
     bookAction = () => {
         this.props.history.push('/contact');
     };
@@ -39,8 +42,23 @@ class Tour extends React.Component {
                     let tourItem = value.find(item => item.name === this.props.match.params.name);
                     return (
                         <div className={'Tour'}>
-                            <ImageGallery items={tourItem.gallery} showThumbnails={false} />
-                            <Heading heading={heading} subTitle={about} style={customStyle} />
+                            <Heading heading={tourItem.title} subTitle={about} style={customStyle} />
+                            <ImageGallery
+                                items={tourItem.gallery}
+                                showThumbnails={false}
+                                showPlayButton={this.state.showImageControl}
+                                showFullscreenButton={this.state.showImageControl}
+                                onMouseOver={() =>
+                                    this.setState(({ showImageControl }) => ({
+                                        showImageControl: !showImageControl,
+                                    }))
+                                }
+                                onMouseLeave={() =>
+                                    this.setState(({ showImageControl }) => ({
+                                        showImageControl: !showImageControl,
+                                    }))
+                                }
+                            />
                             <Highlights
                                 highlights={[
                                     'Discover the Whale Route to Hermanus',
@@ -49,8 +67,15 @@ class Tour extends React.Component {
                                 ]}
                             />
                             <Itinerary data={tourItem.placeByDay} itinerary />
-                            <Include data={tourItem.includesInTour.filter(item => item.include)} include title={'PRICE INCLUDES:'} />
-                            <Include data={tourItem.includesInTour.filter(item => !item.include)} title={'NOT INCLUDED:'} />
+                            <Include
+                                data={tourItem.includesInTour.filter(item => item.include)}
+                                include
+                                title={'PRICE INCLUDES:'}
+                            />
+                            <Include
+                                data={tourItem.includesInTour.filter(item => !item.include)}
+                                title={'NOT INCLUDED:'}
+                            />
                             <BookButton onClickAction={this.bookAction} />
                         </div>
                     );

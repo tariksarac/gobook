@@ -21,13 +21,13 @@ const leftStyle = {
 const WhyBosnia = props => {
     return (
         <div className={'WhyBosnia'}>
+            <Heading heading={'WHY BOSNIA?'} line subTitle={headingAbout} style={customStyle}/>
             <FeaturedPicture
                 left
                 title={firstHeading}
                 subTitle={firstSubHeading}
                 picture={temporaryImg}
             />
-            <Heading heading={'WHY BOSNIA?'} line subTitle={headingAbout} style={customStyle}/>
             <TextItem
                 title={'Landscapes of Bosnia and Herzegovina'}
                 text={

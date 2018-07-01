@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb826fb-30f8-49aa-937d-473dc2ebb226" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Common/ExpansionItem/ExpansionItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/ExpansionItem/ExpansionItem.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Heading/Heading.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Heading/Heading.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Common/ExpansionItem/ExpansionItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/ExpansionItem/ExpansionItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tours/Tour.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tours/Tour.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WhyBosnia/WhyBosnia.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WhyBosnia/WhyBosnia.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,11 +18,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BookButton.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Common/BookButton/BookButton.css">
+      <file leaf-file-name="Tour.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Tours/Tour.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="210">
+              <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="image-gallery.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/react-image-gallery/build/image-gallery.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="1023" column="33" selection-start-line="1023" selection-start-column="19" selection-end-line="1023" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WhyBosnia.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/WhyBosnia/WhyBosnia.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainContext.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/constants/mainContext.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -31,31 +67,10 @@
         <entry file="file://$PROJECT_DIR$/src/components/Itinerary/Itinerary.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+              <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Header.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Header/Header.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="33" column="125" selection-start-line="33" selection-start-column="125" selection-end-line="33" selection-end-column="125" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Contact.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Contact/Contact.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="70" column="24" lean-forward="true" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -63,13 +78,16 @@
       <file leaf-file-name="ExpansionItem.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Common/ExpansionItem/ExpansionItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state relative-caret-position="302">
+              <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExpansionItem.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ExpansionItem.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Common/ExpansionItem/ExpansionItem.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
@@ -78,20 +96,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.css">
+      <file leaf-file-name="constants.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/constants/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="111" column="19" lean-forward="true" selection-start-line="111" selection-end-line="112" />
+            <state relative-caret-position="270">
+              <caret line="58" column="13" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Heading.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Heading/Heading.js">
+      <file leaf-file-name="Tour.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Tours/Tour.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="14" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+            <state relative-caret-position="180">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -101,15 +119,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="286">
               <caret line="40" column="41" lean-forward="true" selection-start-line="40" selection-end-line="40" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Product/Product.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="92" column="1" lean-forward="true" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -127,6 +136,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>size</find>
+      <find>renderPlayPauseButton</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -172,10 +182,7 @@
         <option value="$PROJECT_DIR$/src/components/FeaturedPicture/FeaturedPicture.js" />
         <option value="$PROJECT_DIR$/src/components/Product/Product.js" />
         <option value="$PROJECT_DIR$/src/components/Itinerary/Itinerary.js" />
-        <option value="$PROJECT_DIR$/src/components/Common/ExpansionItem/ExpansionItem.js" />
-        <option value="$PROJECT_DIR$/src/components/Tours/Tour.js" />
         <option value="$PROJECT_DIR$/src/components/Highlights/Highlights.css" />
-        <option value="$PROJECT_DIR$/src/components/WhyBosnia/WhyBosnia.js" />
         <option value="$PROJECT_DIR$/src/components/About/About.js" />
         <option value="$PROJECT_DIR$/src/constants/constants.js" />
         <option value="$PROJECT_DIR$/src/components/MainContent/MainContent.js" />
@@ -186,6 +193,9 @@
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/components/Heading/Heading.css" />
         <option value="$PROJECT_DIR$/src/components/Common/ExpansionItem/ExpansionItem.css" />
+        <option value="$PROJECT_DIR$/src/components/Tours/Tour.js" />
+        <option value="$PROJECT_DIR$/src/components/Common/ExpansionItem/ExpansionItem.js" />
+        <option value="$PROJECT_DIR$/src/components/WhyBosnia/WhyBosnia.js" />
       </list>
     </option>
   </component>
@@ -386,12 +396,12 @@
       <workItem from="1530046604496" duration="5947000" />
       <workItem from="1530117571128" duration="9125000" />
       <workItem from="1530198392565" duration="14635000" />
-      <workItem from="1530367483780" duration="2310000" />
+      <workItem from="1530367483780" duration="3708000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114800000" />
+    <option name="totallyTimeSpent" value="116198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -401,11 +411,11 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50069445" side_tool="true" weight="0.32969698" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49930555" weight="0.33915213" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49930555" visible="true" weight="0.33915213" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49305555" visible="true" weight="0.28553617" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49305555" weight="0.28553617" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="8" />
@@ -465,23 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/mainContext.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-image-gallery/build/image-gallery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="375" column="26" selection-start-line="375" selection-start-column="22" selection-end-line="375" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -493,13 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tours/Tour.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -672,16 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tours/Tour.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Highlights/Highlights.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -699,16 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/WhyBosnia/WhyBosnia.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/About/About.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -716,13 +682,6 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="117" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="117" />
         </state>
       </provider>
     </entry>
@@ -788,23 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Itinerary/Itinerary.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Common/ExpansionItem/ExpansionItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Heading/Heading.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -816,6 +758,77 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="58" column="13" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Tours/Tour.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/mainContext.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-image-gallery/build/image-gallery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="1023" column="33" selection-start-line="1023" selection-start-column="19" selection-end-line="1023" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Tours/Tour.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Itinerary/Itinerary.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Common/ExpansionItem/ExpansionItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/WhyBosnia/WhyBosnia.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

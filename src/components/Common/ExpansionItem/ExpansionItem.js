@@ -19,10 +19,10 @@ const ExpansionItem = ({ data, classes, include, itinerary }) => {
                 {itinerary && <div className={'title'}>{`${data.name}   ${data.place}`}</div>}
                 {!itinerary && <div className={'title'}>{data.includeText}</div>}
             </ExpansionPanelSummary>
-            <ExpansionPanelDetails>
+            <ExpansionPanelDetails >
                 {itinerary &&
                     data.introDescription && (
-                        <Typography component="p" align={'left'}>
+                        <Typography component="p" align={'left'} style={{borderBottom: '1px solid'}}>
                             {data.introDescription}
                         </Typography>
                     )}
