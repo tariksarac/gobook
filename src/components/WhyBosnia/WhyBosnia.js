@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { about, firstHeading, firstSubHeading, heading, temporaryImg } from '../../constants/constants';
+import { about, firstHeading, firstSubHeading, heading, stariMostNaslovna } from '../../constants/constants';
 import FeaturedPicture from '../FeaturedPicture/FeaturedPicture';
 import Heading from '../Heading/Heading';
 import './WhyBosnia.css';
@@ -26,7 +26,7 @@ const WhyBosnia = props => {
                 left
                 title={firstHeading}
                 subTitle={firstSubHeading}
-                picture={temporaryImg}
+                picture={stariMostNaslovna}
             />
             <TextItem
                 style={{marginTop: '50px'}}

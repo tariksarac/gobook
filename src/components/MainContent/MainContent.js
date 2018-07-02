@@ -8,9 +8,9 @@ import ProductsContainer from "../Product/ProductsContainer";
 import {
     about,
     heading,
-    pliva,
+    basimamovic,
     plivaText,
-    temporaryImg,
+    stariMostNaslovna,
     firstHeading,
     firstSubHeading,
     lastHeading,
@@ -45,7 +45,7 @@ class MainContent extends Component {
         
         return (
             <div className={"App-main"}>
-                <FeaturedPicture  title={firstHeading} subTitle={firstSubHeading} picture={temporaryImg} />
+                <FeaturedPicture  title={firstHeading} subTitle={firstSubHeading} picture={stariMostNaslovna} />
                 <Heading heading={'Take a break and relax'} line subTitle={about} style={customStyle}/>
                 {/*<FeaturedPicture about={plivaText} picture={pliva}/>*/}
                 <Heading heading={'Go Book'} line subTitle={offer} style={whiteBackground} />

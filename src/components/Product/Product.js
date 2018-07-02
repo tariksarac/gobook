@@ -20,7 +20,7 @@ class Product extends React.Component {
 
     render() {
         let { over, showMore } = this.state;
-        let { gallery, title, name, description } = this.props.product;
+        let { gallery, title, name, description, featuredPicture } = this.props.product;
 
         let backGroundImage = over && gallery && gallery.length > 1 ? gallery[0] : gallery[1];
         // let backGround = {
@@ -40,7 +40,7 @@ class Product extends React.Component {
 
         return (
             <Card className={'Product'}>
-                <CardMedia className={'Product-image'} image={backGroundImage.original} title="p" onClick={() => this.props.history.push(`/tour/${name}`)}/>
+                <CardMedia className={'Product-image'} image={featuredPicture} title="p" onClick={() => this.props.history.push(`/tour/${name}`)}/>
                 <CardContent onClick={() => this.props.history.push(`/tour/${name}`)}>
                     <Typography gutterBottom variant="headline" component="h2">
                         {title}
@@ -49,17 +49,17 @@ class Product extends React.Component {
                         {name}
                     </Typography>
                 </CardContent>
-                {showMore && (
+                {/*{showMore && (*/}
                     <Typography component="p" align={'center'}>
                         {description}
                     </Typography>
-                )}
+                {/*)}*/}
                 <CardActions className={'Product-image-button'}>
-                    <Button
-                        size="small"
-                        onClick={() => this.setState(({ showMore }) => ({ showMore: !showMore }))}>
-                        {showMore ? 'Less' : 'Learn More'}
-                    </Button>
+                    {/*<Button*/}
+                        {/*size="small"*/}
+                        {/*onClick={() => this.setState(({ showMore }) => ({ showMore: !showMore }))}>*/}
+                        {/*{showMore ? 'Less' : 'Learn More'}*/}
+                    {/*</Button>*/}
                 </CardActions>
             </Card>
         );

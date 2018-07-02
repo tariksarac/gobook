@@ -1,3 +1,20 @@
+//sarajevo
+export const sebilj = require('../images/sebilj.jpg');
+export const sarajevo2 = require('../images/Sarjevo_2.jpg');
+
+//jajce
+export const miketa = require('../images/sarajevo-jajce.JPG');
+export const jajceVodopad = require('../images/jajce3.jpg');
+
+//mostar
+export const stariMost = require('../images/architecture-3176756_1280.jpg');
+export const stariMostNaslovna = require('../images/bosnia-2058087_1280.jpg');
+
+
+
+
+
+
 export const firstHeading = 'THE BEST OF BOSNIA & HERZEGOVINA TOURS';
 export const firstSubHeading = 'Experience the incredible Bosnia and Herzegovina';
 
@@ -21,8 +38,7 @@ export const lastSubHeading =
     ' of Bosnia and Herzegovina in the best way possible. ' +
     'We thank everyone who decides to put their trust in us!';
 
-export const temporaryImg = require('../images/sebilj.jpg');
-export const pliva = require('../images/pliva.jpg');
+export const basimamovic = require('../images/pliva.jpg');
 export const sarajevo =
     'https://drscdn.500px.org/photo/72791701/q%3D80_m%3D2000/v2?webp=true&sig=ab909fa759b56af27e3840eb1bac889f6c17a9644b62a90e95a511f7a370a13b';
 export const jajce =
@@ -58,6 +74,7 @@ export const tours = [
         name: 'Sarajevo-Jajce-Mostar',
         title: ' THE BEST OF BOSNIA & HERZEGOVINA TOUR',
         description: '6 noćenja, 7 dana',
+        featuredPicture: sebilj,
         placeByDay: [
             {
                 name: 'Day 1',
@@ -176,17 +193,17 @@ export const tours = [
         ],
         gallery: [
             {
-                original: sarajevo,
-                thumbnail: sarajevo,
+                original: sarajevo2,
+                thumbnail: sarajevo2,
                 originalClass: 'originalClass'
             },
             {
-                original: jajce,
+                original: miketa,
                 thumbnail: jajce,
                 originalClass: 'originalClass'
             },
             {
-                original: mostar,
+                original: stariMost,
                 thumbnail: mostar,
                 originalClass: 'originalClass'
             },
@@ -231,6 +248,7 @@ export const tours = [
         name: 'Sarajevo-Jajce',
         title: 'BEST OF BOSNIA ',
         description: '4 noćenja, 5 dana',
+        featuredPicture: miketa,
         placeByDay: [
             {
                 name: 'Day 1',
@@ -380,12 +398,12 @@ export const tours = [
         ],
         gallery: [
             {
-                original: sarajevo,
+                original: sarajevo2,
                 thumbnail: sarajevo,
                 originalClass: 'originalClass'
             },
             {
-                original: jajce,
+                original: jajceVodopad,
                 thumbnail: jajce,
                 originalClass: 'originalClass'
             },
@@ -431,6 +449,7 @@ export const tours = [
         name: 'Sarajevo-Mostar',
         title: 'BOSNIA & HERZEGOVINA INTRO TOUR',
         description: '4 noćenja, 5 dana',
+        featuredPicture: stariMost,
         placeByDay: [
             {
                 name: 'Day 1',
@@ -580,12 +599,12 @@ export const tours = [
         ],
         gallery: [
             {
-                original: sarajevo,
+                original: sarajevo2,
                 thumbnail: sarajevo,
                 originalClass: 'originalClass'
             },
             {
-                original: mostar,
+                original: stariMost,
                 thumbnail: mostar,
                 originalClass: 'originalClass'
             },
