@@ -9,11 +9,9 @@ import {
     about,
     heading,
     basimamovic,
-    plivaText,
     stariMostNaslovna,
     firstHeading,
     firstSubHeading,
-    lastHeading,
     lastSubHeading,
     offer
 } from "../../constants/constants";

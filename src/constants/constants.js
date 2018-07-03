@@ -12,31 +12,124 @@ export const stariMostNaslovna = require('../images/bosnia-2058087_1280.jpg');
 
 
 
-
-
-
+//landing page
 export const firstHeading = 'THE BEST OF BOSNIA & HERZEGOVINA TOURS';
 export const firstSubHeading = 'Experience the incredible Bosnia and Herzegovina';
-
 export const heading = 'Take a break and relax';
 export const about =
     'Visit the heart-shaped country, the place where the East meets the West, ' +
     'the country with exceptionally rich gastronomy, magical natural beauty and warm-hearted people. ' +
     'Enjoy the Bosnian coffee drinking ritual.';
 
-export const plivaText =
-    'In a very short period Bosnia and Herzegovina has become ' +
-    'a tourist fairy-tale. Thanks to the beauty of our country the tourist season every year ' +
-    'becomes richer in different trips on offer to our guests. We are ready to provide all the ' +
-    'necessary information about trips and transfers as well as to recommend the best service based on demands of our guests. ';
 export const offer =
     'In our offer we highlight the trips which represent the best and must-see destinations in Bosnia and Herzegovina';
 
-export const lastHeading = 'Experience the incredible Bosnia and Herzegovina';
 export const lastSubHeading =
     'Our agency’s goal is to help you see and experience the beauty' +
     ' of Bosnia and Herzegovina in the best way possible. ' +
     'We thank everyone who decides to put their trust in us!';
+
+
+//why bosnia page
+export const whyBosniaIntro =
+    'In a very short period Bosnia and Herzegovina has become ' +
+    'a tourist fairy-tale. Thanks to the beauty of our country the tourist season every year ' +
+    'becomes richer in different trips on offer to our guests. We are ready to provide all the ' +
+    'necessary information about trips and transfers as well as to recommend the best service based on demands of our guests. ';
+
+export const whyBosniaData = {
+    whyBosniaIntro:'In a very short period Bosnia and Herzegovina has become a well-known tourist and one Europe’s exotic destinations. The cities and towns of Bosnia and Herzegovina have rich history, beautiful nature, tasty local food and warm-hearted and pleasant people. People in Bosnia and Herzegovina know how to enjoy. We invite you to be our guests! Below we shall endeavor to give you a taste of some of the beauties of our country and share with you opinions of those who have experienced a breath of this ambiance. Many famous magazines and adventurers have rated Bosnia and Herzegovina’s sights very high. We give to you ten reasons we believe should make you decide to visit Bosnia and Herzegovina.',
+    mainImage: stariMost,
+    sights:[
+        {
+            title: '#1 Landscapes of Bosnia and Herzegovina',
+            text: 'Bosna and Herzegovina still has unspoiled nature, clean rivers, incredible views and beautiful forests abundant with different flora and\n' +
+            'fauna. In the south of the country, one can find not very extensive but highly valuable seacoast with crystal clear water. Our landscapes\n' +
+            'offer beautiful views which greatly vary from place to place.',
+            image: null
+        },
+        {
+            title: '#2 The Past',
+            text:'In some towns you have a feeling that the time has stood still; local population still honors old customs and lifestyle. The air appears to be\n' +
+            'cleaner and you have this feeling that everyone knows everyone.',
+            image: null
+        },
+        {
+            title: '#3 Excellent inexpensive food',
+            text:'Bosnia and Herzegovina is a true gourmet paradise. Here you can taste various dishes hailing from Ottoman, Austro-Hungarian and Balkan\n' +
+            'cuisines. The food is almost completely locally produced and the guests are offered a great choice of delicacies.',
+            image: null
+        },
+        {
+            title: '#4 Good hosts',
+            text:'Our people are known as “merhametli” (kind-hearted) – people who are ready to offer you’re the warmest and most hospitable welcome.\n' +
+            'There are no limitations, we easily make true friendships, not few of which last a lifetime.',
+            image: null
+        },
+        {
+            title: '#5 Spirit of Adventure',
+            text:'In Bosnia and Herzegovina at the same time you can enjoy mountaineering, mountain biking, rafting, swimming or skiing. Few countries can\n' +
+            'boast of such natural beauties!',
+            image: null
+        },
+        {
+            title: '#6 History-Rich and Diverse Sarajevo',
+            text:'Sarajevo is the capital which brings together the East and the West. One moment you believe that you are in Vienna, the next moment you\n' +
+            'feel a breath of Istanbul. Despite the recent war period which left deep scars, Sarajevo is a city radiant with life and where people live their\n' +
+            'lives to the fullest. Each times it enchants you with its beauties which are not easy to forget.',
+            image: null
+        },
+        {
+            title: '#7 Beautiful Una',
+            text:'Una offers magical rapids and waterfalls, which can satisfy the adventurous spirit of even the most demanding guests. In late July, the now\n' +
+            'famous Una Regata takes place, attracting a significant number of adventurers.',
+            image: null
+        },
+        {
+            title: '#8 Mostar Old Bridge',
+            text:'Thanks to its appearance and features, Mostar and the Old Bridge will captivate you with their history. After the war and destruction of the\n' +
+            'Old Bridge, the bridge was reconstructed and each summer the traditional Old Bridge Diving Competition takes place there.',
+            image: stariMost
+        },
+        {
+            title: '#9 Coffee-Drinking Culture',
+            text:'If you want to have a nice talk with your friends in Bosnia, coffee is unavoidable! It has become a part of a mandatory ritual which makes us\n' +
+            'relax and enjoy. Sarajevo is one of those cities which offer an endless number of both oriental and European style cafés, where visitors can\n' +
+            'just sit back, enjoy and have a cup of coffee. Traditional Bosnian coffee is served in a small cezve pot often with a Turkish delight to\n' +
+            'sweeten it up.',
+            image: null
+        },
+        {
+            title: '#10 Fortresses',
+            text:'In 15 th century the Ottomans arrived to these areas and captured the Bosnian medieval fortresses which they additional fortified and built\n' +
+            'new ones. Those fortresses were given over to the Austro-Hungarian Empire later on, and they continued to improve them. Jajce is the\n' +
+            'town with one of the most famous fortresses in Bosnia. Once it was the royal seat of Bosnia’s medieval kings. Other towns which boast well\n' +
+            'preserved medieval fortresses include: Gradačac, Tešanj, Maglaj, Banja Luka, Doboj…',
+            image: null
+        }
+    ],
+    otherAboutBosnia: {
+        intro: 'Below you can find links of some of the famous magazine and internet portal articles about our country:',
+        links: [
+            {
+                site:'standard.co.uk',
+                link:'https://www.standard.co.uk/lifestyle/travel/10-reasons-why-you-should-visit-bosnia-and-herzegovina-in-2016-a3251401.html'
+            },
+            {
+                site:'worldofwanderlust.com',
+                link:'http://www.worldofwanderlust.com/10-reasons-visit-bosnia-herzegovina/'
+            },
+            {
+                site:'cnn.com',
+                link:'https://edition.cnn.com/travel/article/10-reasons-to-visit-bosnia-and-herzegovina/index.html'
+            },
+            {
+                site:'lonelyplanet.com',
+                link:'https://www.lonelyplanet.com/bosnia-and-hercegovina/travel-tips-and-articles/ten-reasons-to-visit-bosnia-hercegovina/40625c8c-8a11-5710-a052-1479d2760cf7'
+            }
+        ]
+    }
+}
 
 export const basimamovic = require('../images/pliva.jpg');
 export const sarajevo =

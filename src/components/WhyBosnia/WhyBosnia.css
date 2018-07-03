@@ -1,3 +1,8 @@
 .WhyBosnia {
     grid-area: main;
 }
+
+.WhyBosnia .why-bosnia-media{
+    display: flex;
+    flex-direction: column;
+}
