@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { whyBosniaData } from '../../constants/constants';
 import FeaturedPicture from '../FeaturedPicture/FeaturedPicture';
 import Heading from '../Heading/Heading';

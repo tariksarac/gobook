@@ -1,0 +1,54 @@
+.book-modal {
+    position: relative;
+    margin: 0 auto;
+    height: 300px;
+    top: 100px;
+    background: #f2f2f2;
+    padding: 10px;
+    max-width: 600px;
+}
+
+.book-modal .headline-modal{
+   padding-bottom: 30px;
+}
+
+ .book-modal form {
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+.book-modal form select {
+    width: 100%;
+    margin-right: 15px;
+    margin-left: 15px;
+    height: 35px;
+    margin-bottom: 13px;
+    padding: 5px;
+    border: 0 solid rgba(160, 160, 159, 0.29);
+    box-shadow: 0 0 0 transparent;
+    font-family: Roboto;
+    background: #ffffff;
+ }
+
+.book-modal form input {
+     box-sizing: border-box;
+     flex: 1 0 30%;
+     height: 35px;
+     margin-bottom: 13px;
+    margin-right: 15px;
+    margin-left: 15px;
+     padding: 5px;
+     border: 0 solid rgba(160, 160, 159, 0.29);
+     box-shadow: 0 0 0 transparent;
+     font-family: Roboto;
+     background: #ffffff;
+    -webkit-appearance: none;
+ }
+
+.book-modal form input[type="submit"] {
+    background-color: var(--main-text-color);
+    flex: 1 1 100%;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Roboto;
+}

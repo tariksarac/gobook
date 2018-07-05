@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import BookButton from "../Common/BookButton/BookButton";
 import {withRouter} from "react-router-dom";
 import FeaturedPicture from "../FeaturedPicture/FeaturedPicture";
@@ -7,8 +6,6 @@ import Heading from "../Heading/Heading";
 import ProductsContainer from "../Product/ProductsContainer";
 import {
     about,
-    heading,
-    basimamovic,
     stariMostNaslovna,
     firstHeading,
     firstSubHeading,
@@ -16,6 +13,7 @@ import {
     offer
 } from "../../constants/constants";
 import {tours} from '../../constants/constants'
+import BookModal from "../Common/BookModal/BookModal";
 
 const whiteBackground = {
     backgroundColor: '#ffffff',
@@ -33,10 +31,12 @@ class MainContent extends Component {
 
     static propTypes = {};
 
-    state = {};
+    state = {
+        modalOpen: false
+    };
 
     bookAction = () => {
-        this.props.history.push('/contact')
+        this.setState(({modalOpen}) => ({modalOpen: !modalOpen}))
     }
 
     render() {
@@ -50,6 +50,7 @@ class MainContent extends Component {
                 <ProductsContainer products={tours}/>
                 <Heading  subTitle={lastSubHeading} line style={customStyle}/>
                 <BookButton onClickAction={this.bookAction}/>
+                <BookModal handleClose={this.bookAction} openModal={this.state.modalOpen}/>
             </div>
         );
     }

@@ -1,12 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Social from "../Header/Social";
 import './Footer.css'
 
 const logo = require('../../images/logo.jpeg')
 
 
-const Footer = props => {
+const Footer = () => {
     return (
         <div className={'Footer'}>
             <div className={'footer-contact'}>
@@ -14,7 +13,7 @@ const Footer = props => {
                 <span> +255 688 285 354</span> <span>+255 684 864 483</span>{' '}
                 <span>info@safari-infinity.com</span>{' '}
             </div>
-            <div className={'footer-logo'} ><img src={logo}/></div>
+            <div className={'footer-logo'} ><img src={logo} alt={''}/></div>
             <div className={'footer-text'} >Go Book</div>
             <div className={'footer-social'} ><Social /></div>
             <div />

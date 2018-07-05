@@ -11,7 +11,7 @@ const Highlights = ({highlights}) => {
                 <div className={'title'}>highlights</div>
                 {highlights.map((item,index) => <HighlightItem key={index} data={item}/>)}
             </div>
-            <div className={'Highlights-image'}><img src={sarajevo}/></div>
+            <div className={'Highlights-image'}><img src={sarajevo} alt={''}/></div>
         </Section>
     )
 }

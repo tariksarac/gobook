@@ -14,7 +14,9 @@ export const stariMostNaslovna = require('../images/bosnia-2058087_1280.jpg');
 export const coffe = require('../images/A6508045.JPG')
 export const cevapcici = require('../images/IMG-00a3e414c526b75069192c7a0704e558-V.jpg')
 
-
+export const fortres = require('../images/Fortresses.jpg')
+export const landscape = require('../images/Landcapes of Bosnia and Herzegovina.jpg')
+export const nightinsaraejvo = require('../images/night-in-sarajevo-2-1221424.jpg')
 
 //landing page
 export const firstHeading = 'THE BEST OF BOSNIA & HERZEGOVINA TOURS';
@@ -50,7 +52,7 @@ export const whyBosniaData = {
             text: 'Bosna and Herzegovina still has unspoiled nature, clean rivers, incredible views and beautiful forests abundant with different flora and\n' +
             'fauna. In the south of the country, one can find not very extensive but highly valuable seacoast with crystal clear water. Our landscapes\n' +
             'offer beautiful views which greatly vary from place to place.',
-            image: null
+            image: landscape
         },
         {
             title: '#2 The Past',
@@ -81,7 +83,7 @@ export const whyBosniaData = {
             text:'Sarajevo is the capital which brings together the East and the West. One moment you believe that you are in Vienna, the next moment you\n' +
             'feel a breath of Istanbul. Despite the recent war period which left deep scars, Sarajevo is a city radiant with life and where people live their\n' +
             'lives to the fullest. Each times it enchants you with its beauties which are not easy to forget.',
-            image: null
+            image: nightinsaraejvo
         },
         {
             title: '#7 Beautiful Una',
@@ -109,7 +111,7 @@ export const whyBosniaData = {
             'new ones. Those fortresses were given over to the Austro-Hungarian Empire later on, and they continued to improve them. Jajce is the\n' +
             'town with one of the most famous fortresses in Bosnia. Once it was the royal seat of Bosnia’s medieval kings. Other towns which boast well\n' +
             'preserved medieval fortresses include: Gradačac, Tešanj, Maglaj, Banja Luka, Doboj…',
-            image: null
+            image: fortres
         }
     ],
     otherAboutBosnia: {

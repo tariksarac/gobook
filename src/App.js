@@ -1,4 +1,4 @@
-import React, { Component, createContext } from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import MainContent from './components/MainContent/MainContent';
@@ -27,7 +27,6 @@ class App extends Component {
                     <Route path="/about" component={About} />
                     <Route path="/tour/:name" component={Tour} />
                     <Route path="/contact" component={Contact} />
-                    {/*<Contact id={'contact'} />*/}
                     </ScrollToTop>
                     <Footer />
                 </div>
