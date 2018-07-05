@@ -1,6 +1,7 @@
 .TextItem {
     padding: 30px 20px;
     background-color: #ffffff;
+    display: flex;
 }
 
 .TextItem-line {
@@ -27,8 +28,23 @@
 
 .TextItem .sight-image {
     padding: 5px;
+    flex: 1 0 350px;
 }
 
 .TextItem .sight-image img{
     max-width: 100%;
+}
+
+
+@media only screen and (max-width: 600px){
+    .TextItem {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .TextItem .sight-image {
+        padding: 5px;
+        flex: unset;
+    }
+
 }

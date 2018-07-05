@@ -5,9 +5,12 @@ import './TextItem.css'
 const TextItem = ({title, text, style, image}) => {
     return (
         <div className={'TextItem'} style={{...style}}>
+            <div>
+                <div className={'TextItem-title'}>{title}</div>
+                <div className={'TextItem-text'}>{text}</div>
+            </div>
             <div className={'TextItem-line'}/>
-            <div className={'TextItem-title'}>{title}</div>
-            <div className={'TextItem-text'}>{text}</div>
+
             <div className={'sight-image'}><img src={image} alt={''}/></div>
         </div>
     );

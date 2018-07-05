@@ -10,6 +10,10 @@ export const jajceVodopad = require('../images/jajce3.jpg');
 export const stariMost = require('../images/architecture-3176756_1280.jpg');
 export const stariMostNaslovna = require('../images/bosnia-2058087_1280.jpg');
 
+//food
+export const coffe = require('../images/A6508045.JPG')
+export const cevapcici = require('../images/IMG-00a3e414c526b75069192c7a0704e558-V.jpg')
+
 
 
 //landing page
@@ -58,7 +62,7 @@ export const whyBosniaData = {
             title: '#3 Excellent inexpensive food',
             text:'Bosnia and Herzegovina is a true gourmet paradise. Here you can taste various dishes hailing from Ottoman, Austro-Hungarian and Balkan\n' +
             'cuisines. The food is almost completely locally produced and the guests are offered a great choice of delicacies.',
-            image: null
+            image: cevapcici
         },
         {
             title: '#4 Good hosts',
@@ -97,7 +101,7 @@ export const whyBosniaData = {
             'relax and enjoy. Sarajevo is one of those cities which offer an endless number of both oriental and European style cafés, where visitors can\n' +
             'just sit back, enjoy and have a cup of coffee. Traditional Bosnian coffee is served in a small cezve pot often with a Turkish delight to\n' +
             'sweeten it up.',
-            image: null
+            image: coffe
         },
         {
             title: '#10 Fortresses',
