@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb826fb-30f8-49aa-937d-473dc2ebb226" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Common/BookModal/BookModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/BookModal/BookModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Common/BookModal/BookModal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/BookModal/BookModal.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookModal.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BookModal.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Common/BookModal/BookModal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="210">
+              <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -50,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookModal.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BookModal.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Common/BookModal/BookModal.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            <state relative-caret-position="423">
+              <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -83,8 +82,8 @@
       <file leaf-file-name="Contact.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Contact/Contact.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="52" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+            <state relative-caret-position="256">
+              <caret line="81" column="41" selection-start-line="81" selection-end-line="81" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -175,9 +174,9 @@
         <option value="$PROJECT_DIR$/src/components/MainContent/MainContent.js" />
         <option value="$PROJECT_DIR$/src/components/Common/DatePicker/DatePicker.js" />
         <option value="$PROJECT_DIR$/src/components/Contact/Contact.js" />
-        <option value="$PROJECT_DIR$/src/components/Common/BookModal/BookModal.css" />
         <option value="$PROJECT_DIR$/src/constants/constants.js" />
         <option value="$PROJECT_DIR$/src/components/Common/BookModal/BookModal.js" />
+        <option value="$PROJECT_DIR$/src/components/Common/BookModal/BookModal.css" />
       </list>
     </option>
   </component>
@@ -339,12 +338,12 @@
       <workItem from="1530648324842" duration="4056000" />
       <workItem from="1530732771987" duration="1497000" />
       <workItem from="1530820773612" duration="6459000" />
-      <workItem from="1530853768641" duration="456000" />
+      <workItem from="1530853768641" duration="646000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138375000" />
+    <option name="totallyTimeSpent" value="138565000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -677,20 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Contact/Contact.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Common/BookModal/BookModal.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/constants/constants.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
@@ -724,11 +709,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Common/BookModal/BookModal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="210">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Contact/Contact.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="81" column="41" selection-start-line="81" selection-end-line="81" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Common/BookModal/BookModal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
         </state>
       </provider>
     </entry>

@@ -52,3 +52,9 @@
     font-size: 18px;
     font-family: Roboto;
 }
+
+@media only screen and (max-width: 600px){
+    .book-modal {
+        height: auto;
+    }
+}
