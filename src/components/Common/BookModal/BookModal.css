@@ -28,6 +28,7 @@
     box-shadow: 0 0 0 transparent;
     font-family: Roboto;
     background: #ffffff;
+    -webkit-appearance: none;
  }
 
 .book-modal form input {
@@ -56,5 +57,12 @@
 @media only screen and (max-width: 600px){
     .book-modal {
         height: auto;
+    }
+
+    .book-modal form select {
+        height: 50px;
+    }
+    .book-modal form input {
+        height: 50px;
     }
 }
