@@ -33,36 +33,94 @@ export const customStyles = {
     overlay: overlay,
 };
 
-const BookModal = ({ handleClose, openModal }) => {
-    return (
-        <Modal
-            aria-labelledby="simple-modal-title"
-            aria-describedby="simple-modal-description"
-            open={openModal}
-            onClose={handleClose}>
-            <div style={customStyles} className={'book-modal'}>
-                <Typography  id="modal-title" align={'center'} variant={'headline'} className={'headline-modal'}>
-                   Choose a tour
-                </Typography>
-                <form>
-                    <select defaultValue={2}>
-                        <option>Sarajevo-Mostar</option>
-                        <option>Sarajevo-Jajce-Mostar</option>
-                        <option>Sarajevo-Jajce</option>
-                    </select>
-                    <input id={'firstName'} placeholder={'First Name'} type={'text'} name={'First Name'} />
-                    <input id={'surname'} placeholder={'Last Name'} type={'text'} name={'Last Name'} />
-                    <input id={'number'} placeholder={'Number of people'} type={'number'} name={'Number'} />
-                    <input id={'date'} placeholder={'Date'} type={'date'} name={'Date'} />
-                    <input id={'country'} placeholder={'Country'} type={'text'} name={'Country'} />
-                    <input type="submit" value="Book" style={{width:'100%'}}/>
-                </form>
-            </div>
-        </Modal>
-    );
-};
+class BookModal extends React.Component {
+    state = {
+        custom: false,
+    };
+
+    render() {
+        let { handleClose, openModal } = this.props;
+        let { custom } = this.state;
+
+        let transitionStyle = {
+            // left: custom && '-50%',
+            // transform: custom && 'scale(0.9) translateX(50%)',
+            // transition: 'all 3000ms ease-out'
+        };
+
+        let tour = {
+            transform: custom && 'translateX(-100%)',
+            transition: 'all 300ms ease-out',
+        };
+
+        let customTour = {
+            transform: custom && 'translateX(-100%)',
+            transition: 'transform 300ms ease-out',
+        };
+        return (
+            <Modal
+                aria-labelledby="simple-modal-title"
+                aria-describedby="simple-modal-description"
+                open={openModal}
+                onClose={handleClose}>
+                <div style={customStyles} className={'book-modal'}>
+                    <div className={'book-modal-wide'} style={transitionStyle}>
+                        <CreateTour style={tour} />
+                        <CreateCustomTour style={customTour} />
+                    </div>
+                    <div
+                        className={'action-link'}
+                        onClick={() => this.setState(({ custom }) => ({ custom: !custom }))}>
+                        {!custom ? 'Try create tour' : 'Return'}
+                    </div>
+                </div>
+            </Modal>
+        );
+    }
+}
 
 BookModal.propTypes = {};
 BookModal.defaultProps = {};
 
 export default BookModal;
+
+const CreateTour = ({ style }) => {
+    return (
+        <div className={'create-tour'} style={{ ...style }}>
+            <Typography id="modal-title" align={'center'} variant={'headline'} className={'headline-modal'}>
+                Choose a tour
+            </Typography>
+            <form>
+                <select defaultValue={2}>
+                    <option>Sarajevo-Mostar</option>
+                    <option>Sarajevo-Jajce-Mostar</option>
+                    <option>Sarajevo-Jajce</option>
+                </select>
+                <input id={'firstName'} placeholder={'First Name'} type={'text'} name={'First Name'} />
+                <input id={'surname'} placeholder={'Last Name'} type={'text'} name={'Last Name'} />
+                <input id={'number'} placeholder={'Number of people'} type={'number'} name={'Number'} />
+                <input id={'date'} placeholder={'Date'} type={'date'} name={'Date'} />
+                <input id={'country'} placeholder={'Country'} type={'text'} name={'Country'} />
+                <input type="submit" value="Book" style={{ width: '100%' }} />
+            </form>
+        </div>
+    );
+};
+
+const CreateCustomTour = ({ style }) => {
+    return (
+        <div className={'create-custom-tour'} style={{ ...style }}>
+            <Typography id="modal-title" align={'center'} variant={'headline'} className={'headline-modal'}>
+                Create your own tour
+            </Typography>
+            <form>
+                <input id={'firstName'} placeholder={'First Name'} type={'text'} name={'First Name'} />
+                <input id={'surname'} placeholder={'Last Name'} type={'text'} name={'Last Name'} />
+                <input id={'number'} placeholder={'Number of people'} type={'number'} name={'Number'} />
+                <input id={'date'} placeholder={'Date'} type={'date'} name={'Date'} />
+                <input id={'country'} placeholder={'Country'} type={'text'} name={'Country'} />
+                <input type="submit" value="Book" style={{ width: '100%' }} />
+            </form>
+        </div>
+    );
+};
