@@ -1,6 +1,6 @@
 import React from 'react';
-import Modal from '@material-ui/core/es/Modal/Modal';
-import Typography from '@material-ui/core/es/Typography/Typography';
+import Modal from '@material-ui/core/Modal';
+import Typography from '@material-ui/core/Typography';
 import './BookModal.css';
 
 const overlay = {
