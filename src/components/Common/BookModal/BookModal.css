@@ -139,19 +139,19 @@
 
     .book-modal #date {
         height: 40px !important;
-        flex: 1 0 100px !important;
+        flex: 1 1 100px !important;
     }
     .book-modal #number {
         height: 40px !important;
-        flex: 1 0 100px !important;
+        flex: 1 1 100px !important;
     }
     .book-modal #place {
         height: 40px !important;
-        flex: 1 0 100px !important;
+        flex: 1 1 100px !important;
     }
 
     .book-modal input[type='submit'] {
-        flex: 1 0 150px !important;
+        flex: 1 1 150px !important;
     }
 
     .book-modal .action-link {
