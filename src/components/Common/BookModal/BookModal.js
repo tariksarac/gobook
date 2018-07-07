@@ -94,8 +94,8 @@ const CreateTour = ({ style }) => {
             <Typography id="modal-title" align={'center'} variant={'headline'} className={'headline-modal'}>
                 Choose a tour
             </Typography>
-            <form>
-                <select defaultValue={2}>
+            <form name="BookModal" method="POST" data-netlify="true">
+                <select placeholder={'Select tour'}>
                     <option>Sarajevo-Mostar</option>
                     <option>Sarajevo-Jajce-Mostar</option>
                     <option>Sarajevo-Jajce</option>
