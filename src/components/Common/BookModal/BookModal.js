@@ -90,11 +90,11 @@ export default BookModal;
 
 const CreateTour = ({ style }) => {
     return (
-        <div className={'create-tour'} style={{ ...style }}>
+        <div className={'create-tour'} style={{ ...style }} data-netlify="true">
             <Typography id="modal-title" align={'center'} variant={'headline'} className={'headline-modal'}>
                 Choose a tour
             </Typography>
-            <form name="BookModal" method="POST" data-netlify="true" action={'/'}>
+            <form data-netlify="true" name="BookModal" method="POST"  action={'/'}>
                 <select placeholder={'Select tour'}>
                     <option>Sarajevo-Mostar</option>
                     <option>Sarajevo-Jajce-Mostar</option>
