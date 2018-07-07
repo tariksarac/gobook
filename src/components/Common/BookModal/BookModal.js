@@ -121,7 +121,9 @@ const CreateCustomTour = ({ style }) => {
                 <input id={'firstName'} placeholder={'First Name'} type={'text'} name={'First Name'} />
                 <input id={'surname'} placeholder={'Last Name'} type={'text'} name={'Last Name'} />
                 <input id={'number'} placeholder={'Number of people'} type={'number'} name={'Number'} />
-                <input id={'date'} placeholder={'Date'} type={'date'} name={'Date'} />
+                <input id={'date'} placeholder={'Start Date'} type={'date'} name={'Date'} />
+                <input id={'date'} placeholder={'End Date'} type={'date'} name={'Date'} />
+                <input id={'place'} placeholder={'Place to visit'} type={'text'} name={'Place'} />
                 <input id={'country'} placeholder={'Country'} type={'text'} name={'Country'} />
                 <input type="submit" value="Book" style={{ width: '100%' }} />
             </form>

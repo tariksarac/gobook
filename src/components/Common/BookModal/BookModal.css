@@ -57,6 +57,12 @@
     font-family: Roboto;
     background: #ffffff;
     -webkit-appearance: none;
+    outline: none;
+    color: #2d2926;
+}
+
+.book-modal option{
+    font-family: Roboto;
 }
 
 .book-modal form input {
@@ -72,6 +78,7 @@
     font-family: Roboto;
     background: #ffffff;
     -webkit-appearance: none;
+    outline: none;
 }
 
 .book-modal form input[type='submit'] {
@@ -80,6 +87,7 @@
     color: #ffffff;
     font-size: 18px;
     font-family: Roboto;
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -99,12 +107,21 @@
         /*margin-bottom: auto !important;*/
     }
 
-    /*.book-modal:before {*/
-    /*display: inline-block;*/
-    /*vertical-align: middle;*/
-    /*content: ' ';*/
-    /*height: 100%;*/
-    /*}*/
+    .book-modal .book-modal-wide {
+       /*align-items: flex-end;*/
+    }
+
+    .book-modal .book-modal-wide .create-tour {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .book-modal .book-modal-wide .create-custom-tour {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
     .book-modal .headline-modal {
         padding-bottom: 20px;
@@ -112,14 +129,33 @@
     }
 
     .book-modal select {
-        height: 50px !important;
+        height: 40px !important;
     }
+
     .book-modal input {
+        height: 40px !important;
+        /*flex: 1 0 100px !important;*/
+    }
+
+    .book-modal #date {
+        height: 40px !important;
+        flex: 1 0 100px !important;
+    }
+    .book-modal #number {
+        height: 40px !important;
+        flex: 1 0 100px !important;
+    }
+    .book-modal #place {
         height: 40px !important;
         flex: 1 0 100px !important;
     }
 
     .book-modal input[type='submit'] {
         flex: 1 0 150px !important;
+    }
+
+    .book-modal .action-link {
+        text-align: center;
+        color: var(--main-text-color);
     }
 }
