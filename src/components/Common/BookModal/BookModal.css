@@ -139,11 +139,11 @@
 
     .book-modal #date {
         height: 40px !important;
-        flex: 1 1 100px !important;
+        flex: 0 1 100px !important;
     }
     .book-modal #number {
         height: 40px !important;
-        flex: 1 1 100px !important;
+        flex: 0 1 100px !important;
     }
     .book-modal #place {
         height: 40px !important;
