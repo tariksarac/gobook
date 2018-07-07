@@ -1,4 +1,9 @@
-.book-modal-container .book-modal {
+.book-modal-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
 }
 .book-modal {
     position: relative;
@@ -79,6 +84,9 @@
     background: #ffffff;
     -webkit-appearance: none;
     outline: none;
+
+    display: block;
+    -webkit-box-flex: 1;
 }
 
 .book-modal form input[type='submit'] {
@@ -89,7 +97,6 @@
     color: #ffffff;
     font-size: 18px;
     font-family: Roboto;
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -110,7 +117,7 @@
     }
 
     .book-modal .book-modal-wide {
-       /*align-items: flex-end;*/
+        /*align-items: flex-end;*/
     }
 
     .book-modal .book-modal-wide .create-tour {
@@ -134,30 +141,54 @@
         flex-basis: 80% !important;
     }
 
+    .book-modal option {
+        color: #f2f2f2;
+    }
+
     /*.book-modal input {*/
-        /*height: 40px !important;*/
-        /*!*flex: 1 0 100px !important;*!*/
+    /*height: 40px !important;*/
+    /*!*flex: 1 0 100px !important;*!*/
     /*}*/
 
     /*.book-modal #date {*/
-        /*height: 40px !important;*/
-        /*flex: 1 0 50px !important;*/
+    /*height: 40px !important;*/
+    /*flex: 1 0 50px !important;*/
     /*}*/
     /*.book-modal #number {*/
-        /*height: 40px !important;*/
-        /*flex: 1 0 50px !important;*/
+    /*height: 40px !important;*/
+    /*flex: 1 0 50px !important;*/
     /*}*/
     /*.book-modal #place {*/
-        /*height: 40px !important;*/
-        /*flex: 1 0 50px !important;*/
+    /*height: 40px !important;*/
+    /*flex: 1 0 50px !important;*/
     /*}*/
 
     /*.book-modal input[type='submit'] {*/
-        /*flex: 1 1 150px !important;*/
+    /*flex: 1 1 150px !important;*/
     /*}*/
 
     .book-modal .action-link {
         text-align: center;
         color: var(--main-text-color);
+    }
+
+    input[type='date']:before {
+        content: attr(placeholder) !important;
+        color: #aaa;
+        margin-right: 0.5em;
+    }
+    input[type='date']:focus:before,
+    input[type='date']:valid:before {
+        content: '';
+    }
+
+    input[type='number']:before {
+        content: attr(placeholder) !important;
+        color: #aaa;
+        margin-right: 0.5em;
+    }
+    input[type='number']:focus:before,
+    input[type='number']:valid:before {
+        content: '';
     }
 }

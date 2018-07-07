@@ -65,7 +65,7 @@ class BookModal extends React.Component {
                     open={openModal}
                     onClose={handleClose}>
                     <div style={customStyles} className={'book-modal'}>
-                        <div className={'book-modal-wide'} style={transitionStyle}>
+                        <div className={'book-modal-wide'}>
                             <CreateTour style={tour} />
                             <CreateCustomTour style={customTour} />
                         </div>
