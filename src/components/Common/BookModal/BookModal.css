@@ -1,14 +1,16 @@
+.book-modal-container .book-modal {
+}
 .book-modal {
     position: relative;
     margin: 0 auto;
     /*height: 72%;*/
-    top: 100px;
+    /*top: 100px;*/
     background: #f2f2f2;
     padding: 10px;
     max-width: 600px;
     border-radius: 10px;
     outline: none;
-    margin-bottom: 30%;
+    margin-bottom: auto;
     margin-top: auto;
     overflow: hidden;
 }

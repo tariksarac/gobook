@@ -58,23 +58,27 @@ class BookModal extends React.Component {
             transition: 'transform 300ms ease-out',
         };
         return (
-            <Modal
-                aria-labelledby="simple-modal-title"
-                aria-describedby="simple-modal-description"
-                open={openModal}
-                onClose={handleClose}>
-                <div style={customStyles} className={'book-modal'}>
-                    <div className={'book-modal-wide'} style={transitionStyle}>
-                        <CreateTour style={tour} />
-                        <CreateCustomTour style={customTour} />
+            <div className={'book-modal-container'}>
+                <Modal
+                    aria-labelledby="simple-modal-title"
+                    aria-describedby="simple-modal-description"
+                    open={openModal}
+                    onClose={handleClose}>
+                    <div style={customStyles} className={'book-modal'}>
+                        <div className={'book-modal-wide'} style={transitionStyle}>
+                            <CreateTour style={tour} />
+                            <CreateCustomTour style={customTour} />
+                        </div>
+                        <div
+                            className={'action-link'}
+                            onClick={() => this.setState(({ custom }) => ({ custom: !custom }))}>
+                            {!custom ? 'Try create tour' : 'Return'}
+                        </div>
                     </div>
-                    <div
-                        className={'action-link'}
-                        onClick={() => this.setState(({ custom }) => ({ custom: !custom }))}>
-                        {!custom ? 'Try create tour' : 'Return'}
-                    </div>
-                </div>
-            </Modal>
+                </Modal>
+
+            </div>
+
         );
     }
 }
