@@ -84,11 +84,13 @@
 
 @media only screen and (max-width: 600px) {
     .book-modal {
-        height: auto;
-        width: 320px;
-        border-radius: 5px;
-        margin-top: auto;
-        margin-bottom: auto;
+        /*height: auto;*/
+        max-width: 320px !important;
+        /*border-radius: 5px;*/
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
         /*display: inline-block;*/
         /*vertical-align: middle;*/
     }
@@ -99,6 +101,13 @@
         /*content: ' ';*/
         /*height: 100%;*/
     /*}*/
+
+
+    .book-modal .headline-modal {
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+
 
     .book-modal select {
         height: 50px;
