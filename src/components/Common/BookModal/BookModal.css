@@ -59,15 +59,15 @@
     -webkit-appearance: none;
     outline: none;
     color: #2d2926;
-}
-
-.book-modal option{
-    font-family: Roboto;
+    flex-grow: 1;
+    flex-basis: 40%;
 }
 
 .book-modal form input {
     box-sizing: border-box;
-    flex: 1 0 200px;
+    /*flex: 1 0 200px;*/
+    flex-grow: 1;
+    flex-basis: 40%;
     height: 35px;
     margin-bottom: 20px;
     margin-right: 15px;
@@ -83,7 +83,9 @@
 
 .book-modal form input[type='submit'] {
     background-color: var(--main-text-color);
-    flex: 1 1 100%;
+    /*flex: 1 1 100%;*/
+    flex-grow: 1;
+    flex-basis: 80%;
     color: #ffffff;
     font-size: 18px;
     font-family: Roboto;
@@ -95,11 +97,11 @@
         bottom: 0;
         left: 0;
         margin: auto;
-        /*max-height: calc(100vh - 50px);*/
-        height: calc(100vh - 100px) !important;
+        height: auto;
+        max-height: calc(100vh - 100px) !important;
         max-width: 90%;
         min-width: 320px;
-        position: fixed;
+        position: relative;
         right: 0;
         top: 0;
         overflow-y: scroll;
@@ -129,30 +131,30 @@
     }
 
     .book-modal select {
-        height: 40px !important;
+        flex-basis: 80% !important;
     }
 
-    .book-modal input {
-        height: 40px !important;
-        /*flex: 1 0 100px !important;*/
-    }
+    /*.book-modal input {*/
+        /*height: 40px !important;*/
+        /*!*flex: 1 0 100px !important;*!*/
+    /*}*/
 
-    .book-modal #date {
-        height: 40px !important;
-        flex: 1 0 50px !important;
-    }
-    .book-modal #number {
-        height: 40px !important;
-        flex: 1 0 50px !important;
-    }
-    .book-modal #place {
-        height: 40px !important;
-        flex: 1 0 50px !important;
-    }
+    /*.book-modal #date {*/
+        /*height: 40px !important;*/
+        /*flex: 1 0 50px !important;*/
+    /*}*/
+    /*.book-modal #number {*/
+        /*height: 40px !important;*/
+        /*flex: 1 0 50px !important;*/
+    /*}*/
+    /*.book-modal #place {*/
+        /*height: 40px !important;*/
+        /*flex: 1 0 50px !important;*/
+    /*}*/
 
-    .book-modal input[type='submit'] {
-        flex: 1 1 150px !important;
-    }
+    /*.book-modal input[type='submit'] {*/
+        /*flex: 1 1 150px !important;*/
+    /*}*/
 
     .book-modal .action-link {
         text-align: center;
