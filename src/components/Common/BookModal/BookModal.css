@@ -13,6 +13,7 @@
     margin-bottom: auto;
     margin-top: auto;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .book-modal .book-modal-wide {
@@ -84,15 +85,15 @@
 
 @media only screen and (max-width: 600px) {
     .book-modal {
-        /*height: auto;*/
-        max-width: 320px !important;
-        /*border-radius: 5px;*/
-        margin-top: auto !important;
-        margin-bottom: auto !important;
-        margin-right: auto !important;
-        margin-left: auto !important;
-        /*display: inline-block;*/
-        /*vertical-align: middle;*/
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        max-height: calc(100vh - 200px);
+        max-width: 90%;
+        min-width: 320px;
+        position: fixed;
+        right: 0;
+        top: 0;
     }
 
     /*.book-modal:before {*/
