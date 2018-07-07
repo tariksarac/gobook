@@ -115,11 +115,11 @@
         height: 50px !important;
     }
     .book-modal input {
-        height: 50px !important;
-        flex: 1 0 50px !important;
+        height: 40px !important;
+        flex: 1 0 100px !important;
     }
 
     .book-modal input[type='submit'] {
-        flex: 1 1 100% !important;
+        flex: 1 0 100% !important;
     }
 }
