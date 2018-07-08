@@ -90,23 +90,43 @@ export default BookModal;
 
 const CreateTour = ({ style }) => {
     return (
-        <div className={'create-tour'} style={{ ...style }} data-netlify="true">
+        <div className={'create-tour'} style={{ ...style }}>
             <Typography id="modal-title" align={'center'} variant={'headline'} className={'headline-modal'}>
                 Choose a tour
             </Typography>
-            <form data-netlify="true" name="BookModal" method="POST"  action={'/'}>
-                <select placeholder={'Select tour'}>
-                    <option>Sarajevo-Mostar</option>
-                    <option>Sarajevo-Jajce-Mostar</option>
-                    <option>Sarajevo-Jajce</option>
-                </select>
-                <input id={'firstName'} placeholder={'First Name'} type={'text'} name={'First Name'} />
-                <input id={'surname'} placeholder={'Last Name'} type={'text'} name={'Last Name'} />
-                <input id={'number'} placeholder={'Number of people'} type={'number'} name={'Number'} />
-                <input id={'date'} placeholder={'Date'} type={'date'} name={'Date'} />
-                <input id={'country'} placeholder={'Country'} type={'text'} name={'Country'} />
-                <input type="submit" value="Book" style={{ width: '100%' }} />
+            <form name="contact" method="POST" netlify>
+                <p>
+                    <label>Your Name: <input type="text" name="name" /></label>
+                </p>
+                <p>
+                    <label>Your Email: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                    <label>Your Role: <select name="role[]" multiple>
+                        <option value="leader">Leader</option>
+                        <option value="follower">Follower</option>
+                    </select></label>
+                </p>
+                <p>
+                    <label>Message: <textarea name="message"></textarea></label>
+                </p>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
             </form>
+            {/*<form netlify name="BookModal" method="POST">*/}
+                {/*<select placeholder={'Select tour'}>*/}
+                    {/*<option>Sarajevo-Mostar</option>*/}
+                    {/*<option>Sarajevo-Jajce-Mostar</option>*/}
+                    {/*<option>Sarajevo-Jajce</option>*/}
+                {/*</select>*/}
+                {/*<input id={'firstName'} placeholder={'First Name'} type={'text'} name={'First Name'} />*/}
+                {/*<input id={'surname'} placeholder={'Last Name'} type={'text'} name={'Last Name'} />*/}
+                {/*<input id={'number'} placeholder={'Number of people'} type={'number'} name={'Number'} />*/}
+                {/*<input id={'date'}  type={'date'} name={'Date'}  placeholder="Date of tour" value=""/>*/}
+                {/*<input id={'country'} placeholder={'Country'} type={'text'} name={'Country'} />*/}
+                {/*<input type="submit" value="Book" style={{ width: '100%' }} />*/}
+            {/*</form>*/}
         </div>
     );
 };

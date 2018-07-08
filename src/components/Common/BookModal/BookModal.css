@@ -6,7 +6,7 @@
     display: none;
 }
 .book-modal {
-    position: relative;
+    position: fixed;
     margin: 0 auto;
     /*height: 72%;*/
     /*top: 100px;*/
@@ -172,23 +172,34 @@
         color: var(--main-text-color);
     }
 
-    input[type='date']:before {
-        content: attr(placeholder) !important;
-        color: #aaa;
-        margin-right: 0.5em;
-    }
-    input[type='date']:focus:before,
-    input[type='date']:valid:before {
-        content: '';
-    }
+    /*input[type='date']:before {*/
+        /*content: attr(placeholder) !important;*/
+        /*color: #aaa;*/
+        /*margin-right: 0.5em;*/
+    /*}*/
+    /*input[type='date']:focus:before,*/
+    /*input[type='date']:valid:before {*/
+        /*content: '';*/
+    /*}*/
 
-    input[type='number']:before {
-        content: attr(placeholder) !important;
-        color: #aaa;
-        margin-right: 0.5em;
-    }
-    input[type='number']:focus:before,
-    input[type='number']:valid:before {
-        content: '';
-    }
+    /*input[type="date"]::before {*/
+        /*content: attr(placeholder) !important;*/
+        /*width: 100%;*/
+    /*}*/
+
+    /*!* hide our custom/fake placeholder text when in focus to show the default*/
+     /** 'mm/dd/yyyy' value and when valid to show the users' date of birth value.*/
+     /**!*/
+    /*input[type="date"]:focus::before ,*/
+    /*input[type="date"]:valid::before { display: none }*/
+
+    /*input[type='number']:before {*/
+        /*content: attr(placeholder) !important;*/
+        /*color: #aaa;*/
+        /*margin-right: 0.5em;*/
+    /*}*/
+    /*input[type='number']:focus:before,*/
+    /*input[type='number']:valid:before {*/
+        /*content: '';*/
+    /*}*/
 }
