@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb826fb-30f8-49aa-937d-473dc2ebb226" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/200.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Common/BookModal/BookModal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/BookModal/BookModal.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Common/BookModal/BookModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/BookModal/BookModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contact/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/Contact.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookModal.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BookModal.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Common/BookModal/BookModal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="115" column="19" selection-start-line="115" selection-start-column="19" selection-end-line="115" selection-end-column="19" />
+            <state relative-caret-position="157">
+              <caret line="95" column="25" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="25" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -80,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Contact.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Contact.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Contact/Contact.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="85" selection-start-line="10" selection-start-column="81" selection-end-line="10" selection-end-column="85" />
+            <state relative-caret-position="256">
+              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -181,10 +178,10 @@
         <option value="$PROJECT_DIR$/src/components/Common/Fade/Fade.js" />
         <option value="$PROJECT_DIR$/public/200.html" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/components/Contact/Contact.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/components/Common/BookModal/BookModal.css" />
         <option value="$PROJECT_DIR$/src/components/Common/BookModal/BookModal.js" />
+        <option value="$PROJECT_DIR$/src/components/Contact/Contact.js" />
       </list>
     </option>
   </component>
@@ -348,12 +345,12 @@
       <workItem from="1530732771987" duration="1497000" />
       <workItem from="1530820773612" duration="6459000" />
       <workItem from="1530853768641" duration="2332000" />
-      <workItem from="1530909462037" duration="19968000" />
+      <workItem from="1530909462037" duration="20106000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160219000" />
+    <option name="totallyTimeSpent" value="160357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -691,16 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Contact/Contact.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="85" selection-start-line="10" selection-start-column="81" selection-end-line="10" selection-end-column="85" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -720,10 +707,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Common/BookModal/BookModal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="115" column="19" selection-start-line="115" selection-start-column="19" selection-end-line="115" selection-end-column="19" />
+        <state relative-caret-position="157">
+          <caret line="95" column="25" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="25" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Contact/Contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
