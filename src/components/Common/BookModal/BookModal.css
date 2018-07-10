@@ -1,24 +1,40 @@
-.book-modal-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-}
+/*.book-modal-container {*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    /*display: none;*/
+/*}*/
 .book-modal {
     /*position: fixed;*/
-    margin: 0 auto;
-    /*height: 72%;*/
-    /*top: 100px;*/
-    background: #f2f2f2;
-    padding: 10px;
-    max-width: 600px;
-    border-radius: 10px;
+    /*margin: 0 auto;*/
+    /*!*height: 72%;*!*/
+    /*!*top: 100px;*!*/
+    /*background: #f2f2f2;*/
+    /*padding: 10px;*/
+    /*max-width: 600px;*/
+    /*border-radius: 10px;*/
     outline: none;
-    margin-bottom: auto;
-    margin-top: auto;
+    /*margin-bottom: auto;*/
+    /*margin-top: auto;*/
+    /*overflow: hidden;*/
+    /*box-sizing: border-box;*/
+
+
+    position: absolute;
+    padding: 0;
+    border: 0;
+    width: 60%;
     overflow: hidden;
-    box-sizing: border-box;
+    background-color: #f2f2f2;
+    left: 50%;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    border-radius: 10px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .book-modal .book-modal-wide {
@@ -101,19 +117,35 @@
 
 @media only screen and (max-width: 600px) {
     .book-modal {
-        bottom: 0;
-        left: 0;
-        margin: auto;
-        height: auto;
-        max-height: calc(100vh - 100px) !important;
-        max-width: 90%;
-        min-width: 320px;
-        position: relative;
-        right: 0;
-        top: 0;
-        overflow-y: scroll;
-        /*margin-top: auto !important;*/
-        /*margin-bottom: auto !important;*/
+        /*bottom: 0;*/
+        /*left: 0;*/
+        /*margin: auto;*/
+        /*height: auto;*/
+        /*max-height: calc(100vh - 100px) !important;*/
+        /*max-width: 90%;*/
+        /*min-width: 320px;*/
+        /*position: relative;*/
+        /*right: 0;*/
+        /*top: 0;*/
+        /*overflow-y: scroll;*/
+        /*!*margin-top: auto !important;*!*/
+        /*!*margin-bottom: auto !important;*!*/
+
+
+        position: absolute;
+        padding: 0;
+        border: 0;
+        width: 90%;
+        overflow: hidden;
+        background-color: #f2f2f2;
+        left: 50%;
+        top: 50%;
+        right: auto;
+        bottom: auto;
+        border-radius: 10px;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
     }
 
     .book-modal .book-modal-wide {
