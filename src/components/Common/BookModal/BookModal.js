@@ -94,19 +94,19 @@ const CreateTour = ({ style }) => {
             <Typography id="modal-title" align={'center'} variant={'headline'} className={'headline-modal'}>
                 Choose a tour
             </Typography>
-            {/*<form netlify name="BookModal" method="POST">*/}
-                {/*<select placeholder={'Select tour'}>*/}
-                    {/*<option>Sarajevo-Mostar</option>*/}
-                    {/*<option>Sarajevo-Jajce-Mostar</option>*/}
-                    {/*<option>Sarajevo-Jajce</option>*/}
-                {/*</select>*/}
-                {/*<input id={'firstName'} placeholder={'First Name'} type={'text'} name={'First Name'} />*/}
-                {/*<input id={'surname'} placeholder={'Last Name'} type={'text'} name={'Last Name'} />*/}
-                {/*<input id={'number'} placeholder={'Number of people'} type={'number'} name={'Number'} />*/}
-                {/*<input id={'date'}  type={'date'} name={'Date'}  placeholder="Date of tour" value=""/>*/}
-                {/*<input id={'country'} placeholder={'Country'} type={'text'} name={'Country'} />*/}
-                {/*<input type="submit" value="Book" style={{ width: '100%' }} />*/}
-            {/*</form>*/}
+            <form netlify="true" name="BookModal" method="POST">
+                <select placeholder={'Select tour'}>
+                    <option>Sarajevo-Mostar</option>
+                    <option>Sarajevo-Jajce-Mostar</option>
+                    <option>Sarajevo-Jajce</option>
+                </select>
+                <input id={'firstName'} placeholder={'First Name'} type={'text'} name={'First Name'} />
+                <input id={'surname'} placeholder={'Last Name'} type={'text'} name={'Last Name'} />
+                <input id={'number'} placeholder={'Number of people'} type={'number'} name={'Number'} />
+                <input id={'date'}  type={'date'} name={'Date'}  placeholder="Date of tour" value=""/>
+                <input id={'country'} placeholder={'Country'} type={'text'} name={'Country'} />
+                <input type="submit" value="Book" style={{ width: '100%' }} />
+            </form>
         </div>
     );
 };

@@ -6,7 +6,7 @@
     display: none;
 }
 .book-modal {
-    position: fixed;
+    /*position: fixed;*/
     margin: 0 auto;
     /*height: 72%;*/
     /*top: 100px;*/
