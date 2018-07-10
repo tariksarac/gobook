@@ -94,8 +94,8 @@ const CreateTour = ({ style }) => {
             <Typography id="modal-title" align={'center'} variant={'headline'} className={'headline-modal'}>
                 Choose a tour
             </Typography>
-            <form name="createTourForm" method="POST">
-                <input type="hidden" name="form-name" value="contact" />
+            <form action="https://formspree.io/tarik.sarac@gmail.com"
+                  method="POST" name={'CreateTour'}>
                 <select placeholder={'Select tour'}>
                     <option>Sarajevo-Mostar</option>
                     <option>Sarajevo-Jajce-Mostar</option>
@@ -118,7 +118,8 @@ const CreateCustomTour = ({ style }) => {
             <Typography id="modal-title" align={'center'} variant={'headline'} className={'headline-modal'}>
                 Create your own tour
             </Typography>
-            <form>
+            <form action="https://formspree.io/tarik.sarac@gmail.com"
+                  method="POST" name={'CreateCustomTour'}>
                 <input id={'firstName'} placeholder={'First Name'} type={'text'} name={'First Name'} />
                 <input id={'surname'} placeholder={'Last Name'} type={'text'} name={'Last Name'} />
                 <input id={'number'} placeholder={'Number of people'} type={'number'} name={'Number'} />
