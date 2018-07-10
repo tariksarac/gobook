@@ -97,6 +97,7 @@ const CreateTour = ({ style }) => {
             <form action="https://formspree.io/tarik.sarac@gmail.com"
                   method="POST" name={'CreateTour'}>
                 <select placeholder={'Select tour'}>
+                    <option >Select your option</option>
                     <option>Sarajevo-Mostar</option>
                     <option>Sarajevo-Jajce-Mostar</option>
                     <option>Sarajevo-Jajce</option>

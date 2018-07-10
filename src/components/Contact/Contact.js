@@ -8,8 +8,7 @@ class Contact extends React.Component {
                 <div className={'Contact'}>
                     <div className={'contact-heading'}>CONTACT US</div>
                     <div className={'contact-detail'}>
-                        info@gobook.ba &nbsp; &nbsp; &nbsp; &nbsp;/ &nbsp; &nbsp; &nbsp; &nbsp;poznatog junaka
-                        23, Sarajevo&nbsp;&nbsp;&nbsp;&nbsp; /&nbsp; &nbsp;&nbsp;&nbsp; +3876111111
+                        gobook@gobook.ba &nbsp; &nbsp; &nbsp; &nbsp;/ &nbsp; &nbsp; &nbsp; &nbsp;Alaudin 10, Visoko&nbsp;&nbsp;&nbsp;&nbsp; /&nbsp; &nbsp;&nbsp;&nbsp; +3876111111
                     </div>
                     <form name="contact" method="POST" netlify="true">
                         <input id={'name'} placeholder={'Name'} type={'text'} name={'Name'} />
