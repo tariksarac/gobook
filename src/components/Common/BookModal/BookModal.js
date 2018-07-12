@@ -105,7 +105,7 @@ const CreateTour = ({ style }) => {
                 <input id={'firstName'} placeholder={'First Name'} type={'text'} name={'First Name'} />
                 <input id={'surname'} placeholder={'Last Name'} type={'text'} name={'Last Name'} />
                 <input id={'number'} placeholder={'Number of people'} type={'number'} name={'Number'} />
-                <input id={'date'}  type={'date'} name={'Date'}  placeholder="Date of tour" value=""/>
+                <input id={'date'}  type={'date'} name={'Date'} />
                 <input id={'country'} placeholder={'Country'} type={'text'} name={'Country'} />
                 <input type="submit" value="Book" style={{ width: '100%' }} />
             </form>
