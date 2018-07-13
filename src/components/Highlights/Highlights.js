@@ -6,12 +6,11 @@ import { sarajevo} from "../../constants/constants";
 
 const Highlights = ({highlights}) => {
     return(
-        <Section>
+        <Section style={{backgroundColor: 'unset', padding: '50px 0'}}>
             <div className={'Highlights'}>
-                <div className={'title'}>highlights</div>
-                {highlights.map((item,index) => <HighlightItem key={index} data={item}/>)}
+                <div className={'title'}>Tour Highlights</div>
+                {highlights.map((item,index) => <HighlightItem key={index} data={item} reverse={index%2===0}/>)}
             </div>
-            <div className={'Highlights-image'}><img src={sarajevo} alt={''}/></div>
         </Section>
     )
 }

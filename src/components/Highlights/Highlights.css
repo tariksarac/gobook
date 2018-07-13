@@ -5,6 +5,10 @@
     align-items: flex-start;
 }
 
+.reverse {
+    flex-direction: row-reverse;
+}
+
 .Highlights .title {
     font-size: 18px;
     line-height: 23px;
@@ -15,11 +19,35 @@
     margin: 5px 0 24px;
 }
 
+.HighlightItem-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.HighlightItem-container .HighlightItem-text{
+   background-color: #ffffff;
+    width: 50%;
+    height: 250px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+
+}
+
 .Highlights .HighlightItem {
     line-height: 30px;
     padding-left: 24px;
     position: relative;
+    text-align: left;
+    font-weight: 600;
 }
+
 .Highlights .HighlightItem:before {
     position: absolute;
     content: "\2713";
@@ -27,22 +55,72 @@
     font-weight: 700;
 }
 
+.Highlights p {
+    font-size: 15px ;
+    padding: 5px 25px;
+    text-align: left;
+    margin: unset;
+}
+.Highlights p:before { content:"\00b6"; margin-right: 15px}
+
 .Highlights-image {
     /*flex: 1;*/
     max-width: 50%;
-    max-height: 200px;
+    /*max-height: 200px;*/
+
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* height: 940px; */
+    max-height: 250px;
 }
 
 .Highlights-image img {
-    max-height: 100%;
-    width: 50%;
+    /*max-height: 100%;*/
+    /*width: 50%;*/
     /*max-height: 250px;*/
     /*max-width: 250px;*/
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
 }
 
 @media only screen and (max-width: 600px){
+
+    .reverse {
+        flex-direction: column;
+    }
+
+
+    .Highlights {
+        align-items: center;
+    }
+    .HighlightItem-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .HighlightItem-container .HighlightItem-text {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+
+    }
+
     .Highlights-image {
-        padding-top: 20px;
+        /*padding-top: 20px;*/
         max-width: 100%;
     }
 

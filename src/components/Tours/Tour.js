@@ -11,14 +11,16 @@ import Include from '../Include/Include';
 import BookButton from '../Common/BookButton/BookButton';
 import { withRouter } from 'react-router-dom';
 import { customStyle } from '../MainContent/MainContent';
+import BookModal from "../Common/BookModal/BookModal";
 
 class Tour extends React.Component {
     state = {
         showImageControl: false,
+        modalOpen: false
     };
     bookAction = () => {
-        this.props.history.push('/contact');
-    };
+        this.setState(({modalOpen}) => ({modalOpen: !modalOpen}))
+    }
 
     render() {
         let width = window.innerWidth
@@ -48,11 +50,7 @@ class Tour extends React.Component {
                                 }
                             />
                             <Highlights
-                                highlights={[
-                                    'Discover the Whale Route to Hermanus',
-                                    'Discover the Whale Route to Hermanus',
-                                    'Discover the Whale Route to Hermanus',
-                                ]}
+                                highlights={tourItem.highLights}
                             />
                             <Itinerary data={tourItem.placeByDay} itinerary />
                             <Include
@@ -65,6 +63,7 @@ class Tour extends React.Component {
                                 title={'NOT INCLUDED:'}
                             />
                             <BookButton onClickAction={this.bookAction} />
+                            <BookModal handleClose={this.bookAction} openModal={this.state.modalOpen}/>
                         </div>
                     );
                 }}

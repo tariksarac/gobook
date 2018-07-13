@@ -1,4 +1,6 @@
-
+input[type='date']:after {
+    content: attr(placeholder)
+}
 .book-modal {
     /*position: fixed;*/
     /*margin: 0 auto;*/
@@ -107,6 +109,10 @@
     color: #ffffff;
     font-size: 18px;
     font-family: Roboto;
+}
+
+.book-modal form input[type='date']::placeholder{
+    content: 'Date';
 }
 
 .book-modal .action-link {

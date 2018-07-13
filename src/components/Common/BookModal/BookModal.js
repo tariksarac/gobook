@@ -104,7 +104,10 @@ const CreateTour = ({ style }) => {
                 </select>
                 <input id={'firstName'} placeholder={'First Name'} type={'text'} name={'First Name'} />
                 <input id={'surname'} placeholder={'Last Name'} type={'text'} name={'Last Name'} />
-                <input id={'number'} placeholder={'Number of people'} type={'number'} name={'Number'} />
+                <input id={'number'} placeholder={'Number of people'} type={'number'} name={'Number'}/>
+                {/*<input placeholder="Date" type="text" onFocus="this.type='date';*/}
+                      {/*this.setAttribute('onfocus','');this.blur();this.focus();"/>*/}
+
                 <input id={'date'}  type={'date'} name={'Date'} />
                 <input id={'country'} placeholder={'Country'} type={'text'} name={'Country'} />
                 <input type="submit" value="Book" style={{ width: '100%' }} />
