@@ -558,6 +558,8 @@ export const tours = [
                 includeText: 'Trebević Cable Care ticket EUR 10',
             },
         ],
+        highLights: [{...sarajevoHighlights}, {...jajceHighlights}]
+
     },
     {
         name: 'Sarajevo-Mostar',
@@ -760,5 +762,7 @@ export const tours = [
                 includeText: 'Trebević Cable Care ticket EUR 10',
             },
         ],
+        highLights: [{...sarajevoHighlights}, {...mostarHighlights}]
+
     },
 ];
