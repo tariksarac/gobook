@@ -1,6 +1,6 @@
-/*input[type='date']:after {*/
-    /*content: attr(placeholder)*/
-/*}*/
+input[type='date']:after {
+     content: attr(placeholder)
+ }
 .book-modal {
     /*position: fixed;*/
     /*margin: 0 auto;*/

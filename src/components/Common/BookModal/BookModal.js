@@ -4,6 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import './BookModal.css';
 import BookButton from "../BookButton/BookButton";
 import CreateCustomTour from "../../Tours/CreateCustomTour";
+import CreateTour from "../../Tours/CreateTour";
 
 
 // const overlay = {
@@ -96,43 +97,5 @@ BookModal.defaultProps = {};
 export default BookModal;
 
 
-const CreateTour = ({ style, tourItem }) => {
-    let selectedTour = tourItem ? tourItem.title : null;
-    return (
-        <div className={'create-tour'} style={{ ...style }}>
-            <Typography id="modal-title" align={'center'} variant={'headline'} className={'headline-modal'}>
-                {tourItem ? selectedTour : 'Choose a tour'}
-            </Typography>
-            <form action="https://formspree.io/tarik.sarac@gmail.com" method="POST" name={'CreateTour'}>
-                <select placeholder={'Select tour'}>
-                    <option value={'Not selected'}>Select your option</option>
-                    <option
-                        value={'THE BEST OF BOSNIA & HERZEGOVINA TOUR'}
-                        selected={selectedTour === 'THE BEST OF BOSNIA & HERZEGOVINA TOUR'}>
-                        THE BEST OF BOSNIA & HERZEGOVINA TOUR
-                    </option>
-                    <option value={'BEST OF BOSNIA'} selected={selectedTour === 'BEST OF BOSNIA'}>
-                        BEST OF BOSNIA
-                    </option>
-                    <option
-                        value={'BOSNIA & HERZEGOVINA INTRO TOUR'}
-                        selected={selectedTour === 'BOSNIA & HERZEGOVINA INTRO TOUR'}>
-                        BOSNIA & HERZEGOVINA INTRO TOUR
-                    </option>
-                </select>
-                <input id={'firstName'} placeholder={'First Name'} type={'text'} name={'First Name'} />
-                <input id={'surname'} placeholder={'Last Name'} type={'text'} name={'Last Name'} />
-                <input id={'number'} placeholder={'Number of people'} type={'number'} name={'Number'} />
-                {/*<input placeholder="Date" type="text" onFocus="this.type='date';*/}
-                {/*this.setAttribute('onfocus','');this.blur();this.focus();"/>*/}
 
-                {/*<input id={'date'} type={'date'} name={'Date'} placeholder={'Date'}/>*/}
-                <input placeholder="Select Date" className="textbox-n" type="text" onFocus={(e) => e.target.type='date'}
-                       onBlur={(e) => e.target.type='text'} id="select-date"/>
-                <input id={'country'} placeholder={'Where are you from'} type={'text'} name={'Country'} />
-                <BookButton type={"submit"} value="Book" buttonText={"Book"} style={{ width: '100%', height:'35px' }} />
-            </form>
-        </div>
-    );
-};
 

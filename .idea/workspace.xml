@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb826fb-30f8-49aa-937d-473dc2ebb226" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Tours/CreateTour.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Common/BookModal/BookModal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/BookModal/BookModal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Common/BookModal/BookModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/BookModal/BookModal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Tours/CreateCustomTour.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tours/CreateCustomTour.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/constants.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,13 +21,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LandingPage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/LandingPage/LandingPage.js">
+      <file leaf-file-name="BookModal.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Common/BookModal/BookModal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="53" column="79" selection-start-line="53" selection-start-column="79" selection-end-line="53" selection-end-column="79" />
+            <state relative-caret-position="45">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateTour.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Tours/CreateTour.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -32,20 +45,8 @@
       <file leaf-file-name="BookModal.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Common/BookModal/BookModal.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="130" column="1" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookModal.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Common/BookModal/BookModal.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="128" column="73" selection-start-line="128" selection-start-column="73" selection-end-line="128" selection-end-column="73" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state>
+              <caret selection-end-line="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -53,8 +54,8 @@
       <file leaf-file-name="CreateCustomTour.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Tours/CreateCustomTour.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+            <state relative-caret-position="225">
+              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -95,6 +96,22 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="constants.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/constants/constants.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="187" column="16" lean-forward="true" selection-start-line="187" selection-start-column="16" selection-end-line="187" selection-end-column="16" />
+              <folding>
+                <element signature="e#2123#8271#0" />
+                <element signature="e#10581#17053#0" />
+                <element signature="e#17072#17526#0" />
+                <element signature="e#17552#18806#0" />
+                <element signature="e#18910#29860#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BookButton.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Common/BookButton/BookButton.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -114,18 +131,6 @@
               <caret line="64" column="94" selection-start-line="64" selection-start-column="94" selection-end-line="64" selection-end-column="94" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -170,7 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/Tours/AllTour.js" />
         <option value="$PROJECT_DIR$/public/manifest.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/components/Product/ProductsContainer.js" />
@@ -210,9 +214,7 @@
         <option value="$PROJECT_DIR$/src/components/Heading/Heading.js" />
         <option value="$PROJECT_DIR$/src/components/Common/BookButton/BookButton.css" />
         <option value="$PROJECT_DIR$/src/App.css" />
-        <option value="$PROJECT_DIR$/src/constants/constants.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/LandingPage.js" />
-        <option value="$PROJECT_DIR$/src/components/Common/BookModal/BookModal.css" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Tours/Tour.js" />
         <option value="$PROJECT_DIR$/src/components/Common/BookButton/BookButton.js" />
@@ -220,6 +222,9 @@
         <option value="$PROJECT_DIR$/src/components/Highlights/Highlights.js" />
         <option value="$PROJECT_DIR$/src/components/Highlights/HighlightItem.js" />
         <option value="$PROJECT_DIR$/src/components/Common/BookModal/BookModal.js" />
+        <option value="$PROJECT_DIR$/src/constants/constants.js" />
+        <option value="$PROJECT_DIR$/src/components/Tours/CreateTour.js" />
+        <option value="$PROJECT_DIR$/src/components/Common/BookModal/BookModal.css" />
         <option value="$PROJECT_DIR$/src/components/Tours/CreateCustomTour.js" />
       </list>
     </option>
@@ -411,18 +416,18 @@
       <workItem from="1531345822917" duration="191000" />
       <workItem from="1531423201442" duration="2148000" />
       <workItem from="1531508618037" duration="14000" />
-      <workItem from="1531509708469" duration="26526000" />
+      <workItem from="1531509708469" duration="31783000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193695000" />
+    <option name="totallyTimeSpent" value="198952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25369978" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25369978" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50069445" side_tool="true" weight="0.32969698" />
@@ -431,7 +436,7 @@
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49930555" weight="0.33915213" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49305555" visible="true" weight="0.28553617" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49305555" visible="true" weight="0.28553617" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TypeScript" order="8" />
@@ -449,17 +454,12 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Include/Include.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Common/ExpansionItem/ExpansionItem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -670,22 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#2123#8271#0" />
-            <element signature="e#9700#16172#0" />
-            <element signature="e#16191#16645#0" />
-            <element signature="e#16671#17925#0" />
-            <element signature="e#18101#27179#0" />
-            <element signature="e#27535#28812#0" />
-            <element signature="e#29008#38086#0" />
-            <element signature="e#38440#39736#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -697,13 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="22" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Common/BookModal/BookModal.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="130" column="1" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -774,20 +751,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="187" column="16" lean-forward="true" selection-start-line="187" selection-start-column="16" selection-end-line="187" selection-end-column="16" />
+          <folding>
+            <element signature="e#2123#8271#0" />
+            <element signature="e#10581#17053#0" />
+            <element signature="e#17072#17526#0" />
+            <element signature="e#17552#18806#0" />
+            <element signature="e#18910#29860#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Tours/CreateTour.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Common/BookModal/BookModal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="128" column="73" selection-start-line="128" selection-start-column="73" selection-end-line="128" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Common/BookModal/BookModal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Tours/CreateCustomTour.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        <state relative-caret-position="225">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>

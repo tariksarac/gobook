@@ -185,7 +185,7 @@ export const jajceHighlights ={image: jajceVodopad, town: 'Jajce', highLights: [
 export const tours = [
     {
         name: 'Sarajevo-Jajce-Mostar',
-        title: ' THE BEST OF BOSNIA & HERZEGOVINA TOUR',
+        title: 'THE BEST OF BOSNIA & HERZEGOVINA TOUR',
         description: '6 noćenja, 7 dana',
         featuredPicture: sebilj,
         placeByDay: [

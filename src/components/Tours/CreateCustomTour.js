@@ -3,15 +3,15 @@ import BookButton from "../Common/BookButton/BookButton";
 import Typography from '@material-ui/core/Typography';
 
 class CreateCustomTour extends React.Component {
-    state = {
-        inputType: 'text'
-    }
-    _onFocus = (event) => {
-       this.setState({ inputType: 'date'})
-    }
-    _onBlur = (event) => {
-       this.setState({ inputType: 'date'})
-    }
+    // state = {
+    //     inputType: 'text'
+    // }
+    // _onFocus = (event) => {
+    //    this.setState({ inputType: 'date'})
+    // }
+    // _onBlur = (event) => {
+    //    this.setState({ inputType: 'text'})
+    // }
 
     render(){
         const {style} = this.props
@@ -25,12 +25,12 @@ class CreateCustomTour extends React.Component {
                     <input id={'surname'} placeholder={'Last Name'} type={'text'} name={'Last Name'} />
                     <input id={'number'} placeholder={'Number of people'} type={'number'} name={'Number'} />
                     <input id={'place'} placeholder={'Place to visit'} type={'text'} name={'Place'} />
-                    {/*<input id={'date'} placeholder={'Start Date'} type={'date'} name={'Date'} />*/}
-                    {/*<input id={'date'} placeholder={'End Date'} type={'date'} name={'Date'} />*/}
-                    <input placeholder="Start Date" className="textbox-n" type={this.state.inputType} onFocus={this._onFocus}
-                           onBlur={this._onBlur} id="start-date"/>
-                    <input placeholder="End Date" className="textbox-n" type="text" onFocus={(e) => e.target.type='date'}
-                           onBlur={(e) => e.target.type='text'} id="end-date"/>
+                    <input id={'date'} placeholder={'Start Date'} type={'date'} name={'Date'} />
+                    <input id={'date'} placeholder={'End Date'} type={'date'} name={'Date'} />
+                    {/*<input placeholder="Start Date" className="textbox-n" type={this.state.inputType} onFocus={() => this._onFocus()}*/}
+                           {/*onBlur={()=>this._onBlur()} id="start-date"/>*/}
+                    {/*<input placeholder="End Date" className="textbox-n" type="text" onFocus={(e) => e.target.type='date'}*/}
+                           {/*onBlur={(e) => e.target.type='text'} id="end-date"/>*/}
 
 
                     <input id={'country'} placeholder={'Where are you from'} type={'text'} name={'Country'} />
