@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './BookButton.css';
+import Button from "@material-ui/core/es/Button/Button";
 
 class BookButton extends Component {
     static defaultProps = {
-        buttonText: 'Book Now!',
+        buttonText: '',
     };
 
     static propTypes = {
@@ -17,7 +18,7 @@ class BookButton extends Component {
 
     render() {
 
-        let { buttonText, onClickAction } = this.props;
+        let { buttonText, onClickAction,style, ...rest } = this.props;
         let buttonStyle = {
             backgroundColor: !this.state.hovered && '#33a3fc',
             color: !this.state.hovered ? '#ffffff' : '#33a3fc',
@@ -27,7 +28,7 @@ class BookButton extends Component {
         return (
             <button
                 className={'BookButton'}
-                style={buttonStyle}
+                style={{...style, ...buttonStyle}}
                 onClick={onClickAction}
                 onMouseOver={() => this.setState(({ hovered }) => ({ hovered: !hovered }))}
                 onMouseLeave={() => this.setState(({ hovered }) => ({ hovered: !hovered }))}>

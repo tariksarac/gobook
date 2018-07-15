@@ -168,17 +168,17 @@ export const products = [
     },
 ];
 
-export const sarajevoHighlights = {town: 'Sarajevo', highLights: ['Enyoy the local cuisine', 'Visit the heart of the city,in the centre of Baščaršija,famous square „The Sebilj“',
+export const sarajevoHighlights = { image: sarajevo2, town: 'Sarajevo', highLights: ['Enyoy the local cuisine', 'Visit the heart of the city,in the centre of Baščaršija,famous square „The Sebilj“',
         'Take a break,and relax with the famous coffe in Sarajevo',
         'Visit the „Sarajevo Tunnel,also known as „Tunnel of Rescue“']}
 
-export const mostarHighlights = {town: 'Mostar', highLights: ['Visit the old town in Mostar',
+export const mostarHighlights = {image: mostar, town: 'Mostar', highLights: ['Visit the old town in Mostar',
         'Visit the famous and beautiful old bridge',
         'Enyoj the adrenaline party on the old bridge',
         'Buy souvenirs from the local sellers',
         'Visit the Blagaj,meet the natural beauty „Vrelo Bune“']}
 
-export const jajceHighlights ={town: 'Jajce', highLights: ['Visit the waterfall in Jajce',
+export const jajceHighlights ={image: jajceVodopad, town: 'Jajce', highLights: ['Visit the waterfall in Jajce',
         'Enyoj in the crystal clear water',
         'Visit the royal city,visit the fortress']}
 

@@ -21,7 +21,12 @@ class Product extends React.Component {
 
         return (
             <Card className={'Product'}>
-                <CardMedia className={'Product-image'} image={featuredPicture} title="p" onClick={() => this.props.history.push(`/tour/${name}`)}/>
+                <CardMedia
+                    className={'Product-image'}
+                    image={featuredPicture}
+                    title="p"
+                    onClick={() => this.props.history.push(`/tour/${name}`)}
+                />
                 <CardContent onClick={() => this.props.history.push(`/tour/${name}`)}>
                     <Typography gutterBottom variant="headline" component="h2">
                         {title}
@@ -31,11 +36,10 @@ class Product extends React.Component {
                     </Typography>
                 </CardContent>
 
-                    <Typography component="p" align={'center'}>
-                        {description}
-                    </Typography>
-                <CardActions className={'Product-image-button'}>
-                </CardActions>
+                <Typography component="p" align={'center'}>
+                    {description}
+                </Typography>
+                <CardActions className={'Product-image-button'} />
             </Card>
         );
     }

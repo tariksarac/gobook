@@ -4,7 +4,7 @@ import FeaturedPicture from '../FeaturedPicture/FeaturedPicture';
 import Heading from '../Heading/Heading';
 import './WhyBosnia.css';
 import TextItem from './TextItem';
-import { customStyle } from '../MainContent/MainContent';
+import { customStyle } from '../LandingPage/LandingPage';
 
 
 const WhyBosnia = props => {

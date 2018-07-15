@@ -2,36 +2,39 @@ import React from 'react';
 import Modal from '@material-ui/core/Modal';
 import Typography from '@material-ui/core/Typography';
 import './BookModal.css';
+import BookButton from "../BookButton/BookButton";
+import CreateCustomTour from "../../Tours/CreateCustomTour";
 
-const overlay = {
-    backgroundColor: 'rgba(16, 19, 21, 0.7)',
-    zIndex: '1001',
-};
 
-export const customStyles = {
-    content: {
-        position: 'absolute',
-        padding: 0,
-        border: 0,
-        width: '60%',
-        overflow: 'hidden',
-        backgroundColor: 'unset',
-        left: '50%',
-        top: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        // padding: '35px 50px 40px 50px',
-        // boxSizing:'border-box',
-        // border: '1px solid #ee3029',
-        borderRadius: '10px',
-        marginRight: '-50%',
-        transform: 'translate(-50%, -50%)',
-        // display: 'flex',
-        // flexDirection: 'column',
-        textAlign: 'center',
-    },
-    overlay: overlay,
-};
+// const overlay = {
+//     backgroundColor: 'rgba(16, 19, 21, 0.7)',
+//     zIndex: '1001',
+// };
+
+// export const customStyles = {
+//     content: {
+//         position: 'absolute',
+//         padding: 0,
+//         border: 0,
+//         width: '60%',
+//         overflow: 'hidden',
+//         backgroundColor: 'unset',
+//         left: '50%',
+//         top: '50%',
+//         right: 'auto',
+//         bottom: 'auto',
+//         // padding: '35px 50px 40px 50px',
+//         // boxSizing:'border-box',
+//         // border: '1px solid #ee3029',
+//         borderRadius: '10px',
+//         marginRight: '-50%',
+//         transform: 'translate(-50%, -50%)',
+//         // display: 'flex',
+//         // flexDirection: 'column',
+//         textAlign: 'center',
+//     },
+//     overlay: overlay,
+// };
 
 class BookModal extends React.Component {
     state = {
@@ -39,14 +42,14 @@ class BookModal extends React.Component {
     };
 
     render() {
-        let { handleClose, openModal } = this.props;
+        let { handleClose, openModal, tourItem } = this.props;
         let { custom } = this.state;
 
-        let transitionStyle = {
-            // left: custom && '-50%',
-            // transform: custom && 'scale(0.9) translateX(50%)',
-            // transition: 'all 3000ms ease-out'
-        };
+        // let transitionStyle = {
+        //     // left: custom && '-50%',
+        //     // transform: custom && 'scale(0.9) translateX(50%)',
+        //     // transition: 'all 3000ms ease-out'
+        // };
 
         let tour = {
             transform: custom && 'translateX(-100%)',
@@ -64,21 +67,25 @@ class BookModal extends React.Component {
                     aria-describedby="simple-modal-description"
                     open={openModal}
                     onClose={handleClose}>
-                    <div  className={'book-modal'}>
-                        <div className={'book-modal-wide'}>
-                            <CreateTour style={tour} />
-                            <CreateCustomTour style={customTour} />
+                    <div className={'book-modal'}>
+                        <div className={'book-modal-wide'} style={{ width: tourItem && '100%' }}>
+                            <CreateTour style={tour} tourItem={tourItem} />
+                            {!tourItem && <CreateCustomTour style={customTour} />}
                         </div>
-                        <div
-                            className={'action-link'}
-                            onClick={() => this.setState(({ custom }) => ({ custom: !custom }))}>
-                            {!custom ? 'Try create tour' : 'Return'}
-                        </div>
+                        {!tourItem && (
+                            <div>
+                                <div className={'or'}>or</div>
+                                <div
+                                    className={'action-link'}
+                                    onClick={() => this.setState(({ custom }) => ({ custom: !custom }))}>
+                                    {!custom ? ' TRy Create your tour' : 'Return'}
+                                </div>
+                                {/*<BookButton buttonText={!custom ? 'Create tour' : 'Return'}/>*/}
+                            </div>
+                        )}
                     </div>
                 </Modal>
-
             </div>
-
         );
     }
 }
@@ -88,51 +95,42 @@ BookModal.defaultProps = {};
 
 export default BookModal;
 
-const CreateTour = ({ style }) => {
+
+const CreateTour = ({ style, tourItem }) => {
+    let selectedTour = tourItem ? tourItem.title : null;
     return (
         <div className={'create-tour'} style={{ ...style }}>
             <Typography id="modal-title" align={'center'} variant={'headline'} className={'headline-modal'}>
-                Choose a tour
+                {tourItem ? selectedTour : 'Choose a tour'}
             </Typography>
-            <form action="https://formspree.io/tarik.sarac@gmail.com"
-                  method="POST" name={'CreateTour'}>
+            <form action="https://formspree.io/tarik.sarac@gmail.com" method="POST" name={'CreateTour'}>
                 <select placeholder={'Select tour'}>
                     <option value={'Not selected'}>Select your option</option>
-                    <option value={'THE BEST OF BOSNIA & HERZEGOVINA TOUR'}>THE BEST OF BOSNIA & HERZEGOVINA TOUR</option>
-                    <option value={'BEST OF BOSNIA'}>BEST OF BOSNIA</option>
-                    <option value={'BOSNIA & HERZEGOVINA INTRO TOUR'}>BOSNIA & HERZEGOVINA INTRO TOUR</option>
+                    <option
+                        value={'THE BEST OF BOSNIA & HERZEGOVINA TOUR'}
+                        selected={selectedTour === 'THE BEST OF BOSNIA & HERZEGOVINA TOUR'}>
+                        THE BEST OF BOSNIA & HERZEGOVINA TOUR
+                    </option>
+                    <option value={'BEST OF BOSNIA'} selected={selectedTour === 'BEST OF BOSNIA'}>
+                        BEST OF BOSNIA
+                    </option>
+                    <option
+                        value={'BOSNIA & HERZEGOVINA INTRO TOUR'}
+                        selected={selectedTour === 'BOSNIA & HERZEGOVINA INTRO TOUR'}>
+                        BOSNIA & HERZEGOVINA INTRO TOUR
+                    </option>
                 </select>
                 <input id={'firstName'} placeholder={'First Name'} type={'text'} name={'First Name'} />
                 <input id={'surname'} placeholder={'Last Name'} type={'text'} name={'Last Name'} />
-                <input id={'number'} placeholder={'Number of people'} type={'number'} name={'Number'}/>
-                {/*<input placeholder="Date" type="text" onFocus="this.type='date';*/}
-                      {/*this.setAttribute('onfocus','');this.blur();this.focus();"/>*/}
-
-                <input id={'date'}  type={'date'} name={'Date'} />
-                <input id={'country'} placeholder={'Country'} type={'text'} name={'Country'} />
-                <input type="submit" value="Book" style={{ width: '100%' }} />
-            </form>
-        </div>
-    );
-};
-
-const CreateCustomTour = ({ style }) => {
-    return (
-        <div className={'create-custom-tour'} style={{ ...style }}>
-            <Typography id="modal-title" align={'center'} variant={'headline'} className={'headline-modal'}>
-                Create your own tour
-            </Typography>
-            <form action="https://formspree.io/tarik.sarac@gmail.com"
-                  method="POST" name={'CreateCustomTour'}>
-                <input id={'firstName'} placeholder={'First Name'} type={'text'} name={'First Name'} />
-                <input id={'surname'} placeholder={'Last Name'} type={'text'} name={'Last Name'} />
                 <input id={'number'} placeholder={'Number of people'} type={'number'} name={'Number'} />
-                <input id={'date'} placeholder={'Start Date'} type={'date'} name={'Date'} />
-                <input id={'date'} placeholder={'End Date'} type={'date'} name={'Date'} />
-                <input id={'place'} placeholder={'Place to visit'} type={'text'} name={'Place'} />
-                <input id={'country'} placeholder={'Country'} type={'text'} name={'Country'} />
-                <input type="submit" value="Book" style={{ width: '100%' }} />
+                {/*<input placeholder="Date" type="text" onFocus="this.type='date';*/}
+                {/*this.setAttribute('onfocus','');this.blur();this.focus();"/>*/}
+
+                <input id={'date'} type={'date'} name={'Date'} placeholder={'Date'}/>
+                <input id={'country'} placeholder={'Where are you from'} type={'text'} name={'Country'} />
+                <BookButton type={"submit"} value="Book" buttonText={"Book"} style={{ width: '100%', height:'35px' }} />
             </form>
         </div>
     );
 };
+

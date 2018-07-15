@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <div className={'Footer'}>
             <div className={'footer-contact'}>
-                <span> +255 688 285 354</span> <span>+255 684 864 483</span> <span>gobook@gobook.ba</span>{' '}
+                <span> +387 32 000 000</span>/ <span>+387 61 000 000</span> /<span>gobook@gobook.ba</span>{' '}
             </div>
             <div className={'footer-logo'}>
                 <img src={logo} alt={''} />

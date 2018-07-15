@@ -10,7 +10,7 @@ import Itinerary from '../Itinerary/Itinerary';
 import Include from '../Include/Include';
 import BookButton from '../Common/BookButton/BookButton';
 import { withRouter } from 'react-router-dom';
-import { customStyle } from '../MainContent/MainContent';
+import { customStyle } from '../LandingPage/LandingPage';
 import BookModal from "../Common/BookModal/BookModal";
 
 class Tour extends React.Component {
@@ -63,7 +63,7 @@ class Tour extends React.Component {
                                 title={'NOT INCLUDED:'}
                             />
                             <BookButton onClickAction={this.bookAction} />
-                            <BookModal handleClose={this.bookAction} openModal={this.state.modalOpen}/>
+                            <BookModal handleClose={this.bookAction} openModal={this.state.modalOpen} tourItem={tourItem}/>
                         </div>
                     );
                 }}

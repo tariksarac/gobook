@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Terms = (props) => {
     return (
-        <div style={{gridArea: 'main'}}>{terms}</div>
+        <div className={'terms-condition'} style={{gridArea: 'main'}}>{terms}</div>
     );
 };
 
@@ -12,7 +12,7 @@ Terms.defaultProps = {};
 
 export default Terms;
 
-const terms = '1. General\n' +
+const terms = '1. General\n\n' +
     'The general terms and conditions constitute an integral part of the package tour purchase\n' +
     'contracts entered into between GoBook d.o.o. Visoko, Alaudin 10, 71300 Visoko and travelers\n' +
     'applying to book a certain package tour organized by GoBook d.o.o. Visoko. In case that certain\n' +
@@ -26,8 +26,8 @@ const terms = '1. General\n' +
     'legislation in this filed shall be binding for travelers. In addition, the general terms and conditions\n' +
     'shall not apply to terms of travel health insurance when traveling abroad (if such insurance is\n' +
     'included in the tour price), where GoBook d.o.o. Visoko acts as an agent and in which case the\n' +
-    'general terms and conditions of the insurance provider shall apply.\n' +
-    '2. Application and contract\n' +
+    'general terms and conditions of the insurance provider shall apply.\n\n' +
+    '2. Application and contract\n\n' +
     'A traveler can apply for a tour package organized by GoBook d.o.o. Visoko at the office of\n' +
     'GoBook d.o.o. Visoko, Alaudin 10, 71300 Visoko, by telephone, fax, e-mail or other means of\n' +
     'electronic communication, as well as with our authorized agents.\n' +
@@ -36,57 +36,39 @@ const terms = '1. General\n' +
     'be sent to the party along with the general terms and conditions. The party can also select one of\n' +
     'the already existing package tours. Finally, the party books the package tour personally at the\n' +
     'offices, by telephone or email.\n' +
-    '\n' +
-    'Društvo za posredovanje u turizmu i nekretninama GoBook d.o.o. Visoko\n' +
-    'Alaudin 10, 71300 Visoko\n' +
-    'www.gobook.ba, mail: gobook@gobook.ba\n' +
-    'Tel: +387 32 , mob: +387 61\n' +
-    'Društvo je registrovano u općinskom sudu u Zenici, JIB:\n' +
-    'Sparkasse Bank d.d. Sarajevo, Transakcijski račun:\n' +
-    'Šifra pretežne djelatnosti:\n' +
-    'Upisani i uplaćeni kapital: 1.000,00 KM\n' +
     'By signing a contract, voucher or a booking form, or by giving their credit card number when\n' +
     'purchasing our services online, the travelers fully accept these Tour Booking Terms and\n' +
     'Conditions which they have previously read with due care and attention. When applying for a\n' +
     'certain tour, for the purpose of booking the selected service, the travelers shall pay 30% of the\n' +
     'package tour price (per person) unless the package tour program specifies otherwise. The\n' +
     'balance of the full price shall be paid in full at least 15 days before the tour departs unless the tour\n' +
-    'program specifies otherwise (with installment payment being an exception).\n' +
-    '3. Price and content of package tours\n' +
+    'program specifies otherwise (with installment payment being an exception).\n\n' +
+    '3. Price and content of package tours\n\n' +
     'The package tour price (unless the tour program specifies otherwise) includes:\n' +
-    ' transport,\n' +
-    ' hotel accommodation with breakfast,\n' +
-    ' tour organization.\n' +
+    '\u2219 transport,\n' +
+    '\u2219 hotel accommodation with breakfast,\n' +
+    '\u2219 tour organization.\n' +
     'If it is specified in the tour program, the price can also include the airport landing fees and the\n' +
     'costs of professional local guides.\n' +
     'The package tour price does not include (unless agreed otherwise):\n' +
-    ' Optional visits and excursions,\n' +
-    ' Visa fees and charges,\n' +
-    ' Tickets and entrance fees for sights and facilities to be visited.\n' +
+    '\u2219 Optional visits and excursions,\n' +
+    '\u2219 Visa fees and charges,\n' +
+    '\u2219 Tickets and entrance fees for sights and facilities to be visited.\n' +
     'All kinds of special services (single room, special diet, etc.) are paid by the travelers themselves\n' +
     'and the travelers have to order any such services when booking the tour. If a traveler requests a\n' +
     'special service while on tour, they will pay it directly to the guide or the representative of GoBook\n' +
     'd.o.o. Visoko, in the currency of the country they are visiting.\n' +
     'The travelers must pay in full the agreed tour price to GoBook d.o.o. Visoko within the specified\n' +
-    'payment period. The price, due date and method of payment shall be specified in the Contract.\n' +
-    '4. Right to increase the prices and right to cancel due to the increased prices\n' +
+    'payment period. The price, due date and method of payment shall be specified in the Contract.\n\n' +
+    '4. Right to increase the prices and right to cancel due to the increased prices\n\n' +
     'All tour prices are based on the exchange rate between Bosnian Convertible Mark (BAM) and\n' +
     'foreign currencies. GoBook d.o.o. Visoko reserves the right to request an increase in the agreed\n' +
     'price if one of the following takes place after the contract was signed:\n' +
-    ' Change in currency exchange rates in relation to the date on which the tour program was\n' +
+    '\u2219 Change in currency exchange rates in relation to the date on which the tour program was\n' +
     'published,\n' +
-    ' Change in transport costs (fuel prices, road tolls, etc.),\n' +
-    ' Changes in prices charged by hotel operators and passenger carriers.\n' +
-    '\n' +
-    'Društvo za posredovanje u turizmu i nekretninama GoBook d.o.o. Visoko\n' +
-    'Alaudin 10, 71300 Visoko\n' +
-    'www.gobook.ba, mail: gobook@gobook.ba\n' +
-    'Tel: +387 32 , mob: +387 61\n' +
-    'Društvo je registrovano u općinskom sudu u Zenici, JIB:\n' +
-    'Sparkasse Bank d.d. Sarajevo, Transakcijski račun:\n' +
-    'Šifra pretežne djelatnosti:\n' +
-    'Upisani i uplaćeni kapital: 1.000,00 KM\n' +
-    ' GoBook d.o.o. Visoko shall notify the travelers about the change in prices either verbally or in\n' +
+    '\u2219 Change in transport costs (fuel prices, road tolls, etc.),\n' +
+    '\u2219 Changes in prices charged by hotel operators and passenger carriers.\n' +
+    '\u2219 GoBook d.o.o. Visoko shall notify the travelers about the change in prices either verbally or in\n' +
     'writing.\n' +
     'The travelers can cancel their tour free of charge in case that the agreed price is increased by\n' +
     'over 10% not later than 48 hours after receiving the written notification about the price increase. If\n' +
@@ -100,11 +82,11 @@ const terms = '1. General\n' +
     'In case of change in transport costs, change in currency exchange rates, lower than the required\n' +
     'minimum number of travelers or similar, GoBook d.o.o. Visoko reserves the right to increase the\n' +
     'tour price by an appropriate amount or to cancel the tour at least five days before intended\n' +
-    'departure. The tour price shall apply as the date on which the tour program was posted.\n' +
-    '5. Discounts\n' +
+    'departure. The tour price shall apply as the date on which the tour program was posted.\n\n' +
+    '5. Discounts\n\n' +
     'All discounts, as well as other benefits are specified in the descriptions of individual package\n' +
-    'tours.\n' +
-    '6. Travel documents and other documentation\n' +
+    'tours.\n\n' +
+    '6. Travel documents and other documentation\n\n' +
     'Upon request of the tour organizer, the traveler has to provide in due time all the information\n' +
     'necessary for organization of the tour, especially details necessary for transportation tickets and\n' +
     'accommodation booking.\n' +
@@ -122,14 +104,6 @@ const terms = '1. General\n' +
     'The travelers are bound to obtain visas for entering the countries which require visas as well as to\n' +
     'procure documents necessary to cross borders.\n' +
     '\n' +
-    'Društvo za posredovanje u turizmu i nekretninama GoBook d.o.o. Visoko\n' +
-    'Alaudin 10, 71300 Visoko\n' +
-    'www.gobook.ba, mail: gobook@gobook.ba\n' +
-    'Tel: +387 32 , mob: +387 61\n' +
-    'Društvo je registrovano u općinskom sudu u Zenici, JIB:\n' +
-    'Sparkasse Bank d.d. Sarajevo, Transakcijski račun:\n' +
-    'Šifra pretežne djelatnosti:\n' +
-    'Upisani i uplaćeni kapital: 1.000,00 KM\n' +
     'If travelers lose their documents or if they get stolen during the tour, and if those documents are\n' +
     'necessary for continuation of the tour or for return to their country of residence, the travelers shall\n' +
     'obtain new documents at their own expense. In case that travelers have to end the tour due to\n' +
@@ -137,8 +111,8 @@ const terms = '1. General\n' +
     'In case of breach of the aforementioned provisions, the traveler shall cover any damages caused,\n' +
     'as well as damages sustained by the tour operator or other travelers due to his/her negligence.\n' +
     'The traveler shall be liable and responsible for damages caused to the tour operator by failing to\n' +
-    'fulfill his/her obligations under the package tour contract.\n' +
-    '7. Categorization and description of services\n' +
+    'fulfill his/her obligations under the package tour contract.\n\n' +
+    '7. Categorization and description of services\n\n' +
     'The offered accommodation listed in the GoBook Visoko package tours are described according\n' +
     'to the official categorization of the country where the accommodation is located applicable at the\n' +
     'time when the tour program was posted.\n' +
@@ -150,34 +124,25 @@ const terms = '1. General\n' +
     'mentioned. Travelers have to take into consideration that some of the hotel features or facilities\n' +
     'are not always available due to objective circumstances, as well as that some localities at a\n' +
     'certain destination, such as shopping malls, stores, restaurants or museums, might not be opened\n' +
-    'because of religious or state holidays.\n' +
-    '8. Accommodation in rooms/suites\n' +
+    'because of religious or state holidays.\n\n' +
+    '8. Accommodation in rooms/suites\n\n' +
     'Who is going to sleep in which room/suite is decided by the reception services of the hotel the\n' +
-    'travelers are staying at.\n' +
-    '9. Notifications prior to departure\n' +
+    'travelers are staying at.\n\n' +
+    '9. Notifications prior to departure\n\n' +
     'The travelers shall receive final notification at least 5 (five) days before departure. All damages\n' +
     'caused by travelers providing incomplete or incorrect address for the purpose of filling in the bills\n' +
     'and receipts and sending notifications about the tour, shall be borne by those travelers. In the\n' +
     'event that the travelers do not receive the notification at least five days before departure, they are\n' +
     'bound to contact GoBook immediately and request to be sent the notification. Any claims or\n' +
-    'complaints due to unreceived mail shall not be accepted by GoBook d.o.o. Visoko.\n' +
-    '10. Notification on protection of personal and confidential information\n' +
-    '\n' +
-    'Društvo za posredovanje u turizmu i nekretninama GoBook d.o.o. Visoko\n' +
-    'Alaudin 10, 71300 Visoko\n' +
-    'www.gobook.ba, mail: gobook@gobook.ba\n' +
-    'Tel: +387 32 , mob: +387 61\n' +
-    'Društvo je registrovano u općinskom sudu u Zenici, JIB:\n' +
-    'Sparkasse Bank d.d. Sarajevo, Transakcijski račun:\n' +
-    'Šifra pretežne djelatnosti:\n' +
-    'Upisani i uplaćeni kapital: 1.000,00 KM\n' +
+    'complaints due to unreceived mail shall not be accepted by GoBook d.o.o. Visoko.\n\n' +
+    '10. Notification on protection of personal and confidential information\n\n' +
     'Travelers provide their personal information of their own free will. GoBook d.o.o. Visoko needs the\n' +
     'said information in order to provide the requested services. Notifications the tour operator receives\n' +
     'about the traveler, his/her baggage and movements can be released or disclosed only with the\n' +
     'traveler’s express consent or at the request of the competent authorities.\n' +
     'GoBook d.o.o. Visoko shall not be held liable or responsible for any cases of loss or theft during\n' +
-    'the tour.\n' +
-    '11. Baggage\n' +
+    'the tour.\n\n' +
+    '11. Baggage\n\n' +
     'GoBook d.o.o. Visoko shall not be responsible for transportation, theft or damage of traveler’s\n' +
     'baggage or other personal belongings, valuables or documents from accommodation facilities\n' +
     '(hotel rooms, suites, etc.) or transport facilities (airplanes, buses, ships, etc.). Report of stolen or\n' +
@@ -198,8 +163,8 @@ const terms = '1. General\n' +
     'transport, a traveler can carry two pieces of personal baggage. The travelers are bound to take\n' +
     'care of their belonging taken into the bus, and they have to take those belongings with them\n' +
     'whenever they leave the bus. Otherwise they take responsibility for any theft, loss or damage of\n' +
-    'belongings which have been left inside the bus without their supervision.\n' +
-    '12. Claims and complaints\n' +
+    'belongings which have been left inside the bus without their supervision.\n\n' +
+    '12. Claims and complaints\n\n' +
     'The traveler is bound to notify on the spot a representative of GoBook d.o.o. Visoko about any\n' +
     'irregularities that might arise. In case that a complaint can be dealt with on the sport (e.g.\n' +
     'insufficiently clean room, equipment, room position in the hotel, etc.), and the traveler fails to raise\n' +
@@ -210,14 +175,6 @@ const terms = '1. General\n' +
     'complaint must be well founded and supported. Therefore, together with their complaint the\n' +
     'traveler must enclose appropriate evidence and/or adequate confirmation by the hotel operator,\n' +
     '\n' +
-    'Društvo za posredovanje u turizmu i nekretninama GoBook d.o.o. Visoko\n' +
-    'Alaudin 10, 71300 Visoko\n' +
-    'www.gobook.ba, mail: gobook@gobook.ba\n' +
-    'Tel: +387 32 , mob: +387 61\n' +
-    'Društvo je registrovano u općinskom sudu u Zenici, JIB:\n' +
-    'Sparkasse Bank d.d. Sarajevo, Transakcijski račun:\n' +
-    'Šifra pretežne djelatnosti:\n' +
-    'Upisani i uplaćeni kapital: 1.000,00 KM\n' +
     'transport operator or some other competent person as to the facts based on which the traveler\n' +
     'wants to realize his/her claim. Within 15 days from receiving the complaint, GoBook d.o.o. Visoko\n' +
     'is bound to make a written response. If it is a simple omission where the error has been\n' +
@@ -238,8 +195,8 @@ const terms = '1. General\n' +
     'tour program in accordance with the provisions of these terms and conditions and applicable laws.\n' +
     'Regardless of the complaint filed, the traveler must settle all the bills and invoices issued for the\n' +
     'services provided in accordance with the agreed payment schedule, any potential damages shall\n' +
-    'be paid into the travelers personal bank account upon conclusion of the complaint procedure.\n' +
-    '13. Obligations of GoBook d.o.o. Visoko\n' +
+    'be paid into the travelers personal bank account upon conclusion of the complaint procedure.\n\n' +
+    '13. Obligations of GoBook d.o.o. Visoko\n\n' +
     'GoBook d.o.o. Visoko shall select service providers with due care and attention and in\n' +
     'accordance with the positive business customs. The company shall take care of the travelers’\n' +
     'rights with due care and in accordance with the positive business customs in the field of tourism.\n' +
@@ -250,29 +207,21 @@ const terms = '1. General\n' +
     'circumstances. In case when it is prevented to provide service specified in the package tour\n' +
     'program, GoBook d.o.o. Visoko shall not be held liable or responsible. GoBook d.o.o. Visoko is\n' +
     'not bound to provide any services beyond these terms and conditions. GoBook d.o.o. Visoko shall\n' +
-    'not be held liable or responsible for printing errors.\n' +
-    '14. Obligations of travelers\n' +
+    'not be held liable or responsible for printing errors.\n\n' +
+    '14. Obligations of travelers\n\n' +
     'The travelers are bound to make sure to personally meet all the requirements provided for by\n' +
     'regulations of Bosnia and Herzegovina and any other country in which the tour take place or goes\n' +
     'through, as well as to abide by the rules and regulations of hotels and other facilities and to\n' +
     'cooperate with representatives of the tour operator and service providers. The travelers\n' +
     '\n' +
-    'Društvo za posredovanje u turizmu i nekretninama GoBook d.o.o. Visoko\n' +
-    'Alaudin 10, 71300 Visoko\n' +
-    'www.gobook.ba, mail: gobook@gobook.ba\n' +
-    'Tel: +387 32 , mob: +387 61\n' +
-    'Društvo je registrovano u općinskom sudu u Zenici, JIB:\n' +
-    'Sparkasse Bank d.d. Sarajevo, Transakcijski račun:\n' +
-    'Šifra pretežne djelatnosti:\n' +
-    'Upisani i uplaćeni kapital: 1.000,00 KM\n' +
     'themselves shall be held solely responsible for any damages they cause, particularly for damages\n' +
     'resulting from their failure to abide by the contract and these general terms and conditions. The\n' +
     'travelers shall pay for any damages that they have caused immediately at the hotel reception or at\n' +
     'some other place designated by the legal entity or natural person that have sustained the\n' +
     'aforementioned damages.\n' +
     'GoBook d.o.o. Visoko shall deem that the traveler has read and fully accepted the General Terms\n' +
-    'and Conditions when they sign the contract and when they make the deposit.\n' +
-    '15. Personal data protection\n' +
+    'and Conditions when they sign the contract and when they make the deposit.\n\n' +
+    '15. Personal data protection\n\n' +
     'Travelers provide their personal information to GoBook d.o.o. Visoko of their own free will.\n' +
     'GoBook d.o.o. Visoko needs the said personal information in order to provide the requested\n' +
     'services, and GoBook d.o.o. Visoko hereby undertakes to use such information only for mutual\n' +
@@ -284,8 +233,8 @@ const terms = '1. General\n' +
     'provided to the insurance company. The travelers’ personal details shall be stored and kept in\n' +
     'data base in accordance with the decision of the Company’s management on the method of\n' +
     'collecting, processing and storing personal data of travelers. The parties give their express\n' +
-    'consent for their personal details to be used for marketing purposes by GoBook d.o.o. Visoko.\n' +
-    '16. Final provisions\n' +
+    'consent for their personal details to be used for marketing purposes by GoBook d.o.o. Visoko.\n\n' +
+    '16. Final provisions\n\n' +
     'These General Terms and Conditions constitute and integral part of any contract signed. By\n' +
     'signing a contract, the traveler fully accepts the defined package tour as well as the\n' +
     'aforementioned terms and conditions.'

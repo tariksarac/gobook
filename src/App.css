@@ -1,5 +1,6 @@
 body {
   --main-text-color: #33a3fc;
+  --second-text-color: #0ac66a;
   font-family: Roboto;
   background-color: #f2f2f2;
   font-size: 18px;
@@ -109,6 +110,13 @@ p {
   grid-area: main;
 }
 
+.terms-condition {
+  grid-area: main;
+  padding: 100px 160px;
+  white-space: pre;
+  text-align: left;
+}
+
 @media only screen and (max-width: 600px) {
   body {
 
@@ -181,7 +189,12 @@ p {
     z-index: 6;
   }
 
-
+  .terms-condition {
+    grid-area: main;
+    padding: 50px 5px;
+    white-space: pre-wrap;
+    text-align: left;
+  }
 
 
 }

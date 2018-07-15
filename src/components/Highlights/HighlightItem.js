@@ -20,7 +20,7 @@ const HighlightItem = ({data, reverse}) => {
                 <div className={'HighlightItem'}>{data.town}</div>
                 { data.highLights && data.highLights .map((item, index) => <p key={index}>{item}</p>)}
             </div>
-            <div className={'Highlights-image'}><img src={sarajevo} alt={''}/></div>
+            <div className={'Highlights-image'}><img src={data.image} alt={''}/></div>
             {/*<div style={{width:'50%', height: '100%'}}>*/}
                 {/*<div className={'Highlights-image'} style={featuredStyle}><span>twst</span></div>*/}
             {/*</div>*/}

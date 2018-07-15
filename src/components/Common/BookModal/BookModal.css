@@ -1,6 +1,6 @@
-input[type='date']:after {
-    content: attr(placeholder)
-}
+/*input[type='date']:after {*/
+    /*content: attr(placeholder)*/
+/*}*/
 .book-modal {
     /*position: fixed;*/
     /*margin: 0 auto;*/
@@ -31,6 +31,9 @@ input[type='date']:after {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
+    max-height: 600px;
+    overflow-y: scroll;
 }
 
 .book-modal .book-modal-wide {
@@ -54,6 +57,7 @@ input[type='date']:after {
 .book-modal .headline-modal {
     padding-bottom: 30px;
     padding-top: 50px;
+    text-transform: uppercase;
 }
 
 .book-modal form {
@@ -111,14 +115,27 @@ input[type='date']:after {
     font-family: Roboto;
 }
 
-.book-modal form input[type='date']::placeholder{
-    content: 'Date';
+.book-modal .action-link {
+    text-align: center;
+    color: var(--main-text-color);
+    padding: 5px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
-.book-modal .action-link {
-    text-align: left;
-    color: var(--main-text-color);
-    padding: 20px;
+.book-modal .or {
+    text-align: center;
+    color: gray;
+    padding: 2px;
+}
+
+.date-field {
+    border: 0;
+}
+
+.date-field {
+    border: 0;
 }
 
 @media only screen and (max-width: 600px) {
