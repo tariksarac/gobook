@@ -11,7 +11,7 @@ const CreateTour = ({ style, tourItem }) => {
                 {tourItem ? selectedTour : 'Choose a tour'}
             </Typography>
             <form action="https://formspree.io/tarik.sarac@gmail.com" method="POST" name={'CreateTour'}>
-                <select disabled={!!tourItem}>
+                <select disabled={!!tourItem} name={'tour'} id={'tour'}>
                     <option value={'Not selected'}>Select your option</option>
                     <option
                         selected={selectedTour==='THE BEST OF BOSNIA & HERZEGOVINA TOUR'}
