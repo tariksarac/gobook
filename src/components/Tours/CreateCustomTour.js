@@ -1,28 +1,28 @@
 import React from 'react'
-import TextField from '@material-ui/core/TextField';
-import { withStyles } from '@material-ui/core/styles';
+// import TextField from '@material-ui/core/TextField';
+// import { withStyles } from '@material-ui/core/styles';
 import BookButton from "../Common/BookButton/BookButton";
 import Typography from '@material-ui/core/Typography';
 
 
 
-const styles = theme => ({
-    textField: {
-        fontSize: '16px',
-        width: '100%'
-    },
-    colorPrimary: {
-        color: 'red' // Replace with your own color
-    },
-    uppercase: {
-        textTransform: 'uppercase'
-    },
-    inputField: {
-        '&:after': {
-            backgroundColor: 'blue'
-        }
-    }
-});
+// const styles = theme => ({
+//     textField: {
+//         fontSize: '16px',
+//         width: '100%'
+//     },
+//     colorPrimary: {
+//         color: 'red' // Replace with your own color
+//     },
+//     uppercase: {
+//         textTransform: 'uppercase'
+//     },
+//     inputField: {
+//         '&:after': {
+//             backgroundColor: 'blue'
+//         }
+//     }
+// });
 
 const CreateCustomTour = ({ style }) => {
     return (
@@ -84,4 +84,4 @@ const CreateCustomTour = ({ style }) => {
     );
 };
 
-export default withStyles(styles)(CreateCustomTour)
+export default CreateCustomTour
