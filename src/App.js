@@ -59,7 +59,6 @@ import Terms from './components/Terms/Terms';
 class App extends Component {
     render() {
         return (
-            <MuiThemeProvider theme={theme}>
                 <AppContext.Provider value={tours}>
                     <Router>
                         <div className="App">
@@ -76,7 +75,6 @@ class App extends Component {
                         </div>
                     </Router>
                 </AppContext.Provider>
-            </MuiThemeProvider>
         );
     }
 }
