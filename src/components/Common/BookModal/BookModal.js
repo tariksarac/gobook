@@ -126,7 +126,9 @@ const CreateTour = ({ style, tourItem }) => {
                 {/*<input placeholder="Date" type="text" onFocus="this.type='date';*/}
                 {/*this.setAttribute('onfocus','');this.blur();this.focus();"/>*/}
 
-                <input id={'date'} type={'date'} name={'Date'} placeholder={'Date'}/>
+                {/*<input id={'date'} type={'date'} name={'Date'} placeholder={'Date'}/>*/}
+                <input placeholder="Select Date" className="textbox-n" type="text" onFocus={(e) => e.target.type='date'}
+                       onBlur={(e) => e.target.type='text'} id="select-date"/>
                 <input id={'country'} placeholder={'Where are you from'} type={'text'} name={'Country'} />
                 <BookButton type={"submit"} value="Book" buttonText={"Book"} style={{ width: '100%', height:'35px' }} />
             </form>

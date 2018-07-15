@@ -62,7 +62,7 @@ class Tour extends React.Component {
                                 data={tourItem.includesInTour.filter(item => !item.include)}
                                 title={'NOT INCLUDED:'}
                             />
-                            <BookButton onClickAction={this.bookAction} />
+                            <BookButton onClickAction={this.bookAction} buttonText={'Book Now!'}/>
                             <BookModal handleClose={this.bookAction} openModal={this.state.modalOpen} tourItem={tourItem}/>
                         </div>
                     );

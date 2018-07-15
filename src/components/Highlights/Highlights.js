@@ -2,7 +2,6 @@ import React from 'react'
 import Section from "../Section/Section";
 import './Highlights.css'
 import HighlightItem from "./HighlightItem";
-import { sarajevo} from "../../constants/constants";
 
 const Highlights = ({highlights}) => {
     return(

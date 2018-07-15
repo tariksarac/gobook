@@ -26,6 +26,7 @@ class BookButton extends Component {
         };
         return (
             <button
+                {...rest}
                 className={'BookButton'}
                 style={{...style, ...buttonStyle}}
                 onClick={onClickAction}
