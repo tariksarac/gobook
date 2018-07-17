@@ -3,8 +3,13 @@
 }
 
 .Tour .originalClass {
-    max-height: 600px;
+    max-height: 400px;
 }
+
+
+/*.Tour .image-gallery-image {*/
+    /*max-height: 400px;*/
+/*}*/
 
 @media only screen and (max-width: 600px){
     .Tour .originalClass {

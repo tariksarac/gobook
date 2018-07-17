@@ -1,5 +1,5 @@
 input[type='date']:after {
-     content: attr(placeholder)
+     content: attr(placeholder);
  }
 .book-modal {
     /*position: fixed;*/

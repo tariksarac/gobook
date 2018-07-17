@@ -19,12 +19,16 @@ const ExpansionItem = ({ data, classes, include, itinerary }) => {
                 {itinerary && <div className={'title'}>{`${data.name}   ${data.place}`}</div>}
                 {!itinerary && <div className={'title'}>{data.includeText}</div>}
             </ExpansionPanelSummary>
-            <ExpansionPanelDetails >
+            <ExpansionPanelDetails style={{flexDirection: 'column'}}>
                 {itinerary &&
                     data.introDescription && (
-                        <Typography component="p" align={'left'} style={{borderBottom: '1px solid'}}>
+                        <Typography component="p" align={'left'} style={{borderBottom: !data.descriptionDetails && '1px solid'}}>
                             {data.introDescription}
                         </Typography>
+                    )}
+                {itinerary &&
+                    data.descriptionDetails && (
+                      <div style={{borderBottom: data.descriptionDetails && '1px solid'}}>{data.descriptionDetails.map((item, index) => <p key={index}><strong>{item.emphasize}</strong>{item.text}</p>)}</div>
                     )}
                 {!itinerary &&
                     data.includeDescription && (

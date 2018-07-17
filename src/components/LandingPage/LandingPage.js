@@ -7,10 +7,10 @@ import ProductsContainer from '../Product/ProductsContainer';
 import {
     about,
     stariMostNaslovna,
-    firstHeading,
-    firstSubHeading,
+    mainHeading,
+    mainSubheading,
     lastSubHeading,
-    offer,
+    offer, whyBosniaIntro,
 } from '../../constants/constants';
 import { tours } from '../../constants/constants';
 import BookModal from '../Common/BookModal/BookModal';
@@ -43,12 +43,13 @@ class LandingPage extends Component {
         return (
             <div className={'App-main'}>
                 <FeaturedPicture
-                    title={firstHeading}
-                    subTitle={firstSubHeading}
+                    title={mainHeading}
+                    subTitle={mainSubheading}
                     picture={stariMostNaslovna}
                 />
                 <Heading heading={'Take a break and relax'} line subTitle={about} style={customStyle} />
-                <Heading heading={'Go Book'} line subTitle={offer} style={whiteBackground} />
+                <Heading heading={'What to expect'} line subTitle={whyBosniaIntro } style={whiteBackground} />
+                <Heading heading={'Go Book'} line subTitle={offer} />
                 <ProductsContainer products={tours} />
                 <Heading subTitle={lastSubHeading} line style={customStyle} />
                 <BookButton onClickAction={this.bookAction} buttonText={'Book'}/>

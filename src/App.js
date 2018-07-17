@@ -13,49 +13,6 @@ import WhyBosnia from './components/WhyBosnia/WhyBosnia';
 import About from './components/About/About';
 import Terms from './components/Terms/Terms';
 
-// import { MuiThemeProvider, createMuiTheme, withStyles } from '@material-ui/core/styles';
-
-// const theme = createMuiTheme({
-//     // palette: {
-//     //     primary: '#33a3fc',
-//     //     secondary: '#fff'
-//     // },
-//     overrides: {
-//         MuiButton: {
-//             root: {
-//                 color: 'white',
-//                 '&:hover': {
-//                     color:'#33a3fc',
-//                     backgroundColor: 'white',
-//                     border: '1px solid',
-//                     borderColor: '#33a3fc'
-//                 },
-//                 backgroundColor: '#33a3fc',
-//                 width: '300px',
-//                 height: '50px',
-//                 borderRadius: '10px',
-//                 transition:'all 0.2s ease',
-//                 cursor: 'pointer',
-//             }
-//         },
-//         MuiInput: {
-//             root : {
-//                 height: '35px',
-//                 '&:before': {
-//                     display: 'none'
-//                 },
-//                 backgroundColor:'#fff',
-//             }
-//         }
-//     }
-// });
-
-// const styles = {
-//     root: {
-//         display: 'flex',
-//     },
-// };
-
 class App extends Component {
     render() {
         return (

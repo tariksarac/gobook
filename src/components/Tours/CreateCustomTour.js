@@ -20,9 +20,11 @@ class CreateCustomTour extends React.Component {
                 <Typography id="modal-title" align={'center'} variant={'headline'} className={'headline-modal'}>
                     Create your own tour
                 </Typography>
-                <form action="https://formspree.io/tarik.sarac@gmail.com" method="POST" name={'CreateCustomTour'}>
-                    <input id={'firstName'} placeholder={'First Name'} type={'text'} name={'First Name'} />
-                    <input id={'surname'} placeholder={'Last Name'} type={'text'} name={'Last Name'} />
+                <form action="https://formspree.io/tarik.sarac@gmail.com" method="POST" >
+                    <input type="hidden" name="_subject" value="New submission from custom tour!" />
+                    {/*<input type="hidden" name="_cc" value="another@email.com" />*/}
+                    <input id={'fullName'} placeholder={'Full Name'} type={'text'} name={'Full Name'} />
+                    <input id={'email'} placeholder={'Email'} type={'email'} name={'_replyto'} />
                     <input id={'number'} placeholder={'Number of people'} type={'number'} name={'Number'} />
                     <input id={'place'} placeholder={'Place to visit'} type={'text'} name={'Place'} />
                     <input id={'date'} placeholder={'Start Date'} type={'date'} name={'Date'} />

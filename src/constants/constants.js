@@ -5,6 +5,7 @@ export const sarajevo2 = require('../images/Sarjevo_2.jpg');
 //jajce
 export const miketa = require('../images/sarajevo-jajce.JPG');
 export const jajceVodopad = require('../images/jajce3.jpg');
+export const jajceVodopadStarigrad = require('../images/vodopad.jpg');
 
 //mostar
 export const stariMost = require('../images/architecture-3176756_1280.jpg');
@@ -19,14 +20,16 @@ export const landscape = require('../images/Landcapes of Bosnia and Herzegovina.
 export const nightinsaraejvo = require('../images/night-in-sarajevo-2-1221424.jpg')
 
 //landing page
-export const firstHeading = 'THE BEST OF BOSNIA & HERZEGOVINA TOURS';
-export const firstSubHeading = 'Experience the incredible Bosnia and Herzegovina';
+        // FeaturedImage component
+export const mainHeading = 'THE BEST OF BOSNIA & HERZEGOVINA TOURS';
+export const mainSubheading = 'Experience the incredible Bosnia and Herzegovina';
+        //Heading
 export const heading = 'Take a break and relax';
 export const about =
     'Visit the heart-shaped country, the place where the East meets the West, ' +
     'the country with exceptionally rich gastronomy, magical natural beauty and warm-hearted people. ' +
     'Enjoy the Bosnian coffee drinking ritual.';
-
+        //Heading2
 export const offer =
     'In our offer we highlight the trips which represent the best and must-see destinations in Bosnia and Herzegovina';
 
@@ -147,26 +150,26 @@ export const mostar =
 export const jezero =
     'https://drscdn.500px.org/photo/150980049/q%3D80_m%3D2000/v2?webp=true&sig=4577267c9a336325e79d9364e54d5143b4fc3050b442bb8cbf7587a53a35f465';
 
-export const products = [
-    {
-        name: 'Sarajevo-Jajce-Mostar',
-        images: [sarajevo, mostar],
-        description: '6 noćenja, 7 dana',
-        price: '100$',
-    },
-    {
-        name: 'Sarajevo-Jajce',
-        images: [sarajevo, jajce],
-        description: '4 noćenja, 5 dana',
-        price: '100$',
-    },
-    {
-        name: 'Sarajevo-Mostar',
-        images: [sarajevo, mostar],
-        description: '4 noćenja, 5 dana',
-        price: '100$',
-    },
-];
+// export const products = [
+//     {
+//         name: 'Sarajevo-Jajce-Mostar',
+//         images: [sarajevo, mostar],
+//         description: '6 noćenja, 7 dana',
+//         price: '100$',
+//     },
+//     {
+//         name: 'Sarajevo-Jajce',
+//         images: [sarajevo, jajce],
+//         description: '4 noćenja, 5 dana',
+//         price: '100$',
+//     },
+//     {
+//         name: 'Sarajevo-Mostar',
+//         images: [sarajevo, mostar],
+//         description: '4 noćenja, 5 dana',
+//         price: '100$',
+//     },
+// ];
 
 export const sarajevoHighlights = { image: sarajevo2, town: 'Sarajevo', highLights: ['Enyoy the local cuisine', 'Visit the heart of the city,in the centre of Baščaršija,famous square „The Sebilj“',
         'Take a break,and relax with the famous coffe in Sarajevo',
@@ -186,7 +189,7 @@ export const tours = [
     {
         name: 'Sarajevo-Jajce-Mostar',
         title: 'THE BEST OF BOSNIA & HERZEGOVINA TOUR',
-        description: '6 noćenja, 7 dana',
+        description: 'Seven day trip',
         featuredPicture: sebilj,
         placeByDay: [
             {
@@ -311,7 +314,7 @@ export const tours = [
                 originalClass: 'originalClass'
             },
             {
-                original: miketa,
+                original: jajceVodopadStarigrad,
                 thumbnail: jajce,
                 originalClass: 'originalClass'
             },
@@ -361,7 +364,7 @@ export const tours = [
     {
         name: 'Sarajevo-Jajce',
         title: 'BEST OF BOSNIA ',
-        description: '4 noćenja, 5 dana',
+        description: 'Five day trip',
         featuredPicture: miketa,
         placeByDay: [
             {
@@ -564,7 +567,7 @@ export const tours = [
     {
         name: 'Sarajevo-Mostar',
         title: 'BOSNIA & HERZEGOVINA INTRO TOUR',
-        description: '4 noćenja, 5 dana',
+        description: 'Five day trip',
         featuredPicture: stariMost,
         placeByDay: [
             {

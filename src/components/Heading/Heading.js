@@ -5,7 +5,7 @@ const Heading = ({ subTitle, heading, line, color, margin, about, style, large }
     return (
         <div className={'Heading'} style={{ ...style }}>
             {heading && (
-                <div className={`main-heading `} style={{ fontSize: large && '50px' }}>
+                <div className={`main-heading ${large && 'large'}`} >
                     {heading}
                 </div>
             )}

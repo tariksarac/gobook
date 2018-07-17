@@ -11,6 +11,7 @@ const CreateTour = ({ style, tourItem }) => {
                 {tourItem ? selectedTour : 'Choose a tour'}
             </Typography>
             <form action="https://formspree.io/tarik.sarac@gmail.com" method="POST" name={'CreateTour'}>
+                <input type="hidden" name="_subject" value="New submission !" />
                 <select disabled={!!tourItem} name={'tour'} id={'tour'}>
                     <option value={'Not selected'}>Select your option</option>
                     <option
@@ -29,6 +30,7 @@ const CreateTour = ({ style, tourItem }) => {
                 </select>
                 <input id={'firstName'} placeholder={'First Name'} type={'text'} name={'First Name'} />
                 <input id={'surname'} placeholder={'Last Name'} type={'text'} name={'Last Name'} />
+                <input id={'email'} placeholder={'Email'} type={'email'} name={'_replyto'} />
                 <input id={'number'} placeholder={'Number of people'} type={'number'} name={'Number'} />
                 {/*<input placeholder="Date" type="text" onFocus="this.type='date';*/}
                 {/*this.setAttribute('onfocus','');this.blur();this.focus();"/>*/}

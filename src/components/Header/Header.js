@@ -4,7 +4,8 @@ import Social from "./Social";
 import { Link } from 'react-router-dom'
 
 
-const logo = require('../../images/logo.jpeg')
+// const logo = require('../../images/logo.jpeg')
+const largeLogo = require('../../images/largeLogo.png')
 
 class Header extends React.Component {
     constructor() {
@@ -27,7 +28,7 @@ class Header extends React.Component {
             <header className="App-header" style={{backgroundColor: open && 'transparent'}}>
                 <div className={'header-content'}>
                     <div className={'header-items'} style={{left: open && '0%'}}>
-                        <Link id={'logo'} className={'header-item'}  to="/" onClick={() => this.setState({open :false})} style={{display:'flex', alignItems:'center'}}> <img className={'logo'} src={logo} style={{margin: '0'}} alt={''}/></Link>
+                        <Link id={'logo'} className={'header-item'}  to="/" onClick={() => this.setState({open :false})} style={{display:'flex', alignItems:'center'}}> <img className={'logo'} src={largeLogo} style={{margin: '0'}} alt={''}/></Link>
                         <Link className={'header-item mobile-home'} to="/" onClick={() => this.setState({open :false})}>Home</Link>
                         <Link className={'header-item'} to="/why-bosnia" onClick={() => this.setState({open :false})}>Why Bosnia</Link>
                         <Link className={'header-item'} to="/about" onClick={() => this.setState({open :false})}>About</Link>

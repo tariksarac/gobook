@@ -94,8 +94,8 @@ p {
 
 
 .App .App-header .header-content img {
-  height: 55px;
-  width: 55px;
+  height: auto;
+  width: 140px;
   margin-bottom: auto;
   margin-top: auto;
   padding-right: 10px;
