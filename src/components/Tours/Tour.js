@@ -32,7 +32,7 @@ class Tour extends React.Component {
                     let tourItem = value.find(item => item.name === this.props.match.params.name);
                     return (
                         <div className={'Tour'}>
-                            <Heading heading={tourItem.title} subTitle={about} style={customStyle} />
+                            <Heading heading={tourItem.title}  style={customStyle} />
                             <ImageGallery
                                 items={tourItem.gallery}
                                 showThumbnails={false}
@@ -54,14 +54,17 @@ class Tour extends React.Component {
                             />
                             <Itinerary data={tourItem.placeByDay} itinerary />
                             <Include
-                                data={tourItem.includesInTour.filter(item => item.include)}
+                                data={tourItem.includesInTour}
                                 include
                                 title={'PRICE INCLUDES:'}
                             />
                             <Include
-                                data={tourItem.includesInTour.filter(item => !item.include)}
+                                data={tourItem.notIncludesInTour}
                                 title={'NOT INCLUDED:'}
                             />
+                            <Heading about={'The tour requires minimum 4 guests to apply. The general traveling conditions of the GoBook tour organizer apply to this tour.\n' +
+                            'GoBook reserves the right to cancel the tour without any explanations.\n' +
+                            '\n'}/>
                             <BookButton onClickAction={this.bookAction} buttonText={'Book Now!'}/>
                             <BookModal handleClose={this.bookAction} openModal={this.state.modalOpen} tourItem={tourItem}/>
                         </div>

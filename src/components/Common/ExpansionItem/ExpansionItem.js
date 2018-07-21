@@ -8,35 +8,25 @@ import Place from '@material-ui/icons/Place';
 import Check from '@material-ui/icons/Check';
 import Error from '@material-ui/icons/Error';
 import './ExpansionItem.css';
+import * as Markdown from 'react-markdown';
 
 const ExpansionItem = ({ data, classes, include, itinerary }) => {
+    debugger
     return (
         <ExpansionPanel className={'ext-panel'}>
             <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} className={'exp-sum'}>
                 {itinerary && <Place />}
                 {include && <Check />}
                 {include === undefined && itinerary === undefined && <Error />}
-                {itinerary && <div className={'title'}>{`${data.name}   ${data.place}`}</div>}
-                {!itinerary && <div className={'title'}>{data.includeText}</div>}
+                { data && <Markdown source={data.title} className={'go-book-text'} /> }
+                {/*{itinerary && <div className={'title'}>{`${data.name}   ${data.place}`}</div>}*/}
+                {/*{!itinerary && <div className={'title'}>{data.includeText}</div>}*/}
             </ExpansionPanelSummary>
-            <ExpansionPanelDetails style={{flexDirection: 'column'}}>
-                {itinerary &&
-                    data.introDescription && (
-                        <Typography component="p" align={'left'} style={{borderBottom: !data.descriptionDetails && '1px solid'}}>
-                            {data.introDescription}
-                        </Typography>
-                    )}
-                {itinerary &&
-                    data.descriptionDetails && (
-                      <div style={{borderBottom: data.descriptionDetails && '1px solid'}}>{data.descriptionDetails.map((item, index) => <p key={index}><strong>{item.emphasize}</strong>{item.text}</p>)}</div>
-                    )}
-                {!itinerary &&
-                    data.includeDescription && (
-                        <Typography component="p" align={'left'}>
-                            {data.includeDescription}
-                        </Typography>
-                    )}
-            </ExpansionPanelDetails>
+            { data && <ExpansionPanelDetails style={{ flexDirection: 'column' }} className={'exp-details'}>
+                { data.introDescription && (
+                    <Markdown source={data.introDescription} className={'go-book-text'} />
+                )}
+            </ExpansionPanelDetails> }
         </ExpansionPanel>
     );
 };

@@ -32,4 +32,7 @@
     .ext-panel .exp-sum .title{
         text-align: left;
     }
+    .ext-panel .exp-details {
+        padding: 0;
+    }
 }

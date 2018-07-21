@@ -117,6 +117,27 @@ p {
   text-align: left;
 }
 
+.go-book-text  {
+  padding-left: 5px;
+}
+
+.go-book-text  p{
+  font-size: 15px;
+  text-align: left;
+  white-space: pre-wrap;
+}
+.go-book-text  li{
+  font-size: 15px;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+.go-book-text  h5{
+  margin: 0;
+  line-height: 24px;
+  text-align: left;
+}
+
 @media only screen and (max-width: 600px) {
   body {
 
