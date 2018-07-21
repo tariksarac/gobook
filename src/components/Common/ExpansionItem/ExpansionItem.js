@@ -11,7 +11,6 @@ import './ExpansionItem.css';
 import * as Markdown from 'react-markdown';
 
 const ExpansionItem = ({ data, classes, include, itinerary }) => {
-    debugger
     return (
         <ExpansionPanel className={'ext-panel'}>
             <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} className={'exp-sum'}>
