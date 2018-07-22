@@ -23,7 +23,7 @@ class App extends Component {
                             <ScrollToTop>
                                 <Route exact path="/" component={LandingPage} />
                                 <Route path="/why-bosnia" component={WhyBosnia} />
-                                <Route path="/about" component={About} />
+                                {/*<Route path="/about" component={About} />*/}
                                 <Route path="/tour/:name" component={Tour} />
                                 <Route path="/contact" component={Contact} />
                                 <Route path="/terms-of-use" component={Terms} />

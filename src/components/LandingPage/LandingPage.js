@@ -10,7 +10,7 @@ import {
     mainHeading,
     mainSubheading,
     lastSubHeading,
-    offer, whyBosniaIntro,
+    offer, whyBosniaIntro, jajceVodopadStarigrad,
 } from '../../constants/constants';
 import { tours } from '../../constants/constants';
 import BookModal from '../Common/BookModal/BookModal';
@@ -45,7 +45,7 @@ class LandingPage extends Component {
                 <FeaturedPicture
                     title={mainHeading}
                     subTitle={mainSubheading}
-                    picture={stariMostNaslovna}
+                    picture={'https://images.ctfassets.net/0o22ljw5du6a/6ag1DNKk00kGSymkQuwmsa/2759a7e9ef9f2fdc391c642c89310e9b/bosnia-2058087_1280.jpg'}
                 />
                 <Heading heading={'Take a break and relax'} line subTitle={about} style={customStyle} />
                 <Heading heading={'What to expect'} line subTitle={whyBosniaIntro } style={whiteBackground} />

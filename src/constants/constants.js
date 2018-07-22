@@ -49,7 +49,7 @@ export const whyBosniaIntro =
 export const whyBosniaData = {
     whyBosniaIntro:
         'In a very short period Bosnia and Herzegovina has become a well-known tourist and one Europe’s exotic destinations. The cities and towns of Bosnia and Herzegovina have rich history, beautiful nature, tasty local food and warm-hearted and pleasant people. People in Bosnia and Herzegovina know how to enjoy. We invite you to be our guests! Below we shall endeavor to give you a taste of some of the beauties of our country and share with you opinions of those who have experienced a breath of this ambiance. Many famous magazines and adventurers have rated Bosnia and Herzegovina’s sights very high. We give to you ten reasons we believe should make you decide to visit Bosnia and Herzegovina.',
-    mainImage: stariMost,
+    mainImage: 'https://images.ctfassets.net/0o22ljw5du6a/3CcO4n2304CWoQIoICGEqA/22c9f965aac9feb79d0cb770301f0c85/jajce_jezero.jpg',
     sights: [
         {
             title: '#1 Landscapes of Bosnia and Herzegovina',
@@ -57,35 +57,35 @@ export const whyBosniaData = {
                 'Bosna and Herzegovina still has unspoiled nature, clean rivers, incredible views and beautiful forests abundant with different flora and\n' +
                 'fauna. In the south of the country, one can find not very extensive but highly valuable seacoast with crystal clear water. Our landscapes\n' +
                 'offer beautiful views which greatly vary from place to place.',
-            image: landscape,
+            image: 'https://images.ctfassets.net/0o22ljw5du6a/4IgVuA1CmAcAsouykCagAE/77d7f5940299662dba278486e723ddab/Landcapes_of_Bosnia_and_Herzegovina.jpg',
         },
         {
             title: '#2 The Past',
             text:
                 'In some towns you have a feeling that the time has stood still; local population still honors old customs and lifestyle. The air appears to be\n' +
                 'cleaner and you have this feeling that everyone knows everyone.',
-            image: null,
+            image: 'https://images.ctfassets.net/0o22ljw5du6a/f1GN3cZqA8IeSc8qSA8CM/c7b78e166a2f602d6e18206e99b273f2/muzej_avnoja.jpg',
         },
         {
             title: '#3 Excellent inexpensive food',
             text:
                 'Bosnia and Herzegovina is a true gourmet paradise. Here you can taste various dishes hailing from Ottoman, Austro-Hungarian and Balkan\n' +
                 'cuisines. The food is almost completely locally produced and the guests are offered a great choice of delicacies.',
-            image: cevapcici,
+            image: 'https://images.ctfassets.net/0o22ljw5du6a/16xuIULbSaAOuQGWUGYeA8/e69d82ec2495e7b0b2fbffdc97245eff/IMG-00a3e414c526b75069192c7a0704e558-V.jpg',
         },
         {
             title: '#4 Good hosts',
             text:
                 'Our people are known as “merhametli” (kind-hearted) – people who are ready to offer you’re the warmest and most hospitable welcome.\n' +
                 'There are no limitations, we easily make true friendships, not few of which last a lifetime.',
-            image: null,
+            image: null
         },
         {
             title: '#5 Spirit of Adventure',
             text:
                 'In Bosnia and Herzegovina at the same time you can enjoy mountaineering, mountain biking, rafting, swimming or skiing. Few countries can\n' +
                 'boast of such natural beauties!',
-            image: null,
+            image: 'https://images.ctfassets.net/0o22ljw5du6a/1r1g5zVwV6U2YyUU20AycK/bcf9f5894604b45120f74a42e105129f/_5_spirit_of_adventure.jpg',
         },
         {
             title: '#6 History-Rich and Diverse Sarajevo',
@@ -93,21 +93,21 @@ export const whyBosniaData = {
                 'Sarajevo is the capital which brings together the East and the West. One moment you believe that you are in Vienna, the next moment you\n' +
                 'feel a breath of Istanbul. Despite the recent war period which left deep scars, Sarajevo is a city radiant with life and where people live their\n' +
                 'lives to the fullest. Each times it enchants you with its beauties which are not easy to forget.',
-            image: nightinsaraejvo,
+            image: 'https://images.ctfassets.net/0o22ljw5du6a/5eSwe0UulaMeCOicKYCsIS/a527bd35056150c175c0e16eb4dd04ee/s5.jpg',
         },
         {
             title: '#7 Beautiful Una',
             text:
                 'Una offers magical rapids and waterfalls, which can satisfy the adventurous spirit of even the most demanding guests. In late July, the now\n' +
                 'famous Una Regata takes place, attracting a significant number of adventurers.',
-            image: null,
+            image: 'https://images.ctfassets.net/0o22ljw5du6a/6gzbNv3j3iwIiuoOcyyaWo/13afe067a937425e7beea866e1dfaa38/_4_good_hosts.jpg',
         },
         {
             title: '#8 Mostar Old Bridge',
             text:
                 'Thanks to its appearance and features, Mostar and the Old Bridge will captivate you with their history. After the war and destruction of the\n' +
                 'Old Bridge, the bridge was reconstructed and each summer the traditional Old Bridge Diving Competition takes place there.',
-            image: stariMost,
+            image: 'https://images.ctfassets.net/0o22ljw5du6a/uN3cTyMFXiA42MCWWyMWc/0280e27bdb9c006e1817e1028a632738/architecture-3176756_1280.jpg',
         },
         {
             title: '#9 Coffee-Drinking Culture',
@@ -116,7 +116,7 @@ export const whyBosniaData = {
                 'relax and enjoy. Sarajevo is one of those cities which offer an endless number of both oriental and European style cafés, where visitors can\n' +
                 'just sit back, enjoy and have a cup of coffee. Traditional Bosnian coffee is served in a small cezve pot often with a Turkish delight to\n' +
                 'sweeten it up.',
-            image: coffe,
+            image: 'https://images.ctfassets.net/0o22ljw5du6a/zckzSK1MqsMOs24Mkwgy8/2726151bd48aa52550f6297e14d07002/A6508045.JPG',
         },
         {
             title: '#10 Fortresses',
@@ -125,7 +125,7 @@ export const whyBosniaData = {
                 'new ones. Those fortresses were given over to the Austro-Hungarian Empire later on, and they continued to improve them. Jajce is the\n' +
                 'town with one of the most famous fortresses in Bosnia. Once it was the royal seat of Bosnia’s medieval kings. Other towns which boast well\n' +
                 'preserved medieval fortresses include: Gradačac, Tešanj, Maglaj, Banja Luka, Doboj…',
-            image: fortres,
+            image: 'https://images.ctfassets.net/0o22ljw5du6a/51BRE1WspOqUACoqW8ao60/641b8a032930945f8106f9eb6757270c/Fortresses.jpg',
         },
     ],
     otherAboutBosnia: {
@@ -224,7 +224,7 @@ export const tours = [
         name: 'Sarajevo-Jajce-Mostar',
         title: 'THE BEST OF BOSNIA & HERZEGOVINA TOUR',
         description: 'Seven day trip',
-        featuredPicture: sebilj,
+        featuredPicture: 'https://images.ctfassets.net/0o22ljw5du6a/5Tj9NZ6w4EeUKGKGMKIeQk/10e763518e65e8c95bd248fe5b2963b8/bosnia-and-herzegovina-189575_1280.jpg',
         placeByDay: [
             {
                 title: '##### Day 1 Sarajevo',
@@ -280,13 +280,11 @@ export const tours = [
         ],
         gallery: [
             {
-                original: sarajevo2,
-                thumbnail: sarajevo2,
+                original: 'https://images.ctfassets.net/0o22ljw5du6a/7lpS01ccj68y44gAiAgCym/61c10032876456a9b251ee7b1d5383c8/Sarjevo_2.jpg',
                 originalClass: 'originalClass',
             },
             {
-                original: jajceVodopadStarigrad,
-                thumbnail: jajce,
+                original: 'https://images.ctfassets.net/0o22ljw5du6a/ksIlVwj13UyWie8OcM6Ey/bbf6aa8cc6f0f98d184b8b48c9ce631e/slika12_20_281_20of_201_29.jpg',
                 originalClass: 'originalClass',
             },
             {
@@ -328,7 +326,7 @@ export const tours = [
         name: 'Sarajevo-Jajce',
         title: 'BEST OF BOSNIA ',
         description: 'Five day trip',
-        featuredPicture: miketa,
+        featuredPicture: 'https://images.ctfassets.net/0o22ljw5du6a/5Tj9NZ6w4EeUKGKGMKIeQk/a0a7b5a6fd5584317cc41685a5e181a9/jajce3.jpg',
         placeByDay: [
             {
                 title: '##### Day 1 Sarajevo',
@@ -386,7 +384,7 @@ export const tours = [
             '- Accommodation in Sarajevo- 2 nights\n' +
             '- Accommodation in Jajce- 2 nights',
         },
-        notincludesInTour: {
+        notIncludesInTour: {
             title: '##### Tour does not include:',
             introDescription: '- meals – except from the breakfast at the hotel\n' +
             '- tips\n' +
