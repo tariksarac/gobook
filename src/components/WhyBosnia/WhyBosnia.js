@@ -16,7 +16,7 @@ const WhyBosnia = props => {
                 subTitle={whyBosniaData.whyBosniaIntro}
                 style={customStyle}
             />
-            <FeaturedPicture left picture={whyBosniaData.mainImage} />
+            <FeaturedPicture left picture={whyBosniaData.mainImage} notShadow/>
             {whyBosniaData.sights.map((item, index) => (
                 <TextItem
                     key={index}

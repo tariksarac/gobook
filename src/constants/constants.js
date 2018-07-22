@@ -187,7 +187,7 @@ export const jezero =
 // ];
 
 export const sarajevoHighlights = {
-    image: sarajevo2,
+    image: 'https://images.ctfassets.net/0o22ljw5du6a/w5uCWG3ct2Kak0ua8QU8i/a408f0e0ceea3868dfaec0d6cd9c4883/sarajevo_most.jpg',
     town: 'Sarajevo',
     highLights: [
         'Enyoy the local cuisine',
@@ -221,6 +221,7 @@ export const jajceHighlights = {
 
 export const tours = [
     {
+        id:1,
         name: 'Sarajevo-Jajce-Mostar',
         title: 'THE BEST OF BOSNIA & HERZEGOVINA TOUR',
         description: 'Seven day trip',
@@ -236,10 +237,10 @@ export const tours = [
                 title: '##### Day 2 Sarajevo',
                 introDescription:
                     'Tour of: Baščaršija, bridges on the river Miljacka, National Theater, City Hall, the House of Spite, Sebilj Square,  Coppersmith Street – here you can find antiques, handcrafted copper plates, dishes, cups with oriental decorations and ornaments; Baščaršijska Mosque from 16th century, old Orthodox church, Jewish temple and synagogue, and the Eternal Flame.\n' +
-                    '\t•\t__Sebilj – the heart of Baščaršija –__ is a famous square and one of the most important city fountains; it is always surrounded by pigeons. This is an excellent spot for a short break and your first coffee. All the coffeehouses around the square serve Turkish coffee with Turkish delight (rahat lokum). \n' +
-                    '\t•\t__Latin Bridge,__ also known as the Princip Bridge, as this is the place where Gavrilo Princip in 1914 notoriously assassinated Archduke Franz Ferdinand and his wife Sophie, causing the start of the World Word I.\n' +
-                    '\t•\t__Ćevapi-__ not-to-be-missed when visiting Sarajevo. The saying goes “If you have not eaten ćevapi in Sarajevo, it as if you did not visit Sarajevo at all”. \n' +
-                    '\t•\t__Trebević Cable Car-__ experience a beautiful view of the Bosnia and Herzegovina’s capital city.',
+                    '- __Sebilj – the heart of Baščaršija –__ is a famous square and one of the most important city fountains; it is always surrounded by pigeons. This is an excellent spot for a short break and your first coffee. All the coffeehouses around the square serve Turkish coffee with Turkish delight (rahat lokum). \n' +
+                    '- __Latin Bridge,__ also known as the Princip Bridge, as this is the place where Gavrilo Princip in 1914 notoriously assassinated Archduke Franz Ferdinand and his wife Sophie, causing the start of the World Word I.\n' +
+                    '- __Ćevapi-__ not-to-be-missed when visiting Sarajevo. The saying goes “If you have not eaten ćevapi in Sarajevo, it as if you did not visit Sarajevo at all”. \n' +
+                    '- __Trebević Cable Car-__ experience a beautiful view of the Bosnia and Herzegovina’s capital city.',
             },
             {
                 title: '##### Day 3 Sarajevo- Travnik - Jajce',
@@ -323,10 +324,11 @@ export const tours = [
         highLights: [{ ...sarajevoHighlights }, { ...mostarHighlights }, { ...jajceHighlights }],
     },
     {
+        id:2,
         name: 'Sarajevo-Jajce',
-        title: 'BEST OF BOSNIA ',
+        title: 'BEST OF BOSNIA',
         description: 'Five day trip',
-        featuredPicture: 'https://images.ctfassets.net/0o22ljw5du6a/5Tj9NZ6w4EeUKGKGMKIeQk/a0a7b5a6fd5584317cc41685a5e181a9/jajce3.jpg',
+        featuredPicture: 'https://images.ctfassets.net/0o22ljw5du6a/1MtXniDAFeASewIacAemWw/bc50a27b95f5473c35d123e32ea7832c/vodopad.jpg',
         placeByDay: [
             {
                 title: '##### Day 1 Sarajevo',
@@ -368,13 +370,11 @@ export const tours = [
         ],
         gallery: [
             {
-                original: sarajevo2,
-                thumbnail: sarajevo,
+                original: 'https://images.ctfassets.net/0o22ljw5du6a/7lpS01ccj68y44gAiAgCym/61c10032876456a9b251ee7b1d5383c8/Sarjevo_2.jpg',
                 originalClass: 'originalClass',
             },
             {
-                original: jajceVodopad,
-                thumbnail: jajce,
+                original: 'https://images.ctfassets.net/0o22ljw5du6a/5cQRgZEqHYUIssgQYOQAsy/ef2b74efc55f00c05f3d286eaf89e1c0/vodenice.jpg',
                 originalClass: 'originalClass',
             },
         ],
@@ -396,6 +396,7 @@ export const tours = [
         highLights: [{ ...sarajevoHighlights }, { ...jajceHighlights }],
     },
     {
+        id:3,
         name: 'Sarajevo-Mostar',
         title: 'BOSNIA & HERZEGOVINA INTRO TOUR',
         description: 'Five day trip',

@@ -2,12 +2,9 @@ import React from 'react';
 import './FeaturedPicture.css';
 import Heading from '../Heading/Heading';
 
-const FeaturedPicture = ({ picture, title, subTitle, about, left }) => {
+const FeaturedPicture = ({ picture, title, subTitle, about, left, notShadow }) => {
     let featuredStyle = {
-        background: `linear-gradient(
-      rgba(0, 0, 0, 0.45), 
-      rgba(0, 0, 0, 0.45)
-    ), url(${picture})`,
+        background: `${!notShadow ? 'linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),' : ''} url(${picture})`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         paddingTop: left && '200px',

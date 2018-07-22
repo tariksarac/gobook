@@ -16,22 +16,20 @@ import Terms from './components/Terms/Terms';
 class App extends Component {
     render() {
         return (
-                <AppContext.Provider value={tours}>
-                    <Router>
-                        <div className="App">
-                            <Header />
-                            <ScrollToTop>
-                                <Route exact path="/" component={LandingPage} />
-                                <Route path="/why-bosnia" component={WhyBosnia} />
-                                {/*<Route path="/about" component={About} />*/}
-                                <Route path="/tour/:name" component={Tour} />
-                                <Route path="/contact" component={Contact} />
-                                <Route path="/terms-of-use" component={Terms} />
-                            </ScrollToTop>
-                            <Footer />
-                        </div>
-                    </Router>
-                </AppContext.Provider>
+            <Router>
+                <div className="App">
+                    <Header />
+                    <ScrollToTop>
+                        <Route exact path="/" component={LandingPage} />
+                        <Route path="/why-bosnia" component={WhyBosnia} />
+                        {/*<Route path="/about" component={About} />*/}
+                        <Route path="/tour/:name" component={Tour} />
+                        <Route path="/contact" component={Contact} />
+                        <Route path="/terms-of-use" component={Terms} />
+                    </ScrollToTop>
+                    <Footer />
+                </div>
+            </Router>
         );
     }
 }

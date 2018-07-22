@@ -3,27 +3,28 @@ import BookButton from "../Common/BookButton/BookButton";
 import Typography from "@material-ui/core/Typography/Typography";
 
 const CreateTour = ({ style, tourItem }) => {
-    let selectedTour = tourItem ? tourItem.title : null;
+    let selectedTour = tourItem ? tourItem.id : null;
 
     return (
         <div className={'create-tour'} style={{ ...style }}>
             <Typography id="modal-title" align={'center'} variant={'headline'} className={'headline-modal'}>
-                {tourItem ? selectedTour : 'Choose a tour'}
+                {tourItem ? tourItem.title : 'Choose a tour'}
             </Typography>
             <form action="https://formspree.io/tarik.sarac@gmail.com" method="POST" name={'CreateTour'}>
                 <input type="hidden" name="_subject" value="New submission !" />
                 <select disabled={!!tourItem} name={'tour'} id={'tour'}>
                     <option value={'Not selected'}>Select your option</option>
                     <option
-                        selected={selectedTour==='THE BEST OF BOSNIA & HERZEGOVINA TOUR'}
+                        selected={selectedTour===1}
                         value={'THE BEST OF BOSNIA & HERZEGOVINA TOUR'}>
                         THE BEST OF BOSNIA & HERZEGOVINA TOUR
                     </option>
-                    <option value={'BEST OF BOSNIA'} >
+                    <option value={'BEST OF BOSNIA'} selected={selectedTour===2}>
                         BEST OF BOSNIA
                     </option>
                     <option
                         value={'BOSNIA & HERZEGOVINA INTRO TOUR'}
+                        selected={selectedTour===3}
                     >
                         BOSNIA & HERZEGOVINA INTRO TOUR
                     </option>
