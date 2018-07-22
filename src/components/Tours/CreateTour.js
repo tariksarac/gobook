@@ -10,8 +10,9 @@ const CreateTour = ({ style, tourItem }) => {
             <Typography id="modal-title" align={'center'} variant={'headline'} className={'headline-modal'}>
                 {tourItem ? tourItem.title : 'Choose a tour'}
             </Typography>
-            <form action="https://formspree.io/tarik.sarac@gmail.com" method="POST" name={'CreateTour'}>
+            <form action="https://formspree.io/gobook@gobook.ba" method="POST" name={'CreateTour'}>
                 <input type="hidden" name="_subject" value="New submission !" />
+                <input type="hidden" name="_cc" value="tarik.sarac@gmail.com" />
                 <select disabled={!!tourItem} name={'tour'} id={'tour'}>
                     <option value={'Not selected'}>Select your option</option>
                     <option

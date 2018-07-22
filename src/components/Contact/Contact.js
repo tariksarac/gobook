@@ -11,8 +11,9 @@ class Contact extends React.Component {
                     <div className={'contact-detail'}>
                         gobook@gobook.ba &nbsp; &nbsp; &nbsp; &nbsp;/ &nbsp; &nbsp; &nbsp; &nbsp;Alaudin 10, Visoko&nbsp;&nbsp;&nbsp;&nbsp; /&nbsp; &nbsp;&nbsp;&nbsp; +3876111111
                     </div>
-                    <form action="https://formspree.io/tarik.sarac@gmail.com" method="POST">
+                    <form action="https://formspree.io/gobook@gobook.ba" method="POST">
                         <input type="hidden" name="_subject" value="Someone contact you!" />
+                        <input type="hidden" name="_cc" value="tarik.sarac@gmail.com" />
                         <input id={'name'} placeholder={'Name'} type={'text'} name={'Name'} />
                         <input id={'name'} placeholder={'Email'} type={'email'} name={'_replyto'} />
                         <input placeholder={'Subject'} type={'text'} name={'Subject'} />

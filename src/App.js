@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import LandingPage from './components/LandingPage/LandingPage';
 import Contact from './components/Contact/Contact';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Tour from './components/Tours/Tour';
 import AppContext from './constants/mainContext';
 import { tours } from './constants/constants';
@@ -20,12 +20,15 @@ class App extends Component {
                 <div className="App">
                     <Header />
                     <ScrollToTop>
-                        <Route exact path="/" component={LandingPage} />
-                        <Route path="/why-bosnia" component={WhyBosnia} />
-                        {/*<Route path="/about" component={About} />*/}
-                        <Route path="/tour/:name" component={Tour} />
-                        <Route path="/contact" component={Contact} />
-                        <Route path="/terms-of-use" component={Terms} />
+                        <Switch >
+                            <Route exact path="/" component={LandingPage} />
+                            <Route path="/why-bosnia" component={WhyBosnia} />
+                            {/*<Route path="/about" component={About} />*/}
+                            <Route path="/tour/:name" component={Tour} />
+                            <Route path="/contact" component={Contact} />
+                            <Route path="/terms-of-use" component={Terms} />
+                        </Switch>
+
                     </ScrollToTop>
                     <Footer />
                 </div>
