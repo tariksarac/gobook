@@ -11,7 +11,7 @@ const TextItem = ({title, text, style, image}) => {
             </div>
 
 
-            <div className={'sight-image'}><img src={image} alt={''}/></div>
+            <div className={'sight-image'}><img src={image} alt={title}/></div>
         </div>
     );
 };

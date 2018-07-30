@@ -19,7 +19,7 @@ class App extends Component {
             <Router>
                 <div className="App">
                     <Header />
-                    <ScrollToTop>
+                    {/*<ScrollToTop>*/}
                         <Switch >
                             <Route exact path="/" component={LandingPage} />
                             <Route path="/why-bosnia" component={WhyBosnia} />
@@ -29,7 +29,7 @@ class App extends Component {
                             <Route path="/terms-of-use" component={Terms} />
                         </Switch>
 
-                    </ScrollToTop>
+                    {/*</ScrollToTop>*/}
                     <Footer />
                 </div>
             </Router>

@@ -9,10 +9,10 @@ const Footer = (props) => {
     return (
         <div className={'Footer'}>
             <div className={'footer-contact'}>
-                <span> +387 32 000 000</span>/ <span>+387 61 000 000</span> /<span>gobook@gobook.ba</span>{' '}
+                <span> +387 61 025 015</span><span>gobook@gobook.ba</span>{' '}
             </div>
             <div className={'footer-logo'}>
-                <img src={logo} alt={''} onClick={() => props.history.push('/')}/>
+                <img src={logo} alt={'Go Book'} onClick={() => props.history.push('/')}/>
             </div>
             {/*<div className={'footer-text'}>Go Book</div>*/}
             <div className={'footer-social'}>

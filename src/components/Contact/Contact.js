@@ -9,9 +9,9 @@ class Contact extends React.Component {
                 <div className={'Contact'}>
                     <div className={'contact-heading'}>CONTACT US</div>
                     <div className={'contact-detail'}>
-                        gobook@gobook.ba &nbsp; &nbsp; &nbsp; &nbsp;/ &nbsp; &nbsp; &nbsp; &nbsp;Alaudin 10, Visoko&nbsp;&nbsp;&nbsp;&nbsp; /&nbsp; &nbsp;&nbsp;&nbsp; +3876111111
+                        gobook@gobook.ba &nbsp; &nbsp; &nbsp; &nbsp;/ &nbsp; &nbsp; &nbsp; &nbsp;Alaudin 10, Visoko&nbsp;&nbsp;&nbsp;&nbsp; /&nbsp; &nbsp;&nbsp;&nbsp; +387 61 025 015
                     </div>
-                    <form action="https://formspree.io/gobook@gobook.ba" method="POST">
+                    <form action="https://formspree.io/info@gobook.ba" method="POST">
                         <input type="hidden" name="_subject" value="Someone contact you!" />
                         <input type="hidden" name="_cc" value="tarik.sarac@gmail.com" />
                         <input id={'name'} placeholder={'Name'} type={'text'} name={'Name'} />

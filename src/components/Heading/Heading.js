@@ -5,13 +5,13 @@ const Heading = ({ subTitle, heading, line, color, margin, about, style, large }
     return (
         <div className={'Heading'} style={{ ...style }}>
             {heading && (
-                <div className={`main-heading ${large && 'large'}`} >
+                <h1 className={`main-heading ${large && 'large'}`} >
                     {heading}
-                </div>
+                </h1>
             )}
             {line && <div className={'line'} />}
-            {subTitle && <div className={'sub-heading'}>{subTitle}</div>}
-            {about && <div className={'sub-heading-about'}>{about}</div>}
+            {subTitle && <h2 className={'sub-heading'}>{subTitle}</h2>}
+            {about && <h3 className={'sub-heading-about'}>{about}</h3>}
         </div>
     );
 };

@@ -1,4 +1,3 @@
-import React from 'react';
 //sarajevo
 export const sebilj = require('../images/sebilj.jpg');
 export const sarajevo2 = require('../images/Sarjevo_2.jpg');
@@ -76,9 +75,9 @@ export const whyBosniaData = {
         {
             title: '#4 Good hosts',
             text:
-                'Our people are known as “merhametli” (kind-hearted) – people who are ready to offer you’re the warmest and most hospitable welcome.\n' +
+                'Our people are known as “merhametli” (kind-hearted) – people who are ready to offer you the warmest and most hospitable welcome.\n' +
                 'There are no limitations, we easily make true friendships, not few of which last a lifetime.',
-            image: null
+            image: 'https://images.ctfassets.net/0o22ljw5du6a/zckzSK1MqsMOs24Mkwgy8/2726151bd48aa52550f6297e14d07002/A6508045.JPG'
         },
         {
             title: '#5 Spirit of Adventure',
@@ -130,7 +129,7 @@ export const whyBosniaData = {
     ],
     otherAboutBosnia: {
         intro:
-            'Below you can find links of some of the famous magazine and internet portal articles about our country:',
+            'Below you can find links to some of the famous magazine and internet portal articles about our country:',
         links: [
             {
                 site: 'standard.co.uk',
@@ -246,7 +245,6 @@ export const tours = [
                 title: '##### Day 3 Sarajevo- Travnik - Jajce',
                 introDescription:
                     '- __Vrelo Bosne-__ In the vicinity of Ilidža, you can find a natural monument which is reached via three and a half kilometers long avenue of hundred year old plane and chestnut trees. It is a natural park crisscrossed with numerous water springs, brooks and little lakes. The main source of drinkable water of the city of Sarajevo – Bačevo - is also located in the Vrelo Bosne area. It is assumed that the name “Bosna” itself originates from the word “bosana”, an ancient Indo-European word meaning – water. Another symbolic feature of Vrelo Bosne are the famous fiacres, which have been carrying guests through the Grand Avenue from Ilidža to Vrelo Bosne for over one hundred years. It is believed that the first fiacre arrived the Archduke Franz Ferdinand in 1895.\n' +
-                    '- There is also the option to visit the __Sarajevo War Tunnel__ which has been converted into the Sarajevo Tunnel of Hope and Rescue Museum. Supply of Sarajevo with good, electrical energy, medical supplies, fuel and weapons was made possible because of the 800 meter long tunnel. \n' +
                     '- __Journey to Travnik.__\n' +
                     'We visit the main sights of Travnik - __Plava voda__ where the water emerges from a rock and produces relaxing sounds creating the most beautiful picnic area in Travnik, along with the Lašva river and the Hender stream which flows into the Lašva – which together form the neighborhood called Šumeće (roaring water).\n' +
                     'We enjoy a cup of coffee and go to visit the birth house of __Ivo Andrić – a winner of the Nobel Prize for Literature.__\n' +
@@ -303,7 +301,7 @@ export const tours = [
                 '- Accommodation in Jajce- 1 night\n' +
                 '- Accommodation in Mostar- 2 nights\n' +
                 '- Accommodation in Sarajev0- 1 night\n' +
-                '\n' +
+                'Breakfast in hotel\n' +
                 '---\n',
         },
         notIncludesInTour: {
@@ -311,10 +309,10 @@ export const tours = [
             introDescription:
                 '---\n' +
                 '\n' +
-                '- meals – except from the breakfast at the hotel\n' +
-                '- tips\n' +
-                '- insurance costs\n' +
-                '- Trebević Cable Care ticket EUR 10\n' +
+                '- Meals – except from the breakfast at the hotel\n' +
+                '- Tips\n' +
+                '- Insurance costs\n' +
+                '- Tickets\n' +
                 '\n' +
                 '\n' +
                 '---',
@@ -348,7 +346,6 @@ export const tours = [
                 title: '##### Day 3 Sarajevo- Travnik - Jajce',
                 introDescription:
                     ' -__Vrelo Bosne__- In the vicinity of Ilidža, you can find a natural monument which is reached via three and a half kilometers long avenue of hundred year old plane and chestnut trees. It is a natural park crisscrossed with numerous water springs, brooks and little lakes. The main source of drinkable water of the city of Sarajevo – Bačevo - is also located in the Vrelo Bosne area. It is assumed that the name “Bosna” itself originates from the word “bosana”, an ancient Indo-European word meaning – water. Another symbolic feature of Vrelo Bosne are the famous fiacres, which have been carrying guests through the Grand Avenue from Ilidža to Vrelo Bosne for over one hundred years. It is believed that the first fiacre arrived the Archduke Franz Ferdinand in 1895.\n' +
-                    '    -There is also the option to visit the __Sarajevo War Tunnel__ which has been converted into the Sarajevo Tunnel of Hope and Rescue Museum. Supply of Sarajevo with good, electrical energy, medical supplies, fuel and weapons was made possible because of the 800 meter long tunnel. \n' +
                     '    -Journey to __Travnik__.\n' +
                     '    We visit the main sights of Travnik - __Plava voda__- where the water emerges from a rock and produces relaxing sounds creating the most beautiful picnic area in Travnik, along with the Lašva river and the Hender stream which flows into the Lašva – which together form the neighborhood called Šumeće (roaring water).\n' +
                     '     We enjoy a cup of coffee and go to visit the birth house of __Ivo Andrić – a winner of the Nobel Prize for Literature__.\n' +
@@ -382,14 +379,15 @@ export const tours = [
             title: '##### Tour includes:',
             introDescription: '- Transportation, transfer, accommodation in a four star hotel with breakfast included, and visiting the above mentioned sights and landmarks. \n' +
             '- Accommodation in Sarajevo- 2 nights\n' +
-            '- Accommodation in Jajce- 2 nights',
+            '- Accommodation in Jajce- 2 nights' +
+            '- Breakfast in hotel',
         },
         notIncludesInTour: {
             title: '##### Tour does not include:',
             introDescription: '- meals – except from the breakfast at the hotel\n' +
-            '- tips\n' +
-            '- insurance costs\n' +
-            '- Trebević Cable Care ticket EUR 10',
+            '- Tips\n' +
+            '- Insurance costs\n' +
+            '- Tickets',
         },
         additional: 'The tour requires minimum 4 guests to apply. The general traveling conditions of the GoBook tour organizer apply to this tour.\n' +
         'GoBook reserves the right to cancel the tour without any explanations.\n',
@@ -420,7 +418,6 @@ export const tours = [
             {
                 title: '##### Day 3 Sarajevo- Mostar',
                 introDescription: '- __Vrelo Bosne__- In the vicinity of Ilidža, you can find a natural monument which is reached via three and a half kilometers long avenue of hundred year old plane and chestnut trees. It is a natural park crisscrossed with numerous water springs, brooks and little lakes. The main source of drinkable water of the city of Sarajevo – Bačevo - is also located in the Vrelo Bosne area. It is assumed that the name “Bosna” itself originates from the word “bosana”, an ancient Indo-European word meaning – water. Another symbolic feature of Vrelo Bosne are the famous fiacres, which have been carrying guests through the Grand Avenue from Ilidža to Vrelo Bosne for over one hundred years. It is believed that the first fiacre arrived the Archduke Franz Ferdinand in 1895.\n' +
-                '- There is also the option to visit the __Sarajevo War Tunnel__ which has been converted into the Sarajevo Tunnel of Hope and Rescue Museum. Supply of Sarajevo with good, electrical energy, medical supplies, fuel and weapons was made possible because of the 800 meter long tunnel. \n' +
                 '- Afternoon journey through Bosnia and Herzegovina – to __Mostar__. Getting settled at the hotel in Mostar.\n' +
                 '\n',
 
@@ -460,7 +457,7 @@ export const tours = [
             '- Accommodation in Jajce- 1 night\n' +
             '- Accommodation in Mostar- 2 nights\n' +
             '- Accommodation in Sarajev0- 1 night\n' +
-            '\n' +
+            '- Breakfast in hotel\n' +
             '---\n',
         },
         notIncludesInTour: {
@@ -468,10 +465,10 @@ export const tours = [
             introDescription:
             '---\n' +
             '\n' +
-            '- meals – except from the breakfast at the hotel\n' +
-            '- tips\n' +
-            '- insurance costs\n' +
-            '- Trebević Cable Care ticket EUR 10\n' +
+            '- Meals – except from the breakfast at the hotel\n' +
+            '- Tips\n' +
+            '- Insurance costs\n' +
+            '- Tickets\n' +
             '\n' +
             '\n' +
             '---',
