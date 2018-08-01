@@ -224,6 +224,7 @@ export const tours = [
         name: 'Sarajevo-Jajce-Mostar',
         title: 'THE BEST OF BOSNIA & HERZEGOVINA TOUR',
         description: 'Seven day trip',
+        price:'590 EUR',
         featuredPicture: 'https://images.ctfassets.net/0o22ljw5du6a/5Tj9NZ6w4EeUKGKGMKIeQk/10e763518e65e8c95bd248fe5b2963b8/bosnia-and-herzegovina-189575_1280.jpg',
         placeByDay: [
             {
@@ -326,6 +327,7 @@ export const tours = [
         name: 'Sarajevo-Jajce',
         title: 'BEST OF BOSNIA',
         description: 'Five day trip',
+        price:'390 EUR',
         featuredPicture: 'https://images.ctfassets.net/0o22ljw5du6a/1MtXniDAFeASewIacAemWw/bc50a27b95f5473c35d123e32ea7832c/vodopad.jpg',
         placeByDay: [
             {
@@ -398,6 +400,7 @@ export const tours = [
         name: 'Sarajevo-Mostar',
         title: 'BOSNIA & HERZEGOVINA INTRO TOUR',
         description: 'Five day trip',
+        price:'390 EUR',
         featuredPicture: stariMost,
         placeByDay: [
             {

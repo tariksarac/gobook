@@ -48,7 +48,7 @@ class LandingPage extends Component {
                     picture={'https://images.ctfassets.net/0o22ljw5du6a/6ag1DNKk00kGSymkQuwmsa/2759a7e9ef9f2fdc391c642c89310e9b/bosnia-2058087_1280.jpg'}
                 />
                 <Heading heading={'Take a break and relax'} line subTitle={about} style={customStyle} />
-                <Heading heading={'What to expect'} line subTitle={whyBosniaIntro } style={whiteBackground} />
+                <Heading heading={'What to expect'} line subTitle={whyBosniaIntro } style={whiteBackground} absolute/>
                 <Heading heading={'Go Book'} line subTitle={offer} />
                 <ProductsContainer products={tours} />
                 <Heading subTitle={lastSubHeading} line style={customStyle} />

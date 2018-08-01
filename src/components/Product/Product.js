@@ -17,7 +17,7 @@ class Product extends React.Component {
     }
 
     render() {
-        let { title, name, description, featuredPicture } = this.props.product;
+        let { title, name, description, featuredPicture, price } = this.props.product;
 
         return (
             <Card className={'Product'}>
@@ -36,7 +36,10 @@ class Product extends React.Component {
                     </Typography>
                 </CardContent>
 
-                <Typography component="p" align={'center'}>
+                <Typography component="h1" align={'center'} style={{fontWeight:'500'}}>
+                    {price}
+                </Typography>
+                <Typography component="p" align={'center'} style={{opacity:'0.5'}}>
                     {description}
                 </Typography>
                 <CardActions className={'Product-image-button'} />
