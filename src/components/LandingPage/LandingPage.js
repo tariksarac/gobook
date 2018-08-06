@@ -6,14 +6,15 @@ import Heading from '../Heading/Heading';
 import ProductsContainer from '../Product/ProductsContainer';
 import {
     about,
-    stariMostNaslovna,
     mainHeading,
     mainSubheading,
     lastSubHeading,
-    offer, whyBosniaIntro, jajceVodopadStarigrad,
+    offer, whyBosniaIntro,
 } from '../../constants/constants';
 import { tours } from '../../constants/constants';
 import BookModal from '../Common/BookModal/BookModal';
+import * as contentful from 'contentful'
+
 
 const whiteBackground = {
     backgroundColor: '#ffffff',
@@ -34,6 +35,23 @@ class LandingPage extends Component {
     state = {
         modalOpen: false,
     };
+
+    client = contentful.createClient({
+        space: '0o22ljw5du6a',
+        accessToken: '88d7f6c70a9105568ed603450cf5e40de480c622b02fe861a3381c6b5f7970a5'
+    })
+
+    componentDidMount() {
+        this.fetchLandingPageData().then(this.setLandingPage);
+    }
+
+    fetchLandingPageData = query => this.client.getEntries({'content_type': 'landingPage', include: 2})
+
+    setLandingPage = response => {
+        this.setState({
+            landingPageData: response.items
+        })
+    }
 
     bookAction = () => {
         this.setState(({ modalOpen }) => ({ modalOpen: !modalOpen }));

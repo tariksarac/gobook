@@ -301,8 +301,9 @@ export const tours = [
                 '- Accommodation in Sarajevo- 2 nights\n' +
                 '- Accommodation in Jajce- 1 night\n' +
                 '- Accommodation in Mostar- 2 nights\n' +
-                '- Accommodation in Sarajev0- 1 night\n' +
-                'Breakfast in hotel\n' +
+                '- Accommodation in Sarajevo- 1 night\n' +
+                '- Breakfast in hotel\n' +
+                '- Transport, tour guide, driver\n' +
                 '---\n',
         },
         notIncludesInTour: {
@@ -382,7 +383,9 @@ export const tours = [
             introDescription: '- Transportation, transfer, accommodation in a four star hotel with breakfast included, and visiting the above mentioned sights and landmarks. \n' +
             '- Accommodation in Sarajevo- 2 nights\n' +
             '- Accommodation in Jajce- 2 nights' +
-            '- Breakfast in hotel',
+            '- Breakfast in hotel' +
+            '- Transport, tour guide, driver' +
+                '---\n',
         },
         notIncludesInTour: {
             title: '##### Tour does not include:',
@@ -459,8 +462,9 @@ export const tours = [
             '- Accommodation in Sarajevo- 2 nights\n' +
             '- Accommodation in Jajce- 1 night\n' +
             '- Accommodation in Mostar- 2 nights\n' +
-            '- Accommodation in Sarajev0- 1 night\n' +
+            '- Accommodation in Sarajevo- 1 night\n' +
             '- Breakfast in hotel\n' +
+            '- Transport, tour guide, driver\n' +
             '---\n',
         },
         notIncludesInTour: {
