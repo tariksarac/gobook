@@ -9,12 +9,13 @@ import {
     mainHeading,
     mainSubheading,
     lastSubHeading,
-    offer, whyBosniaIntro,
+    offer,
+    whyBosniaIntro,
 } from '../../constants/constants';
 import { tours } from '../../constants/constants';
 import BookModal from '../Common/BookModal/BookModal';
-import * as contentful from 'contentful'
-
+import * as contentful from 'contentful';
+import {mapLandingPage} from "../../utils/mapContentfulData";
 
 const whiteBackground = {
     backgroundColor: '#ffffff',
@@ -34,24 +35,28 @@ class LandingPage extends Component {
 
     state = {
         modalOpen: false,
+        headings:[],
+        featuredImage:{}
     };
 
     client = contentful.createClient({
         space: '0o22ljw5du6a',
-        accessToken: '88d7f6c70a9105568ed603450cf5e40de480c622b02fe861a3381c6b5f7970a5'
-    })
+        accessToken: '88d7f6c70a9105568ed603450cf5e40de480c622b02fe861a3381c6b5f7970a5',
+    });
 
     componentDidMount() {
         this.fetchLandingPageData().then(this.setLandingPage);
     }
 
-    fetchLandingPageData = query => this.client.getEntries({'content_type': 'landingPage', include: 2})
+    fetchLandingPageData = query => this.client.getEntries({ content_type: 'landingPage', include: 2 });
 
     setLandingPage = response => {
+        let mappedData = mapLandingPage(response);
         this.setState({
-            landingPageData: response.items
-        })
-    }
+            headings: mappedData.headings,
+            featuredImage: mappedData.featuredImageData,
+        });
+    };
 
     bookAction = () => {
         this.setState(({ modalOpen }) => ({ modalOpen: !modalOpen }));
@@ -63,14 +68,22 @@ class LandingPage extends Component {
                 <FeaturedPicture
                     title={mainHeading}
                     subTitle={mainSubheading}
-                    picture={'https://images.ctfassets.net/0o22ljw5du6a/6ag1DNKk00kGSymkQuwmsa/2759a7e9ef9f2fdc391c642c89310e9b/bosnia-2058087_1280.jpg'}
+                    picture={
+                        'https://images.ctfassets.net/0o22ljw5du6a/6ag1DNKk00kGSymkQuwmsa/2759a7e9ef9f2fdc391c642c89310e9b/bosnia-2058087_1280.jpg'
+                    }
                 />
                 <Heading heading={'Take a break and relax'} line subTitle={about} style={customStyle} />
-                <Heading heading={'What to expect'} line subTitle={whyBosniaIntro } style={whiteBackground} absolute/>
+                <Heading
+                    heading={'What to expect'}
+                    line
+                    subTitle={whyBosniaIntro}
+                    style={whiteBackground}
+                    absolute
+                />
                 <Heading heading={'Go Book'} line subTitle={offer} />
                 <ProductsContainer products={tours} />
                 <Heading subTitle={lastSubHeading} line style={customStyle} />
-                <BookButton onClickAction={this.bookAction} buttonText={'Book'}/>
+                <BookButton onClickAction={this.bookAction} buttonText={'Book'} />
                 <BookModal handleClose={this.bookAction} openModal={this.state.modalOpen} />
             </div>
         );
