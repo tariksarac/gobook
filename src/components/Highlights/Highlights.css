@@ -49,12 +49,12 @@
     font-weight: 600;
 }
 
-.Highlights .HighlightItem:before {
-    position: absolute;
-    content: "\2713";
-    left: 0;
-    font-weight: 700;
-}
+/*.Highlights .HighlightItem:before {*/
+    /*position: absolute;*/
+    /*content: "\2713";*/
+    /*left: 0;*/
+    /*font-weight: 700;*/
+/*}*/
 
 .Highlights p {
     font-size: 15px ;
