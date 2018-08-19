@@ -6,24 +6,16 @@ export function mapLandingPage(data) {
     let featuredImage = {};
 
     if (items && items[0].fields.headingSections) {
-        let headingIds = items[0].fields.headingSections.reduce((total, amount) => {
-            total.push(amount.sys.id);
-            return total;
-        }, []);
-        headingIds.forEach(item => {
-            let heading = Entry.find(entry => item === entry.sys.id);
-            heading && headings.push(heading.fields);
+        headings = items[0].fields.headingSections.map(item => {
+            return { ...item.fields };
         });
     }
-    if (items && items[0].fields.featuredImage) {
-        let featuredImageRaw = Entry.find(entry => items[0].fields.featuredImage.sys.id === entry.sys.id);
-        let pictureAsset = '';
-        if (featuredImageRaw.fields.picture) {
-            let pictureAssetObj = Asset.find(item => item.sys.id === featuredImageRaw.fields.picture.sys.id);
-            pictureAsset = pictureAssetObj ? pictureAssetObj.fields.file.url : '';
-        }
 
-        featuredImage = { ...featuredImageRaw.fields, picture: pictureAsset };
+    if (items && items[0].fields.featuredImage) {
+        featuredImage = {
+            ...items[0].fields.featuredImage.fields,
+            picture: items[0].fields.featuredImage.fields.picture.fields.file.url,
+        };
     }
 
     return { headings: headings, featuredImageData: featuredImage };
@@ -54,6 +46,8 @@ export function mapTourData(data) {
     let included = '';
     let notIncluded = '';
     let tourDetail = '';
+    let id = '';
+    let title = '';
 
     if (items && items[0].fields.tourHeading) {
         headings = items[0].fields.tourHeading.map(item => {
@@ -69,7 +63,7 @@ export function mapTourData(data) {
 
     if (items && items[0].fields.gallery) {
         gallery = items[0].fields.gallery.map(item => {
-            return {original: item.fields.file.url} ;
+            return { original: item.fields.file.url };
         });
     }
 
@@ -80,16 +74,24 @@ export function mapTourData(data) {
     }
 
     if (items && items[0].fields.included) {
-        included = items[0].fields.included
+        included = items[0].fields.included;
     }
 
     if (items && items[0].fields.notIncluded) {
-        notIncluded = items[0].fields.notIncluded
+        notIncluded = items[0].fields.notIncluded;
     }
 
     if (items && items[0].fields.tourDetail) {
-        tourDetail = items[0].fields.tourDetail
+        tourDetail = items[0].fields.tourDetail;
     }
 
-    return { headings, highlights, gallery, itinerary, included, notIncluded, tourDetail };
+    if (items && items[0].fields.id) {
+        id = items[0].fields.id;
+    }
+
+    if (items && items[0].fields.title) {
+        title = items[0].fields.title;
+    }
+
+    return { headings, highlights, gallery, itinerary, included, notIncluded, tourDetail, id, title };
 }

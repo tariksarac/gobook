@@ -6,6 +6,8 @@ class Contact extends React.Component {
     render() {
         return (
             <div className={'contact-container'}>
+                <div className={'book-now-image'}/>
+
                 <div className={'Contact'}>
                     <div className={'contact-heading'}>CONTACT US</div>
                     <div className={'contact-detail'}>
@@ -21,6 +23,7 @@ class Contact extends React.Component {
                         <BookButton type={"submit"} value="Book" buttonText={"Send"} style={{ width: '100%', height:'35px' }} />
                     </form>
                 </div>
+                <div style={{gridArea:'ft'}}/>
             </div>
         );
     }

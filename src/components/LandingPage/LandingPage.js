@@ -46,7 +46,7 @@ class LandingPage extends Component {
             content_type: 'tour',
             include: 2,
             select:
-                'sys.id,fields.id,fields.title,fields.tourCardPicture,fields.shortDescription,fields.price,fields.duration',
+                'sys.id,fields.id,fields.title,fields.oneDayTour,fields.tourCardPicture,fields.shortDescription,fields.price,fields.duration',
         });
 
     setLandingPage = response => {
@@ -77,10 +77,12 @@ class LandingPage extends Component {
                 <Heading {...headings[0]} style={customStyle} />
                 <Heading {...headings[1]} style={whiteBackground} absolute />
                 <Heading {...headings[2]} />
-                <ProductsContainer products={cardsData} />
+                <ProductsContainer products={cardsData.filter(item => !item.oneDayTour)} />
                 <Heading {...headings[3]} style={customStyle} />
+                <ProductsContainer products={cardsData.filter(item => item.oneDayTour)} />
+                <Heading {...headings[4]} style={customStyle} />
                 <BookButton onClickAction={this.bookAction} buttonText={'Book'} />
-                <BookModal handleClose={this.bookAction} openModal={modalOpen} />
+                {/*<BookModal handleClose={this.bookAction} openModal={modalOpen} />*/}
             </div>
         );
     }

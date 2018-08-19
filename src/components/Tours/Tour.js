@@ -9,7 +9,7 @@ import Include from '../Include/Include';
 import BookButton from '../Common/BookButton/BookButton';
 import { withRouter } from 'react-router-dom';
 import { customStyle } from '../LandingPage/LandingPage';
-import BookModal from '../Common/BookModal/BookModal';
+// import BookModal from '../Common/BookModal/BookModal';
 import { tours } from '../../constants/constants';
 import * as contentful from 'contentful';
 import { mapTourData } from '../../utils/mapContentfulData';
@@ -29,6 +29,8 @@ class Tour extends React.Component {
                 included: '',
                 notIncluded: '',
                 tourDetail: '',
+                id: '',
+                title: '',
             },
         };
 
@@ -57,7 +59,8 @@ class Tour extends React.Component {
     };
 
     bookAction = () => {
-        this.setState(({ modalOpen }) => ({ modalOpen: !modalOpen }));
+        // this.setState(({ modalOpen }) => ({ modalOpen: !modalOpen }));
+        this.props.history.push('/book-now', {id: this.state.tourData.id, title: this.state.tourData.title})
     };
 
     render() {
@@ -71,7 +74,7 @@ class Tour extends React.Component {
             tourDetail,
         } = this.state.tourData;
         let width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        let tourItem = tours.find(item => item.name === this.props.match.params.name) || {};
+        // let tourItem = tours.find(item => item.name === this.props.match.params.name) || {};
         return (
             <div className={'Tour'}>
                 <Heading {...headings[0]} style={customStyle} />
@@ -97,11 +100,11 @@ class Tour extends React.Component {
                 <Include data={{ description: notIncluded }} title={'NOT INCLUDED:'} />
                 <Heading about={tourDetail} />
                 <BookButton onClickAction={this.bookAction} buttonText={'Book Now!'} />
-                <BookModal
-                    handleClose={this.bookAction}
-                    openModal={this.state.modalOpen}
-                    tourItem={tourItem}
-                />
+                {/*<BookModal*/}
+                    {/*handleClose={this.bookAction}*/}
+                    {/*openModal={this.state.modalOpen}*/}
+                    {/*tourItem={tourItem}*/}
+                {/*/>*/}
             </div>
         );
     }
