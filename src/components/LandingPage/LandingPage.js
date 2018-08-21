@@ -76,8 +76,8 @@ class LandingPage extends Component {
                 <FeaturedPicture {...featuredImage} />
                 <Heading {...headings[0]} style={customStyle} />
                 <Heading {...headings[1]} style={whiteBackground} absolute />
-                <Heading {...headings[2]} />
                 <ProductsContainer products={cardsData.filter(item => !item.oneDayTour)} />
+                <Heading {...headings[2]} />
                 <Heading {...headings[3]} style={customStyle} />
                 <ProductsContainer products={cardsData.filter(item => item.oneDayTour)} />
                 <Heading {...headings[4]} style={customStyle} />
