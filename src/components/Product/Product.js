@@ -17,22 +17,22 @@ class Product extends React.Component {
     }
 
     render() {
-        let { title, name, description, featuredPicture, price } = this.props.product;
+        let { title, shortDescription, duration, tourCardPicture, price, id} = this.props.product;
 
         return (
             <Card className={'Product'}>
                 <CardMedia
                     className={'Product-image'}
-                    image={featuredPicture}
-                    title="p"
-                    onClick={() => this.props.history.push(`/tour/${name}`)}
+                    image={tourCardPicture}
+                    title=""
+                    onClick={() => this.props.history.push(`/tour/${id}`)}
                 />
-                <CardContent onClick={() => this.props.history.push(`/tour/${name}`)}>
+                <CardContent onClick={() => this.props.history.push(`/tour/${id}`)}>
                     <Typography gutterBottom variant="headline" component="h2">
                         {title}
                     </Typography>
                     <Typography component="p" align={'center'}>
-                        {name}
+                        {shortDescription}
                     </Typography>
                 </CardContent>
 
@@ -40,7 +40,7 @@ class Product extends React.Component {
                     {price}
                 </Typography>
                 <Typography component="p" align={'center'} style={{opacity:'0.5'}}>
-                    {description}
+                    {duration}
                 </Typography>
                 <CardActions className={'Product-image-button'} />
             </Card>

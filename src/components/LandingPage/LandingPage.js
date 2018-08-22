@@ -1,19 +1,11 @@
 import React, { Component } from 'react';
 import BookButton from '../Common/BookButton/BookButton';
-import { withRouter } from 'react-router-dom';
 import FeaturedPicture from '../FeaturedPicture/FeaturedPicture';
 import Heading from '../Heading/Heading';
 import ProductsContainer from '../Product/ProductsContainer';
-import {
-    about,
-    stariMostNaslovna,
-    mainHeading,
-    mainSubheading,
-    lastSubHeading,
-    offer, whyBosniaIntro, jajceVodopadStarigrad,
-} from '../../constants/constants';
-import { tours } from '../../constants/constants';
-import BookModal from '../Common/BookModal/BookModal';
+// import BookModal from '../Common/BookModal/BookModal';
+import * as contentful from 'contentful';
+import { mapLandingPage, mapPageCards } from '../../utils/mapContentfulData';
 
 const whiteBackground = {
     backgroundColor: '#ffffff',
@@ -33,30 +25,69 @@ class LandingPage extends Component {
 
     state = {
         modalOpen: false,
+        headings: [],
+        featuredImage: {},
+        cardsData:[]
+    };
+
+    client = contentful.createClient({
+        space: '0o22ljw5du6a',
+        accessToken: '88d7f6c70a9105568ed603450cf5e40de480c622b02fe861a3381c6b5f7970a5',
+    });
+
+    componentDidMount() {
+        this.fetchLandingPageData().then(this.setLandingPage);
+        this.fetchLandingPageCards().then(this.setPageCards);
+    }
+
+    fetchLandingPageData = query => this.client.getEntries({ content_type: 'landingPage', include: 2 });
+    fetchLandingPageCards = query =>
+        this.client.getEntries({
+            content_type: 'tour',
+            include: 2,
+            select:
+                'sys.id,fields.id,fields.title,fields.oneDayTour,fields.tourCardPicture,fields.shortDescription,fields.price,fields.duration',
+        });
+
+    setLandingPage = response => {
+        let mappedData = mapLandingPage(response);
+        this.setState({
+            headings: mappedData.headings,
+            featuredImage: mappedData.featuredImageData,
+        });
+    };
+
+    setPageCards = response => {
+        let mappedData = mapPageCards(response);
+        this.setState({
+            cardsData: mappedData,
+        });
     };
 
     bookAction = () => {
-        this.setState(({ modalOpen }) => ({ modalOpen: !modalOpen }));
+        this.props.history.push('/book-now')
+        // this.setState(({ modalOpen }) => ({ modalOpen: !modalOpen }));
     };
 
     render() {
+        let {featuredImage, headings, cardsData, modalOpen} = this.state
         return (
             <div className={'App-main'}>
-                <FeaturedPicture
-                    title={mainHeading}
-                    subTitle={mainSubheading}
-                    picture={'https://images.ctfassets.net/0o22ljw5du6a/6ag1DNKk00kGSymkQuwmsa/2759a7e9ef9f2fdc391c642c89310e9b/bosnia-2058087_1280.jpg'}
-                />
-                <Heading heading={'Take a break and relax'} line subTitle={about} style={customStyle} />
-                <Heading heading={'What to expect'} line subTitle={whyBosniaIntro } style={whiteBackground} absolute/>
-                <Heading heading={'Go Book'} line subTitle={offer} />
-                <ProductsContainer products={tours} />
-                <Heading subTitle={lastSubHeading} line style={customStyle} />
-                <BookButton onClickAction={this.bookAction} buttonText={'Book'}/>
-                <BookModal handleClose={this.bookAction} openModal={this.state.modalOpen} />
+                <FeaturedPicture {...featuredImage} />
+                <Heading {...headings[0]} style={customStyle} />
+                <Heading {...headings[1]} style={whiteBackground} absolute />
+                <ProductsContainer products={cardsData.filter(item => !item.oneDayTour)} />
+                <Heading {...headings[2]} />
+                <Heading {...headings[3]} style={customStyle} />
+                <ProductsContainer products={cardsData.filter(item => item.oneDayTour)} />
+                <Heading {...headings[4]} style={customStyle} />
+                <BookButton onClickAction={this.bookAction} buttonText={'Book'} />
+                {/*<BookModal handleClose={this.bookAction} openModal={modalOpen} />*/}
             </div>
         );
     }
+
+    fetchLandingPageCards() {}
 }
 
-export default withRouter(LandingPage);
+export default LandingPage;

@@ -9,7 +9,7 @@ const Footer = (props) => {
     return (
         <div className={'Footer'}>
             <div className={'footer-contact'}>
-                <span> +387 61 025 015</span><span>gobook@gobook.ba</span>{' '}
+                <span><span role="img">📞 </span>Viber, WhatsApp <span role="img">👉</span>+387 61025015</span><span>gobook@gobook.ba</span>
             </div>
             <div className={'footer-logo'}>
                 <img src={logo} alt={'Go Book'} onClick={() => props.history.push('/')}/>

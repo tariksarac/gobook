@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    min-height: 300px;
+    min-height: 200px;
 
 }
 
@@ -37,7 +37,7 @@
     margin: 0 auto;
     padding: 20px;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .Heading .sub-heading-about {

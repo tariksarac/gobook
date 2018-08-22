@@ -320,7 +320,7 @@ export const tours = [
                 '---',
         },
         additional: 'The tour requires minimum 4 guests to apply. The general traveling conditions of the GoBook tour organizer apply to this tour.\n' +
-            'GoBook reserves the right to cancel the tour without any explanations.\n',
+        'GoBook reserves the right to cancel the tour without any explanations.\n',
         highLights: [{ ...sarajevoHighlights }, { ...mostarHighlights }, { ...jajceHighlights }],
     },
     {
@@ -381,21 +381,21 @@ export const tours = [
         includesInTour: {
             title: '##### Tour includes:',
             introDescription: '- Transportation, transfer, accommodation in a four star hotel with breakfast included, and visiting the above mentioned sights and landmarks. \n' +
-                '- Accommodation in Sarajevo- 2 nights\n' +
-                '- Accommodation in Jajce- 2 nights' +
-                '- Breakfast in hotel' +
-                '- Transport, tour guide, driver' +
+            '- Accommodation in Sarajevo- 2 nights\n' +
+            '- Accommodation in Jajce- 2 nights' +
+            '- Breakfast in hotel' +
+            '- Transport, tour guide, driver' +
                 '---\n',
         },
         notIncludesInTour: {
             title: '##### Tour does not include:',
             introDescription: '- meals – except from the breakfast at the hotel\n' +
-                '- Tips\n' +
-                '- Insurance costs\n' +
-                '- Tickets',
+            '- Tips\n' +
+            '- Insurance costs\n' +
+            '- Tickets',
         },
         additional: 'The tour requires minimum 4 guests to apply. The general traveling conditions of the GoBook tour organizer apply to this tour.\n' +
-            'GoBook reserves the right to cancel the tour without any explanations.\n',
+        'GoBook reserves the right to cancel the tour without any explanations.\n',
         highLights: [{ ...sarajevoHighlights }, { ...jajceHighlights }],
     },
     {
@@ -409,23 +409,23 @@ export const tours = [
             {
                 title: '##### Day 1 Sarajevo',
                 introDescription:
-                    ' We welcome you at the Sarajevo Airport, the railway or the ' +
-                    'bus station and organize the transfer to the hotel. You settle at the hotel. Free activities.',
+                ' We welcome you at the Sarajevo Airport, the railway or the ' +
+                'bus station and organize the transfer to the hotel. You settle at the hotel. Free activities.',
             },
             {
                 title: '##### Day 2 Sarajevo',
                 introDescription:
-                    'Tour of: Baščaršija, bridges on the river Miljacka, National Theater, City Hall, the House of Spite, Sebilj Square,  Coppersmith Street – here you can find antiques, handcrafted copper plates, dishes, cups with oriental decorations and ornaments; Baščaršijska Mosque from 16th century, old Orthodox church, Jewish temple and synagogue, and the Eternal Flame.\n' +
-                    '\t•\t__Sebilj – the heart of Baščaršija –__ is a famous square and one of the most important city fountains; it is always surrounded by pigeons. This is an excellent spot for a short break and your first coffee. All the coffeehouses around the square serve Turkish coffee with Turkish delight (rahat lokum). \n' +
-                    '\t•\t__Latin Bridge,__ also known as the Princip Bridge, as this is the place where Gavrilo Princip in 1914 notoriously assassinated Archduke Franz Ferdinand and his wife Sophie, causing the start of the World Word I.\n' +
-                    '\t•\t__Ćevapi-__ not-to-be-missed when visiting Sarajevo. The saying goes “If you have not eaten ćevapi in Sarajevo, it as if you did not visit Sarajevo at all”. \n' +
-                    '\t•\t__Trebević Cable Car-__ experience a beautiful view of the Bosnia and Herzegovina’s capital city.',
+                'Tour of: Baščaršija, bridges on the river Miljacka, National Theater, City Hall, the House of Spite, Sebilj Square,  Coppersmith Street – here you can find antiques, handcrafted copper plates, dishes, cups with oriental decorations and ornaments; Baščaršijska Mosque from 16th century, old Orthodox church, Jewish temple and synagogue, and the Eternal Flame.\n' +
+                '\t•\t__Sebilj – the heart of Baščaršija –__ is a famous square and one of the most important city fountains; it is always surrounded by pigeons. This is an excellent spot for a short break and your first coffee. All the coffeehouses around the square serve Turkish coffee with Turkish delight (rahat lokum). \n' +
+                '\t•\t__Latin Bridge,__ also known as the Princip Bridge, as this is the place where Gavrilo Princip in 1914 notoriously assassinated Archduke Franz Ferdinand and his wife Sophie, causing the start of the World Word I.\n' +
+                '\t•\t__Ćevapi-__ not-to-be-missed when visiting Sarajevo. The saying goes “If you have not eaten ćevapi in Sarajevo, it as if you did not visit Sarajevo at all”. \n' +
+                '\t•\t__Trebević Cable Car-__ experience a beautiful view of the Bosnia and Herzegovina’s capital city.',
             },
             {
                 title: '##### Day 3 Sarajevo- Mostar',
                 introDescription: '- __Vrelo Bosne__- In the vicinity of Ilidža, you can find a natural monument which is reached via three and a half kilometers long avenue of hundred year old plane and chestnut trees. It is a natural park crisscrossed with numerous water springs, brooks and little lakes. The main source of drinkable water of the city of Sarajevo – Bačevo - is also located in the Vrelo Bosne area. It is assumed that the name “Bosna” itself originates from the word “bosana”, an ancient Indo-European word meaning – water. Another symbolic feature of Vrelo Bosne are the famous fiacres, which have been carrying guests through the Grand Avenue from Ilidža to Vrelo Bosne for over one hundred years. It is believed that the first fiacre arrived the Archduke Franz Ferdinand in 1895.\n' +
-                    '- Afternoon journey through Bosnia and Herzegovina – to __Mostar__. Getting settled at the hotel in Mostar.\n' +
-                    '\n',
+                '- Afternoon journey through Bosnia and Herzegovina – to __Mostar__. Getting settled at the hotel in Mostar.\n' +
+                '\n',
 
             },
             {
@@ -435,10 +435,10 @@ export const tours = [
             },{
                 title: '##### Day 5 Mostar -Buna- Jablanica- Sarajevo',
                 introDescription: '- Departure for Blagaj- the __Buna__ river spring- the largest karstic water spring in Europe where you can also find the famous __Sufi Tekke__.\n' +
-                    '- __Roast lamb__ – try some “to lick your fingers” roast lamb in a beautiful eating environment\n' +
-                    '- Return to __Sarajevo__\n' +
-                    '- Free activities.\n' +
-                    '- Transfer to the Sarajevo Airport, railway or bus station.\n'
+                '- __Roast lamb__ – try some “to lick your fingers” roast lamb in a beautiful eating environment\n' +
+                '- Return to __Sarajevo__\n' +
+                '- Free activities.\n' +
+                '- Transfer to the Sarajevo Airport, railway or bus station.\n'
 
             }
         ],
@@ -457,31 +457,31 @@ export const tours = [
         includesInTour: {
             title: '##### Tour includes:',
             introDescription:
-                '---\n' +
-                '\n' +
-                '- Accommodation in Sarajevo- 2 nights\n' +
-                '- Accommodation in Jajce- 1 night\n' +
-                '- Accommodation in Mostar- 2 nights\n' +
-                '- Accommodation in Sarajevo- 1 night\n' +
-                '- Breakfast in hotel\n' +
-                '- Transport, tour guide, driver\n' +
-                '---\n',
+            '---\n' +
+            '\n' +
+            '- Accommodation in Sarajevo- 2 nights\n' +
+            '- Accommodation in Jajce- 1 night\n' +
+            '- Accommodation in Mostar- 2 nights\n' +
+            '- Accommodation in Sarajevo- 1 night\n' +
+            '- Breakfast in hotel\n' +
+            '- Transport, tour guide, driver\n' +
+            '---\n',
         },
         notIncludesInTour: {
             title: '##### Tour does not include:',
             introDescription:
-                '---\n' +
-                '\n' +
-                '- Meals – except from the breakfast at the hotel\n' +
-                '- Tips\n' +
-                '- Insurance costs\n' +
-                '- Tickets\n' +
-                '\n' +
-                '\n' +
-                '---',
+            '---\n' +
+            '\n' +
+            '- Meals – except from the breakfast at the hotel\n' +
+            '- Tips\n' +
+            '- Insurance costs\n' +
+            '- Tickets\n' +
+            '\n' +
+            '\n' +
+            '---',
         },
         additional: 'The tour requires minimum 4 guests to apply. The general traveling conditions of the GoBook tour organizer apply to this tour.\n' +
-            'GoBook reserves the right to cancel the tour without any explanations.\n',
+        'GoBook reserves the right to cancel the tour without any explanations.\n',
         highLights: [{ ...sarajevoHighlights }, { ...mostarHighlights }],
     },
 ];
