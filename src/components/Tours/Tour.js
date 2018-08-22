@@ -94,17 +94,12 @@ class Tour extends React.Component {
                         }))
                     }
                 />
-                <Highlights highlights={highlights} />
-                <Itinerary data={itinerary} itinerary />
-                <Include data={{ description: included }} include title={'PRICE INCLUDES:'} />
-                <Include data={{ description: notIncluded }} title={'NOT INCLUDED:'} />
-                <Heading about={tourDetail} />
+                { highlights.length > 0 && <Highlights highlights={highlights} /> }
+                { itinerary.length > 0 && <Itinerary data={itinerary} itinerary /> }
+                { included && <Include data={{ description: included }} include title={'PRICE INCLUDES:'} /> }
+                { notIncluded && <Include data={{ description: notIncluded }} title={'NOT INCLUDED:'} /> }
+                { tourDetail && <Heading about={tourDetail} /> }
                 <BookButton onClickAction={this.bookAction} buttonText={'Book Now!'} />
-                {/*<BookModal*/}
-                    {/*handleClose={this.bookAction}*/}
-                    {/*openModal={this.state.modalOpen}*/}
-                    {/*tourItem={tourItem}*/}
-                {/*/>*/}
             </div>
         );
     }

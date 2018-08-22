@@ -3,7 +3,8 @@ import BookButton from "../Common/BookButton/BookButton";
 import Typography from "@material-ui/core/Typography/Typography";
 
 const CreateTour = ({ style, tourItem }) => {
-    let selectedTour = tourItem ? tourItem.id : null;
+    let selectedTour = tourItem ? tourItem.title : null;
+    const options = ['Select your option','THE BEST OF BOSNIA & HERZEGOVINA TOUR', 'BEST OF BOSNIA', 'BOSNIA & HERZEGOVINA INTRO TOUR', 'DAILY TOUR IN MOSTAR AND POČITELJ', 'DAY TOUR IN VISOKO', 'DAY TOUR IN TRAVNIK AND JAJCE']
 
     return (
         <div className={'create-tour'} style={{ ...style }}>
@@ -14,21 +15,22 @@ const CreateTour = ({ style, tourItem }) => {
                 <input type="hidden" name="_subject" value="New submission !" />
                 <input type="hidden" name="_cc" value="tarik.sarac@gmail.com" />
                 <select disabled={!!tourItem} name={'tour'} id={'tour'}>
-                    <option value={'Not selected'}>Select your option</option>
-                    <option
-                        selected={selectedTour===1}
-                        value={'THE BEST OF BOSNIA & HERZEGOVINA TOUR'}>
-                        THE BEST OF BOSNIA & HERZEGOVINA TOUR
-                    </option>
-                    <option value={'BEST OF BOSNIA'} selected={selectedTour===2}>
-                        BEST OF BOSNIA
-                    </option>
-                    <option
-                        value={'BOSNIA & HERZEGOVINA INTRO TOUR'}
-                        selected={selectedTour===3}
-                    >
-                        BOSNIA & HERZEGOVINA INTRO TOUR
-                    </option>
+                    {options.map((item, index) => <option key={index} value={item} selected={item === selectedTour}>{item}</option>)}
+                    {/*<option value={'Not selected'}>Select your option</option>*/}
+                    {/*<option*/}
+                        {/*selected={selectedTour===1}*/}
+                        {/*value={'THE BEST OF BOSNIA & HERZEGOVINA TOUR'}>*/}
+                        {/*THE BEST OF BOSNIA & HERZEGOVINA TOUR*/}
+                    {/*</option>*/}
+                    {/*<option value={'BEST OF BOSNIA'} selected={selectedTour===2}>*/}
+                        {/*BEST OF BOSNIA*/}
+                    {/*</option>*/}
+                    {/*<option*/}
+                        {/*value={'BOSNIA & HERZEGOVINA INTRO TOUR'}*/}
+                        {/*selected={selectedTour===3}*/}
+                    {/*>*/}
+                        {/*BOSNIA & HERZEGOVINA INTRO TOUR*/}
+                    {/*</option>*/}
                 </select>
                 <input id={'firstName'} placeholder={'First Name'} type={'text'} name={'First Name'} />
                 <input id={'surname'} placeholder={'Last Name'} type={'text'} name={'Last Name'} />

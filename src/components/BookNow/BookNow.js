@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import CreateTour from "../Tours/CreateTour";
 import CreateCustomTour from "../Tours/CreateCustomTour";
 import './BookNow.css'
+import '../../components/Common/BookModal/BookModal.css';
+
 
 class BookNow extends Component {
     static defaultProps = {};

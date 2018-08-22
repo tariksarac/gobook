@@ -3,7 +3,7 @@ import BookButton from '../Common/BookButton/BookButton';
 import FeaturedPicture from '../FeaturedPicture/FeaturedPicture';
 import Heading from '../Heading/Heading';
 import ProductsContainer from '../Product/ProductsContainer';
-import BookModal from '../Common/BookModal/BookModal';
+// import BookModal from '../Common/BookModal/BookModal';
 import * as contentful from 'contentful';
 import { mapLandingPage, mapPageCards } from '../../utils/mapContentfulData';
 
