@@ -48,6 +48,7 @@ export function mapTourData(data) {
     let tourDetail = '';
     let id = '';
     let title = '';
+    let tourCardPicture = '';
 
     if (items && items[0].fields.tourHeading) {
         headings = items[0].fields.tourHeading.map(item => {
@@ -93,5 +94,9 @@ export function mapTourData(data) {
         title = items[0].fields.title;
     }
 
-    return { headings, highlights, gallery, itinerary, included, notIncluded, tourDetail, id, title };
+    if (items && items[0].fields.tourCardPicture) {
+        tourCardPicture = items[0].fields.tourCardPicture.fields.file.url
+    }
+
+    return { headings, highlights, gallery, itinerary, included, notIncluded, tourDetail, id, title, tourCardPicture };
 }

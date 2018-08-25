@@ -10,9 +10,10 @@ import BookButton from '../Common/BookButton/BookButton';
 import { withRouter } from 'react-router-dom';
 import { customStyle } from '../LandingPage/LandingPage';
 // import BookModal from '../Common/BookModal/BookModal';
-import { tours } from '../../constants/constants';
+// import { tours } from '../../constants/constants';
 import * as contentful from 'contentful';
 import { mapTourData } from '../../utils/mapContentfulData';
+import {Helmet} from "react-helmet";
 
 class Tour extends React.Component {
     constructor(props) {
@@ -72,11 +73,22 @@ class Tour extends React.Component {
             included,
             notIncluded,
             tourDetail,
+            tourCardPicture,
+            title
         } = this.state.tourData;
         let width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         // let tourItem = tours.find(item => item.name === this.props.match.params.name) || {};
         return (
             <div className={'Tour'}>
+                <Helmet>
+                    <title>My Title</title>
+                    <meta property="og:title" content={title} />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:url" content={"http://www.gobook.ba/" + this.props.location.pathname} />
+                    <meta property="og:image" content={"https:" + tourCardPicture}  />
+                    <meta property="og:description" content={title} />
+                    <meta property="og:site_name" content="Go Book" />
+                </Helmet>
                 <Heading {...headings[0]} style={customStyle} />
                 <ImageGallery
                     items={gallery}
@@ -105,4 +117,4 @@ class Tour extends React.Component {
     }
 }
 
-export default withRouter(Tour);
+export default Tour;
