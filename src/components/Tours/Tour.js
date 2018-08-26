@@ -81,7 +81,7 @@ class Tour extends React.Component {
         return (
             <div className={'Tour'}>
                 <Helmet>
-                    <title>My Title</title>
+                    <title>{title}</title>
                     <meta property="og:title" content={title} />
                     <meta property="og:type" content="website" />
                     <meta property="og:url" content={"http://www.gobook.ba/" + this.props.location.pathname} />
