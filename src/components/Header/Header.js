@@ -31,6 +31,7 @@ class Header extends React.Component {
                         <Link className={'header-item'} to="/why-bosnia" onClick={() => this.setState({open :false})}>Why Bosnia</Link>
                         <Link className={'header-item'} to="/about" onClick={() => this.setState({open :false})}>About</Link>
                         <Link className={'header-item'} to="/contact" onClick={() => this.setState({open :false})}>Contact</Link>
+                        {/*<Link className={'header-item'} to="/hungary-special" onClick={() => this.setState({open :false})}>Hungary Special</Link>*/}
                     </div>
                     <div className={'menu'}>
                         <HamburgerMenu

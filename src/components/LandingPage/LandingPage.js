@@ -73,7 +73,7 @@ class LandingPage extends Component {
         let {featuredImage, headings, cardsData, modalOpen} = this.state
         return (
             <div className={'App-main'}>
-                <FeaturedPicture {...featuredImage} />
+                <FeaturedPicture {...featuredImage} notShadow/>
                 <Heading {...headings[0]} style={customStyle} />
                 <Heading {...headings[1]} style={whiteBackground} absolute />
                 <ProductsContainer products={cardsData.filter(item => !item.oneDayTour)} />
@@ -82,7 +82,7 @@ class LandingPage extends Component {
                 <ProductsContainer products={cardsData.filter(item => item.oneDayTour)} />
                 <Heading {...headings[4]} style={customStyle} />
                 <BookButton onClickAction={this.bookAction} buttonText={'Book'} />
-                {/*<BookModal handleClose={this.bookAction} openModal={modalOpen} />*/}
+                <FeaturedPicture  picture={'https://images.ctfassets.net/0o22ljw5du6a/3xCDg4osKAK8AuYMcyC2U4/4346f8f676cdc60505b59083d648eb01/3.jpg'} notShadow />
             </div>
         );
     }
