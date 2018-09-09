@@ -88,6 +88,7 @@ class Tour extends React.Component {
                     <meta property="og:image" content={"https:" + tourCardPicture}  />
                     <meta property="og:description" content={title} />
                     <meta property="og:site_name" content="Go Book" />
+                    <meta name="fragment" content="!"/>
                 </Helmet>
                 <Heading {...headings[0]} style={customStyle} />
                 <ImageGallery
