@@ -70,6 +70,8 @@ const HungaryPromo = props => {
                     '4 vagy több csillagos SZÁLLODA Szarajevó központjában reggelivel\n' +
                     'WizzAir járat (Budapest-Szarajevó)'
                 }
+                headingPrice={'ár 290 EUR'}
+                headingDiscount={'gyerekek legfeljebb 12 éves ingyenes'}
             />
             <Itinerary data={itinerary} itinerary style={{  marginBottom: '50px'}} />
             <Include style={{ marginBottom: '50px'}} data={{ description: '● Szállás Szarajevóban - 3 éjszaka, 4 vagy több csillagos Szálloda Szarajevó központjában\n' +
@@ -82,7 +84,7 @@ const HungaryPromo = props => {
                      '● Biztosítási költségek\n' +
                      '● Belépőjegyek' }} title={'A túra díja nem foglalja magában:'} />
 
-            <BookButton onClickAction={() => props.history.push('/book-now')} buttonText={'Book'} />
+            <BookButton onClickAction={() => props.history.push('/book-now', { title: 'HOSSZÚ HÉTVÉGE BOSZNIÁBAN'})} buttonText={'Book'} />
             <FeaturedPicture  picture={'https://images.ctfassets.net/0o22ljw5du6a/3xCDg4osKAK8AuYMcyC2U4/4346f8f676cdc60505b59083d648eb01/3.jpg'} notShadow />
         </div>
     );

@@ -12,6 +12,7 @@ import ScrollToTop from "./utils/ScrollToTop";
 import BookNow from "./components/BookNow/BookNow";
 import About from "./components/About/About";
 import HungaryPromo from "./components/LandingPage/HungaryPromo";
+import NotFound from "./components/NotFound/NotFound";
 
 class App extends Component {
     render() {
@@ -29,6 +30,7 @@ class App extends Component {
                             <Route path="/terms-of-use" component={Terms} />
                             <Route path="/book-now" component={BookNow} />
                             <Route path="/hungary-special" component={HungaryPromo} />
+                            <Route path="*" component={NotFound} />
                         </Switch>
 
                     </ScrollToTop>

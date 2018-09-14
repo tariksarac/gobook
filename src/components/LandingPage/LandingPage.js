@@ -3,7 +3,6 @@ import BookButton from '../Common/BookButton/BookButton';
 import FeaturedPicture from '../FeaturedPicture/FeaturedPicture';
 import Heading from '../Heading/Heading';
 import ProductsContainer from '../Product/ProductsContainer';
-// import BookModal from '../Common/BookModal/BookModal';
 import * as contentful from 'contentful';
 import { mapLandingPage, mapPageCards } from '../../utils/mapContentfulData';
 
@@ -66,11 +65,10 @@ class LandingPage extends Component {
 
     bookAction = () => {
         this.props.history.push('/book-now')
-        // this.setState(({ modalOpen }) => ({ modalOpen: !modalOpen }));
     };
 
     render() {
-        let {featuredImage, headings, cardsData, modalOpen} = this.state
+        let {featuredImage, headings, cardsData} = this.state
         return (
             <div className={'App-main'}>
                 <FeaturedPicture {...featuredImage} notShadow/>
@@ -82,6 +80,14 @@ class LandingPage extends Component {
                 <ProductsContainer products={cardsData.filter(item => item.oneDayTour)} />
                 <Heading {...headings[4]} style={customStyle} />
                 <BookButton onClickAction={this.bookAction} buttonText={'Book'} />
+                <Heading
+                    style={{...whiteBackground, marginBottom:'20px'}}
+                    mainTitle={'Hungary special promo'}
+                    subTitle={'Ha a kiindulási pont Magyarország ellenőrizze ezt az ajánlatot'}
+                    hasLine
+                >
+                    <BookButton onClickAction={() => this.props.history.push('/hungary-special')} buttonText={'Ellenőrizd'} />
+                </Heading>
                 <FeaturedPicture  picture={'https://images.ctfassets.net/0o22ljw5du6a/3xCDg4osKAK8AuYMcyC2U4/4346f8f676cdc60505b59083d648eb01/3.jpg'} notShadow />
             </div>
         );

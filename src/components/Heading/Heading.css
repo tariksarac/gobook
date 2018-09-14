@@ -49,6 +49,18 @@
     font-size: 16px;
 }
 
+.Heading .heading-price {
+    font-size: 32px;
+    color: #33a3fc;
+}
+
+
+.Heading .heading-discount {
+    font-size: 22px;
+    color: #0ac66a;
+    font-weight: 400;
+}
+
 @media only screen and (max-width: 600px){
     .Heading {
         padding: 20px 5px;

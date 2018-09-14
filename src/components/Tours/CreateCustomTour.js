@@ -24,6 +24,7 @@ class CreateCustomTour extends React.Component {
                     <input type="hidden" name="_subject" value="New submission from custom tour!" />
                     <input type="hidden" name="_cc" value="tarik.sarac@gmail.com" />
                     <input id={'fullName'} placeholder={'Full Name'} type={'text'} name={'Full Name'} />
+                    <input id={'phoneNumber'} placeholder={'Phone Number'} type={'tel'} name={'Phone Number'} />
                     <input id={'email'} placeholder={'Email'} type={'email'} name={'_replyto'} />
                     <input id={'number'} placeholder={'Number of people'} type={'number'} name={'Number'} />
                     <input id={'place'} placeholder={'Place to visit'} type={'text'} name={'Place'} />
