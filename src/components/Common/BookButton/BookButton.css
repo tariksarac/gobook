@@ -1,21 +1,10 @@
 .BookButton {
-    width: 300px;
+    width: 150px;
     height: 50px;
-
     cursor: pointer;
-    font-size: 16px;
-    font-family: Roboto;
     -moz-appearance: none;
     outline: none;
-    margin-bottom: 20px;
-    margin-right: 15px;
-    margin-left: 15px;
-
     -webkit-appearance: button;
-    border: none;
-    color: #fff;
-    padding: 7px 20px;
-    display: inline-block;
     outline: 0;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -24,5 +13,22 @@
     -moz-border-radius: 3px;
     border-radius: 3px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 4px;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+    .BookButton {
+        width: 280px;
+    }
 }

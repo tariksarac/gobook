@@ -42,68 +42,68 @@ p {
   overflow: hidden;
 }
 
-.App .App-header {
-  grid-area: hd;
-  /*background-color: #f2f2f2;*/
-  background-color: #ffffff;
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  color: var(--main-text-color);
-}
+/*.App .App-header {*/
+  /*grid-area: hd;*/
+  /*!*background-color: #f2f2f2;*!*/
+  /*background-color: #ffffff;*/
+  /*display: grid;*/
+  /*grid-template-columns: repeat(9, 1fr);*/
+  /*color: var(--main-text-color);*/
+/*}*/
 
-.App .App-header .header-content {
-  grid-column-start: 2;
-  grid-column-end: 9;
-  display: flex;
-  justify-content: space-between;
-}
+/*.App .App-header .header-content {*/
+  /*grid-column-start: 2;*/
+  /*grid-column-end: 9;*/
+  /*display: flex;*/
+  /*justify-content: space-between;*/
+/*}*/
 
-.App .App-header .header-content .header-items {
-  width: auto;
-  transition: ease-in-out 200ms;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+/*.App .App-header .header-content .header-items {*/
+  /*width: auto;*/
+  /*transition: ease-in-out 200ms;*/
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  /*justify-content: flex-start;*/
+  /*align-items: center;*/
 
-}
+/*}*/
 
-.App .App-header .header-content .header-items .mobile-home {
-  display: none;
+/*.App .App-header .header-content .header-items .mobile-home {*/
+  /*display: none;*/
 
-}
+/*}*/
 
-.App .App-header .header-content .header-items a {
- text-decoration: none;
+/*.App .App-header .header-content .header-items a {*/
+ /*text-decoration: none;*/
 
-}
+/*}*/
 
-.App .App-header .header-content .header-social {
-  /*margin-right: 0;*/
-  /*margin-left: auto;*/
-  display: flex;
-}
+/*.App .App-header .header-content .header-social {*/
+  /*!*margin-right: 0;*!*/
+  /*!*margin-left: auto;*!*/
+  /*display: flex;*/
+/*}*/
 
-.App .App-header .header-content .header-items .header-item {
-  padding-right: 15px;
-  text-decoration: none;
-  color: #33a3fc;
+/*.App .App-header .header-content .header-items .header-item {*/
+  /*padding-right: 15px;*/
+  /*text-decoration: none;*/
+  /*color: #33a3fc;*/
 
-}
+/*}*/
 
 
 
-.App .App-header .header-content img {
-  height: auto;
-  width: 140px;
-  margin-bottom: auto;
-  margin-top: auto;
-  padding-right: 10px;
-}
+/*.App .App-header .header-content img {*/
+  /*height: auto;*/
+  /*width: 140px;*/
+  /*margin-bottom: auto;*/
+  /*margin-top: auto;*/
+  /*padding-right: 10px;*/
+/*}*/
 
-.App .App-header .menu {
-  display: none;
-}
+/*.App .App-header .menu {*/
+  /*display: none;*/
+/*}*/
 
 
 .App .App-main {
@@ -152,63 +152,63 @@ p {
             "ft ft ft ft   ft   ft   ft   ft   ft";
   }
 
-  .App .App-header {
-    /*height: 90px;*/
-    position: relative;
-  }
+  /*.App .App-header {*/
+    /*!*height: 90px;*!*/
+    /*position: relative;*/
+  /*}*/
 
-  .App .App-header .header-content {
-    grid-column-start: 1;
-    grid-column-end: 10;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
+  /*.App .App-header .header-content {*/
+    /*grid-column-start: 1;*/
+    /*grid-column-end: 10;*/
+    /*display: flex;*/
+    /*flex-direction: row-reverse;*/
+    /*justify-content: space-between;*/
+  /*}*/
 
-  .App .App-header .header-content .logo {
-    display: none;
-  }
+  /*.App .App-header .header-content .logo {*/
+    /*display: none;*/
+  /*}*/
 
-  #logo {
-    display: none !important;
-  }
+  /*#logo {*/
+    /*display: none !important;*/
+  /*}*/
 
-  .App .App-header .header-content .header-social {
-    margin: 0;
-    padding-left: 10px;
-  }
+  /*.App .App-header .header-content .header-social {*/
+    /*margin: 0;*/
+    /*padding-left: 10px;*/
+  /*}*/
 
 
-  .App .App-header .header-content .header-items {
-    position: absolute;
-    background-color: #ffffff;
-    width: 100%;
-    height: 100vh;
-    left: 100%;
-    transition: ease-in-out 200ms;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 100px;
-    z-index: 5;
-  }
+  /*.App .App-header .header-content .header-items {*/
+    /*position: absolute;*/
+    /*background-color: #ffffff;*/
+    /*width: 100%;*/
+    /*height: 100vh;*/
+    /*left: 100%;*/
+    /*transition: ease-in-out 200ms;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: flex-start;*/
+    /*padding-top: 100px;*/
+    /*z-index: 5;*/
+  /*}*/
 
-  .App .App-header .header-content .header-items .mobile-home {
-    display: block;
+  /*.App .App-header .header-content .header-items .mobile-home {*/
+    /*display: block;*/
 
-  }
+  /*}*/
 
-  .App .App-header .header-items .header-item {
-    height: 35px;
-  }
+  /*.App .App-header .header-items .header-item {*/
+    /*height: 35px;*/
+  /*}*/
 
-  .App .App-header .menu {
-    display: flex;
-    margin-bottom: auto;
-    margin-top: auto;
-    padding-right: 10px;
-    z-index: 6;
-  }
+  /*.App .App-header .menu {*/
+    /*display: flex;*/
+    /*margin-bottom: auto;*/
+    /*margin-top: auto;*/
+    /*padding-right: 10px;*/
+    /*z-index: 6;*/
+  /*}*/
 
   .terms-condition {
     grid-area: main;
