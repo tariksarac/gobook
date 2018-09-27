@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../../Heading/Heading.css';
 
 const HeadingContainer = ({children}) => {
     return (
-        <div style={{display:'flex', justifyContent:'space-between', gridArea:'content', alignItems: 'flex-start'}}>{children}</div>
+        <div className={'HeadingContainer'} >{children}</div>
     );
 };
 

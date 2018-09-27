@@ -3,6 +3,7 @@
     height: 600px;
     border-bottom: 10px solid #33a3fc;
     grid-area: wide;
+    margin-bottom: 100px
 }
 
 .HeroImage .text-container {

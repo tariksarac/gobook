@@ -2,8 +2,7 @@
     border-radius: 8px;
     width: 535px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+   text-align: center;
     margin-bottom: 25px;
 }
 

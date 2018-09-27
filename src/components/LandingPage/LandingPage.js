@@ -81,11 +81,11 @@ class LandingPage extends Component {
                 </HeroImage>
                 {/*<FeaturedPicture {...featuredImage} notShadow/>*/}
                 <HeadingContainer>
-                    <Heading {...headings[0]}  style={{flex:'1', flexBasis:'45%'}}/>
-                    <Heading {...headings[1]}  style={{flex:'1', flexBasis:'45%'}}/>
+                    <Heading {...headings[0]}  style={{maxWidth:'490px' }}/>
+                    <Heading {...headings[1]}  style={{maxWidth:'490px' }}/>
                 </HeadingContainer>
                 {/*<Heading {...headings[1]} style={whiteBackground} absolute />*/}
-                {/*<ProductsContainer products={cardsData.filter(item => !item.oneDayTour)} />*/}
+                <ProductsContainer products={cardsData.filter(item => !item.oneDayTour)} />
                 {/*/!*<Heading {...headings[2]} />*!/*/}
                 {/*<Heading {...headings[3]} style={customStyle} />*/}
                 {/*<ProductsContainer products={cardsData.filter(item => item.oneDayTour)} />*/}

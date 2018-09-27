@@ -30,7 +30,7 @@ p {
 /*input[type="date"]:valid::before { display: none }*/
 
 .App {
-  text-align: center;
+  /* text-align: center; */
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-auto-rows: minmax(100px, auto);
@@ -114,6 +114,8 @@ p {
   grid-template-areas:
           "wide wide wide wide wide wide wide wide wide"
           ". content content content   content   content   content   content   ."
+          ". card card card   card   card   card   card   ."
+          ;
 ;
 
   overflow: hidden;

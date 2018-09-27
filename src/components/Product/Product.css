@@ -1,8 +1,10 @@
 .product-container {
     padding-top: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     /*height: 320px;*/
+    grid-area: card;
+    margin-bottom: 100px
 }
 
 .product-container .Product {

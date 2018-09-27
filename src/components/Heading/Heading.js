@@ -1,5 +1,4 @@
 import React from 'react';
-import './Heading.css';
 
 const Heading = ({ subTitle, mainTitle, hasLine, color, margin, about, style, large, absolute, headingPrice, headingDiscount,children }) => {
     return (
