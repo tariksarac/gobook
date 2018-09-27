@@ -1,0 +1,11 @@
+.HeroImage {
+    width: 100%;
+    height: 600px;
+    border-bottom: 10px solid #33a3fc;
+    grid-area: wide;
+}
+
+.HeroImage .text-container {
+   padding-top: 186px;
+    padding-left: 200px;
+}

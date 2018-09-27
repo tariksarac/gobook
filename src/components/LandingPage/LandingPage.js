@@ -5,6 +5,10 @@ import Heading from '../Heading/Heading';
 import ProductsContainer from '../Product/ProductsContainer';
 import * as contentful from 'contentful';
 import { mapLandingPage, mapPageCards } from '../../utils/mapContentfulData';
+import HeroImage from "../HeroImage/HeroImage";
+import ColoredHeading from "../Common/ColoredHeading/ColoredHeading";
+import HeadingSection from "../Common/HeadingSection/HeadingSection";
+import HeadingContainer from "../Common/HeadingSection/HeadingContainer";
 
 const whiteBackground = {
     backgroundColor: '#ffffff',
@@ -71,24 +75,31 @@ class LandingPage extends Component {
         let {featuredImage, headings, cardsData} = this.state
         return (
             <div className={'App-main'}>
-                <FeaturedPicture {...featuredImage} notShadow/>
-                <Heading {...headings[0]} style={customStyle} />
-                <Heading {...headings[1]} style={whiteBackground} absolute />
-                <ProductsContainer products={cardsData.filter(item => !item.oneDayTour)} />
-                <Heading {...headings[2]} />
-                <Heading {...headings[3]} style={customStyle} />
-                <ProductsContainer products={cardsData.filter(item => item.oneDayTour)} />
-                <Heading {...headings[4]} style={customStyle} />
-                <BookButton onClickAction={this.bookAction} buttonText={'Book'} />
-                <Heading
-                    style={{...whiteBackground, marginBottom:'20px'}}
-                    mainTitle={'Hungary special promo'}
-                    subTitle={'Ha a kiindulási pont Magyarország ellenőrizze ezt az ajánlatot'}
-                    hasLine
-                >
-                    <BookButton onClickAction={() => this.props.history.push('/hungary-special')} buttonText={'Ellenőrizd'} />
-                </Heading>
-                <FeaturedPicture  picture={'https://images.ctfassets.net/0o22ljw5du6a/3xCDg4osKAK8AuYMcyC2U4/4346f8f676cdc60505b59083d648eb01/3.jpg'} notShadow />
+                <HeroImage picture={require('../../images/clouds-conifer-daylight-371589.jpg')}>
+                    <ColoredHeading heading={'The best of Bosnia and Herzegovina Tours'} color={'#33a3fc'}/>
+                    <ColoredHeading subheading={'Experience the incredible Bosnia and Herzegovina'} color={'#2edc38'}/>
+                </HeroImage>
+                {/*<FeaturedPicture {...featuredImage} notShadow/>*/}
+                <HeadingContainer>
+                    <Heading {...headings[0]}  style={{flex:'1', flexBasis:'45%'}}/>
+                    <Heading {...headings[1]}  style={{flex:'1', flexBasis:'45%'}}/>
+                </HeadingContainer>
+                {/*<Heading {...headings[1]} style={whiteBackground} absolute />*/}
+                {/*<ProductsContainer products={cardsData.filter(item => !item.oneDayTour)} />*/}
+                {/*/!*<Heading {...headings[2]} />*!/*/}
+                {/*<Heading {...headings[3]} style={customStyle} />*/}
+                {/*<ProductsContainer products={cardsData.filter(item => item.oneDayTour)} />*/}
+                {/*<Heading {...headings[4]} style={customStyle} />*/}
+                {/*<BookButton onClickAction={this.bookAction} buttonText={'Book'} />*/}
+                {/*<Heading*/}
+                    {/*style={{...whiteBackground, marginBottom:'20px'}}*/}
+                    {/*mainTitle={'Hungary special promo'}*/}
+                    {/*subTitle={'Ha a kiindulási pont Magyarország ellenőrizze ezt az ajánlatot'}*/}
+                    {/*hasLine*/}
+                {/*>*/}
+                    {/*<BookButton onClickAction={() => this.props.history.push('/hungary-special')} buttonText={'Ellenőrizd'} />*/}
+                {/*</Heading>*/}
+                {/*<FeaturedPicture  picture={'https://images.ctfassets.net/0o22ljw5du6a/3xCDg4osKAK8AuYMcyC2U4/4346f8f676cdc60505b59083d648eb01/3.jpg'} notShadow />*/}
             </div>
         );
     }
