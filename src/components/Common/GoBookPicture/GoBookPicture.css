@@ -1,0 +1,14 @@
+.GoBookPicture {
+
+}
+
+.GoBookPicture .pict {
+    width: 486px;
+    height: 274px;
+}
+.GoBookPicture .bord {
+    width: 484px;
+    height: 10px;
+    margin: 15px auto;
+}
+

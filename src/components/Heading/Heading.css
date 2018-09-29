@@ -1,8 +1,9 @@
 .HeadingContainer {
     display:flex;
      justify-content:space-between;
-     grid-area:content;
-     align-items: flex-start;
+    grid-column-start: 2;
+    grid-column-end: 9;
+    align-items: flex-start;
      width:100%;
      margin-bottom: 100px
 }
@@ -19,7 +20,7 @@
 }
 
 .Heading .main-heading {
-    /* height: 40px; */
+    text-transform: uppercase;
     font-family: 'Work Sans', sans-serif;
     font-size: 28px;
     font-weight: 600;
@@ -27,7 +28,7 @@
     font-stretch: normal;
     line-height: 1.43;
     letter-spacing: normal;
-    text-align: center;
+    text-align: left;
     color: #444444;
     margin: 0;
     padding-bottom: 15px;
@@ -51,8 +52,13 @@
     text-align: left;
     margin: 0 auto;
     /*padding: 20px;*/
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #444444;
 }
 
 .Heading .sub-heading-about {
@@ -77,6 +83,10 @@
 }
 
 @media only screen and (max-width: 600px){
+    .HeadingContainer {
+        flex-direction: column;
+        align-items:center ;
+    }
     .Heading {
         padding: 20px 5px;
     }
@@ -84,6 +94,7 @@
     .Heading .main-heading {
         font-size: 1.5rem;
         line-height: 40px;
+        text-align: left;
     }
 
     .Heading .large {

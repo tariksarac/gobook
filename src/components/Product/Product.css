@@ -1,9 +1,10 @@
 .product-container {
     padding-top: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     /*height: 320px;*/
-    grid-area: card;
+    grid-column-start: 2;
+    grid-column-end: 9;
     margin-bottom: 100px
 }
 

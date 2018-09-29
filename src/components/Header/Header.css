@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-areas: '. logo content content   content   content   content   content   .';
-    grid-auto-rows: minmax(80px, 110px);
+    /*grid-auto-rows: minmax(80px, 110px);*/
     position: fixed;
     top: 0;
     z-index: 99999;
