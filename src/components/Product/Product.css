@@ -75,12 +75,17 @@
         flex-direction: column;
         height: auto;
         align-items: center;
+
+        grid-column-start: 1;
+        grid-column-end: 10;
+        padding: 0 20px;
+        margin-bottom: 50px
     }
 
     .product-container .Product {
         margin: 10px 0;
         transition: none;
-        max-width: 350px;
+        width: 100%;
 
     }
     .product-container .Product:hover {

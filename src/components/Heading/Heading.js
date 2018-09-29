@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Heading = ({ subTitle, mainTitle, hasLine, color, margin, about, style, large, absolute, headingPrice, headingDiscount,children }) => {
+const Heading = ({ subTitle, mainTitle, hasLine, color, margin, about, style, large, absolute, headingPrice, headingDiscount,children, id }) => {
     return (
-        <div className={'Heading'} style={{ ...style }}>
+        <div className={'Heading'} style={{ ...style }} id={id}>
 
             {mainTitle && (
                 <h1 className={`main-heading ${large && 'large'}`} >

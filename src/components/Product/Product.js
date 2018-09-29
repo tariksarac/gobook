@@ -28,7 +28,7 @@ class Product extends React.Component {
                     onClick={() => this.props.history.push(`/tour/${id}`)}
                 />
                 <CardContent onClick={() => this.props.history.push(`/tour/${id}`)}>
-                    <Typography gutterBottom variant="headline" component="h2">
+                    <Typography gutterBottom variant="headline" component="h2" align={'center'}>
                         {title}
                     </Typography>
                     <Typography component="p" align={'center'}>

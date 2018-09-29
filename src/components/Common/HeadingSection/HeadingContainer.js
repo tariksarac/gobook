@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../../Heading/Heading.css';
 
-const HeadingContainer = ({children}) => {
+const HeadingContainer = ({children, style, id}) => {
     return (
-        <div className={'HeadingContainer'} >{children}</div>
+        <div className={'HeadingContainer'} style={style} id={id}>{children}</div>
     );
 };
 
