@@ -3,7 +3,7 @@
     background-color: #33a3fc;
     display: flex;
     /*flex-direction: column;*/
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .Footer .footer-contact {
@@ -69,6 +69,13 @@
 
 .Footer  .site-link {
    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    color: #ffffff;
 }
 
 /*.Footer .footer-social .social-icon:hover {*/
@@ -112,9 +119,13 @@
 }
 
 @media only screen and (max-width: 600px){
-    .Footer .footer-contact {
+    .Footer  {
         flex-direction: column;
-        align-items: center;
-        width: 100%;
+
+    }
+    .Footer .footer-contact {
+        /*flex-direction: column;*/
+        /*align-items: center;*/
+        /*width: 100%;*/
     }
 }

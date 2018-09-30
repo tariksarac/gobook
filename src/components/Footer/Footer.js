@@ -7,7 +7,7 @@ import { Instagram, Facebook, Twitter } from 'react-feather';
 
 const logo = require('../../images/logo.jpeg');
 
-const Footer = props => {
+const Footer = ({history}) => {
     return (
         <div className={'Footer'}>
             <div className={'footer-contact'}>
@@ -24,7 +24,7 @@ const Footer = props => {
                     </div>
                     <div>
                         <div>
-                            <span role="img">📬</span> gobook@gobook.ba
+                            <span role="img">📬</span><a className={'site-link'} href="mailto:gobook@gobook.ba">gobook@gobook.ba</a>
                         </div>
                     </div>
                     <div>GoBook Ⓡ2018. All rights reserved.</div>
@@ -35,8 +35,8 @@ const Footer = props => {
                 <Line color={'#ffffff'} />
                 <div className={'contact-detail'}>
                     <div className={'social'}>
-                        <Instagram marginRight={'50px'} className={'social-icon'}/>
-                        <Facebook className={'social-icon'}/>
+                        <a className={'site-link'} href={'https://www.instagram.com/gobook.ba/'}><Instagram marginRight={'50px'}/></a>
+                        <a className={'site-link'} href={'https://www.facebook.com/GoBook-227313291292119/'}><Facebook marginRight={'50px'}/></a>
                         <Twitter className={'social-icon'}/>
                     </div>
 
@@ -47,12 +47,12 @@ const Footer = props => {
                 <Line color={'#ffffff'} />
                 <div className={'contact-detail'}>
                     <div className={'site-map'}>
-                        <div className={'site-link'}>Home</div>
-                        <div className={'site-link'}>Why Bosnia</div>
-                        <div className={'site-link'}>About</div>
-                        <div className={'site-link'}>Contact</div>
+                        <div className={'site-link'} onClick={() => history.push('/')}>Home</div>
+                        <div className={'site-link'} onClick={() => history.push('/why-bosnia')}>Why Bosnia</div>
+                        <div className={'site-link'} onClick={() => history.push('/about')}>About</div>
+                        <div className={'site-link'} onClick={() => history.push('/contact')}>Contact</div>
                     </div>
-                    <div className={'site-link'}>Terms of Use</div>
+                    <div className={'site-link'} style={{paddingBottom:'30px'}} onClick={() => history.push('/terms-of-use')}>Terms of Use</div>
                 </div>
             </div>
             {/*<div className={'footer-logo'}>*/}
