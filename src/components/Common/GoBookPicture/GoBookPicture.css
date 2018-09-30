@@ -12,3 +12,14 @@
     margin: 15px auto;
 }
 
+@media only screen and (max-width: 600px) {
+
+    .GoBookPicture {
+        width: 100%;
+    }
+    .GoBookPicture .pict {
+        width: 100%;
+        height: 274px;
+    }
+}
+

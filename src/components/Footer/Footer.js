@@ -1,11 +1,8 @@
 import React from 'react';
-// import Social from '../Header/Social';
 import './Footer.css';
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import Line from '../Common/Line/Line';
 import { Instagram, Facebook, Twitter } from 'react-feather';
-
-const logo = require('../../images/logo.jpeg');
 
 const Footer = ({history}) => {
     return (
@@ -35,8 +32,8 @@ const Footer = ({history}) => {
                 <Line color={'#ffffff'} />
                 <div className={'contact-detail'}>
                     <div className={'social'}>
-                        <a className={'site-link'} href={'https://www.instagram.com/gobook.ba/'}><Instagram marginRight={'50px'}/></a>
-                        <a className={'site-link'} href={'https://www.facebook.com/GoBook-227313291292119/'}><Facebook marginRight={'50px'}/></a>
+                        <a className={'site-link'} href={'https://www.instagram.com/gobook.ba/'}><Instagram /></a>
+                        <a className={'site-link'} href={'https://www.facebook.com/GoBook-227313291292119/'}><Facebook /></a>
                         <Twitter className={'social-icon'}/>
                     </div>
 
@@ -55,19 +52,6 @@ const Footer = ({history}) => {
                     <div className={'site-link'} style={{paddingBottom:'30px'}} onClick={() => history.push('/terms-of-use')}>Terms of Use</div>
                 </div>
             </div>
-            {/*<div className={'footer-logo'}>*/}
-            {/*<img src={logo} alt={'Go Book'} onClick={() => props.history.push('/')}/>*/}
-            {/*</div>*/}
-            {/*<div className={'footer-text'}>Go Book</div>*/}
-
-            {/*<div className={'footer-social'}>*/}
-            {/*<Social />*/}
-            {/*</div>*/}
-            {/*<div className={'footer-site-map'}>*/}
-            {/*<Link to={'/terms-of-use'} style={{ color: '#f2f2f2', height: '50px' }}>*/}
-            {/*Terms of use*/}
-            {/*</Link>*/}
-            {/*</div>*/}
         </div>
     );
 };

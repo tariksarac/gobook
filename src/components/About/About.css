@@ -1,8 +1,25 @@
 .About {
-    display: flex;
+    /*display: flex;*/
     grid-area: main;
-    justify-content: center;
-    align-items: flex-start;
+    /*justify-content: center;*/
+    /*align-items: flex-start;*/
     height: 100vh;
-    padding-top: 100px;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.About .about-image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About .about-image img{
+    max-width: 100%;
+    height: auto;
+
 }

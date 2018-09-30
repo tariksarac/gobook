@@ -1,4 +1,5 @@
 import React from 'react';
+import Line from "../Common/Line/Line";
 
 const Heading = ({ subTitle, mainTitle, hasLine, color, margin, about, style, large, absolute, headingPrice, headingDiscount,children, id }) => {
     return (
@@ -8,7 +9,7 @@ const Heading = ({ subTitle, mainTitle, hasLine, color, margin, about, style, la
                 <h1 className={`main-heading ${large && 'large'}`} >
                     {mainTitle}
                 </h1>
-            )} {hasLine && <div className={'line'} />}
+            )} {hasLine && <Line color={color}/>}
 
             {subTitle && <h2 className={'sub-heading'}>{subTitle}</h2>}
             {about && <h3 className={'sub-heading-about'}>{about}</h3>}

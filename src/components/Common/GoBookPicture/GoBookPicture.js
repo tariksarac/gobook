@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './GoBookPicture.css'
+import Line from "../Line/Line";
 
 const GoBookPicture = ({picture, color}) => {
 
@@ -11,7 +12,8 @@ const GoBookPicture = ({picture, color}) => {
     return (
         <div className={'GoBookPicture'} >
             <div className={'pict'} style={{...imageStyle}}/>
-            <div className={'bord'} style={{backgroundColor: color}}/>
+            {/*<div className={'bord'} style={{backgroundColor: color}}/>*/}
+            <Line color={color} full/>
         </div>
     );
 };

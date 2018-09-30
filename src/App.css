@@ -2,7 +2,7 @@ body {
   --main-text-color: #33a3fc;
   --second-text-color: #0ac66a;
   font-family: Roboto;
-  background-color: #f2f2f2;
+  /*background-color: #f2f2f2;*/
   font-size: 18px;
   line-height: 30px;
   color: #2d2926;

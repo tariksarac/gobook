@@ -2,6 +2,8 @@
     padding: 30px 20px;
     background-color: #ffffff;
     display: flex;
+    border-bottom: 1px solid #dedede;
+    align-items: flex-start;
 }
 
 .TextItem-line {
@@ -44,6 +46,7 @@
     .TextItem {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .TextItem .sight-image {

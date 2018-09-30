@@ -90,7 +90,7 @@ class LandingPage extends Component {
                     <ProductsContainer products={cardsData.filter(item => !item.oneDayTour)} />
                     <HeadingContainer >
                         <GoBookPicture picture={require('../../images/kinzig-shore-trees-mirroring-black-forest-158361.jpeg')}/>
-                        <Heading {...headings[2]}  />
+                        <Heading {...headings[2]}  style={{maxWidth:'490px' }}/>
                     </HeadingContainer>
                     <Heading {...headings[3]} id={'check-tour'}/>
                     <ProductsContainer products={cardsData.filter(item => item.oneDayTour)} />
@@ -100,7 +100,7 @@ class LandingPage extends Component {
                         </Heading>
                         <GoBookPicture picture={require('../../images/kinzig-shore-trees-mirroring-black-forest-158361.jpeg')}/>
                     </HeadingContainer>
-                    <HeadingContainer style={{gridColumnStart:2, gridColumnEnd:9}} id={"hungary-special"}>
+                    <HeadingContainer id={"hungary-special"}>
                         <GoBookPicture picture={require('../../images/kinzig-shore-trees-mirroring-black-forest-158361.jpeg')}/>
                         <Heading
                         style={{maxWidth:'490px' }}
