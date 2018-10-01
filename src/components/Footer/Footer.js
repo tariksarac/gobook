@@ -16,12 +16,12 @@ const Footer = ({history}) => {
                             <span role="img">📞 </span>Viber, WhatsApp
                         </div>
                         <div>
-                            <span role="img">👉</span>+387 61025015
+                            <span role="img">👉 </span>+387 61025015
                         </div>
                     </div>
                     <div>
                         <div>
-                            <span role="img">📬</span><a className={'site-link'} href="mailto:gobook@gobook.ba">gobook@gobook.ba</a>
+                            <span role="img">📬 </span><a className={'site-link'} href="mailto:gobook@gobook.ba">gobook@gobook.ba</a>
                         </div>
                     </div>
                     <div>GoBook Ⓡ2018. All rights reserved.</div>

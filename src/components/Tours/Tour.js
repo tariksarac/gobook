@@ -14,6 +14,8 @@ import { customStyle } from '../LandingPage/LandingPage';
 import * as contentful from 'contentful';
 import { mapTourData } from '../../utils/mapContentfulData';
 import {Helmet} from "react-helmet";
+import HeadingContainer from "../Common/HeadingSection/HeadingContainer";
+import Line from "../Common/Line/Line";
 
 class Tour extends React.Component {
     constructor(props) {
@@ -90,29 +92,55 @@ class Tour extends React.Component {
                     <meta property="og:site_name" content="Go Book" />
                     <meta name="fragment" content="!"/>
                 </Helmet>
-                <Heading {...headings[0]} style={customStyle} />
-                <ImageGallery
-                    items={gallery}
-                    showThumbnails={false}
-                    showPlayButton={width < 600 ? true : this.state.showImageControl}
-                    showFullscreenButton={width < 600 ? true : this.state.showImageControl}
-                    onMouseOver={() =>
-                        this.setState(({ showImageControl }) => ({
-                            showImageControl: !showImageControl,
-                        }))
-                    }
-                    onMouseLeave={() =>
-                        this.setState(({ showImageControl }) => ({
-                            showImageControl: !showImageControl,
-                        }))
-                    }
-                />
-                { highlights.length > 0 && <Highlights highlights={highlights} /> }
-                { itinerary.length > 0 && <Itinerary data={itinerary} itinerary /> }
-                { included && <Include data={{ description: included }} include title={'PRICE INCLUDES:'} /> }
-                { notIncluded && <Include data={{ description: notIncluded }} title={'NOT INCLUDED:'} /> }
-                { tourDetail && <Heading about={tourDetail} /> }
-                <BookButton onClickAction={this.bookAction} buttonText={'Book Now!'} />
+                <HeadingContainer>
+                    <Heading {...headings[0]} hasLine style={{marginBottom: '0'}}/>
+                </HeadingContainer>
+                {/*<Heading {...headings[0]} style={customStyle} />*/}
+                <HeadingContainer style={{flexDirection: 'column'}}>
+                    <ImageGallery
+                        items={gallery}
+                        showThumbnails={false}
+                        showPlayButton={width < 600 ? true : this.state.showImageControl}
+                        showFullscreenButton={width < 600 ? true : this.state.showImageControl}
+                        onMouseOver={() =>
+                            this.setState(({ showImageControl }) => ({
+                                showImageControl: !showImageControl,
+                            }))
+                        }
+                        onMouseLeave={() =>
+                            this.setState(({ showImageControl }) => ({
+                                showImageControl: !showImageControl,
+                            }))
+                        }
+                    />
+                    <Line full/>
+                </HeadingContainer>
+
+                {/*<ImageGallery*/}
+                    {/*items={gallery}*/}
+                    {/*showThumbnails={false}*/}
+                    {/*showPlayButton={width < 600 ? true : this.state.showImageControl}*/}
+                    {/*showFullscreenButton={width < 600 ? true : this.state.showImageControl}*/}
+                    {/*onMouseOver={() =>*/}
+                        {/*this.setState(({ showImageControl }) => ({*/}
+                            {/*showImageControl: !showImageControl,*/}
+                        {/*}))*/}
+                    {/*}*/}
+                    {/*onMouseLeave={() =>*/}
+                        {/*this.setState(({ showImageControl }) => ({*/}
+                            {/*showImageControl: !showImageControl,*/}
+                        {/*}))*/}
+                    {/*}*/}
+                {/*/>*/}
+
+
+
+                {/*{ highlights.length > 0 && <Highlights highlights={highlights} /> }*/}
+                {/*{ itinerary.length > 0 && <Itinerary data={itinerary} itinerary /> }*/}
+                {/*{ included && <Include data={{ description: included }} include title={'PRICE INCLUDES:'} /> }*/}
+                {/*{ notIncluded && <Include data={{ description: notIncluded }} title={'NOT INCLUDED:'} /> }*/}
+                {/*{ tourDetail && <Heading about={tourDetail} /> }*/}
+                {/*<BookButton onClickAction={this.bookAction} buttonText={'Book Now!'} />*/}
             </div>
         );
     }

@@ -1,5 +1,7 @@
 .Tour {
     grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
 }
 
 .Tour .originalClass {
