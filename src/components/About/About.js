@@ -25,7 +25,7 @@ const About = () => {
     return (
         <div className={'About'}>
             <HeadingContainer>
-                <Heading mainTitle={'About Go Book'} about={aboutUs} hasLine style={{width: '50%'}}/>
+                <Heading mainTitle={'About Go Book'} about={aboutUs} hasLine />
                 <div className={'about-image'}><img src={require('../../images/GoBook.png')}/></div>
             </HeadingContainer>
 
