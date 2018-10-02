@@ -6,12 +6,18 @@
 
 .Tour .originalClass {
     max-height: 400px;
+    width: 100%;
+}
+
+.Tour .HeadingContainer {
+   margin-bottom: 50px;
+    padding-top: 50px;
 }
 
 
-/*.Tour .image-gallery-image {*/
-    /*max-height: 400px;*/
-/*}*/
+.Tour .HeadingContainer .image-gallery {
+    width: 100%;
+}
 
 @media only screen and (max-width: 600px){
     .Tour .originalClass {

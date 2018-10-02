@@ -4,6 +4,8 @@
     display: flex;
     margin-bottom: 20px;
     background-color: #ffffff;
+    grid-column-start: 2;
+    grid-column-end: 9;
 }
 
 @media only screen and (max-width: 600px){

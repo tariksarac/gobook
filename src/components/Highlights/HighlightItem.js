@@ -1,6 +1,7 @@
 import React from 'react'
 import './Highlights.css'
 import * as Markdown from "react-markdown";
+import GoBookPicture from "../Common/GoBookPicture/GoBookPicture";
 // import {sarajevo} from "../../constants/constants";
 
 const HighlightItem = ({data, reverse}) => {
@@ -25,7 +26,8 @@ const HighlightItem = ({data, reverse}) => {
                 {/*<div className={'HighlightItem'}>{data.highlightText}</div>*/}
                 <Markdown source={data.highlightText} className={'go-book-text'} />
             </div>
-            <div className={'Highlights-image'}><img src={data.highlightPicture} alt={data.town}/></div>
+            {/*<div className={'Highlights-image'}><img src={data.highlightPicture} alt={data.town}/></div>*/}
+            <GoBookPicture picture={data.highlightPicture} color={'#2edc38'}/>
             {/*<div style={{width:'50%', height: '100%'}}>*/}
                 {/*<div className={'Highlights-image'} style={featuredStyle}><span>twst</span></div>*/}
             {/*</div>*/}

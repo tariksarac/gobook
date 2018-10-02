@@ -1,5 +1,7 @@
 import React from 'react';
 import Line from "../Common/Line/Line";
+import * as Markdown from 'react-markdown';
+
 
 const Heading = ({ subTitle, mainTitle, hasLine, color, margin, about, style, large, absolute, headingPrice, headingDiscount,children, id }) => {
     return (

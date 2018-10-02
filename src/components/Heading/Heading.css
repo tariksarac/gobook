@@ -5,7 +5,9 @@
     grid-column-end: 9;
     align-items: flex-start;
      width:100%;
-     margin-bottom: 100px
+     margin-bottom: 100px;
+    border-bottom: 1px solid #dedede;
+
 }
 
 #check-tour {

@@ -92,9 +92,9 @@ class Tour extends React.Component {
                     <meta property="og:site_name" content="Go Book" />
                     <meta name="fragment" content="!"/>
                 </Helmet>
-                <HeadingContainer>
-                    <Heading {...headings[0]} hasLine style={{marginBottom: '0'}}/>
-                </HeadingContainer>
+                {/*<HeadingContainer>*/}
+                    <Heading {...headings[0]} hasLine style={{marginBottom: '0', gridColumnStart:2, gridColumnEnd:9, marginTop:'50px'}}/>
+                {/*</HeadingContainer>*/}
                 {/*<Heading {...headings[0]} style={customStyle} />*/}
                 <HeadingContainer style={{flexDirection: 'column'}}>
                     <ImageGallery
@@ -135,8 +135,17 @@ class Tour extends React.Component {
 
 
 
-                {/*{ highlights.length > 0 && <Highlights highlights={highlights} /> }*/}
-                {/*{ itinerary.length > 0 && <Itinerary data={itinerary} itinerary /> }*/}
+                { highlights.length > 0 && <Highlights highlights={highlights} /> }
+                { itinerary.length > 0 && <Itinerary data={itinerary} itinerary /> }
+                <HeadingContainer>
+                    {included && <Heading mainTitle={'PRICE INCLUDES'} subTitle={included} hasLine style={{maxWidth:'490px' }}/>}
+                    {notIncluded &&  <Heading mainTitle={'NOT INCLUDED'} subTitle={notIncluded} hasLine style={{maxWidth:'490px' }}/>}
+                </HeadingContainer>
+                <HeadingContainer>
+                    <Heading mainTitle={'Book this tour'} about={tourDetail} hasLine style={{maxWidth:'490px' }}>
+                        <BookButton onClickAction={this.bookAction} buttonText={'Book Now!'} />
+                    </Heading>
+                </HeadingContainer>
                 {/*{ included && <Include data={{ description: included }} include title={'PRICE INCLUDES:'} /> }*/}
                 {/*{ notIncluded && <Include data={{ description: notIncluded }} title={'NOT INCLUDED:'} /> }*/}
                 {/*{ tourDetail && <Heading about={tourDetail} /> }*/}
