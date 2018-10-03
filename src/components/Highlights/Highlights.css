@@ -26,7 +26,6 @@
     width: 100%;
     border-bottom: 1px solid #dedede;
     padding-top: 50px;
-    height: 400px;
 }
 .HighlightItem-container:last-child {
 
@@ -37,7 +36,7 @@
 .HighlightItem-container .HighlightItem-text{
    background-color: #ffffff;
     width: 50%;
-    height: 250px;
+    height: 350px;
     padding: 20px 10px;
     box-sizing: border-box;
     display: flex;
@@ -105,7 +104,7 @@
 
 
     .Highlights {
-        align-items: center;
+        /*align-items: center;*/
     }
     .HighlightItem-container {
         display: flex;
@@ -114,6 +113,7 @@
         align-items: center;
         width: 100%;
         padding-bottom: 20px;
+        padding-top: 0;
     }
 
     .HighlightItem-container .HighlightItem-text {

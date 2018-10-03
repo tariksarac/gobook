@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './GoBookPicture.css'
 import Line from "../Line/Line";
 
-const GoBookPicture = ({picture, color}) => {
+const GoBookPicture = ({picture, color, style}) => {
 
     const imageStyle = {
         background: `url(${picture}) center / cover no-repeat scroll`,
@@ -11,7 +11,7 @@ const GoBookPicture = ({picture, color}) => {
     }
     return (
         <div className={'GoBookPicture'} >
-            <div className={'pict'} style={{...imageStyle}}/>
+            <div className={'pict'} style={{...imageStyle, ...style}}/>
             {/*<div className={'bord'} style={{backgroundColor: color}}/>*/}
             <Line color={color} full/>
         </div>

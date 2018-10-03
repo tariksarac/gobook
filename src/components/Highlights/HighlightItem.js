@@ -27,7 +27,7 @@ const HighlightItem = ({data, reverse}) => {
                 <Markdown source={data.highlightText} className={'go-book-text'} />
             </div>
             {/*<div className={'Highlights-image'}><img src={data.highlightPicture} alt={data.town}/></div>*/}
-            <GoBookPicture picture={data.highlightPicture} color={'#2edc38'}/>
+            <GoBookPicture picture={data.highlightPicture} color={'#2edc38'} style={{height: '275px'}}/>
             {/*<div style={{width:'50%', height: '100%'}}>*/}
                 {/*<div className={'Highlights-image'} style={featuredStyle}><span>twst</span></div>*/}
             {/*</div>*/}

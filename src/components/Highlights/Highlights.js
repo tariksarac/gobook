@@ -6,7 +6,7 @@ import Heading from "../Heading/Heading";
 
 const Highlights = ({highlights}) => {
     return(
-        <Section style={{backgroundColor: 'unset', padding: '50px 0'}}>
+        <Section >
             <div className={'Highlights'}>
                 {/*<div className={'title'}>Tour Highlights</div>*/}
                 <Heading mainTitle={'Tour Highlights'} hasLine/>

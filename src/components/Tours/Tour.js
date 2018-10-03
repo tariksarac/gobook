@@ -99,7 +99,7 @@ class Tour extends React.Component {
                     <Heading {...headings[0]} hasLine style={{marginBottom: '0', gridColumnStart:2, gridColumnEnd:9, marginTop:'50px'}}/>
                 {/*</HeadingContainer>*/}
                 {/*<Heading {...headings[0]} style={customStyle} />*/}
-                <HeadingContainer style={{flexDirection: 'column'}}>
+                <HeadingContainer style={{flexDirection: 'column', marginBottom: '0'}}>
                     {/*<ImageGallery*/}
                         {/*items={gallery}*/}
                         {/*showThumbnails={false}*/}
@@ -116,8 +116,8 @@ class Tour extends React.Component {
                             {/*}))*/}
                         {/*}*/}
                     {/*/>*/}
-                    <Carousel showArrows={true} showThumbs={false} transitionTime={350}>
-                        { gallery.map((item) => <div><img src={item.original}/></div>)}
+                    <Carousel showThumbs={false} transitionTime={350} autoPlay={true} className={'carousel'} showStatus={false} infiniteLoop={true}>
+                        { gallery.map((item, index) => <div key={index}><img src={item.original}/></div>)}
                     </Carousel>
                     <Line full/>
                 </HeadingContainer>

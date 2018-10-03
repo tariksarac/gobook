@@ -24,6 +24,10 @@
     height: 500px;
 }
 
+.Tour .HeadingContainer .carousel .carousel-slider {
+    max-height: 500px;
+}
+
 @media only screen and (max-width: 600px){
     /*.Tour .originalClass {*/
         /*max-height: 300px;*/
