@@ -24,6 +24,14 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    border-bottom: 1px solid #dedede;
+    padding-top: 50px;
+    height: 400px;
+}
+.HighlightItem-container:last-child {
+
+    border-bottom: 0;
+
 }
 
 .HighlightItem-container .HighlightItem-text{

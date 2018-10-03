@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Line.css'
 
-const Line = ({color, full}) => {
+const Line = ({color, full, style}) => {
     return (
-        <div className={'go-book-line'} style={{backgroundColor: color, width: full && '100%'}}/>
+        <div className={'go-book-line'} style={{...style , backgroundColor: color, width: full && '100%'}}/>
     );
 };
 

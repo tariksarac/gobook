@@ -17,6 +17,9 @@ import {Helmet} from "react-helmet";
 import HeadingContainer from "../Common/HeadingSection/HeadingContainer";
 import Line from "../Common/Line/Line";
 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+
 class Tour extends React.Component {
     constructor(props) {
         super(props);
@@ -97,22 +100,25 @@ class Tour extends React.Component {
                 {/*</HeadingContainer>*/}
                 {/*<Heading {...headings[0]} style={customStyle} />*/}
                 <HeadingContainer style={{flexDirection: 'column'}}>
-                    <ImageGallery
-                        items={gallery}
-                        showThumbnails={false}
-                        showPlayButton={width < 600 ? true : this.state.showImageControl}
-                        showFullscreenButton={width < 600 ? true : this.state.showImageControl}
-                        onMouseOver={() =>
-                            this.setState(({ showImageControl }) => ({
-                                showImageControl: !showImageControl,
-                            }))
-                        }
-                        onMouseLeave={() =>
-                            this.setState(({ showImageControl }) => ({
-                                showImageControl: !showImageControl,
-                            }))
-                        }
-                    />
+                    {/*<ImageGallery*/}
+                        {/*items={gallery}*/}
+                        {/*showThumbnails={false}*/}
+                        {/*showPlayButton={width < 600 ? true : this.state.showImageControl}*/}
+                        {/*showFullscreenButton={width < 600 ? true : this.state.showImageControl}*/}
+                        {/*onMouseOver={() =>*/}
+                            {/*this.setState(({ showImageControl }) => ({*/}
+                                {/*showImageControl: !showImageControl,*/}
+                            {/*}))*/}
+                        {/*}*/}
+                        {/*onMouseLeave={() =>*/}
+                            {/*this.setState(({ showImageControl }) => ({*/}
+                                {/*showImageControl: !showImageControl,*/}
+                            {/*}))*/}
+                        {/*}*/}
+                    {/*/>*/}
+                    <Carousel showArrows={true} showThumbs={false} transitionTime={350}>
+                        { gallery.map((item) => <div><img src={item.original}/></div>)}
+                    </Carousel>
                     <Line full/>
                 </HeadingContainer>
 
@@ -136,11 +142,14 @@ class Tour extends React.Component {
 
 
                 { highlights.length > 0 && <Highlights highlights={highlights} /> }
+                <Line full color={'#dedede'} style={{gridColumnStart:1, gridColumnEnd:10, height:'1px'}}/>
                 { itinerary.length > 0 && <Itinerary data={itinerary} itinerary /> }
+                <Line full color={'#dedede'} style={{gridColumnStart:1, gridColumnEnd:10, height:'1px'}}/>
                 <HeadingContainer>
                     {included && <Heading mainTitle={'PRICE INCLUDES'} subTitle={included} hasLine style={{maxWidth:'490px' }}/>}
                     {notIncluded &&  <Heading mainTitle={'NOT INCLUDED'} subTitle={notIncluded} hasLine style={{maxWidth:'490px' }}/>}
                 </HeadingContainer>
+                <Line full color={'#dedede'} style={{gridColumnStart:1, gridColumnEnd:10, height:'1px'}}/>
                 <HeadingContainer>
                     <Heading mainTitle={'Book this tour'} about={tourDetail} hasLine style={{maxWidth:'490px' }}>
                         <BookButton onClickAction={this.bookAction} buttonText={'Book Now!'} />
