@@ -119,7 +119,7 @@
     .HighlightItem-container .HighlightItem-text {
         width: 100%;
         height: auto;
-        padding: 15px;
+        padding: 0;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;

@@ -7,6 +7,8 @@ import FeaturedPicture from '../FeaturedPicture/FeaturedPicture';
 import Itinerary from '../Itinerary/Itinerary';
 import Include from "../Include/Include";
 import BookButton from "../Common/BookButton/BookButton";
+import HeadingContainer from "../Common/HeadingSection/HeadingContainer";
+import HeroImage from "../HeroImage/HeroImage";
 
 const whiteBackground = {
     backgroundColor: '#ffffff',
@@ -54,38 +56,65 @@ const HungaryPromo = props => {
 
     return (
         <div className={'HungaryPromo'}>
-            <Heading
-                mainTitle={'HOSSZÚ HÉTVÉGE BOSZNIÁBAN'}
-                hasLine
-                subTitle={
-                    'Látogassa meg a szív alakú országot, ahol a Kelet találkozik a Nyugattal,\n' +
-                    'a rendkívül gazdag gasztronómia, mágikus természeti szépségek és\n' +
-                    'meleg szívű emberek országát. Élvezze a bosnyák kávézás kultúráját.'
-                }
-            />
-            <FeaturedPicture left picture={'https://images.ctfassets.net/0o22ljw5du6a/2B2befRnTSqKYYaQM0wyAM/35ce0134483f5b0135373107219c3405/BANER.jpg'} notShadow />
-            <Heading
-                style={whiteBackground}
-                subTitle={
-                    '4 vagy több csillagos SZÁLLODA Szarajevó központjában reggelivel\n' +
-                    'WizzAir járat (Budapest-Szarajevó)'
-                }
-                headingPrice={'ár 290 EUR'}
-                headingDiscount={'gyerekek legfeljebb 12 éves ingyenes'}
-            />
-            <Itinerary data={itinerary} itinerary style={{  marginBottom: '50px'}} />
-            <Include style={{ marginBottom: '50px'}} data={{ description: '● Szállás Szarajevóban - 3 éjszaka, 4 vagy több csillagos Szálloda Szarajevó központjában\n' +
-                    '● Reggeli a szállodában\n' +
-                    '● Szállítás\n' +
-                    '● Hivatásos vezető (angol nyelv)' }} include title={'A túra díja magában foglalja'} />
-             <Include style={{  marginBottom: '50px'}} data={{ description: '● Járat (a Wizz Air ajánlott, ára kb. 20 eur)\n' +
-                     '● Étkezés - kivéve a szálloda reggelijét\n' +
-                     '● Borravaló\n' +
-                     '● Biztosítási költségek\n' +
-                     '● Belépőjegyek' }} title={'A túra díja nem foglalja magában:'} />
+            <HeadingContainer>
+                <Heading
+                    mainTitle={'HOSSZÚ HÉTVÉGE BOSZNIÁBAN'}
+                    hasLine
+                    subTitle={
+                        'Látogassa meg a szív alakú országot, ahol a Kelet találkozik a Nyugattal,\n' +
+                        'a rendkívül gazdag gasztronómia, mágikus természeti szépségek és\n' +
+                        'meleg szívű emberek országát. Élvezze a bosnyák kávézás kultúráját.'
+                    }
+                />
+            </HeadingContainer>
 
-            <BookButton onClickAction={() => props.history.push('/book-now', { title: 'HOSSZÚ HÉTVÉGE BOSZNIÁBAN'})} buttonText={'Book'} />
-            <FeaturedPicture  picture={'https://images.ctfassets.net/0o22ljw5du6a/3xCDg4osKAK8AuYMcyC2U4/4346f8f676cdc60505b59083d648eb01/3.jpg'} notShadow />
+            <HeadingContainer>
+                <HeroImage picture={'https://images.ctfassets.net/0o22ljw5du6a/2B2befRnTSqKYYaQM0wyAM/35ce0134483f5b0135373107219c3405/BANER.jpg'}/>
+            </HeadingContainer>
+
+
+            {/*<FeaturedPicture left picture={'https://images.ctfassets.net/0o22ljw5du6a/2B2befRnTSqKYYaQM0wyAM/35ce0134483f5b0135373107219c3405/BANER.jpg'} notShadow />*/}
+            <HeadingContainer >
+                <Heading
+                    hasLine
+                    style={{width:'100%', alignItems: 'center'}}
+                    subTitle={
+                        '4 vagy több csillagos SZÁLLODA Szarajevó központjában reggelivel\n' +
+                        'WizzAir járat (Budapest-Szarajevó)'
+                    }
+                    headingPrice={'ár 290 EUR'}
+                    headingDiscount={'gyerekek legfeljebb 12 éves ingyenes'}
+                />
+            </HeadingContainer>
+
+
+            <Itinerary data={itinerary} itinerary style={{  marginBottom: '50px'}} />
+            {/*<Include style={{ marginBottom: '50px'}} data={{ description: '● Szállás Szarajevóban - 3 éjszaka, 4 vagy több csillagos Szálloda Szarajevó központjában\n' +*/}
+                    {/*'● Reggeli a szállodában\n' +*/}
+                    {/*'● Szállítás\n' +*/}
+                    {/*'● Hivatásos vezető (angol nyelv)' }} include title={'A túra díja magában foglalja'} />*/}
+             {/*<Include style={{  marginBottom: '50px'}} data={{ description: '● Járat (a Wizz Air ajánlott, ára kb. 20 eur)\n' +*/}
+                     {/*'● Étkezés - kivéve a szálloda reggelijét\n' +*/}
+                     {/*'● Borravaló\n' +*/}
+                     {/*'● Biztosítási költségek\n' +*/}
+                     {/*'● Belépőjegyek' }} title={'A túra díja nem foglalja magában:'} />*/}
+
+            <HeadingContainer>
+                <Heading mainTitle={'A túra díja magában foglalja'} subTitle={'● Szállás Szarajevóban - 3 éjszaka, 4 vagy több csillagos Szálloda Szarajevó központjában\n' +
+                '● Reggeli a szállodában\n' +
+                '● Szállítás\n' +
+                '● Hivatásos vezető (angol nyelv)'} hasLine style={{maxWidth:'490px' }}/>
+                <Heading mainTitle={'NOT INCLUDED'} subTitle={'● Járat (a Wizz Air ajánlott, ára kb. 20 eur)\n' +
+                '● Étkezés - kivéve a szálloda reggelijét\n' +
+                '● Borravaló\n' +
+                '● Biztosítási költségek\n' +
+                '● Belépőjegyek'} hasLine style={{maxWidth:'490px' }}/>
+            </HeadingContainer>
+            <HeadingContainer>
+                    <BookButton onClickAction={() => props.history.push('/book-now', { title: 'HOSSZÚ HÉTVÉGE BOSZNIÁBAN'})} buttonText={'Book'} />
+            </HeadingContainer>
+            <HeroImage picture={'https://images.ctfassets.net/0o22ljw5du6a/3xCDg4osKAK8AuYMcyC2U4/4346f8f676cdc60505b59083d648eb01/3.jpg'}/>
+            {/*<FeaturedPicture   notShadow />*/}
         </div>
     );
 };
