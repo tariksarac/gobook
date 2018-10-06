@@ -1,0 +1,4 @@
+.BookFormInput{
+    display: flex;
+    flex-direction: column;
+}

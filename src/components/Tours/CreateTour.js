@@ -8,10 +8,10 @@ const CreateTour = ({ style, tourItem }) => {
 
     return (
         <div className={'create-tour'} style={{ ...style }}>
-            <Typography id="modal-title" align={'center'} variant={'headline'} className={'headline-modal'}>
-                {tourItem ? tourItem.title : 'Choose a tour'}
-            </Typography>
-            <form action="https://formspree.io/info@gobook.ba" method="POST" name={'CreateTour'}>
+            {/*<Typography id="modal-title" align={'center'} variant={'headline'} className={'headline-modal'}>*/}
+                {/*{tourItem ? tourItem.title : 'Choose a tour'}*/}
+            {/*</Typography>*/}
+            {/*<form action="https://formspree.io/info@gobook.ba" method="POST" name={'CreateTour'}>*/}
                 <input type="hidden" name="_subject" value="New submission !" />
                 <input type="hidden" name="_cc" value="tarik.sarac@gmail.com" />
                 <select disabled={!!tourItem} name={'tour'} id={'tour'}>
@@ -30,7 +30,7 @@ const CreateTour = ({ style, tourItem }) => {
                 {/*onBlur={(e) => selectDate.setAttribute.type='text'} id="select-date" ref={selectDate}/>*/}
                 <input id={'country'} placeholder={'Where are you from'} type={'text'} name={'Country'} />
                 <BookButton type={"submit"} value="Book" buttonText={"Book"} style={{ width: '100%', height:'35px' }} />
-            </form>
+            {/*</form>*/}
         </div>
     );
 };

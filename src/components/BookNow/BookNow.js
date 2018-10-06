@@ -4,6 +4,7 @@ import CreateTour from "../Tours/CreateTour";
 import CreateCustomTour from "../Tours/CreateCustomTour";
 import './BookNow.css'
 import '../../components/Common/BookModal/BookModal.css';
+import BookTourForm from "./BookTourForm/BookTourForm";
 
 
 class BookNow extends Component {
@@ -31,24 +32,29 @@ class BookNow extends Component {
 
         return (
             <div className={'book-now'}>
-                <div className={'book-now-image'}/>
                 <div className={'book-modal book-now-container'}>
                     <div className={'book-modal-wide'} style={{ width: tourItem && '100%' }}>
-                        <CreateTour style={tour} tourItem={tourItem} />
+                        {/*<CreateTour style={tour} tourItem={tourItem} />*/}
+                        <BookTourForm style={tour} tourItem={tourItem} />
                         {!tourItem && <CreateCustomTour style={customTour} />}
                     </div>
+
+
+
                     {!tourItem && (
                         <div>
                             <div className={'or'}>or</div>
                             <div
                                 className={'action-link'}
                                 onClick={() => this.setState(({ custom }) => ({ custom: !custom }))}>
-                                {!custom ? ' TRy Create your tour' : 'Return'}
+                                {!custom ? ' Try Create your tour' : 'Return'}
                             </div>
                             {/*<BookButton buttonText={!custom ? 'Create tour' : 'Return'}/>*/}
                         </div>
                     )}
                 </div>
+
+                <div className={'book-now-image'}/>
             </div>
         );
     }

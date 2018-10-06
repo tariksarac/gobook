@@ -1,8 +1,11 @@
 .book-now {
-    grid-area: main;
+    /*grid-area: main;*/
     display: flex;
     padding-bottom: 100px;
     padding-top: 50px;
+    grid-column-end: 9;
+    grid-column-start: 2;
+    justify-content: space-between;
 }
 
 .book-now .book-now-image{
@@ -15,8 +18,9 @@
     position: static;
     max-width: unset;
     transform: unset;
-    margin-left: 50px;
+    /*margin-left: 50px;*/
     max-height: unset;
+    width: 60%;
 }
 
 .book-now .book-now-container .headline-modal{
