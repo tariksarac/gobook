@@ -1,8 +1,15 @@
+.book-now-container {
+    display: flex;
+    flex-direction: column;
+    grid-column-end: 9;
+    grid-column-start: 2;
+}
+
 .book-now {
     /*grid-area: main;*/
     display: flex;
     padding-bottom: 100px;
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     grid-column-end: 9;
     grid-column-start: 2;
     justify-content: space-between;
@@ -27,7 +34,24 @@
    padding-top: 0;
 }
 
+.book-now button {
+    width: calc(100% - 66px);
+    margin: 20px 8px;
+}
+
 @media only screen and (max-width: 600px){
+
+    .book-now-container {
+        display: flex;
+        flex-direction: column;
+        grid-column-end: 10;
+        grid-column-start: 1;
+    }
+    .book-now-container .Heading {
+        padding-bottom:0 ;
+        padding-left: 8px;
+    }
+
     .book-now {
         flex-direction: column;
         padding-top: 0;
@@ -50,5 +74,9 @@
 
     .book-now .book-now-container .headline-modal{
         padding-top: 20px;
+    }
+    .book-now button {
+        width: calc(100% - 16px);
+        margin: 20px 8px;
     }
 }

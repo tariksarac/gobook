@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './BookFormInput.css';
-import Input from '@material-ui/core/Input';
+import './ContactFormTextbox.css';
+import TextField from '@material-ui/core/TextField';
 import InputLabel from '@material-ui/core/InputLabel';
 import { withStyles } from '@material-ui/core/styles';
 
@@ -14,7 +14,7 @@ const styles = theme => ({
         flexWrap: 'wrap',
         border: '0'
     },
-    input: {
+    textField: {
         margin: theme.spacing.unit,
         display: 'flex',
         boxSizing: 'border-box',
@@ -56,33 +56,30 @@ const styles = theme => ({
 });
 
 
-const BookFormInput = ({name, classes, defaultValue, id, type, placeholder, customStyle, onChange, multiline}) => {
+const ContactFormTextbox = ({name, classes, defaultValue, id, type, placeholder, customStyle, onChange, value}) => {
     return (
         <div className={'BookFormInput'} style={{...customStyle}}>
             <InputLabel htmlFor={id} className={classes.label}>{name}</InputLabel>
-            <Input
+            <TextField
+                id="standard-multiline-flexible"
+                label="Multiline"
+                multiline
+                rowsMax="4"
+                value={value}
                 onChange={onChange}
-                placeholder={placeholder}
-                type={type}
-                id={id}
-                defaultValue={defaultValue}
-                className={classes.input}
-                inputProps={{
-                    'aria-label': 'Description',
-                    multiline:multiline
-                }}
-                multiline={multiline}
+                className={classes.textField}
+                margin="normal"
             />
         </div>
     );
 };
 
-BookFormInput.propTypes = {
+ContactFormTextbox.propTypes = {
     inputLabel: PropTypes.string
 };
-BookFormInput.defaultProps = {
+ContactFormTextbox.defaultProps = {
     defaultValue: ''
 };
 
 // export default BookFormInput;
-export default withStyles(styles)(BookFormInput);
+export default withStyles(styles)(ContactFormTextbox);

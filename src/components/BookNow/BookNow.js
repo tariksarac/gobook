@@ -7,17 +7,16 @@ import '../../components/Common/BookModal/BookModal.css';
 import BookTourForm from './BookTourForm/BookTourForm';
 import CreateTourForm from './CreateTourForm/CreateTourForm';
 import BookButton from '../Common/BookButton/BookButton';
-import GoBookPicture from "../Common/GoBookPicture/GoBookPicture";
+import GoBookPicture from '../Common/GoBookPicture/GoBookPicture';
+import Heading from '../Heading/Heading';
 
 class BookNow extends Component {
-    constructor(props){
-        super(props)
+    constructor(props) {
+        super(props);
         // this.myRef = React.createRef();
     }
 
-    componentDidMount(){
-
-    }
+    componentDidMount() {}
     static defaultProps = {};
 
     static propTypes = {};
@@ -27,8 +26,8 @@ class BookNow extends Component {
     };
 
     onSubmitForm = () => {
-        this.state.custom && this.createOwnTour.submitForm() // do stuff
-        !this.state.custom && this.selectTour.submitForm() // do stuff
+        this.state.custom && this.createOwnTour.submitForm(); // do stuff
+        !this.state.custom && this.selectTour.submitForm(); // do stuff
     };
 
     render() {
@@ -46,35 +45,47 @@ class BookNow extends Component {
         };
 
         return (
-            <div className={'book-now'}>
-                <div className={'book-modal book-now-container'}>
-                    <div className={'book-modal-wide'} style={{ width: tourItem && '100%' }}>
-                        <BookTourForm style={tour} tourItem={tourItem} onRef={ref => (this.selectTour = ref)}/>
-                        {!tourItem && <CreateTourForm style={customTour} onRef={ref => (this.createOwnTour = ref)}/>}
+            <div className={'book-now-container'}>
+                <Heading mainTitle={'book now'} hasLine style={{paddingTop: '50px'}}/>
+                <div className={'book-now'}>
+                    <div className={'book-modal book-now-container'}>
+                        <div className={'book-modal-wide'} style={{ width: tourItem && '100%' }}>
+                            <BookTourForm
+                                style={tour}
+                                tourItem={tourItem}
+                                onRef={ref => (this.selectTour = ref)}
+                            />
+                            {!tourItem && (
+                                <CreateTourForm
+                                    style={customTour}
+                                    onRef={ref => (this.createOwnTour = ref)}
+                                />
+                            )}
+                        </div>
+
+                        <BookButton buttonText={'BOOK THIS TOUR'} onClickAction={this.onSubmitForm} />
+
+                        {!tourItem && (
+                            <div className={'book-now-form-button'}>
+                                <div className={'or'}>or</div>
+                                <BookButton
+                                    onClickAction={() => this.setState(({ custom }) => ({ custom: !custom }))}
+                                    buttonText={!custom ? 'Create tour' : 'Return'}
+                                    color={'#2edc38'}
+                                    // style={{ width: 'calc(100% - 66px)', margin: '20px 8px' }}
+                                />
+                            </div>
+                        )}
                     </div>
 
-                    <BookButton
-                        buttonText={'BOOK THIS TOUR'}
-                        style={{ width: 'calc(100% - 66px)', margin: '20px 8px' }}
-                        onClickAction={this.onSubmitForm}
-                        // type="submit" form="form1" value="Submit"
+                    {/*<div className={'book-now-image'} />*/}
+                    <GoBookPicture
+                        id={'book-now-image'}
+                        picture={tourItem && tourItem.picture}
+                        containerStyle={{ width: '40%' }}
+                        style={{ width: '100%', height: '100%' }}
                     />
-
-                    {!tourItem && (
-                        <div>
-                            <div className={'or'}>or</div>
-                            <BookButton
-                                onClickAction={() => this.setState(({ custom }) => ({ custom: !custom }))}
-                                buttonText={!custom ? 'Create tour' : 'Return'}
-                                color={'#2edc38'}
-                                style={{ width: 'calc(100% - 66px)', margin: '20px 8px' }}
-                            />
-                        </div>
-                    )}
                 </div>
-
-                {/*<div className={'book-now-image'} />*/}
-                <GoBookPicture id={'book-now-image'} picture={tourItem && tourItem.picture} containerStyle={{width:'40%'}} style={{width:'100%', height:'100%'}}/>
             </div>
         );
     }

@@ -39,7 +39,17 @@ class CreateTourForm extends Component {
             dataType: 'json',
         })
             .then(function(response) {
-                console.log(response);
+                this.setState({
+                    fullName: '',
+                    phone: '',
+                    numberOfPeople: 0,
+                    placeToVisit: '',
+                    startDate: '',
+                    endDate: '',
+                    whereAreYouForm: '',
+                    email:'',
+                    openModal:true
+                })
             })
             .catch(function(error) {
                 console.log(error);
