@@ -31,10 +31,17 @@
     .book-now {
         flex-direction: column;
         padding-top: 0;
+        grid-column-end: 10;
+        grid-column-start: 1;
     }
 
     .book-now .book-now-container {
         margin: 0 auto;
+        width: 100%;
+    }
+
+    #book-now-image {
+        display: none;
     }
 
     .book-now .book-now-image{

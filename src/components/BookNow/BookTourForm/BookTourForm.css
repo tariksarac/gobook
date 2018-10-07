@@ -4,3 +4,17 @@
     flex-wrap: wrap;
     padding-right: 50px;
 }
+
+.BookTourForm .BookFormInput {
+    width: 50%;
+}
+
+@media  only screen and (max-width: 600px){
+    .BookTourForm {
+        padding-right: 0;
+    }
+
+    .BookTourForm .BookFormInput {
+        width: 100%;
+    }
+}

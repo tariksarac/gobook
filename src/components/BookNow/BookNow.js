@@ -74,7 +74,7 @@ class BookNow extends Component {
                 </div>
 
                 {/*<div className={'book-now-image'} />*/}
-                <GoBookPicture picture={tourItem && tourItem.picture} containerStyle={{width:'40%'}} style={{width:'100%', height:'100%'}}/>
+                <GoBookPicture id={'book-now-image'} picture={tourItem && tourItem.picture} containerStyle={{width:'40%'}} style={{width:'100%', height:'100%'}}/>
             </div>
         );
     }

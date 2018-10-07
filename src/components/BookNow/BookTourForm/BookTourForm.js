@@ -64,7 +64,7 @@ class BookTourForm extends React.Component {
                 <BookFormInput
                     name={'First name'}
                     placeholder={'First name'}
-                    customStyle={{ width: '50%' }}
+                    // customStyle={{ width: '50%' }}
                     value={firstName}
                     type={'text'}
                     onChange={event => this.setState({ firstName: event.target.value })}
@@ -72,7 +72,7 @@ class BookTourForm extends React.Component {
                 <BookFormInput
                     name={'Last name'}
                     placeholder={'Last name'}
-                    customStyle={{ width: '50%' }}
+                    // customStyle={{ width: '50%' }}
                     type={'text'}
                     value={lastName}
                     onChange={event => this.setState({ lastName: event.target.value })}
@@ -80,7 +80,7 @@ class BookTourForm extends React.Component {
                 <BookFormInput
                     name={'Phone number'}
                     placeholder={'Phone number'}
-                    customStyle={{ width: '50%' }}
+                    // customStyle={{ width: '50%' }}
                     type={'tel'}
                     value={phone}
                     onChange={event => this.setState({ phone: event.target.value })}
@@ -88,7 +88,7 @@ class BookTourForm extends React.Component {
                 <BookFormInput
                     name={'Email'}
                     placeholder={'Email'}
-                    customStyle={{ width: '50%' }}
+                    // customStyle={{ width: '50%' }}
                     type={'email'}
                     value={email}
                     onChange={event => this.setState({ email: event.target.value })}
@@ -96,7 +96,7 @@ class BookTourForm extends React.Component {
                 <BookFormInput
                     name={'Number of people'}
                     placeholder={'Number of people'}
-                    customStyle={{ width: '50%' }}
+                    // customStyle={{ width: '50%' }}
                     type={'number'}
                     value={date}
                     onChange={event => this.setState({ date: event.target.value })}
@@ -104,7 +104,7 @@ class BookTourForm extends React.Component {
                 <BookFormInput
                     name={'Date'}
                     placeholder={'Date'}
-                    customStyle={{ width: '50%' }}
+                    // customStyle={{ width: '50%' }}
                     type={'date'}
                     value={numberOfPeople}
                     onChange={event => this.setState({ numberOfPeople: event.target.value })}
