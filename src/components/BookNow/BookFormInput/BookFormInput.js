@@ -19,18 +19,18 @@ const styles = theme => ({
         display: 'flex',
         boxSizing: 'border-box',
         padding:'13px 20px',
-        width: '493px',
         height: '50px',
         backgroundColor: '#ffffff',
         '&:before' : {
             border: 'solid 1px #7b7b7b',
-            width: '493px',
             height: '50px',
             borderRadius: '8px',
+            '&:hover' :{
+                display: 'none'
+            }
         },
         '&:after' : {
             border: 'solid 1px #33a3fc',
-            width: '493px',
             height: '50px',
             borderRadius: '8px',
         },
@@ -50,22 +50,21 @@ const styles = theme => ({
         fontStretch: 'normal',
         lineHeight: '1.14',
         letterSpacing: 'normal',
-        color: '#444444'
+        color: '#444444',
+        marginBottom:'0'
     },
 });
 
 
-const BookFormInput = ({name, classes, defaultValue, id, type, placeholder}) => {
-    const handleOnchange = (event) => console.log('fsdfsd')
+const BookFormInput = ({name, classes, defaultValue, id, type, placeholder, customStyle, onChange}) => {
     return (
-        <div className={'BookFormInput'}>
+        <div className={'BookFormInput'} style={{...customStyle}}>
             <InputLabel htmlFor={id} className={classes.label}>{name}</InputLabel>
             <Input
-                onChange={(event)=>console.log('fsdfsd', event)}
+                onChange={onChange}
                 placeholder={placeholder}
                 type={type}
                 id={id}
-                fullWidth
                 defaultValue={defaultValue}
                 className={classes.input}
                 inputProps={{

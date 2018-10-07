@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 import './GoBookPicture.css'
 import Line from "../Line/Line";
 
-const GoBookPicture = ({picture, color, style}) => {
+const GoBookPicture = ({picture, color, style, containerStyle}) => {
 
     const imageStyle = {
         background: `url(${picture}) center / cover no-repeat scroll`,
 
     }
     return (
-        <div className={'GoBookPicture'} >
+        <div className={'GoBookPicture'} style={{...containerStyle}}>
             <div className={'pict'} style={{...imageStyle, ...style}}/>
             {/*<div className={'bord'} style={{backgroundColor: color}}/>*/}
             <Line color={color} full/>
@@ -23,7 +23,7 @@ GoBookPicture.propTypes = {
     color: PropTypes.string
 };
 GoBookPicture.defaultProps = {
-    picture: '',
+    picture: require('../../../images/clouds-conifer-daylight-371589.jpg'),
     color: '#33a3fc'
 };
 

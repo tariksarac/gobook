@@ -66,7 +66,7 @@ class Tour extends React.Component {
 
     bookAction = () => {
         // this.setState(({ modalOpen }) => ({ modalOpen: !modalOpen }));
-        this.props.history.push('/book-now', {id: this.state.tourData.id, title: this.state.tourData.title})
+        this.props.history.push('/book-now', {id: this.state.tourData.id, title: this.state.tourData.title, picture: this.state.tourData.tourCardPicture})
     };
 
     render() {

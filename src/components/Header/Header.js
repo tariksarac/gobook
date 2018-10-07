@@ -1,6 +1,6 @@
 import React from 'react';
 import HamburgerMenu from 'react-hamburger-menu';
-import { Link } from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
 import './Header.css';
 import BookButton from "../Common/BookButton/BookButton";
 
@@ -102,7 +102,7 @@ class Header extends React.Component {
                         {/*</div>*/}
 
                         <div className={'header-button'}>
-                            <BookButton/>
+                            <BookButton onClickAction={()=>{this.props.history.push('/book-now')}}/>
                         </div>
                     </div>
                 </div>
@@ -113,4 +113,4 @@ class Header extends React.Component {
     }
 }
 
-export default Header;
+export default withRouter(Header);

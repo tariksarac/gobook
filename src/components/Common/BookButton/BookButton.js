@@ -5,10 +5,14 @@ import './BookButton.css';
 class BookButton extends Component {
     static defaultProps = {
         buttonText: 'Book',
+        color: '#33a3fc',
+        onClickAction: () => {}
     };
 
     static propTypes = {
         buttonText: PropTypes.string,
+        color: PropTypes.string,
+        onClickAction: PropTypes.func,
     };
 
     state = {
@@ -19,10 +23,10 @@ class BookButton extends Component {
 
         let { buttonText, onClickAction,style, ...rest } = this.props;
         let buttonStyle = {
-            backgroundColor: !this.state.hovered && '#33a3fc',
-            color: !this.state.hovered ? '#ffffff' : '#33a3fc',
+            backgroundColor: !this.state.hovered && rest.color,
+            color: !this.state.hovered ? '#ffffff' : rest.color,
             border: this.state.hovered ? '1px solid' : 'none',
-            borderColor: this.state.hovered && '#33a3fc',
+            borderColor: this.state.hovered && rest.color,
         };
         return (
             <button
