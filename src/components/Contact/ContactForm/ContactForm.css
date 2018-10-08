@@ -2,3 +2,21 @@
     width: 60%;
     padding-right: 50px;
 }
+
+.contact-form button {
+    width: calc(100% - 16px);
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-form {
+        width: 100%;
+        padding-right: 0;
+    }
+    .contact-details .GoBookPicture {
+        display: none;
+    }
+
+
+}

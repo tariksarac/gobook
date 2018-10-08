@@ -69,9 +69,7 @@ const BookFormInput = ({name, classes, defaultValue, id, type, placeholder, cust
                 className={classes.input}
                 inputProps={{
                     'aria-label': 'Description',
-                    multiline:multiline
                 }}
-                multiline={multiline}
             />
         </div>
     );

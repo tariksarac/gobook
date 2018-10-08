@@ -74,7 +74,7 @@ class BookTourForm extends React.Component {
                     id={tourName}
                     name={'ToUR NAME'}
                     placeholder={'Bosnia and Herzegovina Intro Tour'}
-                    customStyle={{ width: '100%' }}
+                    customStyle={{ width: '100%', marginBottom:'25px'}}
                     fullWidth
                     tourItem={tourItem}
                     onSelectOption={option => this.setState({ tourName: option })}

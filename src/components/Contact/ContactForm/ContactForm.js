@@ -3,6 +3,7 @@ import BookFormInput from "../../BookNow/BookFormInput/BookFormInput";
 import ContactFormTextbox from "../ContactFormTextbox/ContactFormTextbox";
 
 import './ContactForm.css'
+import BookButton from "../../Common/BookButton/BookButton";
 
 class ContactForm extends Component {
 
@@ -20,7 +21,6 @@ class ContactForm extends Component {
                     <BookFormInput
                         name={'Your name'}
                         placeholder={'Your name'}
-                        // customStyle={{ width: '50%' }}
                         value={name}
                         type={'text'}
                         onChange={event => this.setState({ name: event.target.value })}
@@ -30,7 +30,6 @@ class ContactForm extends Component {
                     <BookFormInput
                         name={'Your Email'}
                         placeholder={'Email'}
-                        // customStyle={{ width: '50%' }}
                         type={'email'}
                         value={email}
                         onChange={event => this.setState({ email: event.target.value })}
@@ -38,11 +37,12 @@ class ContactForm extends Component {
                 <ContactFormTextbox
                     name={'Message'}
                     placeholder={'Message'}
-                    // customStyle={{ width: '50%' }}
                     type={'text'}
                     value={message}
                     onChange={event => this.setState({ message: event.target.value })}
                 />
+
+                <BookButton />
 
                 </form>
         );

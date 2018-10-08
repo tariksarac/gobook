@@ -2,6 +2,7 @@
     padding-top: 50px;
     grid-column-start: 2;
     grid-column-end: 9;
+    padding-bottom: 100px;
 }
 .contact-container .contact-details {
    display: flex;
@@ -178,7 +179,21 @@
 @media only screen and (max-width: 600px){
 
     .contact-container {
-        grid-template-areas: "img img img img img img" "main main main main main main " "ft ft ft ft ft ft ";
+        /*grid-template-areas: "img img img img img img" "main main main main main main " "ft ft ft ft ft ft ";*/
+        padding-top: 50px;
+        grid-column-start: 1;
+        grid-column-end: 10;
+        padding-bottom: 100px;
+    }
+
+    .contact-container .contact-details {
+        flex-direction: column;
+
+    }
+
+    .contact-container .Heading {
+        margin-left: 8px;
+
     }
     .contact-container .Contact form #name {
         width: 100%;
