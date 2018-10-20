@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import BookFormInput from '../BookFormInput/BookFormInput';
 import axios from 'axios';
+import { withFormik } from 'formik';
+import * as Yup from 'yup';
 
 class CreateTourForm extends Component {
     constructor(props) {
@@ -20,7 +22,7 @@ class CreateTourForm extends Component {
         placeToVisit: '',
         startDate: '',
         endDate: '',
-        whereAreYouForm: '',
+        whereAreYouFrom: '',
         email:''
     };
 
@@ -33,7 +35,7 @@ class CreateTourForm extends Component {
     submitForm = () => {
         let data = { ...this.state, custom: null };
         axios({
-            url: 'https://formspree.io/tarik.sarac@gmail.com',
+            url: 'https://iau89pgyxf.execute-api.eu-west-1.amazonaws.com/dev/email/send',
             method: 'POST',
             data: data,
             dataType: 'json',
@@ -46,7 +48,7 @@ class CreateTourForm extends Component {
                     placeToVisit: '',
                     startDate: '',
                     endDate: '',
-                    whereAreYouForm: '',
+                    whereAreYouFrom: '',
                     email:'',
                     openModal:true
                 })
@@ -65,32 +67,35 @@ class CreateTourForm extends Component {
             placeToVisit,
             startDate,
             endDate,
-            whereAreYouForm,
+            whereAreYouFrom,
             email
         } = this.state;
         return (
             <form className={'BookTourForm'} style={style} name={'CreateTour'} autoComplete="off">
                 <BookFormInput
                     name={'full NAME'}
-                    placeholder={'Bosnia and Herzegovina Intro Tour'}
+                    placeholder={'Full Name'}
                     customStyle={{ width: '100%' }}
                     fullWidth
                     value={fullName}
                     onChange={event => this.setState({ fullName: event.target.value })}
                 />
                 <BookFormInput
+                    type={'tel'}
                     name={'Phone number'}
                     placeholder={'Phone number'}
                     value={phone}
                     onChange={event => this.setState({ phone: event.target.value })}
                 />
                 <BookFormInput
+                    type={'email'}
                     name={'Email'}
                     placeholder={'Email'}
                     value={email}
                     onChange={event => this.setState({ email: event.target.value })}
                 />
                 <BookFormInput
+                    type={'number'}
                     name={'Number of people'}
                     placeholder={'Number of people'}
                     value={numberOfPeople}
@@ -103,12 +108,14 @@ class CreateTourForm extends Component {
                     onChange={event => this.setState({ placeToVisit: event.target.value })}
                 />
                 <BookFormInput
+                    type={'date'}
                     name={'Start date'}
                     placeholder={'Start date'}
                     value={startDate}
                     onChange={event => this.setState({ startDate: event.target.value })}
                 />
                 <BookFormInput
+                    type={'date'}
                     name={'End date'}
                     placeholder={'End date'}
                     value={endDate}
@@ -118,8 +125,8 @@ class CreateTourForm extends Component {
                     name={'Where are you from'}
                     placeholder={'Where are you from'}
                     fullWidth
-                    value={whereAreYouForm}
-                    onChange={event => this.setState({ whereAreYouForm: event.target.value })}
+                    value={whereAreYouFrom}
+                    onChange={event => this.setState({ whereAreYouFrom: event.target.value })}
                     customStyle={{ width: '100%' }}
                 />
             </form>

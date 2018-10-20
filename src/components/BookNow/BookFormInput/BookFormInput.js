@@ -56,7 +56,7 @@ const styles = theme => ({
 });
 
 
-const BookFormInput = ({name, classes, defaultValue, id, type, placeholder, customStyle, onChange, multiline}) => {
+const BookFormInput = ({name, classes, defaultValue, id, type, placeholder, customStyle, onChange, value}) => {
     return (
         <div className={'BookFormInput'} style={{...customStyle}}>
             <InputLabel htmlFor={id} className={classes.label}>{name}</InputLabel>
@@ -65,11 +65,12 @@ const BookFormInput = ({name, classes, defaultValue, id, type, placeholder, cust
                 placeholder={placeholder}
                 type={type}
                 id={id}
-                defaultValue={defaultValue}
+                // defaultValue={defaultValue}
                 className={classes.input}
                 inputProps={{
                     'aria-label': 'Description',
                 }}
+                value={value}
             />
         </div>
     );

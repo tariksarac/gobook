@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import CreateTour from '../Tours/CreateTour';
-import CreateCustomTour from '../Tours/CreateCustomTour';
+// import CreateTour from '../Tours/CreateTour';
+// import CreateCustomTour from '../Tours/CreateCustomTour';
 import './BookNow.css';
 import '../../components/Common/BookModal/BookModal.css';
 import BookTourForm from './BookTourForm/BookTourForm';
@@ -32,8 +32,8 @@ class BookNow extends Component {
 
     render() {
         // let { handleClose, openModal, tourItem } = this.props;
-        let { custom } = this.state;
-        let tourItem = this.props.location.state;
+        let { custom } = this.state; // handle swipe between custom and regular tour
+        let tourItem = this.props.location.state && this.props.location.state; //
         let tour = {
             transform: custom && 'translateX(-100%)',
             transition: 'all 300ms ease-out',
@@ -47,13 +47,16 @@ class BookNow extends Component {
         return (
             <div className={'book-now-container'}>
                 <Heading mainTitle={'book now'} hasLine style={{paddingTop: '50px'}}/>
+
                 <div className={'book-now'}>
                     <div className={'book-modal book-now-container'}>
+                        {/*Forms*/}
                         <div className={'book-modal-wide'} style={{ width: tourItem && '100%' }}>
                             <BookTourForm
                                 style={tour}
                                 tourItem={tourItem}
                                 onRef={ref => (this.selectTour = ref)}
+                                selectedTour={tourItem && tourItem.title}
                             />
                             {!tourItem && (
                                 <CreateTourForm
@@ -78,7 +81,6 @@ class BookNow extends Component {
                         )}
                     </div>
 
-                    {/*<div className={'book-now-image'} />*/}
                     <GoBookPicture
                         id={'book-now-image'}
                         picture={tourItem && tourItem.picture}

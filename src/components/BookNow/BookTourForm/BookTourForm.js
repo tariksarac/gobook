@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './BookTourForm.css';
 import BookFormInput from '../BookFormInput/BookFormInput';
-import BookFormSelect from '../BookFormSelect/BookFormSelect';
-import axios from "axios";
+import BookFormSelect, {options} from '../BookFormSelect/BookFormSelect';
+import axios from 'axios';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
@@ -16,20 +16,24 @@ class BookTourForm extends React.Component {
         super(props);
     }
 
-    static defaultProps = {};
+    static defaultProps = {
+        selectedTour: 'Select Tour'
+    };
 
-    static propTypes = {};
+    static propTypes = {
+        selectedTour: PropTypes.string
+    };
 
     state = {
-        tourName: '',
+        tourName: this.props.selectedTour || 'Select Tour',
         firstName: '',
         lastName: '',
         phone: '',
         email: '',
         date: '',
         numberOfPeople: 0,
-        whereAreYouForm:'',
-        open:false
+        whereAreYouFrom: '',
+        open: false,
     };
 
     componentDidMount() {
@@ -41,43 +45,57 @@ class BookTourForm extends React.Component {
     submitForm = () => {
         let data = { ...this.state };
         axios({
-            url: 'https://formspree.io/tarik.sarac@gmail.com',
+            url: 'https://iau89pgyxf.execute-api.eu-west-1.amazonaws.com/dev/email/send',
             method: 'POST',
             data: data,
             dataType: 'json',
         })
-            .then(function(response) {
+            .then(response => {
                 console.log(response);
-                this.setState({
-                    tourName: '',
+                this.setState(({ open }) => ({
+                    tourName: 'Select tour',
                     firstName: '',
                     lastName: '',
                     phone: '',
                     email: '',
                     date: '',
                     numberOfPeople: 0,
-                    whereAreYouForm:'',
-                    open:true
-                })
+                    whereAreYouFrom: '',
+                    open: !open,
+                }));
             })
             .catch(function(error) {
                 console.log(error);
             });
     };
+    handleClose = () => {
+        this.setState(({ open }) => ({ open: !open }));
+    };
 
     render() {
         const { style, tourItem } = this.props;
-        const { tourName, firstName, lastName, phone, email, date, numberOfPeople, whereAreYouForm } = this.state;
+        const {
+            tourName,
+            firstName,
+            lastName,
+            phone,
+            email,
+            date,
+            numberOfPeople,
+            whereAreYouFrom,
+        } = this.state;
         return (
             <div className={'BookTourForm'} style={style}>
                 <BookFormSelect
                     id={tourName}
                     name={'ToUR NAME'}
                     placeholder={'Bosnia and Herzegovina Intro Tour'}
-                    customStyle={{ width: '100%', marginBottom:'25px'}}
+                    customStyle={{ width: '100%', marginBottom: '25px' }}
                     fullWidth
                     tourItem={tourItem}
                     onSelectOption={option => this.setState({ tourName: option })}
+                    selectedTour={this.state.tourName}
+
                 />
                 <BookFormInput
                     name={'First name'}
@@ -116,16 +134,16 @@ class BookTourForm extends React.Component {
                     placeholder={'Number of people'}
                     // customStyle={{ width: '50%' }}
                     type={'number'}
-                    value={date}
-                    onChange={event => this.setState({ date: event.target.value })}
+                    value={whereAreYouFrom}
+                    onChange={event => this.setState({ whereAreYouFrom: event.target.value })}
                 />
                 <BookFormInput
                     name={'Date'}
                     placeholder={'Date'}
                     // customStyle={{ width: '50%' }}
                     type={'date'}
-                    value={numberOfPeople}
-                    onChange={event => this.setState({ numberOfPeople: event.target.value })}
+                    value={date}
+                    onChange={event => this.setState({ date: event.target.value })}
                 />
                 <BookFormInput
                     name={'Where are you from'}
@@ -133,21 +151,20 @@ class BookTourForm extends React.Component {
                     fullWidth
                     customStyle={{ width: '100%' }}
                     type={'text'}
-                    value={whereAreYouForm}
-                    onChange={event => this.setState({ whereAreYouForm: event.target.value })}
+                    value={whereAreYouFrom}
+                    onChange={event => this.setState({ whereAreYouFrom: event.target.value })}
                 />
 
                 <Dialog
                     open={this.state.open}
                     onClose={this.handleClose}
                     aria-labelledby="alert-dialog-title"
-                    aria-describedby="alert-dialog-description"
-                >
+                    aria-describedby="alert-dialog-description">
                     <DialogTitle id="alert-dialog-title">{"Use Google's location service?"}</DialogTitle>
                     <DialogContent>
                         <DialogContentText id="alert-dialog-description">
-                            Let Google help apps determine location. This means sending anonymous location data to
-                            Google, even when no apps are running.
+                            Let Google help apps determine location. This means sending anonymous location
+                            data to Google, even when no apps are running.
                         </DialogContentText>
                     </DialogContent>
                     <DialogActions>

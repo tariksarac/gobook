@@ -6,7 +6,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import { withStyles } from '@material-ui/core';
 import Input from '@material-ui/core/Input/Input';
 
-const options = [
+export const options = [
     'THE BEST OF BOSNIA & HERZEGOVINA TOUR',
     'BEST OF BOSNIA',
     'BOSNIA & HERZEGOVINA INTRO TOUR',
@@ -73,11 +73,12 @@ class BookFormSelect extends Component {
         onSelectOption: PropTypes.func
     };
     state = {
-        selected: this.props.tourItem ? this.props.tourItem.title : 'Please select tour',
+        // selected: this.props.tourItem ? this.props.tourItem.title : 'Please select tour',
+        selected: this.props.selected ? this.props.selected : 'Please select tour',
         open: false,
     };
     handleChange = event => {
-        this.setState({ selected: event.target.value });
+        // this.setState({ selected: event.target.value });
         this.props.onSelectOption(event.target.value)
     };
 
@@ -89,9 +90,15 @@ class BookFormSelect extends Component {
         this.setState({ open: true });
     };
 
+    componentDidUpdate(prevState){
+        if(prevState.selected !== this.props.selected){
+            console.log('tetee')
+        }
+    }
+
     render() {
-        const { classes, customStyle, id, name, tourItem } = this.props;
-        const { selected, open } = this.state;
+        const { classes, customStyle, id, name, tourItem, selectedTour } = this.props;
+        const {  open } = this.state;
         return (
             <div style={{ ...customStyle }}>
                 <InputLabel htmlFor={id} className={classes.label}>
@@ -103,16 +110,17 @@ class BookFormSelect extends Component {
                     open={open}
                     onClose={this.handleClose}
                     onOpen={this.handleOpen}
-                    value={selected}
+                    value={selectedTour}
                     onChange={this.handleChange}
                     className={classes.select}
                     inputProps={{
                         name: 'age',
                         id: 'demo-controlled-open-select',
                         disabled: !!tourItem,
-                    }}>
+                    }}
+                >
                     {options.map((item, index) => (
-                        <MenuItem key={index} value={item} selected={item === selected}>
+                        <MenuItem key={index} value={item} selected={item === selectedTour}>
                             {item}
                         </MenuItem>
                     ))}
