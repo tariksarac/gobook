@@ -9,25 +9,55 @@ import CreateTourForm from './CreateTourForm/CreateTourForm';
 import BookButton from '../Common/BookButton/BookButton';
 import GoBookPicture from '../Common/GoBookPicture/GoBookPicture';
 import Heading from '../Heading/Heading';
+import { ReCaptcha } from 'react-recaptcha-google'
+
 
 class BookNow extends Component {
     constructor(props) {
         super(props);
         // this.myRef = React.createRef();
+
+        this.onLoadRecaptcha = this.onLoadRecaptcha.bind(this);
+        this.verifyCallback = this.verifyCallback.bind(this);
     }
 
-    componentDidMount() {}
+    state = {
+        custom: false,
+        notRobot: false
+    };
+
     static defaultProps = {};
 
     static propTypes = {};
 
-    state = {
-        custom: false,
-    };
+    componentDidMount() {
+        if (this.captchaDemo) {
+            console.log("started, just a second...")
+            this.captchaDemo.reset();
+            this.captchaDemo.execute();
+        }
+    }
+
+    onLoadRecaptcha = () => {
+        if (this.captchaDemo) {
+            this.captchaDemo.reset();
+            this.captchaDemo.execute();
+        }
+    }
+
+    verifyCallback= (recaptchaToken) => {
+        // Here you will get the final recaptchaToken!!!
+        console.log(recaptchaToken, "<= your recaptcha token")
+        this.setState({notRobot : true})
+    }
+
+
+
+
 
     onSubmitForm = () => {
-        this.state.custom && this.createOwnTour.submitForm(); // do stuff
-        !this.state.custom && this.selectTour.submitForm(); // do stuff
+        this.state.notRobot && this.state.custom && this.createOwnTour.submitForm(); // do stuff
+        this.state.notRobot && !this.state.custom && this.selectTour.submitForm(); // do stuff
     };
 
     render() {
@@ -46,6 +76,14 @@ class BookNow extends Component {
 
         return (
             <div className={'book-now-container'}>
+                <ReCaptcha
+                    ref={(el) => {this.captchaDemo = el;}}
+                    size="invisible"
+                    render="explicit"
+                    sitekey="6LdBB3YUAAAAALCGIKE_QOlBRfPl082-xvEyh5ui"
+                    onloadCallback={this.onLoadRecaptcha}
+                    verifyCallback={this.verifyCallback}
+                />
                 <Heading mainTitle={'book now'} hasLine style={{paddingTop: '50px'}}/>
 
                 <div className={'book-now'}>
@@ -66,7 +104,7 @@ class BookNow extends Component {
                             )}
                         </div>
 
-                        <BookButton buttonText={'BOOK THIS TOUR'} onClickAction={this.onSubmitForm} />
+                        <BookButton buttonText={'BOOK THIS TOUR'} onClickAction={this.onSubmitForm} disabled={!this.state.notRobot}/>
 
                         {!tourItem && (
                             <div className={'book-now-form-button'}>

@@ -56,11 +56,12 @@ const styles = theme => ({
 });
 
 
-const BookFormInput = ({name, classes, defaultValue, id, type, placeholder, customStyle, onChange, value}) => {
+const BookFormInput = ({name, classes, defaultValue, id, type, placeholder, customStyle, onChange, value, error}) => {
     return (
         <div className={'BookFormInput'} style={{...customStyle}}>
             <InputLabel htmlFor={id} className={classes.label}>{name}</InputLabel>
             <Input
+                required
                 onChange={onChange}
                 placeholder={placeholder}
                 type={type}

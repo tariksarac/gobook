@@ -10,6 +10,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Button from '@material-ui/core/Button';
+import ConfirmationDialog from "../../Forms/ConfirmationDialog/ConfirmationDialog";
 
 class BookTourForm extends React.Component {
     constructor(props) {
@@ -45,7 +46,7 @@ class BookTourForm extends React.Component {
     submitForm = () => {
         let data = { ...this.state };
         axios({
-            url: 'https://iau89pgyxf.execute-api.eu-west-1.amazonaws.com/dev/email/send',
+            url: 'https://iau89pgyxf.execute-api.eu-west-1.amazonaws.com/dev/email/bookTour',
             method: 'POST',
             data: data,
             dataType: 'json',
@@ -64,7 +65,7 @@ class BookTourForm extends React.Component {
                     open: !open,
                 }));
             })
-            .catch(function(error) {
+            .catch((error) => {
                 console.log(error);
             });
     };
@@ -134,8 +135,8 @@ class BookTourForm extends React.Component {
                     placeholder={'Number of people'}
                     // customStyle={{ width: '50%' }}
                     type={'number'}
-                    value={whereAreYouFrom}
-                    onChange={event => this.setState({ whereAreYouFrom: event.target.value })}
+                    value={numberOfPeople}
+                    onChange={event => this.setState({ numberOfPeople: event.target.value })}
                 />
                 <BookFormInput
                     name={'Date'}
@@ -155,27 +156,28 @@ class BookTourForm extends React.Component {
                     onChange={event => this.setState({ whereAreYouFrom: event.target.value })}
                 />
 
-                <Dialog
-                    open={this.state.open}
-                    onClose={this.handleClose}
-                    aria-labelledby="alert-dialog-title"
-                    aria-describedby="alert-dialog-description">
-                    <DialogTitle id="alert-dialog-title">{"Use Google's location service?"}</DialogTitle>
-                    <DialogContent>
-                        <DialogContentText id="alert-dialog-description">
-                            Let Google help apps determine location. This means sending anonymous location
-                            data to Google, even when no apps are running.
-                        </DialogContentText>
-                    </DialogContent>
-                    <DialogActions>
-                        <Button onClick={this.handleClose} color="primary">
-                            Disagree
-                        </Button>
-                        <Button onClick={this.handleClose} color="primary" autoFocus>
-                            Agree
-                        </Button>
-                    </DialogActions>
-                </Dialog>
+                {/*<Dialog*/}
+                    {/*open={this.state.open}*/}
+                    {/*onClose={this.handleClose}*/}
+                    {/*aria-labelledby="alert-dialog-title"*/}
+                    {/*aria-describedby="alert-dialog-description">*/}
+                    {/*<DialogTitle id="alert-dialog-title">{"Use Google's location service?"}</DialogTitle>*/}
+                    {/*<DialogContent>*/}
+                        {/*<DialogContentText id="alert-dialog-description">*/}
+                            {/*Let Google help apps determine location. This means sending anonymous location*/}
+                            {/*data to Google, even when no apps are running.*/}
+                        {/*</DialogContentText>*/}
+                    {/*</DialogContent>*/}
+                    {/*<DialogActions>*/}
+                        {/*<Button onClick={this.handleClose} color="primary">*/}
+                            {/*Disagree*/}
+                        {/*</Button>*/}
+                        {/*<Button onClick={this.handleClose} color="primary" autoFocus>*/}
+                            {/*Agree*/}
+                        {/*</Button>*/}
+                    {/*</DialogActions>*/}
+                {/*</Dialog>*/}
+                <ConfirmationDialog open={this.state.open} handleClose={this.handleClose}/>
             </div>
         );
     }

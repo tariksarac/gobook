@@ -35,7 +35,7 @@ class CreateTourForm extends Component {
     submitForm = () => {
         let data = { ...this.state, custom: null };
         axios({
-            url: 'https://iau89pgyxf.execute-api.eu-west-1.amazonaws.com/dev/email/send',
+            url: 'https://iau89pgyxf.execute-api.eu-west-1.amazonaws.com/dev/email/createTour',
             method: 'POST',
             data: data,
             dataType: 'json',
@@ -53,7 +53,7 @@ class CreateTourForm extends Component {
                     openModal:true
                 })
             })
-            .catch(function(error) {
+            .catch((error) => {
                 console.log(error);
             });
     };

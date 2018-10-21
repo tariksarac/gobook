@@ -33,7 +33,7 @@ class BookButton extends Component {
                 {...rest}
                 className={'BookButton'}
                 style={{...style, ...buttonStyle}}
-                onClick={onClickAction}
+                onClick={(event)=>onClickAction(event)}
                 onMouseOver={() => this.setState(({ hovered }) => ({ hovered: !hovered }))}
                 onMouseLeave={() => this.setState(({ hovered }) => ({ hovered: !hovered }))}>
                 {buttonText}

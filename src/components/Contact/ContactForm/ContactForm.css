@@ -9,6 +9,12 @@
     margin-top: 50px;
 }
 
+.contact-form .contact-form-details {
+    text-align: center;
+    padding-bottom: 30px;
+    font-weight: 400;
+}
+
 @media only screen and (max-width: 600px) {
     .contact-form {
         width: 100%;
