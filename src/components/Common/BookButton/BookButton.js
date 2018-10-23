@@ -21,9 +21,9 @@ class BookButton extends Component {
 
     render() {
 
-        let { buttonText, onClickAction,style, ...rest } = this.props;
+        let { buttonText, onClickAction,style, disabled, ...rest } = this.props;
         let buttonStyle = {
-            backgroundColor: !this.state.hovered && rest.color,
+            backgroundColor: disabled ? 'gray' : !this.state.hovered && rest.color,
             color: !this.state.hovered ? '#ffffff' : rest.color,
             border: this.state.hovered ? '1px solid' : 'none',
             borderColor: this.state.hovered && rest.color,
@@ -31,6 +31,7 @@ class BookButton extends Component {
         return (
             <button
                 {...rest}
+                disabled={disabled}
                 className={'BookButton'}
                 style={{...style, ...buttonStyle}}
                 onClick={(event)=>onClickAction(event)}

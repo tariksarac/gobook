@@ -1,112 +1,75 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BookFormSelect from "../BookNow/BookFormSelect/BookFormSelect";
+import BookFormSelect, {options} from "../BookNow/BookFormSelect/BookFormSelect";
 import BookFormInput from "../BookNow/BookFormInput/BookFormInput";
-import {withFormik} from "formik";
+import {Form, Formik, withFormik} from "formik";
+import * as Yup from "yup";
+import BookButton from "../Common/BookButton/BookButton";
+import {Debug} from "./Debug";
+import {Fieldset} from "./BookTourForm";
 
 
-const CreateTourForm = props => {
-    const { values, touched, errors, handleChange, handleBlur, handleSubmit, handleReset, style } = props;
+const CreateTourForm = ({style}) => {
     return (
-        <form style={style}>
+        <Formik
+            initialValues={{
+                fullName: '',
+                email: '',
+                phone: '',
+                numberOfPeople: '',
+                placeToVisit:'',
+                startDate: '',
+                endDate: '',
+                whereAreYouFrom: '',
+            }}
+            validationSchema={Yup.object().shape({
+                email: Yup.string()
+                    .email('Invalid email address')
+                    .required('Required'),
+                phone: Yup.string().required('Required'),
+                fullName: Yup.string().required('Required'),
+            })}
+            onSubmit={values => {
+                setTimeout(() => {
+                    alert(JSON.stringify(values, null, 2));
+                }, 500);
+            }}
+            render={({ isSubmitting, handleReset, isValid }) => (
+                <Form className={'BookTourForm-new'} style={style}>
 
-            <BookFormInput
-                id={'firstName'}
-                name={'First name'}
-                placeholder={'First name'}
-                // customStyle={{ width: '50%' }}
-                value={values.first_name}
-                type={'text'}
-                onChange={event => handleChange(event)}
-                // onChange={event => this.setState({ firstName: event.target.value })}
-            />
-            <BookFormInput
-                id={'lastName'}
-                name={'Last name'}
-                placeholder={'Last name'}
-                // customStyle={{ width: '50%' }}
-                type={'text'}
-                value={values.last_name}
-                onChange={event => handleChange(event)}
-            />
-            <BookFormInput
-                id={'phoneNumber'}
-                name={'Phone number'}
-                placeholder={'Phone number'}
-                // customStyle={{ width: '50%' }}
-                type={'tel'}
-                value={values.phone}
-                onChange={event => handleChange(event)}
-            />
-            <BookFormInput
-                id={'email'}
-                name={'Email'}
-                placeholder={'Email'}
-                // customStyle={{ width: '50%' }}
-                type={'email'}
-                value={values.email}
-                onChange={event => handleChange(event)}
-            />
-            <BookFormInput
-                id={'numberOfPeople'}
-                name={'Number of people'}
-                placeholder={'Number of people'}
-                // customStyle={{ width: '50%' }}
-                type={'number'}
-                value={values.numberOfPeople}
-                onChange={event => handleChange(event)}
-            />
-            <BookFormInput
-                id={'date'}
-                name={'Date'}
-                placeholder={'Date'}
-                // customStyle={{ width: '50%' }}
-                type={'date'}
-                value={values.date}
-                onChange={event => handleChange(event)}
-            />
-            <BookFormInput
-                id={'whereAreYouFrom'}
-                name={'Where are you from'}
-                placeholder={'Where are you from'}
-                fullWidth
-                customStyle={{ width: '100%' }}
-                type={'text'}
-                value={values.whereAreYouFrom}
-                onChange={event => handleChange(event)}
-            />
-        </form>
+                    <Fieldset name="fullName" type="text" label="Full Name" placeholder="Full Name" style={{flexBasis:'100%'}}/>
+                    <Fieldset name="phone" type="tel" label="Phone Number" placeholder="Phone Number" />
+                    <Fieldset name="email" type="email" label="Email" placeholder="Email" />
+                    <Fieldset
+                        name="numberOfPeople"
+                        type="number"
+                        label="Number Of People"
+                        placeholder="Number Of People"
+                    />
+                    <Fieldset name="placeToVisit" type="text" label="Place to visit" placeholder="Place to visit" />
+                    <Fieldset name="startDate" type="date" label="Start date" placeholder="Start date" />
+                    <Fieldset name="endDate" type="date" label="End date" placeholder="End date" />
+                    <Fieldset
+                        name="whereAreYouFrom"
+                        type="text"
+                        label="Where Are You From"
+                        placeholder="Where Are You From"
+                    />
+
+                    <BookButton type="submit" buttonText={'BOOK THIS TOUR'} style={{ flexBasis: '100%' }} disabled={!isValid}/>
+                    {/*<Debug />*/}
+                </Form>
+            )}
+        />
     );
 };
 
 CreateTourForm.propTypes = {};
 CreateTourForm.defaultProps = {};
 
-const EnhancedForm = withFormik({
-    mapPropsToValues: ({formFields}) => ({ ...formFields }),
 
-    // Custom sync validation
-    validate: values => {
-        const errors = {};
 
-        if (!values.name) {
-            errors.name = 'Required';
-        }
-
-        return errors;
-    },
-
-    handleSubmit: (values, { setSubmitting }) => {
-        setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
-            setSubmitting(false);
-        }, 1000);
-    },
-
-    displayName: 'BasicForm',
-});
-
-export default EnhancedForm(CreateTourForm);
+export default CreateTourForm;
 
 // const CreateTourForm = (props) => {
 //     return (

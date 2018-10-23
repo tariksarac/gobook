@@ -1,96 +1,83 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {ErrorMessage, Field, Form, Formik, withFormik} from 'formik';
+import { ErrorMessage, Field, Form, Formik, withFormik } from 'formik';
 import * as Yup from 'yup';
 import BookFormSelect from '../BookNow/BookFormSelect/BookFormSelect';
 import BookFormInput from '../BookNow/BookFormInput/BookFormInput';
-import {Debug} from "./Debug";
-import {options} from '../../components/BookNow/BookFormSelect/BookFormSelect'
+import { Debug } from './Debug';
+import { options } from '../../components/BookNow/BookFormSelect/BookFormSelect';
+import './BookFormStyle.css';
+import BookButton from '../Common/BookButton/BookButton';
 
-
-const Fieldset = ({ name, label, ...rest }) => (
-    <React.Fragment>
-        <label htmlFor={name}>{label}</label>
+export const Fieldset = ({ name, label, style, ...rest }) => (
+    <div className={'Fieldset'} style={style}>
+        <label htmlFor={name} className={'new-label'}>
+            {label}
+        </label>
         <Field id={name} name={name} {...rest} />
-        <ErrorMessage name={name} />
-    </React.Fragment>
+        <ErrorMessage name={name} component={'span'} />
+    </div>
 );
 
+const BookTourForm = ({style}) => (
+    <Formik
+        initialValues={{
+            email: '',
+            tourName: '',
+            firstName: '',
+            lastName: '',
+            phone: '',
+            numberOfPeople: '',
+            date: '',
+            whereAreYouFrom: '',
+        }}
+        validationSchema={Yup.object().shape({
+            email: Yup.string()
+                .email('Invalid email address')
+                .required('Required'),
+            tourName: Yup.string().required('Required'),
+            phone: Yup.string().required('Required'),
+            firstName: Yup.string().required('Required'),
+        })}
+        onSubmit={values => {
+            setTimeout(() => {
+                alert(JSON.stringify(values, null, 2));
+            }, 500);
+        }}
+        render={({ isSubmitting, handleReset }) => (
+            <Form className={'BookTourForm-new'} style={style}>
+                <Fieldset style={{ flexBasis: '100%' }} name="tourName" label="TOUR NAME" component="select">
+                    {options.map((item, index) => (
+                        <option key={index} value={item}>
+                            {item}
+                        </option>
+                    ))}
+                </Fieldset>
 
-const BookTourForm = () => (
-    <div>
-        <Formik
-            initialValues={{
-                email: '',
-                tourName: '',
-                firstName: '',
-                lastName: '',
-                phone: '',
-                numberOfPeople: '',
-                date: '',
-                whereAreYouFrom: '',
-            }}
-            validationSchema={Yup.object().shape({
-                email: Yup.string()
-                    .email('Invalid email address')
-                    .required('Required'),
-                tourName: Yup.string().required('Required'),
-                phone: Yup.string()
-                    .required('Required'),
-                firstName: Yup.string().required('Required'),
-            })}
-            onSubmit={values => {
-                setTimeout(() => {
-                    alert(JSON.stringify(values, null, 2));
-                }, 500);
-            }}
-            render={({ isSubmitting, handleReset }) => (
-                <Form>
-                    <Fieldset
-                        name="color"
-                        label="TOUR NAME"
-                        component="select"
-                    >
-                        {options.map((item, index) =>  <option key={index} value={item}>{item}</option>)}
-                    </Fieldset>
+                <Fieldset name="firstName" type="text" label="First Name" placeholder="First Name" />
 
-                    <Fieldset
-                        name="firstName"
-                        type="text"
-                        label="First Name"
-                        placeholder="First Name"
-                    />
+                <Fieldset name="lastName" type="text" label="Last Name" placeholder="Last Name" />
+                <Fieldset name="phone" type="tel" label="Phone Number" placeholder="Phone Number" />
+                <Fieldset name="email" type="email" label="Email" placeholder="Email" />
+                <Fieldset
+                    name="numberOfPeople"
+                    type="number"
+                    label="Number Of People"
+                    placeholder="Number Of People"
+                />
+                <Fieldset name="date" type="date" label="Date" placeholder="Date" />
+                <Fieldset
+                    name="whereAreYouFrom"
+                    type="text"
+                    label="Where Are You From"
+                    placeholder="Where Are You From"
+                />
 
-
-                    <Fieldset
-                        name="lastName"
-                        type="text"
-                        label="Last Name"
-                        placeholder="Last Name"
-                    />
-
-                    <Fieldset name="animal" component="select" label="Favorite Animal">
-                        <option value="">Select an animal</option>
-                        <option value="tiger">Tiger</option>
-                        <option value="bear">Bear</option>
-                        <option value="shark">Shark</option>
-                    </Fieldset>
-
-                    <button
-                        type="reset"
-                        className="secondary"
-                        disabled={isSubmitting}
-                        onClick={handleReset}
-                    >
-                        Reset
-                    </button>
-
-                    <button type="submit">Submit</button>
-                    <Debug />
-                </Form>
-            )}
-        />
-    </div>
+                <BookButton type="submit" buttonText={'BOOK THIS TOUR'} style={{ flexBasis: '100%' }}/>
+                {/*<Debug />*/}
+            </Form>
+        )}
+    />
 );
 
 // const BookTourForm = props => {

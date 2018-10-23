@@ -138,12 +138,12 @@ class Test extends Component {
                          <BookTourForm style={tour} formFields={{ email: '', first_name: '', last_name: '', tourName: '', phone:'', whereAreYouFrom:'', date:'', numberOfPeople:'' }}/>
 
                             {!tourItem && (
-                                <CreateTourForm style={customTour} formFields={{ email: '', first_name: '', last_name: '', tourName: '', phone:'', whereAreYouFrom:'', date:'', numberOfPeople:'' }}/>
+                                <CreateTourForm style={customTour} formFields={{ email: '', phone:'', whereAreYouFrom:'', startDate:'', endDate:'', numberOfPeople:'', placeToVisit: '' }}/>
 
                             )}
                         </div>
 
-                        <BookButton buttonText={'BOOK THIS TOUR'} onClickAction={this.onSubmitForm} />
+                        {/*<BookButton buttonText={'BOOK THIS TOUR'} onClickAction={this.onSubmitForm} />*/}
 
                         {!tourItem && (
                             <div className={'book-now-form-button'}>

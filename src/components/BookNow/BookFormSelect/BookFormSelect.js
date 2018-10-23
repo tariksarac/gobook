@@ -7,6 +7,7 @@ import { withStyles } from '@material-ui/core';
 import Input from '@material-ui/core/Input/Input';
 
 export const options = [
+    'Select Tour',
     'THE BEST OF BOSNIA & HERZEGOVINA TOUR',
     'BEST OF BOSNIA',
     'BOSNIA & HERZEGOVINA INTRO TOUR',
