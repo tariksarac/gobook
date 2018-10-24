@@ -133,6 +133,7 @@ input[type='date']:after {
     text-align: center;
     color: gray;
     padding: 2px;
+    padding-right: 50px;
 }
 
 .date-field {
@@ -204,6 +205,11 @@ input[type='date']:after {
     .book-modal option {
         color: #f2f2f2;
     }
+
+    .book-modal .or {
+        padding-right: 0;
+    }
+
 
     /*.book-modal input {*/
     /*height: 40px !important;*/

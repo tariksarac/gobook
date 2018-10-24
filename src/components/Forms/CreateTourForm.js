@@ -1,15 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BookFormSelect, {options} from "../BookNow/BookFormSelect/BookFormSelect";
-import BookFormInput from "../BookNow/BookFormInput/BookFormInput";
-import {Form, Formik, withFormik} from "formik";
+import {Form, Formik} from "formik";
 import * as Yup from "yup";
 import BookButton from "../Common/BookButton/BookButton";
 import {Debug} from "./Debug";
 import {Fieldset} from "./BookTourForm";
 
 
-const CreateTourForm = ({style}) => {
+const CreateTourForm = ({style, submitForm, notRobot}) => {
     return (
         <Formik
             initialValues={{
@@ -27,12 +25,14 @@ const CreateTourForm = ({style}) => {
                     .email('Invalid email address')
                     .required('Required'),
                 phone: Yup.string().required('Required'),
+                placeToVisit: Yup.string().required('Required'),
+                startDate: Yup.string().required('Required'),
+                endDate: Yup.string().required('Required'),
                 fullName: Yup.string().required('Required'),
             })}
-            onSubmit={values => {
-                setTimeout(() => {
-                    alert(JSON.stringify(values, null, 2));
-                }, 500);
+            onSubmit={(values, {resetForm}) => {
+                notRobot && submitForm(values);
+                resetForm();
             }}
             render={({ isSubmitting, handleReset, isValid }) => (
                 <Form className={'BookTourForm-new'} style={style}>
@@ -70,14 +70,3 @@ CreateTourForm.defaultProps = {};
 
 
 export default CreateTourForm;
-
-// const CreateTourForm = (props) => {
-//     return (
-//         <div></div>
-//     );
-// };
-//
-// CreateTourForm.propTypes = {};
-// CreateTourForm.defaultProps = {};
-//
-// export default CreateTourForm;
