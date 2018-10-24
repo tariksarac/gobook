@@ -13,9 +13,9 @@ const ConfirmationDialog = ({open, handleClose, confirmationTitle, confirmationC
             open={open}
             onClose={handleClose}
             aria-labelledby="alert-dialog-title"
-            aria-describedby="alert-dialog-description">
-            <DialogTitle id="alert-dialog-title">{confirmationTitle}</DialogTitle>
-            <DialogContent>
+            aria-describedby="alert-dialog-description" >
+            <DialogTitle id="alert-dialog-title" style={{textAlign: 'center', paddingTop:'100px'}}>{confirmationTitle}</DialogTitle>
+            <DialogContent style={{width: '250px', height: '50px', textAlign: 'center'}}>
                 <DialogContentText id="alert-dialog-description">
                     {confirmationContent}
                 </DialogContentText>

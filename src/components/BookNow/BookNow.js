@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import CreateTour from '../Tours/CreateTour';
-import CreateCustomTour from '../Tours/CreateCustomTour';
+// import PropTypes from 'prop-types';
 import './BookNow.css';
 import '../../components/Forms/BookFormStyle.css';
 import BookTourForm from '../../components/Forms/BookTourForm';
@@ -16,7 +14,6 @@ import ConfirmationDialog from '../Forms/ConfirmationDialog/ConfirmationDialog';
 class BookNow extends Component {
     constructor(props) {
         super(props);
-        // this.myRef = React.createRef();
 
         this.onLoadRecaptcha = this.onLoadRecaptcha.bind(this);
         this.verifyCallback = this.verifyCallback.bind(this);

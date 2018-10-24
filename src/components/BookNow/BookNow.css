@@ -79,4 +79,8 @@
         width: calc(100% - 16px);
         margin: 20px 8px;
     }
+
+    .book-now .GoBookPicture {
+        display: none;
+    }
 }

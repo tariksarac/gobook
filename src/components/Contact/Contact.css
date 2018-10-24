@@ -206,4 +206,8 @@
     .contact-container .Contact form input {
         height: 45px;
     }
+
+    .contact-container .Contact .Heading {
+        padding: 0;
+    }
 }

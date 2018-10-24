@@ -5,7 +5,7 @@
     padding-right: 50px;
 }
 
-.BookTourForm-new  input {
+input {
     height: 50px;
     border-radius: 8px;
     border: solid 1px #7b7b7b;
@@ -13,8 +13,7 @@
     padding: 0 8px 0 8px;
     outline: none;
 }
-
-.BookTourForm-new  label {
+label {
     height: 16px;
     font-family: 'Work Sans', sans-serif;
     font-size: 14px;
@@ -27,7 +26,7 @@
     text-transform: uppercase;
     margin-bottom: 8px;
 }
-.BookTourForm-new  select {
+select {
     height: 50px;
     border-radius: 8px;
     border: solid 1px #7b7b7b;
@@ -35,7 +34,17 @@
     padding: 0 8px 0 8px;
 }
 
-.BookTourForm-new .Fieldset {
+textarea {
+    height: 250px;
+    border-radius: 8px;
+    border: solid 1px #7b7b7b;
+    background-color: #ffffff;
+    padding: 10px 8px 0 8px;
+    outline: none;
+    resize: none;
+}
+
+.Fieldset {
     display: flex;
     flex-direction: column;
     flex-basis: 45%;
@@ -44,7 +53,7 @@
     margin: 8px;
 }
 
-.BookTourForm-new .Fieldset span {
+.Fieldset span {
     color: red;
     font-size: 13px;
 }

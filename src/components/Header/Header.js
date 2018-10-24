@@ -102,7 +102,7 @@ class Header extends React.Component {
                         {/*</div>*/}
 
                         <div className={'header-button'}>
-                            <BookButton onClickAction={()=>{this.props.history.push('/book-now')}}/>
+                            <BookButton onClickAction={()=>{this.handleClick(); this.props.history.push('/book-now')}}/>
                         </div>
                     </div>
                 </div>
