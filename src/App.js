@@ -13,7 +13,6 @@ import BookNow from "./components/BookNow/BookNow";
 import About from "./components/About/About";
 import HungaryPromo from "./components/LandingPage/HungaryPromo";
 import NotFound from "./components/NotFound/NotFound";
-import Test from "./Test";
 import { loadReCaptcha } from 'react-recaptcha-google'
 
 
@@ -36,7 +35,6 @@ class App extends Component {
                             <Route path="/terms-of-use" component={Terms} />
                             <Route path="/book-now" component={BookNow} />
                             <Route path="/hungary-special" component={HungaryPromo} />
-                            <Route path="/test" component={Test} />
                             <Route path="*" component={NotFound} />
                         </Switch>
 
