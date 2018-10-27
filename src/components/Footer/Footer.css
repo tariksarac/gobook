@@ -128,4 +128,8 @@
         /*align-items: center;*/
         /*width: 100%;*/
     }
+
+    .Footer .footer-social .contact-detail {
+        height: auto;
+    }
 }

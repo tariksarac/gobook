@@ -10,13 +10,11 @@ import Heading from '../Heading/Heading';
 import { ReCaptcha } from 'react-recaptcha-google';
 import axios from 'axios';
 import ConfirmationDialog from '../Forms/ConfirmationDialog/ConfirmationDialog';
+import ReceptchaComponent from "../Common/ReceptchaComponent/ReceptchaComponent";
 
 class BookNow extends Component {
     constructor(props) {
         super(props);
-
-        this.onLoadRecaptcha = this.onLoadRecaptcha.bind(this);
-        this.verifyCallback = this.verifyCallback.bind(this);
     }
 
     state = {
@@ -28,26 +26,7 @@ class BookNow extends Component {
 
     static propTypes = {};
 
-    componentDidMount() {
-        if (this.captchaDemo) {
-            console.log('started, just a second...');
-            this.captchaDemo.reset();
-            this.captchaDemo.execute();
-        }
-    }
-
-    onLoadRecaptcha = () => {
-        if (this.captchaDemo) {
-            this.captchaDemo.reset();
-            this.captchaDemo.execute();
-        }
-    };
-
-    verifyCallback = recaptchaToken => {
-        // Here you will get the final recaptchaToken!!!
-        console.log(recaptchaToken, '<= your recaptcha token');
-        this.setState({ notRobot: true });
-    };
+    verify = () => this.setState(({notRobot}) => ({notRobot: !notRobot}))
 
     submitForm = data => {
         let uri = !this.state.custom ? 'bookTour' : 'createTour';
@@ -86,20 +65,11 @@ class BookNow extends Component {
 
         return (
             <div className={'book-now-container'}>
-                <ReCaptcha
-                    ref={el => {
-                        this.captchaDemo = el;
-                    }}
-                    size="invisible"
-                    render="explicit"
-                    sitekey="6LdBB3YUAAAAALCGIKE_QOlBRfPl082-xvEyh5ui"
-                    onloadCallback={this.onLoadRecaptcha}
-                    verifyCallback={this.verifyCallback}
-                />
+                <ReceptchaComponent verify={this.verify}/>
                 <Heading mainTitle={'book now'} hasLine style={{ paddingTop: '50px' }} />
 
                 <div className={'book-now'}>
-                    <div className={'book-modal book-now-container'}>
+                    <div className={'book-modal book-now-container'} style={{flexBasis:'543px', flexShrink:'1' }}>
                         {/*Forms*/}
                         <div className={'book-modal-wide'} style={{ width: tourItem && '100%' }}>
                             <BookTourForm
@@ -125,7 +95,8 @@ class BookNow extends Component {
                                     onClickAction={() => this.setState(({ custom }) => ({ custom: !custom }))}
                                     buttonText={!custom ? 'Create tour' : 'Return'}
                                     color={'#2edc38'}
-                                    // style={{ width: 'calc(100% - 66px)', margin: '20px 8px' }}
+                                    style={{ width: 'calc(100% - 16px)', margin: '0 8px' }}
+                                    // style={{ flexBasis: '100%' }}
                                 />
                             </div>
                         )}
@@ -133,9 +104,8 @@ class BookNow extends Component {
 
                     <GoBookPicture
                         id={'book-now-image'}
-                        picture={tourItem && tourItem.picture}
-                        containerStyle={{ width: '40%' }}
-                        style={{ width: '100%', height: '100%' }}
+                        picture={'https://scontent-waw1-1.xx.fbcdn.net/v/t31.0-8/17880063_1329757693736556_8999220361509411303_o.jpg?_nc_cat=111&_nc_ht=scontent-waw1-1.xx&oh=bbcd8fa49055afb2acee57b852f09e71&oe=5C85F354\n'}
+                        style={{flexBasis:'486px', flexShrink:'1' }}
                     />
                 </div>
                 <ConfirmationDialog open={this.state.open} handleClose={this.handleClose} />
@@ -145,3 +115,5 @@ class BookNow extends Component {
 }
 
 export default BookNow;
+
+

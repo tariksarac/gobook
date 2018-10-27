@@ -13,8 +13,9 @@ const Heading = ({ subTitle, mainTitle, hasLine, color, margin, about, style, la
                 </h1>
             )} {hasLine && <Line color={color}/>}
 
-            {subTitle && <h2 className={'sub-heading'}>{subTitle}</h2>}
-            {about && <h3 className={'sub-heading-about'}>{about}</h3>}
+            {/*{subTitle && <h2 className={'sub-heading'}>{subTitle}</h2>}*/}
+            {subTitle && <Markdown className={'sub-heading'} source={subTitle} />}
+            {about && <Markdown className={'sub-heading-about'} source={about}/>}
             {headingPrice && <h3 className={'heading-price'}>{headingPrice}</h3>}
             {headingDiscount && <h3 className={'heading-discount'}>{headingDiscount}</h3>}
 

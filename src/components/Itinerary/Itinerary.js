@@ -9,7 +9,7 @@ const Itinerary = ({data, itinerary, style}) => {
         <Section style={{ flexDirection: 'column', alignItems: 'flex-start', ...style }}>
             {/*<div className={'Itinerary-title'}>Itinerary</div>*/}
             <Heading mainTitle={'Itinerary'} hasLine/>
-            { data.map((item, index) => <ExpansionItem key={index} data={item} itinerary={itinerary}/>) }
+            { data.map((item, index) => <ExpansionItem key={index} data={item} itinerary={itinerary} />) }
         </Section>
     )
 }

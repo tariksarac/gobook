@@ -24,7 +24,7 @@ const WhyBosnia = props => {
                 {whyBosniaData.sights.map((item, index) => (
                     <TextItem
                         key={index}
-                        style={{ marginTop: index === 0 && '50px' }}
+                        // style={{ marginTop: index === 0 && '50px' }}
                         title={item.title}
                         text={item.text}
                         image={item.image}

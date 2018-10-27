@@ -56,7 +56,7 @@ const CreateTourForm = ({style, submitForm, notRobot}) => {
                         placeholder="Where Are You From"
                     />
 
-                    <BookButton type="submit" buttonText={'BOOK THIS TOUR'} style={{ flexBasis: '100%' }} disabled={!isValid}/>
+                    <BookButton type="submit" buttonText={'BOOK THIS TOUR'} style={{ flexBasis: '100%', margin: '20px 8px 0 8px' }} disabled={!isValid}/>
                     {/*<Debug />*/}
                 </Form>
             )}

@@ -10,7 +10,7 @@ const GoBookPicture = ({picture, color, style, containerStyle}) => {
 
     }
     return (
-        <div className={'GoBookPicture'} style={{...containerStyle}}>
+        <div className={'GoBookPicture'} style={{...containerStyle, ...style}}>
             <div className={'pict'} style={{...imageStyle, ...style}}/>
             {/*<div className={'bord'} style={{backgroundColor: color}}/>*/}
             <Line color={color} full/>

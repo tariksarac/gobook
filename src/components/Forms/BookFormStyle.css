@@ -58,6 +58,23 @@ textarea {
     font-size: 13px;
 }
 
+.BookTourForm-new {
+    padding-right: 0;
+}
+
+.book-modal-wide {
+    position: relative;
+    width: 200%;
+    left: 0;
+    top: 0;
+    display: flex;
+}
+.or {
+    text-align: center;
+}
+
+
+
 @media only screen and (max-width: 600px){
     .BookTourForm-new {
         padding-right: 0;
