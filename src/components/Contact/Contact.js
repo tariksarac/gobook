@@ -7,14 +7,12 @@ import GoBookPicture from "../Common/GoBookPicture/GoBookPicture";
 import { ReCaptcha } from 'react-recaptcha-google';
 import axios from "axios";
 import ConfirmationDialog from "../Forms/ConfirmationDialog/ConfirmationDialog";
+import ReceptchaComponent from "../Common/ReceptchaComponent/ReceptchaComponent";
 
 
 class Contact extends React.Component {
     constructor(props) {
         super(props);
-
-        this.onLoadRecaptcha = this.onLoadRecaptcha.bind(this);
-        this.verifyCallback = this.verifyCallback.bind(this);
     }
 
     state = {
@@ -26,26 +24,8 @@ class Contact extends React.Component {
 
     static propTypes = {};
 
-    componentDidMount() {
-        if (this.captchaDemo) {
-            console.log('started, just a second...');
-            this.captchaDemo.reset();
-            this.captchaDemo.execute();
-        }
-    }
+    verify = () => this.setState(({notRobot}) => ({notRobot: !notRobot}))
 
-    onLoadRecaptcha = () => {
-        if (this.captchaDemo) {
-            this.captchaDemo.reset();
-            this.captchaDemo.execute();
-        }
-    };
-
-    verifyCallback = recaptchaToken => {
-        // Here you will get the final recaptchaToken!!!
-        console.log(recaptchaToken, '<= your recaptcha token');
-        this.setState({ notRobot: true });
-    };
 
     submitForm = data => {
         axios({
@@ -70,16 +50,7 @@ class Contact extends React.Component {
     render() {
         return (
             <div className={'contact-container'}>
-                <ReCaptcha
-                    ref={el => {
-                        this.captchaDemo = el;
-                    }}
-                    size="invisible"
-                    render="explicit"
-                    sitekey="6LdBB3YUAAAAALCGIKE_QOlBRfPl082-xvEyh5ui"
-                    onloadCallback={this.onLoadRecaptcha}
-                    verifyCallback={this.verifyCallback}
-                />
+                <ReceptchaComponent verify={this.verify}/>
                 <Heading mainTitle={'contact us'} hasLine/>
                 <div className={'contact-details'}>
                     <ContactForm notRobot={this.state.notRobot} submitForm={this.submitForm}/>
