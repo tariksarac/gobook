@@ -16,6 +16,7 @@
     "react-helmet": "^5.2.0",
     "react-image-gallery": "^0.8.9",
     "react-markdown": "^3.3.4",
+    "react-messenger-customer-chat": "^0.7.2",
     "react-recaptcha-google": "^1.1.1",
     "react-responsive-carousel": "^3.1.42",
     "react-router-dom": "^4.3.1",

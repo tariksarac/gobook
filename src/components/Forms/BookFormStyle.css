@@ -63,6 +63,15 @@ textarea {
         padding-right: 0;
     }
 
-
+    .book-modal-wide {
+        position: relative;
+        width: 200%;
+        left: 0;
+        top: 0;
+        display: flex;
+    }
+    .or {
+        text-align: center;
+    }
 }
 
