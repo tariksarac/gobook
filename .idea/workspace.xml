@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb826fb-30f8-49aa-937d-473dc2ebb226" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Common/ReceptchaComponent/ReceptchaComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/ReceptchaComponent/ReceptchaComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Forms/BookTourForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forms/BookTourForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Forms/CreateTourForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forms/CreateTourForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,7 +29,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="2670" />
+          <entry key="css" value="2672" />
           <entry key="html" value="492" />
           <entry key="js" value="11975" />
           <entry key="json" value="2" />
@@ -39,7 +37,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="2670" />
+          <entry key="CSS" value="2672" />
           <entry key="HTML" value="492" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="11975" />
@@ -47,7 +45,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="110" />
+          <entry key="css" value="111" />
           <entry key="html" value="9" />
           <entry key="ico" value="3" />
           <entry key="js" value="279" />
@@ -58,7 +56,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="110" />
+          <entry key="CSS" value="111" />
           <entry key="HTML" value="9" />
           <entry key="Image" value="9" />
           <entry key="JSON" value="4" />
@@ -108,11 +106,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Header/Header.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1295">
               <caret line="110" column="21" lean-forward="true" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/App.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -143,15 +150,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="404">
               <caret line="77" column="42" lean-forward="true" selection-start-line="77" selection-end-line="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/WhyBosnia/TextItem.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="66" column="24" lean-forward="true" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -270,7 +268,6 @@
         <option value="$PROJECT_DIR$/src/components/Footer/Footer.css" />
         <option value="$PROJECT_DIR$/src/components/Highlights/HighlightItem.js" />
         <option value="$PROJECT_DIR$/src/components/Highlights/Highlights.js" />
-        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/components/Product/Product.css" />
         <option value="$PROJECT_DIR$/src/components/Tours/Tour.js" />
         <option value="$PROJECT_DIR$/src/components/Itinerary/Itinerary.js" />
@@ -288,6 +285,7 @@
         <option value="$PROJECT_DIR$/src/components/Forms/BookTourForm.js" />
         <option value="$PROJECT_DIR$/src/components/Forms/CreateTourForm.js" />
         <option value="$PROJECT_DIR$/src/components/Common/ReceptchaComponent/ReceptchaComponent.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
       </list>
     </option>
   </component>
@@ -333,13 +331,6 @@
               <item name="gobook" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gobook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gobook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Header" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gobook" type="b2602c69:ProjectViewProjectNode" />
@@ -502,12 +493,12 @@
       <workItem from="1540408778747" duration="4526000" />
       <workItem from="1540489120882" duration="2589000" />
       <workItem from="1540560420131" duration="411000" />
-      <workItem from="1540653859603" duration="9674000" />
+      <workItem from="1540653859603" duration="9851000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="478318000" />
+    <option name="totallyTimeSpent" value="478495000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -519,13 +510,13 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3283767" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49930555" visible="true" weight="0.3370508" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49930555" weight="0.3370508" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49305555" weight="0.2180917" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49305555" visible="true" weight="0.2180917" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50069445" side_tool="true" weight="0.32969698" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32961586" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
@@ -729,13 +720,6 @@
         <state relative-caret-position="-1231" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Product/Product.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="577">
@@ -927,6 +911,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1295">
           <caret line="110" column="21" lean-forward="true" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
         </state>
       </provider>
     </entry>
