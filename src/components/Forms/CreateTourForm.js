@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Form, Formik} from "formik";
-import * as Yup from "yup";
-import BookButton from "../Common/BookButton/BookButton";
-import {Debug} from "./Debug";
-import {Fieldset} from "./BookTourForm";
+import { Form, Formik } from 'formik';
+import * as Yup from 'yup';
+import BookButton from '../Common/BookButton/BookButton';
+import { Debug } from './Debug';
+import { Fieldset } from './BookTourForm';
 
-
-const CreateTourForm = ({style, submitForm, notRobot}) => {
+const CreateTourForm = ({ style, submitForm, notRobot }) => {
     return (
         <Formik
             initialValues={{
@@ -15,7 +14,7 @@ const CreateTourForm = ({style, submitForm, notRobot}) => {
                 email: '',
                 phone: '',
                 numberOfPeople: '',
-                placeToVisit:'',
+                placeToVisit: '',
                 startDate: '',
                 endDate: '',
                 whereAreYouFrom: '',
@@ -30,14 +29,19 @@ const CreateTourForm = ({style, submitForm, notRobot}) => {
                 endDate: Yup.string().required('Required'),
                 fullName: Yup.string().required('Required'),
             })}
-            onSubmit={(values, {resetForm}) => {
+            onSubmit={(values, { resetForm }) => {
                 notRobot && submitForm(values);
                 resetForm();
             }}
             render={({ isSubmitting, handleReset, isValid }) => (
                 <Form className={'BookTourForm-new'} style={style}>
-
-                    <Fieldset name="fullName" type="text" label="Full Name" placeholder="Full Name" style={{flexBasis:'100%'}}/>
+                    <Fieldset
+                        name="fullName"
+                        type="text"
+                        label="Full Name"
+                        placeholder="Full Name"
+                        style={{ flexBasis: '100%' }}
+                    />
                     <Fieldset name="phone" type="tel" label="Phone Number" placeholder="Phone Number" />
                     <Fieldset name="email" type="email" label="Email" placeholder="Email" />
                     <Fieldset
@@ -46,7 +50,12 @@ const CreateTourForm = ({style, submitForm, notRobot}) => {
                         label="Number Of People"
                         placeholder="Number Of People"
                     />
-                    <Fieldset name="placeToVisit" type="text" label="Place to visit" placeholder="Place to visit" />
+                    <Fieldset
+                        name="placeToVisit"
+                        type="text"
+                        label="Place to visit"
+                        placeholder="Place to visit"
+                    />
                     <Fieldset name="startDate" type="date" label="Start date" placeholder="Start date" />
                     <Fieldset name="endDate" type="date" label="End date" placeholder="End date" />
                     <Fieldset
@@ -56,7 +65,12 @@ const CreateTourForm = ({style, submitForm, notRobot}) => {
                         placeholder="Where Are You From"
                     />
 
-                    <BookButton type="submit" buttonText={'BOOK THIS TOUR'} style={{ flexBasis: '100%', margin: '20px 8px 0 8px' }} disabled={!isValid}/>
+                    <BookButton
+                        type="submit"
+                        buttonText={'BOOK THIS TOUR'}
+                        style={{ flexBasis: '100%', margin: '20px 8px 0 8px' }}
+                        // disabled={!isValid}
+                    />
                     {/*<Debug />*/}
                 </Form>
             )}
@@ -66,7 +80,5 @@ const CreateTourForm = ({style, submitForm, notRobot}) => {
 
 CreateTourForm.propTypes = {};
 CreateTourForm.defaultProps = {};
-
-
 
 export default CreateTourForm;

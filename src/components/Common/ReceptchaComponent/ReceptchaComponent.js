@@ -42,7 +42,7 @@ class ReceptchaComponent extends Component {
                     this.captchaDemo = el;
                 }}
                 size="invisible"
-                render="explicit"
+                // render="explicit"
                 sitekey="6LdBB3YUAAAAALCGIKE_QOlBRfPl082-xvEyh5ui"
                 onloadCallback={this.onLoadRecaptcha}
                 verifyCallback={this.verifyCallback}
