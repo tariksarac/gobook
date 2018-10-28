@@ -19,8 +19,15 @@ input.text,
 input[type="text"],
 input[type="button"],
 input[type="submit"],
+select,
 .input-checkbox {
   -webkit-appearance: none;
+}
+
+.my-input {
+  --paper-input-container-input: {
+    -webkit-appearance: none;
+  };
 }
 
 .App {

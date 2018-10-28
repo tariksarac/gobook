@@ -12,7 +12,7 @@ export const Fieldset = ({ name, label, style, ...rest }) => (
         <label htmlFor={name} className={'new-label'}>
             {label}
         </label>
-        <Field id={name} name={name} {...rest} />
+        <Field id={name} name={name} {...rest} className={'my-input'}/>
         <ErrorMessage name={name} component={'span'} />
     </div>
 );
