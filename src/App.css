@@ -19,6 +19,7 @@ input.text,
 input[type="text"],
 input[type="button"],
 input[type="submit"],
+input[type="date"],
 select,
 .input-checkbox {
   -webkit-appearance: none;
