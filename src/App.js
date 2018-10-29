@@ -45,6 +45,7 @@ class App extends Component {
                     <MessengerCustomerChat
                         pageId="227313291292119"
                         appId="350208348879799"
+                        htmlRef={window.location.pathname}
                     />
                 </div>
             </Router>

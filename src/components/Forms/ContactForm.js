@@ -38,7 +38,7 @@ const ContactForm = ({ submitForm, notRobot }) => (
                     type="submit"
                     buttonText={'Send'}
                     style={{ flexBasis: '100%' }}
-                    disabled={!isValid}
+                    // disabled={!isValid}
                 />
                 {/*<Debug />*/}
             </Form>
