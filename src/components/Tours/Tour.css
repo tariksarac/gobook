@@ -28,6 +28,12 @@
     max-height: 500px;
 }
 
+.Tour .HeadingContainer .carousel img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
 @media only screen and (max-width: 600px){
     /*.Tour .originalClass {*/
         /*max-height: 300px;*/
@@ -40,5 +46,11 @@
 
     .Tour .HeadingContainer .image-gallery-slides {
         height: 400px;
+    }
+
+    .Tour .HeadingContainer .carousel img {
+        height: 240px;
+        width: 100%;
+        object-fit: cover;
     }
 }

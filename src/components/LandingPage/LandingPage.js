@@ -70,7 +70,7 @@ class LandingPage extends Component {
         return (
             <div className={'App-main'}>
                     {/*Hero*/}
-                    <HeroImage picture={'https://scontent-waw1-1.xx.fbcdn.net/v/t31.0-8/18595178_1373124796066512_5607472245182435602_o.jpg?_nc_cat=103&_nc_ht=scontent-waw1-1.xx&oh=83fee3c26da6baafc0000bc06b6b3d7f&oe=5C426A67'} >
+                    <HeroImage picture={'https://images.ctfassets.net/0o22ljw5du6a/tCBtpdy7WSC6ECAU0ooq/d96d0ac438cfd34c484e68df6c167c4d/big-waterfall-.jpg'} >
                         <ColoredHeading heading={'The best of Bosnia and Herzegovina Tours'} color={'#33a3fc'}/>
                         <ColoredHeading subheading={'Experience the incredible Bosnia and Herzegovina'} color={'#2edc38'}/>
                     </HeroImage>
@@ -83,7 +83,8 @@ class LandingPage extends Component {
                     <ProductsContainer products={cardsData.filter(item => !item.oneDayTour)} />
                     {/*WHAT TO EXPECT*/}
                     <HeadingContainer >
-                        <GoBookPicture style={{flexBasis:'45%', flexShrink:'1' }} picture={'https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/38534401_1850358535009800_8792306351406579712_o.jpg?_nc_cat=106&_nc_ht=scontent-waw1-1.xx&oh=9046110a9aa5206b4a54959ab8be8ea0&oe=5C7F44BB'}/>
+                        {/*<GoBookPicture style={{flexBasis:'45%', flexShrink:'1' }} picture={'https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/38534401_1850358535009800_8792306351406579712_o.jpg?_nc_cat=106&_nc_ht=scontent-waw1-1.xx&oh=9046110a9aa5206b4a54959ab8be8ea0&oe=5C7F44BB'}/>*/}
+                        <GoBookPicture style={{flexBasis:'45%', flexShrink:'1' }} picture={headings[2] && headings[2].headingImage.fields.file.url}/>
                         <Heading {...headings[2]}  style={{flexBasis:'45%', flexShrink:'1' }}/>
                     </HeadingContainer>
                     {/*CHECK OUR DAY*/}
@@ -98,7 +99,7 @@ class LandingPage extends Component {
                     </HeadingContainer>
                     {/*HUNGARY SPECIAL*/}
                     <HeadingContainer id={"hungary-special"}>
-                        <GoBookPicture style={{flexBasis:'45%', flexShrink:'1' }} picture={'https://scontent-waw1-1.xx.fbcdn.net/v/t31.0-8/13502966_10153446752356920_963416707660048003_o.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=c7ad1407d6a94d4c41be5429375bc945&oe=5C82D318'}/>
+                        <GoBookPicture style={{flexBasis:'45%', flexShrink:'1' }} picture={'https://images.ctfassets.net/0o22ljw5du6a/6AvFWVwJWM00qq0Ag6eoos/fcdd7562f9c3726b642ce7ae2e201ffa/old-bridge-829050_1920.jpg'}/>
                         <Heading
                         style={{flexBasis:'45%', flexShrink:'1' }}
                         mainTitle={'Hungary special promo'}

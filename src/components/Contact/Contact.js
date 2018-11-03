@@ -54,7 +54,7 @@ class Contact extends React.Component {
                 <Heading mainTitle={'contact us'} hasLine/>
                 <div className={'contact-details'}>
                     <ContactForm notRobot={this.state.notRobot} submitForm={this.submitForm}/>
-                    <GoBookPicture picture={'https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/42194651_1154056038075009_3040074213995053056_o.jpg?_nc_cat=108&_nc_ht=scontent-waw1-1.xx&oh=60feb19c7f2e0a60cdd12a7cd743a04e&oe=5C43E229'}/>
+                    <GoBookPicture picture={'https://images.ctfassets.net/0o22ljw5du6a/3rqimAssEw6Cw8OuSUgGwg/fb51a3ef7ed1338d972fb94a8a080405/kravice.jpg'}/>
                 </div>
                 <ConfirmationDialog open={this.state.open} handleClose={this.handleClose} />
             </div>

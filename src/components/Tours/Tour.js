@@ -13,6 +13,7 @@ import Line from '../Common/Line/Line';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
+import GoBookPicture from "../Common/GoBookPicture/GoBookPicture";
 
 class Tour extends React.Component {
     constructor(props) {
@@ -110,7 +111,7 @@ class Tour extends React.Component {
                         className={'carousel'}
                         showStatus={false}
                         infiniteLoop={true}>
-                        {gallery.map((item, index) => (
+                        {gallery && gallery.map((item, index) => (
                             <div key={index}>
                                 <img src={item.original} />
                             </div>
@@ -163,6 +164,8 @@ class Tour extends React.Component {
                         style={{ maxWidth: '490px' }}>
                         <BookButton onClickAction={this.bookAction} buttonText={'Book Now!'} />
                     </Heading>
+                    <GoBookPicture style={{flexBasis:'45%', flexShrink:'1' }} picture={require('../../images/GoBook.png')}/>
+
                 </HeadingContainer>
                 {/*{ included && <Include data={{ description: included }} include title={'PRICE INCLUDES:'} /> }*/}
                 {/*{ notIncluded && <Include data={{ description: notIncluded }} title={'NOT INCLUDED:'} /> }*/}

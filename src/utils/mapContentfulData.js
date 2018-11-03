@@ -1,6 +1,6 @@
 export function mapLandingPage(data) {
     let { items } = data;
-    let { Asset, Entry } = data.includes;
+    // let { Asset, Entry } = data.includes;
 
     let headings = [];
     let featuredImage = {};
