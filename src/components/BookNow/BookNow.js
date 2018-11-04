@@ -105,7 +105,7 @@ class BookNow extends Component {
                     <GoBookPicture
                         id={'book-now-image'}
                         // picture={'https://scontent-waw1-1.xx.fbcdn.net/v/t31.0-8/17880063_1329757693736556_8999220361509411303_o.jpg?_nc_cat=111&_nc_ht=scontent-waw1-1.xx&oh=bbcd8fa49055afb2acee57b852f09e71&oe=5C85F354\n'}
-                        picture={tourItem.picture ? tourItem.picture : 'https://scontent-waw1-1.xx.fbcdn.net/v/t31.0-8/17880063_1329757693736556_8999220361509411303_o.jpg?_nc_cat=111&_nc_ht=scontent-waw1-1.xx&oh=bbcd8fa49055afb2acee57b852f09e71&oe=5C85F354'}
+                        picture={tourItem && tourItem.picture ? tourItem.picture : 'https://scontent-waw1-1.xx.fbcdn.net/v/t31.0-8/17880063_1329757693736556_8999220361509411303_o.jpg?_nc_cat=111&_nc_ht=scontent-waw1-1.xx&oh=bbcd8fa49055afb2acee57b852f09e71&oe=5C85F354'}
                         style={{flexBasis:'486px', flexShrink:'1' }}
                     />
                 </div>
