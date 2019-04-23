@@ -1,0 +1,13 @@
+.go-book-line {
+    width: 100px;
+    height: 10px;
+    margin-bottom: 50px;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .go-book-line {
+        margin-top: 0;
+    }
+
+}

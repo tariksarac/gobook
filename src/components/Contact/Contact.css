@@ -1,11 +1,22 @@
 .contact-container {
-    grid-area: main;
-    /*background-color: #f5f5f5;*/
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    padding-top: 50px;
+    grid-column-start: 2;
+    grid-column-end: 9;
+    padding-bottom: 100px;
+}
+.contact-container .contact-details {
+   display: flex;
 
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-areas: ". . main main main main" "img img main main main main " "ft ft ft ft ft ft ";
+}
+
+.contact-container .GoBookPicture {
+   width: 40%;
+
+}
+
+.contact-container .GoBookPicture .pict {
+   width: 100%;
+    height: 100%;
 }
 
 .contact-container .book-now-image{
@@ -168,7 +179,21 @@
 @media only screen and (max-width: 600px){
 
     .contact-container {
-        grid-template-areas: "img img img img img img" "main main main main main main " "ft ft ft ft ft ft ";
+        /*grid-template-areas: "img img img img img img" "main main main main main main " "ft ft ft ft ft ft ";*/
+        padding-top: 50px;
+        grid-column-start: 1;
+        grid-column-end: 10;
+        padding-bottom: 100px;
+    }
+
+    .contact-container .contact-details {
+        flex-direction: column;
+
+    }
+
+    .contact-container .Heading {
+        margin-left: 8px;
+
     }
     .contact-container .Contact form #name {
         width: 100%;
@@ -180,5 +205,9 @@
 
     .contact-container .Contact form input {
         height: 45px;
+    }
+
+    .contact-container .Contact .Heading {
+        padding: 0;
     }
 }

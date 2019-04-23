@@ -1,7 +1,9 @@
 .TextItem {
-    padding: 30px 20px;
+    padding: 30px 0;
     background-color: #ffffff;
     display: flex;
+    border-bottom: 1px solid #dedede;
+    align-items: flex-start;
 }
 
 .TextItem-line {
@@ -36,7 +38,17 @@
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+}
 
+.TextItem .Heading {
+    flex-basis: 486px;
+    flex-shrink: 1;
+    padding-right: 20px;
+}
+
+.TextItem .GoBookPicture {
+    flex-basis: 486px;
+    flex-shrink: 1;
 }
 
 
@@ -44,11 +56,20 @@
     .TextItem {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .TextItem .sight-image {
         padding: 5px;
         flex: unset;
+    }
+
+    .TextItem .Heading {
+        flex-basis: unset;
+        padding-right: 0;
+    }
+    .TextItem .GoBookPicture {
+        flex-basis: unset;
     }
 
 }

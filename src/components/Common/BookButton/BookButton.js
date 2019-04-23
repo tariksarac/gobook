@@ -4,11 +4,15 @@ import './BookButton.css';
 
 class BookButton extends Component {
     static defaultProps = {
-        buttonText: '',
+        buttonText: 'Book',
+        color: '#33a3fc',
+        onClickAction: () => {}
     };
 
     static propTypes = {
         buttonText: PropTypes.string,
+        color: PropTypes.string,
+        onClickAction: PropTypes.func,
     };
 
     state = {
@@ -17,19 +21,20 @@ class BookButton extends Component {
 
     render() {
 
-        let { buttonText, onClickAction,style, ...rest } = this.props;
+        let { buttonText, onClickAction,style, disabled, ...rest } = this.props;
         let buttonStyle = {
-            backgroundColor: !this.state.hovered && '#33a3fc',
-            color: !this.state.hovered ? '#ffffff' : '#33a3fc',
-            border: this.state.hovered ? '1px solid' : '0',
-            borderColor: this.state.hovered && '#33a3fc',
+            backgroundColor: disabled ? 'gray' : !this.state.hovered && rest.color,
+            color: !this.state.hovered ? '#ffffff' : rest.color,
+            border: this.state.hovered ? '1px solid' : 'none',
+            borderColor: this.state.hovered && rest.color,
         };
         return (
             <button
                 {...rest}
+                disabled={disabled}
                 className={'BookButton'}
                 style={{...style, ...buttonStyle}}
-                onClick={onClickAction}
+                onClick={(event)=>onClickAction(event)}
                 onMouseOver={() => this.setState(({ hovered }) => ({ hovered: !hovered }))}
                 onMouseLeave={() => this.setState(({ hovered }) => ({ hovered: !hovered }))}>
                 {buttonText}

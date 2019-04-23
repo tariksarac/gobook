@@ -1,17 +1,10 @@
 import React from 'react'
 import './Highlights.css'
 import * as Markdown from "react-markdown";
-// import {sarajevo} from "../../constants/constants";
+import GoBookPicture from "../Common/GoBookPicture/GoBookPicture";
+import Line from "../Common/Line/Line";
 
 const HighlightItem = ({data, reverse}) => {
-    // let featuredStyle= {
-    //     background: `linear-gradient(
-    //   rgba(0, 0, 0, 0.45),
-    //   rgba(0, 0, 0, 0.45)
-    // ), url(${sarajevo})`,
-    //     backgroundPosition:'center',
-    //     backgroundSize: 'cover',
-    // }
 
     let reverseClass = reverse ? 'reverse' : ''
     return(
@@ -23,9 +16,12 @@ const HighlightItem = ({data, reverse}) => {
             {/*</div>*/}
             <div className={'HighlightItem-text'}>
                 {/*<div className={'HighlightItem'}>{data.highlightText}</div>*/}
+                <Markdown source={data.mainTitle} className={'main-title'} />
+                <Line color={'#2edc38'} style={{width: '100px', height: '10px', margin:'0'}}/>
                 <Markdown source={data.highlightText} className={'go-book-text'} />
             </div>
-            <div className={'Highlights-image'}><img src={data.highlightPicture} alt={data.town}/></div>
+            {/*<div className={'Highlights-image'}><img src={data.highlightPicture} alt={data.town}/></div>*/}
+            <GoBookPicture style={{flexBasis:'45%', flexShrink:'1' }} picture={data.highlightPicture} />
             {/*<div style={{width:'50%', height: '100%'}}>*/}
                 {/*<div className={'Highlights-image'} style={featuredStyle}><span>twst</span></div>*/}
             {/*</div>*/}

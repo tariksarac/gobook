@@ -18,7 +18,7 @@ const ExpansionItem = ({ data, classes, include, itinerary }) => {
         title = '##### Tour does not include:'
     }
     return (
-        <ExpansionPanel className={'ext-panel'} defaultExpanded={itinerary}>
+        <ExpansionPanel className={'ext-panel'} defaultExpanded={true} >
             <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} className={'exp-sum'}>
                 {itinerary && <Place />}
                 {include && <Check />}

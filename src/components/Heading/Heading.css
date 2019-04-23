@@ -1,21 +1,43 @@
+.HeadingContainer {
+    display:flex;
+     justify-content:space-between;
+    grid-column-start: 2;
+    grid-column-end: 9;
+    align-items: flex-start;
+     width:100%;
+     margin-bottom: 100px;
+
+}
+
+#check-tour {
+    grid-column-start: 2;
+    grid-column-end: 9;
+}
+
 .Heading {
     /*min-height: 230px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
-    min-height: 200px;
-
+    align-items: flex-start;
+    /*padding: 20px;*/
+    /*min-height: 200px;*/
+    /*max-width: 490px;*/
 }
 
 .Heading .main-heading {
- font-size: 34px;
-    /*color: #2F2E2E;*/
     text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 28px;
     font-weight: 600;
-    line-height: 60px;
-    /*font-size: 50px;*/
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #444444;
+    margin: 0;
+    padding-bottom: 15px;
 }
 
 .Heading .large {
@@ -23,21 +45,27 @@
 }
 
 .Heading .line {
-    width: 40px;
-    border-bottom: 3px solid var(--main-text-color);
+    width: 100px;
+    border-bottom: 10px solid var(--main-text-color);
     height: 0 !important;
     min-height: 0 !important;
-    padding: 5px;
+    margin-bottom: 50px;
 }
 
 .Heading .sub-heading {
     /*max-width: 80%;*/
     /*line-height: 1.5em;*/
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
-    padding: 20px;
-    font-size: 20px;
-    font-weight: 400;
+    /*padding: 20px;*/
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #444444;
+    padding-right: 20px;
 }
 
 .Heading .sub-heading-about {
@@ -61,14 +89,48 @@
     font-weight: 400;
 }
 
+.Heading .BookButton {
+    margin-top: 80px;
+    min-width: 150px;
+}
+
 @media only screen and (max-width: 600px){
+    .HeadingContainer {
+        flex-direction: column;
+        /*align-items:center ;*/
+        margin: 0;
+        grid-column-start: 1;
+        grid-column-end: 10;
+        padding: 0 20px;
+        width: unset;
+        /*max-height: 600px;*/
+    }
+
+    #check-tour {
+        grid-column-start: 1;
+        grid-column-end: 10;
+        padding: 0 20px;
+    }
     .Heading {
-        padding: 20px 5px;
+        /*padding: 0 0 50px 0;*/
+        justify-content: flex-start;
+    }
+    .HeadingContainer .Heading {
+        padding: 0 0 50px 0;
+        justify-content: flex-start;
     }
 
     .Heading .main-heading {
-        font-size: 1.5rem;
-        line-height: 40px;
+        text-align: left;
+        width: 100%;
+        height: 48px;
+        font-size: 22px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.09;
+        letter-spacing: normal;
+        color: #444444;
     }
 
     .Heading .large {
@@ -78,7 +140,23 @@
 
     .Heading .sub-heading {
         max-width: 100%;
-        padding: 20px 5px;
-        font-size: 20px;
+        width: 100%;
+        /*height: 120px;*/
+        font-size: 16px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: justify;
+        color: #444444;
+    }
+
+    .Heading .BookButton {
+       margin: 25px 0;
+    }
+
+    #hungary-special {
+        flex-direction: column-reverse;
     }
 }

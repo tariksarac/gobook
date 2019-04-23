@@ -1,0 +1,77 @@
+.ColoredHeading {
+    border-radius: 8px;
+    width: 535px;
+    display: flex;
+   text-align: center;
+    margin-bottom: 25px;
+}
+
+.ColoredHeading h1 {
+    font-family: 'Work Sans', sans-serif;;
+    font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.11;
+    letter-spacing: normal;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.ColoredHeading h2 {
+    font-family: 'Work Sans', sans-serif;;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 600px){
+    .ColoredHeading {
+        display: flex;
+       justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+        width: 280px;
+        border-radius: 8px;
+    }
+
+    .ColoredHeading h1 {
+        font-family: 'Work Sans', sans-serif;;
+        text-transform: uppercase;
+        width: 240px;
+        font-size: 22px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.09;
+        letter-spacing: normal;
+        color: #ffffff;
+        height: 114px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ColoredHeading h2 {
+        font-family: 'Work Sans', sans-serif;
+        width: 240px;
+        font-size: 16px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        color: #ffffff;
+        height: 80px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

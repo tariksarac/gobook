@@ -1,0 +1,222 @@
+.App-header {
+    height: 110px;
+    grid-area: hd;
+}
+
+.App-header .header-wrapper {
+    height: 110px;
+    width: 100%;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas: '. logo content content   content   content   content   content   .';
+    /*grid-auto-rows: minmax(80px, 110px);*/
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    border-bottom: 1px solid #dedede;
+}
+
+.App-header .logo-container {
+    grid-area: logo;
+}
+
+.App-header .logo {
+    height: 110px;
+    width: auto;
+}
+
+.App-header .header-content {
+    grid-area: content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.App-header .header-items {
+    width: auto;
+    transition: ease-in-out 200ms;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.App-header .header-item {
+    text-decoration: none;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 4px;
+    text-align: right;
+    color: #444444;
+    margin-right: 50px;
+    border-bottom: 10px solid transparent;
+}
+
+.App-header .mobile-home {
+    display: none;
+}
+
+.App-header .header-content .active {
+    border-bottom: 10px solid #33a3fc;
+}
+
+.App-header .header-content img {
+    height: auto;
+    width: 140px;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding-right: 10px;
+}
+
+.App-header .menu {
+    display: none;
+}
+
+.App-header .navigation {
+    display: flex;
+    min-height: 100%;
+    padding-left: 20px;
+}
+
+.App-header .header-button {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.App-header .header-logo {
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .App-header {
+        position: relative;
+        height: 100px;
+        grid-area: hd;
+    }
+
+    .App-header .header-wrapper  {
+        height: 100px;
+        background-color: #ffffff;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            'logo .  menu'
+            'content content content ';
+    }
+
+    .App-header .logo-container {
+        height: 100px;
+        grid-area: logo;
+    }
+
+    .App-header .logo {
+        height: 100px;
+        width: auto;
+    }
+
+    .App-header .menu {
+        display: flex;
+        margin-bottom: auto;
+        margin-top: auto;
+        padding-right: 10px;
+        z-index: 6;
+        grid-area: menu;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .App-header .header-content {
+        grid-area: content;
+        position: absolute;
+        background-color: #ffffff;
+        width: 100%;
+        height: 100vh;
+        left: 100%;
+        transition: ease-in-out 200ms;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        z-index: 5;
+    }
+
+    .App-header  .active {
+        border-bottom: 0 !important;
+    }
+
+    .App-header .navigation {
+        display: flex;
+        flex-direction: column;
+        min-height: unset;
+    }
+
+    .App-header .header-button {
+       margin: 0 auto 0 auto;
+    }
+
+    .App-header .header-logo {
+       height: 100px;
+    }
+
+    /*.App-header .header-content .header-social {*/
+        /*margin: 0;*/
+        /*padding-left: 10px;*/
+    /*}*/
+
+    /*.App-header .header-content .header-items {*/
+        /*position: absolute;*/
+        /*background-color: #ffffff;*/
+        /*width: 100%;*/
+        /*height: 100vh;*/
+        /*left: 100%;*/
+        /*transition: ease-in-out 200ms;*/
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*justify-content: flex-start;*/
+        /*padding-top: 100px;*/
+        /*z-index: 5;*/
+    /*}*/
+
+    .App-header .mobile-home {
+        display: flex;
+    }
+
+    .App-header .header-item {
+        height: 24px;
+        max-height: 24px;
+        min-height: unset;
+        padding-bottom: 50px;
+        font-family: 'Work Sans', sans-serif;;
+        font-size: 20px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: center;
+        color: #444444;
+        text-transform: uppercase;
+    }
+
+    .App-header .menu {
+        display: flex;
+        margin-bottom: auto;
+        margin-top: auto;
+        padding-right: 10px;
+        z-index: 6;
+        grid-area: menu;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+}

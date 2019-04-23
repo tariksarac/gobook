@@ -13,8 +13,15 @@ import BookNow from "./components/BookNow/BookNow";
 import About from "./components/About/About";
 import HungaryPromo from "./components/LandingPage/HungaryPromo";
 import NotFound from "./components/NotFound/NotFound";
+import { loadReCaptcha } from 'react-recaptcha-google'
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+
+
 
 class App extends Component {
+    componentDidMount() {
+        loadReCaptcha();
+    }
     render() {
         return (
             <Router>
@@ -35,6 +42,11 @@ class App extends Component {
 
                     </ScrollToTop>
                     <Footer />
+                    <MessengerCustomerChat
+                        pageId="227313291292119"
+                        appId="350208348879799"
+                        htmlRef={window.location.pathname}
+                    />
                 </div>
             </Router>
         );

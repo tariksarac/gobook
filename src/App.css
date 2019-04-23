@@ -2,7 +2,7 @@ body {
   --main-text-color: #33a3fc;
   --second-text-color: #0ac66a;
   font-family: Roboto;
-  background-color: #f2f2f2;
+  /*background-color: #f2f2f2;*/
   font-size: 18px;
   line-height: 30px;
   color: #2d2926;
@@ -10,111 +10,64 @@ body {
 }
 
 p {
-  /*width: 80%;*/
-  /*color: #696969;*/
-  /*line-height: 1.5em;*/
-  text-align: center;
+  /*text-align: center;*/
   margin: 0 auto;
-  padding: 20px;
+  /*padding: 20px;*/
 }
 
-/*input[type="date"]::before {*/
-  /*content: attr(placeholder);*/
-  /*width: 100%;*/
-/*}*/
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="date"],
+select,
+.input-checkbox {
+  -webkit-appearance: none;
+}
 
-/*!* hide our custom/fake placeholder text when in focus to show the default*/
- /** 'mm/dd/yyyy' value and when valid to show the users' date of birth value.*/
- /**!*/
-/*input[type="date"]:focus::before,*/
-/*input[type="date"]:valid::before { display: none }*/
+.my-input {
+  --paper-input-container-input: {
+    -webkit-appearance: none;
+  };
+}
 
 .App {
-  text-align: center;
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-auto-rows: minmax(100px, auto);
   grid-template-areas:
           "hd hd hd hd   hd   hd   hd   hd   hd"
-          ". main main main main main main main ."
+          "main main main main main main main main main"
           "ft ft ft ft   ft   ft   ft   ft   ft";
 
   overflow: hidden;
 }
 
-.App .App-header {
-  grid-area: hd;
-  /*background-color: #f2f2f2;*/
-  background-color: #ffffff;
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  color: var(--main-text-color);
-}
-
-.App .App-header .header-content {
-  grid-column-start: 2;
-  grid-column-end: 9;
-  display: flex;
-  justify-content: space-between;
-}
-
-.App .App-header .header-content .header-items {
-  width: auto;
-  transition: ease-in-out 200ms;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-
-}
-
-.App .App-header .header-content .header-items .mobile-home {
-  display: none;
-
-}
-
-.App .App-header .header-content .header-items a {
- text-decoration: none;
-
-}
-
-.App .App-header .header-content .header-social {
-  /*margin-right: 0;*/
-  /*margin-left: auto;*/
-  display: flex;
-}
-
-.App .App-header .header-content .header-items .header-item {
-  padding-right: 15px;
-  text-decoration: none;
-  color: #33a3fc;
-
-}
-
-
-
-.App .App-header .header-content img {
-  height: auto;
-  width: 140px;
-  margin-bottom: auto;
-  margin-top: auto;
-  padding-right: 10px;
-}
-
-.App .App-header .menu {
-  display: none;
-}
-
-
 .App .App-main {
   grid-area: main;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: minmax(100px, auto);
 }
 
 .terms-condition {
   grid-area: main;
-  padding: 100px 160px;
-  white-space: pre;
+  /*padding: 100px 160px;*/
+  /*white-space: pre;*/
+  padding-top: 50px;
   text-align: left;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+.terms-condition  p {
+  text-align: left;
+  padding: 0;
+  padding-bottom: 10px;
+  margin: 0;
+}
+.terms-condition  ul {
+  margin: 0;
 }
 
 .go-book-text  {
@@ -152,63 +105,63 @@ p {
             "ft ft ft ft   ft   ft   ft   ft   ft";
   }
 
-  .App .App-header {
-    /*height: 90px;*/
-    position: relative;
-  }
+  /*.App .App-header {*/
+    /*!*height: 90px;*!*/
+    /*position: relative;*/
+  /*}*/
 
-  .App .App-header .header-content {
-    grid-column-start: 1;
-    grid-column-end: 10;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
+  /*.App .App-header .header-content {*/
+    /*grid-column-start: 1;*/
+    /*grid-column-end: 10;*/
+    /*display: flex;*/
+    /*flex-direction: row-reverse;*/
+    /*justify-content: space-between;*/
+  /*}*/
 
-  .App .App-header .header-content .logo {
-    display: none;
-  }
+  /*.App .App-header .header-content .logo {*/
+    /*display: none;*/
+  /*}*/
 
-  #logo {
-    display: none !important;
-  }
+  /*#logo {*/
+    /*display: none !important;*/
+  /*}*/
 
-  .App .App-header .header-content .header-social {
-    margin: 0;
-    padding-left: 10px;
-  }
+  /*.App .App-header .header-content .header-social {*/
+    /*margin: 0;*/
+    /*padding-left: 10px;*/
+  /*}*/
 
 
-  .App .App-header .header-content .header-items {
-    position: absolute;
-    background-color: #ffffff;
-    width: 100%;
-    height: 100vh;
-    left: 100%;
-    transition: ease-in-out 200ms;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 100px;
-    z-index: 5;
-  }
+  /*.App .App-header .header-content .header-items {*/
+    /*position: absolute;*/
+    /*background-color: #ffffff;*/
+    /*width: 100%;*/
+    /*height: 100vh;*/
+    /*left: 100%;*/
+    /*transition: ease-in-out 200ms;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: flex-start;*/
+    /*padding-top: 100px;*/
+    /*z-index: 5;*/
+  /*}*/
 
-  .App .App-header .header-content .header-items .mobile-home {
-    display: block;
+  /*.App .App-header .header-content .header-items .mobile-home {*/
+    /*display: block;*/
 
-  }
+  /*}*/
 
-  .App .App-header .header-items .header-item {
-    height: 35px;
-  }
+  /*.App .App-header .header-items .header-item {*/
+    /*height: 35px;*/
+  /*}*/
 
-  .App .App-header .menu {
-    display: flex;
-    margin-bottom: auto;
-    margin-top: auto;
-    padding-right: 10px;
-    z-index: 6;
-  }
+  /*.App .App-header .menu {*/
+    /*display: flex;*/
+    /*margin-bottom: auto;*/
+    /*margin-top: auto;*/
+    /*padding-right: 10px;*/
+    /*z-index: 6;*/
+  /*}*/
 
   .terms-condition {
     grid-area: main;
