@@ -7,15 +7,11 @@ import CreateTourForm from '../../components/Forms/CreateTourForm';
 import BookButton from '../Common/BookButton/BookButton';
 import GoBookPicture from '../Common/GoBookPicture/GoBookPicture';
 import Heading from '../Heading/Heading';
-import { ReCaptcha } from 'react-recaptcha-google';
 import axios from 'axios';
 import ConfirmationDialog from '../Forms/ConfirmationDialog/ConfirmationDialog';
 import ReceptchaComponent from "../Common/ReceptchaComponent/ReceptchaComponent";
 
 class BookNow extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     state = {
         custom: false,
