@@ -87,7 +87,8 @@ class LandingPage extends Component {
                 </HeadingContainer>{/*Relax heading, Go Book Heading*/}
                 <HeadingContainer>
                     <Heading hasLine  mainTitle={'Go Travel'}
-                              subTitle={'We have the cheapest airline tickets and we are __IATA accredited agent__'} style={{ flexBasis: '45%', flexShrink: '1' }} >
+                              subTitle={'We have the cheapest airline tickets and we are __IATA accredited agent__.\n' +
+                              'The best __travel package__ including __cruises__, and __special trips__.'} about={'Check our offer on [https://gotravel.ba/](https://gotravel.ba/ "GoTravel")'} style={{ flexBasis: '45%', flexShrink: '1' }} >
                         <BookButton
                             onClickAction={() => this.props.history.push('/contact')}
                             buttonText={'Contact Us'}
@@ -96,7 +97,7 @@ class LandingPage extends Component {
                     <GoBookPicture
                         style={{ flexBasis: '45%', flexShrink: '1', backgroundSize: 'contain' }}
                         picture={
-                            'https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/52852011_293922881297826_7224776625626284032_n.jpg?_nc_cat=105&_nc_ht=scontent-waw1-1.xx&oh=1c4e30559e20e92da064edfdbf717d41&oe=5CE83E52'
+                            'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/IATAlogo.svg/300px-IATAlogo.svg.png'
                         }
                     />
                 </HeadingContainer>
