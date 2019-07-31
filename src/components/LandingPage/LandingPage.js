@@ -9,6 +9,7 @@ import ColoredHeading from '../Common/ColoredHeading/ColoredHeading';
 import HeadingContainer from '../Common/HeadingSection/HeadingContainer';
 import GoBookPicture from '../Common/GoBookPicture/GoBookPicture';
 
+
 export const customStyle = {
     alignItems: 'center',
     fontSize: '34px',
@@ -23,7 +24,7 @@ class LandingPage extends Component {
         modalOpen: false,
         headings: [],
         featuredImage: {},
-        cardsData: [],
+        cardsData: []
     };
 
     client = contentful.createClient({
@@ -66,7 +67,7 @@ class LandingPage extends Component {
     };
 
     render() {
-        let { headings, cardsData } = this.state;
+        let { headings, cardsData, isMobile } = this.state;
         return (
             <div className={'App-main'}>
                 {/*Hero*/}
@@ -102,7 +103,7 @@ class LandingPage extends Component {
                     />
                 </HeadingContainer>
                 {/*Tours*/}
-                <ProductsContainer products={cardsData.filter(item => !item.oneDayTour)} />
+                <ProductsContainer products={cardsData.filter(item => !item.oneDayTour)} isMobile={isMobile}/>
                 {/*WHAT TO EXPECT*/}
                 <HeadingContainer>
                     {/*<GoBookPicture style={{flexBasis:'45%', flexShrink:'1' }} picture={'https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/38534401_1850358535009800_8792306351406579712_o.jpg?_nc_cat=106&_nc_ht=scontent-waw1-1.xx&oh=9046110a9aa5206b4a54959ab8be8ea0&oe=5C7F44BB'}/>*/}

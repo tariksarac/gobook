@@ -3,7 +3,7 @@ import Line from "../Common/Line/Line";
 import * as Markdown from 'react-markdown';
 
 
-const Heading = ({ subTitle, mainTitle, hasLine, color, margin, about, style, large, absolute, headingPrice, headingDiscount,children, id }) => {
+const Heading = ({ subTitle, mainTitle, hasLine, color, about, style, large, headingPrice, headingDiscount,children, id }) => {
     return (
         <div className={'Heading'} style={{ ...style }} id={id}>
 
