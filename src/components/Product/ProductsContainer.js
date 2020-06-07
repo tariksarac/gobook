@@ -26,7 +26,6 @@ const responsive = {
 };
 
 const ProductsContainer = ({ products, deviceType, isMobile }) => {
-    debugger;
     return (
         <Carousel
             deviceType={deviceType}
@@ -58,7 +57,6 @@ const ProductsContainer = ({ products, deviceType, isMobile }) => {
 };
 
 ProductsContainer.getInitialProps = ({ req }) => {
-    debugger;
     let userAgent;
     if (req) {
         userAgent = req.headers['user-agent'];
