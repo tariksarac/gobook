@@ -1,43 +1,42 @@
 .About {
-    /*display: flex;*/
-    grid-area: main;
-    /*justify-content: center;*/
-    /*align-items: flex-start;*/
-    /*height: 100vh;*/
-    padding-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+  /*display: flex;*/
+  grid-area: main;
+  /*justify-content: center;*/
+  /*align-items: flex-start;*/
+  /*height: 100vh;*/
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: minmax(100px, auto);
 }
 
-.About .Heading{
-    width: 50%;
+.About .Heading {
+  width: 50%;
 }
 
-.About .HeadingContainer{
-    align-items: center;
+.About .HeadingContainer {
+  align-items: center;
 }
 
 .About .about-image {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.About .about-image img{
-    max-width: 100%;
-    height: auto;
-
+.About .about-image img {
+  max-width: 100%;
+  height: auto;
 }
 
-@media only screen and (max-width: 600px){
-    .About .Heading{
-        width: 100%;
-    }
+@media only screen and (max-width: 600px) {
+  .About .Heading {
+    width: 100%;
+  }
 
-    .About .about-image {
-       display: none;
-    }
+  .About .about-image {
+    display: none;
+  }
 }

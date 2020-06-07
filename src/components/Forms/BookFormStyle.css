@@ -1,94 +1,91 @@
 .BookTourForm-new {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 50px;
 }
 
 input {
-    height: 50px;
-    border-radius: 8px;
-    border: solid 1px #7b7b7b;
-    background-color: #ffffff;
-    padding: 0 8px 0 8px;
-    outline: none;
+  height: 50px;
+  border-radius: 8px;
+  border: solid 1px #7b7b7b;
+  background-color: #ffffff;
+  padding: 0 8px 0 8px;
+  outline: none;
 }
 label {
-    height: 16px;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.14;
-    letter-spacing: normal;
-    color: #444444;
-    text-transform: uppercase;
-    margin-bottom: 8px;
+  height: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  color: #444444;
+  text-transform: uppercase;
+  margin-bottom: 8px;
 }
 select {
-    height: 50px;
-    border-radius: 8px;
-    border: solid 1px #7b7b7b;
-    background-color: #ffffff;
-    padding: 0 8px 0 8px;
+  height: 50px;
+  border-radius: 8px;
+  border: solid 1px #7b7b7b;
+  background-color: #ffffff;
+  padding: 0 8px 0 8px;
 }
 
 textarea {
-    height: 250px;
-    border-radius: 8px;
-    border: solid 1px #7b7b7b;
-    background-color: #ffffff;
-    padding: 10px 8px 0 8px;
-    outline: none;
-    resize: none;
+  height: 250px;
+  border-radius: 8px;
+  border: solid 1px #7b7b7b;
+  background-color: #ffffff;
+  padding: 10px 8px 0 8px;
+  outline: none;
+  resize: none;
 }
 
 .Fieldset {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 45%;
-    flex-grow: 1;
-    box-sizing: border-box;
-    margin: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+  flex-grow: 1;
+  box-sizing: border-box;
+  margin: 8px;
 }
 
 .Fieldset span {
-    color: red;
-    font-size: 13px;
+  color: red;
+  font-size: 13px;
 }
 
 .BookTourForm-new {
-    padding-right: 0;
+  padding-right: 0;
 }
 
 .book-modal-wide {
+  position: relative;
+  width: 200%;
+  left: 0;
+  top: 0;
+  display: flex;
+}
+.or {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .BookTourForm-new {
+    padding-right: 0;
+  }
+
+  .book-modal-wide {
     position: relative;
     width: 200%;
     left: 0;
     top: 0;
     display: flex;
-}
-.or {
+  }
+  .or {
     text-align: center;
+  }
 }
-
-
-
-@media only screen and (max-width: 600px){
-    .BookTourForm-new {
-        padding-right: 0;
-    }
-
-    .book-modal-wide {
-        position: relative;
-        width: 200%;
-        left: 0;
-        top: 0;
-        display: flex;
-    }
-    .or {
-        text-align: center;
-    }
-}
-

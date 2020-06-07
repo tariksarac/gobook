@@ -1,12 +1,12 @@
 .WhyBosnia {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    padding-top: 50px;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  padding-top: 50px;
 }
 
-.WhyBosnia .why-bosnia-media{
-    display: flex;
-    flex-direction: column;
+.WhyBosnia .why-bosnia-media {
+  display: flex;
+  flex-direction: column;
 }

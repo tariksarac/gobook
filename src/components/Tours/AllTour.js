@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const AllTour = () => {
-    return (
-        <div>AllTour</div>
-    )
-}
+  return <div>AllTour</div>;
+};
 
-export default AllTour
+export default AllTour;

@@ -1,75 +1,73 @@
 .TextItem {
-    padding: 30px 0;
-    background-color: #ffffff;
-    display: flex;
-    border-bottom: 1px solid #dedede;
-    align-items: flex-start;
+  padding: 30px 0;
+  background-color: #ffffff;
+  display: flex;
+  border-bottom: 1px solid #dedede;
+  align-items: flex-start;
 }
 
 .TextItem-line {
-    position: absolute;
-    width: 0;
-    height: 100px;
-    border-right: 3px solid #33a3fc;
+  position: absolute;
+  width: 0;
+  height: 100px;
+  border-right: 3px solid #33a3fc;
 }
 
 .TextItem-title {
-    padding: 0 0 5px 20px;
-    font-size: 20px;
-    color: #2f2e2e;
-    font-weight: 700;
-    text-align: left;
+  padding: 0 0 5px 20px;
+  font-size: 20px;
+  color: #2f2e2e;
+  font-weight: 700;
+  text-align: left;
 }
 
 .TextItem-text {
-    padding: 0 0 5px 20px;
-    /*font-size: 16px;*/
-    color: #2f2e2e;
-    text-align: left;
+  padding: 0 0 5px 20px;
+  /*font-size: 16px;*/
+  color: #2f2e2e;
+  text-align: left;
 }
 
 .TextItem .sight-image {
-    padding: 5px;
-    flex: 1 0 300px;
-    max-height: 250px;
+  padding: 5px;
+  flex: 1 0 300px;
+  max-height: 250px;
 }
 
-.TextItem .sight-image img{
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+.TextItem .sight-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .TextItem .Heading {
-    flex-basis: 486px;
-    flex-shrink: 1;
-    padding-right: 20px;
+  flex-basis: 486px;
+  flex-shrink: 1;
+  padding-right: 20px;
 }
 
 .TextItem .GoBookPicture {
-    flex-basis: 486px;
-    flex-shrink: 1;
+  flex-basis: 486px;
+  flex-shrink: 1;
 }
 
+@media only screen and (max-width: 600px) {
+  .TextItem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
-@media only screen and (max-width: 600px){
-    .TextItem {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
+  .TextItem .sight-image {
+    padding: 5px;
+    flex: unset;
+  }
 
-    .TextItem .sight-image {
-        padding: 5px;
-        flex: unset;
-    }
-
-    .TextItem .Heading {
-        flex-basis: unset;
-        padding-right: 0;
-    }
-    .TextItem .GoBookPicture {
-        flex-basis: unset;
-    }
-
+  .TextItem .Heading {
+    flex-basis: unset;
+    padding-right: 0;
+  }
+  .TextItem .GoBookPicture {
+    flex-basis: unset;
+  }
 }

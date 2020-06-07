@@ -1,9 +1,9 @@
-.BookFormInput{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25px;
+.BookFormInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
 }
 
 .MuiInput-underline-19:hover:not(.MuiInput-disabled-18):not(.MuiInput-focused-17):not(.MuiInput-error-20):before {
-    border-bottom: solid 1px #7b7b7b !important;
+  border-bottom: solid 1px #7b7b7b !important;
 }
