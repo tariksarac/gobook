@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7fb826fb-30f8-49aa-937d-473dc2ebb226" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LandingPage/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/ProductsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/ProductsContainer.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +22,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ONf0ZfefR9jRxrsJED55CVVxz4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -57,18 +58,6 @@
       <recent name="$PROJECT_DIR$/src/components/Heading" />
       <recent name="$PROJECT_DIR$/src/components/Product" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/gobook/build/index.html" useBuiltInWebServerPort="true">
@@ -188,23 +177,23 @@
       <workItem from="1564558235115" duration="4382000" />
       <workItem from="1564644207223" duration="343000" />
       <workItem from="1575896443202" duration="1521000" />
+      <workItem from="1591562982017" duration="595000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
