@@ -6,13 +6,6 @@ import 'react-multi-carousel/lib/styles.css';
 import { mobile } from '../../index';
 import UAParser from 'ua-parser-js';
 
-// const ProductsContainer = ({ products }) => {
-//     return (
-//         <div className={'product-container'}>
-//             {products && products.map((item, index) => <Product key={index} product={item} />)}
-//         </div>
-//     );
-// };
 
 const responsive = {
     desktop: {
@@ -37,21 +30,28 @@ const ProductsContainer = ({ products, deviceType, isMobile }) => {
     return (
         <Carousel
             deviceType={deviceType}
-            centerMode={false}
-            arrows={mobile ? true : products.length > 3}
+            // centerMode={false} arrows={true}
             swipeable={true}
-            draggable={false}
             showDots={!mobile ? products.length > 3 : false}
             responsive={responsive}
             ssr={false} // means to render carousel on server-side.
-            infinite={false}
             autoPlay={false}
-            keyBoardControl={true}
             customTransition="all .5"
             transitionDuration={500}
             containerClass="product-container"
-            dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px">
+
+            additionalTransfrom={0}
+            arrows
+            autoPlaySpeed={3000}
+            centerMode={false}
+            draggable
+            focusOnSelect={false}
+            infinite
+            keyBoardControl
+            minimumTouchDrag={80}
+            renderDotsOutside={false}
+
+           >
             {products && products.map((item, index) => <Product key={index} product={item} />)}
         </Carousel>
     );

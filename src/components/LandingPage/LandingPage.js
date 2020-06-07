@@ -130,18 +130,18 @@ class LandingPage extends Component {
                     />
                 </HeadingContainer>
                 {/*iata-partner*/}
-                <HeadingContainer>
-                    <Heading
-                        {...headings[4]}
-                        style={{ flexBasis: '45%', flexShrink: '1' }}
-                        mainTitle={'GO BOOK'}>
-                        <BookButton buttonText={'BOOK NOW!'} onClickAction={this.bookAction} />
-                    </Heading>
-                    <GoBookPicture
-                        style={{ flexBasis: '45%', flexShrink: '1' }}
-                        picture={require('../../images/GoBook.png')}
-                    />
-                </HeadingContainer>
+                {/*<HeadingContainer>*/}
+                {/*    <Heading*/}
+                {/*        {...headings[4]}*/}
+                {/*        style={{ flexBasis: '45%', flexShrink: '1' }}*/}
+                {/*        mainTitle={'GO BOOK'}>*/}
+                {/*        <BookButton buttonText={'BOOK NOW!'} onClickAction={this.bookAction} />*/}
+                {/*    </Heading>*/}
+                {/*    <GoBookPicture*/}
+                {/*        style={{ flexBasis: '45%', flexShrink: '1' }}*/}
+                {/*        picture={require('../../images/GoBook.png')}*/}
+                {/*    />*/}
+                {/*</HeadingContainer>*/}
                 {/*HUNGARY SPECIAL*/}
                 <HeadingContainer id={'hungary-special'}>
                     <GoBookPicture
