@@ -79,8 +79,8 @@ class Tour extends React.Component {
       tourCardPicture,
       title,
     } = this.state.tourData;
-    let width =
-      window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    // let width =
+    //   window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     // let tourItem = tours.find(item => item.name === this.props.match.params.name) || {};
     return (
       <div className={'Tour'}>
@@ -115,7 +115,7 @@ class Tour extends React.Component {
             {gallery &&
               gallery.map((item, index) => (
                 <div key={index}>
-                  <img src={item.original} />
+                  <img src={item.original} alt={''}/>
                 </div>
               ))}
           </Carousel>

@@ -54,18 +54,7 @@ const styles = (theme) => ({
   },
 });
 
-const BookFormInput = ({
-  name,
-  classes,
-  defaultValue,
-  id,
-  type,
-  placeholder,
-  customStyle,
-  onChange,
-  value,
-  error,
-}) => {
+const BookFormInput = ({ name, classes, id, type, placeholder, customStyle, onChange, value }) => {
   return (
     <div className={'BookFormInput'} style={{ ...customStyle }}>
       <InputLabel htmlFor={id} className={classes.label}>

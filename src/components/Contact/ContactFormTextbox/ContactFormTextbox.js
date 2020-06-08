@@ -29,7 +29,6 @@ const styles = (theme) => ({
   input: {
     boxSizing: 'border-box',
     margin: theme.spacing.unit,
-    // border: 'solid 1px #7b7b7b',
     minHeight: '200px',
     borderRadius: '8px',
     padding: '13px 20px',
@@ -49,17 +48,7 @@ const styles = (theme) => ({
   },
 });
 
-const ContactFormTextbox = ({
-  name,
-  classes,
-  defaultValue,
-  id,
-  type,
-  placeholder,
-  customStyle,
-  onChange,
-  value,
-}) => {
+const ContactFormTextbox = ({ name, classes, id, customStyle, onChange, value }) => {
   return (
     <div className={'BookFormInput'} style={{ ...customStyle }}>
       <InputLabel htmlFor={id} className={classes.label}>

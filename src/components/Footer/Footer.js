@@ -13,15 +13,15 @@ const Footer = ({ history }) => {
         <div className={'contact-detail'}>
           <div>
             <div>
-              <span role="img">📞 </span>Viber, WhatsApp
+              <span role="img" aria-label="Phone">📞 </span>Viber, WhatsApp
             </div>
             <div>
-              <span role="img">👉 </span>+387 61025015
+              <span role="img" aria-label="Phone">👉 </span>+387 61025015
             </div>
           </div>
           <div>
             <div>
-              <span role="img">📬 </span>
+              <span role="img"aria-label="Email">📬 </span>
               <a className={'site-link'} href="mailto:gobook@gobook.ba">
                 gobook@gobook.ba
               </a>
@@ -30,18 +30,18 @@ const Footer = ({ history }) => {
           <div>GoBook Ⓡ2018. All rights reserved.</div>
         </div>
       </div>
-      <div className={'footer-social'}>
+      <div className={'footer-Social'}>
         <div className={'main-footer'}>Social media</div>
         <Line color={'#ffffff'} />
         <div className={'contact-detail'}>
-          <div className={'social'}>
+          <div className={'Social'}>
             <a className={'site-link'} href={'https://www.instagram.com/gobook.ba/'}>
               <Instagram />
             </a>
             <a className={'site-link'} href={'https://www.facebook.com/GoBook-227313291292119/'}>
               <Facebook />
             </a>
-            <Twitter className={'social-icon'} />
+            <Twitter className={'Social-icon'} />
           </div>
         </div>
       </div>

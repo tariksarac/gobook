@@ -1,22 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Heading from '../Heading/Heading';
 import './HungaryPromo.css';
-import { whyBosniaData } from '../../constants/constants';
-import FeaturedPicture from '../FeaturedPicture/FeaturedPicture';
 import Itinerary from '../Itinerary/Itinerary';
-import Include from '../Include/Include';
 import BookButton from '../Common/BookButton/BookButton';
 import HeadingContainer from '../Common/HeadingSection/HeadingContainer';
 import HeroImage from '../HeroImage/HeroImage';
-
-const whiteBackground = {
-  backgroundColor: '#ffffff',
-  alignItems: 'center',
-  fontSize: '34px',
-  marginBottom: '50px',
-  marginTop: '50px',
-};
 
 const itinerary = [
   {
@@ -75,7 +63,6 @@ const HungaryPromo = (props) => {
         />
       </HeadingContainer>
 
-      {/*<FeaturedPicture left picture={'https://images.ctfassets.net/0o22ljw5du6a/2B2befRnTSqKYYaQM0wyAM/35ce0134483f5b0135373107219c3405/BANER.jpg'} notShadow />*/}
       <HeadingContainer>
         <Heading
           hasLine
@@ -90,15 +77,6 @@ const HungaryPromo = (props) => {
       </HeadingContainer>
 
       <Itinerary data={itinerary} itinerary style={{ marginBottom: '50px' }} />
-      {/*<Include style={{ marginBottom: '50px'}} data={{ description: '● Szállás Szarajevóban - 3 éjszaka, 4 vagy több csillagos Szálloda Szarajevó központjában\n' +*/}
-      {/*'● Reggeli a szállodában\n' +*/}
-      {/*'● Szállítás\n' +*/}
-      {/*'● Hivatásos vezető (angol nyelv)' }} include title={'A túra díja magában foglalja'} />*/}
-      {/*<Include style={{  marginBottom: '50px'}} data={{ description: '● Járat (a Wizz Air ajánlott, ára kb. 20 eur)\n' +*/}
-      {/*'● Étkezés - kivéve a szálloda reggelijét\n' +*/}
-      {/*'● Borravaló\n' +*/}
-      {/*'● Biztosítási költségek\n' +*/}
-      {/*'● Belépőjegyek' }} title={'A túra díja nem foglalja magában:'} />*/}
 
       <HeadingContainer>
         <Heading
@@ -138,7 +116,6 @@ const HungaryPromo = (props) => {
           'https://images.ctfassets.net/0o22ljw5du6a/3xCDg4osKAK8AuYMcyC2U4/4346f8f676cdc60505b59083d648eb01/3.jpg'
         }
       />
-      {/*<FeaturedPicture   notShadow />*/}
     </div>
   );
 };

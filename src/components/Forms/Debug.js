@@ -27,7 +27,7 @@ export const Debug = () => (
       Formik State
     </div>
     <FormikConsumer>
-      {({ validationSchema, validate, onSubmit, ...rest }) => (
+      {({ ...rest }) => (
         <pre
           style={{
             fontSize: '.65rem',

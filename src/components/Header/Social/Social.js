@@ -5,7 +5,7 @@ import { SocialIcon } from 'react-social-icons';
 
 const Social = () => {
   return (
-    <div className={'social'}>
+    <div className={'Social'}>
       <SocialIcon
         network="facebook"
         className={'facebbok'}

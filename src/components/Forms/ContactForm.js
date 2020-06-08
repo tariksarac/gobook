@@ -1,8 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Form, Formik } from 'formik';
 import * as Yup from 'yup';
-// import { Debug } from './Debug';
 import BookButton from '../Common/BookButton/BookButton';
 import { Fieldset } from './BookTourForm';
 import '../../components/Contact/ContactForm/ContactForm.css';
@@ -24,7 +22,7 @@ const ContactForm = ({ submitForm, notRobot }) => (
       notRobot && submitForm(values);
       resetForm();
     }}
-    render={({ isSubmitting, handleReset, isValid }) => (
+    render={() => (
       <Form className={'contact-form'}>
         <Fieldset name="name" type="text" label="Your Name" placeholder="Your Name" />
         <Fieldset name="email" type="email" label="Your Email" placeholder="Your Email" />

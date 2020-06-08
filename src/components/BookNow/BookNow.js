@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
 import './BookNow.css';
 import '../../components/Forms/BookFormStyle.css';
 import BookTourForm from '../../components/Forms/BookTourForm';

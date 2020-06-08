@@ -1,9 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Form, Formik } from 'formik';
 import * as Yup from 'yup';
 import BookButton from '../Common/BookButton/BookButton';
-import { Debug } from './Debug';
 import { Fieldset } from './BookTourForm';
 
 const CreateTourForm = ({ style, submitForm, notRobot }) => {
@@ -31,7 +29,7 @@ const CreateTourForm = ({ style, submitForm, notRobot }) => {
         notRobot && submitForm(values);
         resetForm();
       }}
-      render={({ isSubmitting, handleReset, isValid }) => (
+      render={() => (
         <Form className={'BookTourForm-new'} style={style}>
           <Fieldset
             name="fullName"
@@ -67,9 +65,7 @@ const CreateTourForm = ({ style, submitForm, notRobot }) => {
             type="submit"
             buttonText={'BOOK THIS TOUR'}
             style={{ flexBasis: '100%', margin: '20px 8px 0 8px' }}
-            // disabled={!isValid}
           />
-          {/*<Debug />*/}
         </Form>
       )}
     />

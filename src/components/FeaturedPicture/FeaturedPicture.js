@@ -2,7 +2,7 @@ import React from 'react';
 import './FeaturedPicture.css';
 import Heading from '../Heading/Heading';
 
-const FeaturedPicture = ({ picture, title, mainTitle, subTitle, about, left, notShadow }) => {
+const FeaturedPicture = ({ picture, mainTitle, subTitle, about, left, notShadow }) => {
   let featuredStyle = {
     background: `${
       !notShadow ? 'linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),' : ''

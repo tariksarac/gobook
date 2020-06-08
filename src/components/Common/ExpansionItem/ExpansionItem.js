@@ -9,7 +9,7 @@ import Error from '@material-ui/icons/Error';
 import './ExpansionItem.css';
 import * as Markdown from 'react-markdown';
 
-const ExpansionItem = ({ data, classes, include, itinerary }) => {
+const ExpansionItem = ({ data, include, itinerary }) => {
   let title = data.mainTitle;
   if (include) {
     title = '##### Tour includes:';

@@ -1,19 +1,13 @@
 import React from 'react';
 import './Contact.css';
-import BookButton from '../Common/BookButton/BookButton';
 import Heading from '../Heading/Heading';
 import ContactForm from '../../components/Forms/ContactForm';
 import GoBookPicture from '../Common/GoBookPicture/GoBookPicture';
-import { ReCaptcha } from 'react-recaptcha-google';
 import axios from 'axios';
 import ConfirmationDialog from '../Forms/ConfirmationDialog/ConfirmationDialog';
 import ReceptchaComponent from '../Common/ReceptchaComponent/ReceptchaComponent';
 
 class Contact extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   state = {
     custom: false,
     notRobot: false,

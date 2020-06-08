@@ -3,7 +3,7 @@ import HeadingContainer from '../Common/HeadingSection/HeadingContainer';
 import Heading from '../Heading/Heading';
 import * as Markdown from 'react-markdown';
 
-const Terms = (props) => {
+const Terms = () => {
   return (
     <div className={'terms-condition'} style={{ gridArea: 'main' }}>
       <HeadingContainer style={{ flexDirection: 'column' }}>

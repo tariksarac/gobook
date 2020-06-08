@@ -24,7 +24,7 @@ const responsive = {
   },
 };
 
-const ProductsContainer = ({ products, deviceType, isMobile }) => {
+const ProductsContainer = ({ products, deviceType }) => {
   return (
     <Carousel
       deviceType={deviceType}

@@ -1,14 +1,12 @@
 import React from 'react';
 import { whyBosniaData } from '../../constants/constants';
-import FeaturedPicture from '../FeaturedPicture/FeaturedPicture';
 import Heading from '../Heading/Heading';
 import './WhyBosnia.css';
 import TextItem from './TextItem';
-import { customStyle } from '../LandingPage/LandingPage';
 import HeadingContainer from '../Common/HeadingSection/HeadingContainer';
 import HeroImage from '../HeroImage/HeroImage';
 
-const WhyBosnia = (props) => {
+const WhyBosnia = () => {
   return (
     <div className={'WhyBosnia'}>
       <HeadingContainer>

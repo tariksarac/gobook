@@ -1,11 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
-// import { Debug } from './Debug';
-import { options } from '../../components/BookNow/BookFormSelect/BookFormSelect';
 import './BookFormStyle.css';
 import BookButton from '../Common/BookButton/BookButton';
+import { tourOptions } from '../BookNow/BookFormSelect/BookFormSelect';
 
 export const Fieldset = ({ name, label, style, ...rest }) => (
   <div className={'Fieldset'} style={style}>
@@ -40,7 +38,7 @@ const BookTourForm = ({ style, selectedTour, submitForm, notRobot }) => (
       notRobot && submitForm(values);
       resetForm();
     }}
-    render={({ isSubmitting, handleReset, isValid }) => (
+    render={() => (
       <Form className={'BookTourForm-new'} style={style}>
         <Fieldset
           style={{ flexBasis: '100%' }}
@@ -48,7 +46,7 @@ const BookTourForm = ({ style, selectedTour, submitForm, notRobot }) => (
           label="TOUR NAME"
           component="select"
         >
-          {options.map((item, index) => (
+          {tourOptions.map((item, index) => (
             <option key={index} value={item}>
               {item}
             </option>
@@ -78,9 +76,7 @@ const BookTourForm = ({ style, selectedTour, submitForm, notRobot }) => (
           type="submit"
           buttonText={'BOOK THIS TOUR'}
           style={{ flexBasis: '100%', margin: '20px 8px 0 8px' }}
-          // disabled={!isValid}
         />
-        {/*<Debug />*/}
       </Form>
     )}
   />

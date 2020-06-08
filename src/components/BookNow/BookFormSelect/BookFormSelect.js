@@ -4,9 +4,8 @@ import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import InputLabel from '@material-ui/core/InputLabel';
 import { withStyles } from '@material-ui/core';
-import Input from '@material-ui/core/Input/Input';
 
-export const options = [
+export const tourOptions = [
   'Select Tour',
   'THE BEST OF BOSNIA & HERZEGOVINA TOUR',
   'BEST OF BOSNIA',
@@ -93,7 +92,6 @@ class BookFormSelect extends Component {
 
   componentDidUpdate(prevState) {
     if (prevState.selected !== this.props.selected) {
-      console.log('tetee');
     }
   }
 
@@ -120,18 +118,11 @@ class BookFormSelect extends Component {
             disabled: !!tourItem,
           }}
         >
-          {options.map((item, index) => (
+          {tourOptions.map((item, index) => (
             <MenuItem key={index} value={item} selected={item === selectedTour}>
               {item}
             </MenuItem>
           ))}
-
-          {/*<MenuItem value="">*/}
-          {/*<em>None</em>*/}
-          {/*</MenuItem>*/}
-          {/*<MenuItem value={10}>Ten</MenuItem>*/}
-          {/*<MenuItem value={20}>Twenty</MenuItem>*/}
-          {/*<MenuItem value={30}>Thirty</MenuItem>*/}
         </Select>
       </div>
     );

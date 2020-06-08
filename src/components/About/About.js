@@ -1,11 +1,8 @@
 import React from 'react';
 import Heading from '../Heading/Heading';
 import './About.css';
-import { customStyle } from '../LandingPage/LandingPage';
 import HeadingContainer from '../Common/HeadingSection/HeadingContainer';
 
-const subTitle =
-  'In a very short period Bosnia and Herzegovina has become a tourist fairy-tale. Thanks to the beauty of our country the tourist season every year becomes richer in different trips on offer to our guests. We are ready to provide all the necessary information about trips and transfers as well as to recommend the best service based on demands of our guests. \n';
 const aboutUs =
   'GoBook d.o.o Visoko is a young tourist agency oriented towards\n' +
   'promotion of natural beauty and resources of Bosnia and Herzegovina,\n' +
@@ -29,7 +26,7 @@ const About = () => {
       <HeadingContainer>
         <Heading mainTitle={'About Go Book'} about={aboutUs} hasLine />
         <div className={'about-image'}>
-          <img src={require('../../images/GoBook.png')} />
+          <img src={require('../../images/GoBook.png')} alt="logo"/>
         </div>
       </HeadingContainer>
     </div>
